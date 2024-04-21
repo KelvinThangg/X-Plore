@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Main\\MainMenu.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\MainMenu.cs [Design]",
+              "RelativeToolTip": "Main\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:26:48.998Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeScreen.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs",
+              "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs",
+              "RelativeToolTip": "Main\\HomeScreen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:01:28.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeScreen.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs",
+              "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs [Design]",
+              "RelativeToolTip": "Main\\HomeScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:46:30.552Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Xac_thuc_dky.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "RelativeDocumentMoniker": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "RelativeToolTip": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:41:35.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormDangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
+              "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangNhap.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs [Design]",
+              "RelativeToolTip": "Dangky-Dangnhap\\FormDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:33:30.301Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Xac_thuc_dky.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "RelativeDocumentMoniker": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs [Design]",
+              "RelativeToolTip": "Dangky-Dangnhap\\Xac_thuc_dky.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:31:58.916Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormDangKy.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs",
+              "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangKy.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs [Design]",
+              "RelativeToolTip": "Dangky-Dangnhap\\FormDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:20:37.842Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
