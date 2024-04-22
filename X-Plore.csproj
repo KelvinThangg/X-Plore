@@ -52,6 +52,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chat\General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\Group_chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\Group_chat.Designer.cs">
+      <DependentUpon>Group_chat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dangky-Dangnhap\FormDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +96,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Chat\General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\Group_chat.resx">
+      <DependentUpon>Group_chat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dangky-Dangnhap\FormDangKy.resx">
       <DependentUpon>FormDangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +212,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call_4213179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\live-stream_5175754.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call_597177.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-call_12595734.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send_3354313.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

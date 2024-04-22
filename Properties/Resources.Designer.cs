@@ -143,6 +143,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cat {
+            get {
+                object obj = ResourceManager.GetObject("cat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chatic {
             get {
                 object obj = ResourceManager.GetObject("chatic", resourceCulture);
@@ -233,6 +243,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap live_stream_5175754 {
+            get {
+                object obj = ResourceManager.GetObject("live-stream_5175754", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mahoa {
             get {
                 object obj = ResourceManager.GetObject("mahoa", resourceCulture);
@@ -253,9 +273,39 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap phone_call_4213179 {
+            get {
+                object obj = ResourceManager.GetObject("phone-call_4213179", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone_call_597177 {
+            get {
+                object obj = ResourceManager.GetObject("phone-call_597177", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap renovation_12313686 {
             get {
                 object obj = ResourceManager.GetObject("renovation_12313686", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap send_3354313 {
+            get {
+                object obj = ResourceManager.GetObject("send_3354313", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -296,6 +346,16 @@ namespace X_Plore.Properties {
         internal static System.Drawing.Bitmap usic {
             get {
                 object obj = ResourceManager.GetObject("usic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap video_call_12595734 {
+            get {
+                object obj = ResourceManager.GetObject("video-call_12595734", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

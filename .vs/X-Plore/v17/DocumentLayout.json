@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\chat\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\chat\\group_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\group_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\chat\\group_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\group_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\chat\\general.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\general.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +54,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Group_chat.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Chat\\Group_chat.cs",
+              "RelativeDocumentMoniker": "Chat\\Group_chat.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Chat\\Group_chat.cs",
+              "RelativeToolTip": "Chat\\Group_chat.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAswFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T13:36:35.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "General.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Chat\\General.cs",
+              "RelativeDocumentMoniker": "Chat\\General.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Chat\\General.cs [Design]",
+              "RelativeToolTip": "Chat\\General.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T11:57:54.71Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Group_chat.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Chat\\Group_chat.cs",
+              "RelativeDocumentMoniker": "Chat\\Group_chat.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Chat\\Group_chat.cs [Design]",
+              "RelativeToolTip": "Chat\\Group_chat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:59:30.807Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "General.Designer.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Chat\\General.Designer.cs",
+              "RelativeDocumentMoniker": "Chat\\General.Designer.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Chat\\General.Designer.cs",
+              "RelativeToolTip": "Chat\\General.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:45:58.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "MainMenu.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\MainMenu.cs",
               "RelativeDocumentMoniker": "Main\\MainMenu.cs",
@@ -54,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "HomeScreen.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs",
               "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
@@ -67,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "HomeScreen.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs",
               "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
@@ -79,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Xac_thuc_dky.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
@@ -92,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FormDangNhap.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangNhap.cs",
@@ -104,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Xac_thuc_dky.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
@@ -116,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "FormDangKy.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangKy.cs",

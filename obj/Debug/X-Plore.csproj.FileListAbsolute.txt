@@ -13,3 +13,4 @@ D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X-Plore.csproj.Cor
 D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X-Plore.csproj.Up2Date
 D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X-Plore.exe
 D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X-Plore.pdb
+D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X_Plore.Main.MainMenu.resources
