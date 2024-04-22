@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mnTfZwHfdrvIfzHPZU/gEH1aAtGjCbNCOsGygmwUbcctB8dnmqjB3fuZrvNtBnyUsOMjwTEq3qZOQPqYzC2bfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dadad\\source\\repos\\login\\login.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dadad\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\dadad\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\dadad\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
