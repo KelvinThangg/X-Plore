@@ -70,6 +70,18 @@
     <Compile Include="Dangky-Dangnhap\Xac_thuc_dky.Designer.cs">
       <DependentUpon>Xac_thuc_dky.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaHoaFile\FormFileMaHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaHoaFile\FormFileMaHoa.Designer.cs">
+      <DependentUpon>FormFileMaHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaHoaFile\FormMaHoa2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaHoaFile\FormMaHoa2.Designer.cs">
+      <DependentUpon>FormMaHoa2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +104,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dangky-Dangnhap\Xac_thuc_dky.resx">
       <DependentUpon>Xac_thuc_dky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaHoaFile\FormFileMaHoa.resx">
+      <DependentUpon>FormFileMaHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaHoaFile\FormMaHoa2.resx">
+      <DependentUpon>FormMaHoa2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
@@ -195,5 +213,6 @@
   <ItemGroup>
     <None Include="Resources\23.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

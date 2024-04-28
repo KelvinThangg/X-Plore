@@ -16,5 +16,10 @@ namespace X_Plore
         {
             InitializeComponent();
         }
+
+        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

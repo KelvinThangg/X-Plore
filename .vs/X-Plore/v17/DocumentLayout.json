@@ -1,33 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\code\\course\\ltmcb\\zchat\\x-plore\\mahoafile\\formmahoa2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formmahoa2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\code\\course\\ltmcb\\zchat\\x-plore\\mahoafile\\formmahoa2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formmahoa2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\code\\course\\ltmcb\\zchat\\x-plore\\mahoafile\\formmahoa2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formmahoa2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\mahoafile\\formfilemahoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formfilemahoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\mahoafile\\formfilemahoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formfilemahoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\mahoafile\\formfilemahoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formfilemahoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 n\u0103m 2\\lap trinh mang\\demo\\do an\\x-plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,93 +70,191 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainMenu.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Main\\MainMenu.cs",
-              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\MainMenu.cs [Design]",
-              "RelativeToolTip": "Main\\MainMenu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T17:26:48.998Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeScreen.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs",
-              "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
-              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs",
-              "RelativeToolTip": "Main\\HomeScreen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "FormMaHoa2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormMaHoa2.Designer.cs",
+              "RelativeDocumentMoniker": "MaHoaFile\\FormMaHoa2.Designer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormMaHoa2.Designer.cs",
+              "RelativeToolTip": "MaHoaFile\\FormMaHoa2.Designer.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAnwEgAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T17:01:28.263Z",
+              "WhenOpened": "2024-04-28T14:34:01.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormMaHoa2.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormMaHoa2.cs",
+              "RelativeDocumentMoniker": "MaHoaFile\\FormMaHoa2.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormMaHoa2.cs",
+              "RelativeToolTip": "MaHoaFile\\FormMaHoa2.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAmwBsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T12:40:24.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeScreen.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs",
-              "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
-              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs [Design]",
-              "RelativeToolTip": "Main\\HomeScreen.cs [Design]",
+              "Title": "FormMaHoa2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormMaHoa2.cs",
+              "RelativeDocumentMoniker": "MaHoaFile\\FormMaHoa2.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormMaHoa2.cs [Design]",
+              "RelativeToolTip": "MaHoaFile\\FormMaHoa2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:46:30.552Z",
+              "WhenOpened": "2024-04-22T14:08:10.161Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Xac_thuc_dky.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
-              "RelativeDocumentMoniker": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
-              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
-              "RelativeToolTip": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:41:35.764Z",
+              "WhenOpened": "2024-04-22T13:37:50.139Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormDangNhap.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
-              "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangNhap.cs",
-              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs [Design]",
-              "RelativeToolTip": "Dangky-Dangnhap\\FormDangNhap.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "FormFileMaHoa.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormFileMaHoa.Designer.cs",
+              "RelativeDocumentMoniker": "MaHoaFile\\FormFileMaHoa.Designer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormFileMaHoa.Designer.cs",
+              "RelativeToolTip": "MaHoaFile\\FormFileMaHoa.Designer.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAYwE8AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:33:30.301Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Xac_thuc_dky.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
-              "RelativeDocumentMoniker": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
-              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs [Design]",
-              "RelativeToolTip": "Dangky-Dangnhap\\Xac_thuc_dky.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:31:58.916Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-22T13:37:24.67Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FormDangKy.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs",
+              "Title": "FormFileMaHoa.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormFileMaHoa.cs",
+              "RelativeDocumentMoniker": "MaHoaFile\\FormFileMaHoa.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormFileMaHoa.cs",
+              "RelativeToolTip": "MaHoaFile\\FormFileMaHoa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T13:33:08.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormFileMaHoa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormFileMaHoa.cs",
+              "RelativeDocumentMoniker": "MaHoaFile\\FormFileMaHoa.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormFileMaHoa.cs [Design]",
+              "RelativeToolTip": "MaHoaFile\\FormFileMaHoa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T13:32:33.822Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
+              "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangNhap.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
+              "RelativeToolTip": "Dangky-Dangnhap\\FormDangNhap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:13:01.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormDangKy.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangKy.cs",
-              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs [Design]",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs",
+              "RelativeToolTip": "Dangky-Dangnhap\\FormDangKy.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T12:12:23.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Main\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Main\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Main\\MainMenu.cs [Design]",
+              "RelativeToolTip": "Main\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:26:48.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeScreen.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Main\\HomeScreen.cs",
+              "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Main\\HomeScreen.cs",
+              "RelativeToolTip": "Main\\HomeScreen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:01:28.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeScreen.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Main\\HomeScreen.cs",
+              "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
+              "ToolTip": "D:\\UIT\\HK2 N\u0103m 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Main\\HomeScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:46:30.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Xac_thuc_dky.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "RelativeDocumentMoniker": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "RelativeToolTip": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:41:35.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormDangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
+              "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangNhap.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs [Design]",
+              "RelativeToolTip": "Dangky-Dangnhap\\FormDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:33:30.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormDangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs",
+              "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangKy.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs [Design]",
               "RelativeToolTip": "Dangky-Dangnhap\\FormDangKy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:20:37.842Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-21T16:20:37.842Z"
             }
           ]
         }

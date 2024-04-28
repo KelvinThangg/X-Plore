@@ -13,3 +13,21 @@ D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X-Plore.csproj.Cor
 D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X-Plore.csproj.Up2Date
 D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X-Plore.exe
 D:\UIT\HK2 Năm 2\Lap trinh mang\Demo\Do an\X-Plore\obj\Debug\X-Plore.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X-Plore.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X_Plore.FormDangKy.resources
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X_Plore.FormDangNhap.resources
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X_Plore.Dangky_Dangnhap.Xac_thuc_dky.resources
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X_Plore.Main.HomeScreen.resources
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X_Plore.Main.MainMenu.resources
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X_Plore.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X-Plore.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X-Plore.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X-Plore.exe
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X-Plore.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\bin\Debug\X-Plore.exe.config
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\bin\Debug\X-Plore.exe
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\bin\Debug\X-Plore.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\bin\Debug\Guna.UI2.dll
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X_Plore.MaHoaFile.FormFileMaHoa.resources
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X-Plore.csproj.Up2Date
+C:\Users\Lenovo\Desktop\CODE\Course\LTMCB\ZChat\X-Plore\obj\Debug\X_Plore.MaHoaFile.FormMaHoa2.resources
