@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\dadad\\source\\repos\\loginIndian\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\classes\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:classes\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\classes\\firestorehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:classes\\firestorehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Security.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\Security.cs",
               "RelativeDocumentMoniker": "Classes\\Security.cs",
               "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\Security.cs",
               "RelativeToolTip": "Classes\\Security.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAeAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T08:34:35.149Z",
               "EditorCaption": ""
@@ -60,32 +60,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RegisterForm.cs",
-              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
-              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
-              "RelativeToolTip": "Forms\\RegisterForm.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAuwC8AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T07:28:06.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FirestoreHelper.cs",
-              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\FirestoreHelper.cs",
-              "RelativeDocumentMoniker": "Classes\\FirestoreHelper.cs",
-              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\FirestoreHelper.cs",
-              "RelativeToolTip": "Classes\\FirestoreHelper.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwCQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T07:58:38.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "UserData.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\UserData.cs",
               "RelativeDocumentMoniker": "Classes\\UserData.cs",
@@ -93,12 +67,11 @@
               "RelativeToolTip": "Classes\\UserData.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAuwBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T08:13:59.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T08:13:59.435Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
               "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
@@ -110,6 +83,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
+              "RelativeToolTip": "Forms\\RegisterForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T07:28:06.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FirestoreHelper.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\FirestoreHelper.cs",
+              "RelativeDocumentMoniker": "Classes\\FirestoreHelper.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\FirestoreHelper.cs",
+              "RelativeToolTip": "Classes\\FirestoreHelper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwCQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T07:58:38.855Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\LoginForm.cs",
@@ -118,8 +116,7 @@
               "RelativeToolTip": "Forms\\LoginForm.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAiwB8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T07:35:49.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T07:35:49.951Z"
             },
             {
               "$type": "Document",
@@ -143,8 +140,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T07:23:18.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T07:23:18.634Z"
             }
           ]
         }
