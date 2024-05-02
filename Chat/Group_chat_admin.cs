@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace X_Plore.Chat
 {
-    public partial class Group_chat : Form
+    public partial class Group_chat_admin : Form
     {
-        public Group_chat()
+        public Group_chat_admin()
         {
             InitializeComponent();
         }

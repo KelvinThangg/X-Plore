@@ -127,6 +127,9 @@
   <data name="phone-call_597177" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone-call_597177.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="video-call_12595734" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video-call_12595734.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,6 +138,9 @@
   </data>
   <data name="extttt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\extttt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_14267751" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_14267751.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="password_12795700" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\password_12795700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,10 +208,10 @@
   <data name="2fa_11220705" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2fa_11220705.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="video-call_12595734" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\video-call_12595734.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="send_3354313" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\send_3354313.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picture_7126547" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picture_7126547.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

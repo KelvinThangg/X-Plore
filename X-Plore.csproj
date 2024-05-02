@@ -58,11 +58,23 @@
     <Compile Include="Chat\General.Designer.cs">
       <DependentUpon>General.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chat\Group_chat.cs">
+    <Compile Include="Chat\GroupChat_Member.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chat\Group_chat.Designer.cs">
-      <DependentUpon>Group_chat.cs</DependentUpon>
+    <Compile Include="Chat\GroupChat_Member.Designer.cs">
+      <DependentUpon>GroupChat_Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\Group_chat_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\Group_chat_admin.Designer.cs">
+      <DependentUpon>Group_chat_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\InviteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\InviteUser.Designer.cs">
+      <DependentUpon>InviteUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Dangky-Dangnhap\FormDangKy.cs">
       <SubType>Form</SubType>
@@ -88,6 +100,12 @@
     <Compile Include="Main\HomeScreen.Designer.cs">
       <DependentUpon>HomeScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\MaHoaFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MaHoaFile.Designer.cs">
+      <DependentUpon>MaHoaFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +117,14 @@
     <EmbeddedResource Include="Chat\General.resx">
       <DependentUpon>General.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chat\Group_chat.resx">
-      <DependentUpon>Group_chat.cs</DependentUpon>
+    <EmbeddedResource Include="Chat\GroupChat_Member.resx">
+      <DependentUpon>GroupChat_Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\Group_chat_admin.resx">
+      <DependentUpon>Group_chat_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\InviteUser.resx">
+      <DependentUpon>InviteUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dangky-Dangnhap\FormDangKy.resx">
       <DependentUpon>FormDangKy.cs</DependentUpon>
@@ -113,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MaHoaFile.resx">
+      <DependentUpon>MaHoaFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -230,6 +257,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\send_3354313.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_14267751.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture_7126547.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

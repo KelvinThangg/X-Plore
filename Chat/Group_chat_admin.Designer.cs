@@ -1,6 +1,6 @@
 ﻿namespace X_Plore.Chat
 {
-    partial class Group_chat
+    partial class Group_chat_admin
     {
         /// <summary>
         /// Required designer variable.
@@ -34,8 +34,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Group_chat));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Group_chat_admin));
             this.pnLichSu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.cbHideOrShowPass = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.lbStt = new System.Windows.Forms.Label();
             this.tbNoiDung = new System.Windows.Forms.TextBox();
@@ -52,15 +54,14 @@
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GrPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageRadioButton1 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.guna2ImageRadioButton2 = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.pnLichSu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewsMember)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewsMember)).BeginInit();
             this.SuspendLayout();
             // 
             // pnLichSu
@@ -69,13 +70,42 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnLichSu.AutoScroll = true;
-            this.pnLichSu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.pnLichSu.BackColor = System.Drawing.Color.Black;
+            this.pnLichSu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnLichSu.Controls.Add(this.panel1);
             this.pnLichSu.Location = new System.Drawing.Point(7, 68);
             this.pnLichSu.Name = "pnLichSu";
             this.pnLichSu.Size = new System.Drawing.Size(541, 308);
             this.pnLichSu.TabIndex = 59;
             this.pnLichSu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnLichSu_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.guna2ImageButton2);
+            this.panel1.Controls.Add(this.guna2ImageButton1);
+            this.panel1.Controls.Add(this.guna2ImageRadioButton1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(539, 46);
+            this.panel1.TabIndex = 60;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Shopee Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(53, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 22);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "LTMCB";
+            this.label1.Click += new System.EventHandler(this.lbMatKhauGr_Click);
             // 
             // cbHideOrShowPass
             // 
@@ -309,7 +339,7 @@
             this.guna2GradientButton3.FillColor2 = System.Drawing.Color.DeepSkyBlue;
             this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(343, 27);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(343, 23);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.Size = new System.Drawing.Size(81, 35);
             this.guna2GradientButton3.TabIndex = 70;
@@ -328,7 +358,7 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.DeepSkyBlue;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(430, 27);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(430, 23);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(118, 35);
             this.guna2GradientButton1.TabIndex = 70;
@@ -376,36 +406,8 @@
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(445, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(394, 36);
             this.guna2TextBox1.TabIndex = 72;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.SlateGray;
-            this.panel1.Controls.Add(this.guna2ImageButton2);
-            this.panel1.Controls.Add(this.guna2ImageButton1);
-            this.panel1.Controls.Add(this.guna2ImageRadioButton1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(541, 48);
-            this.panel1.TabIndex = 60;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Shopee Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 22);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "LTMCB";
-            this.label1.Click += new System.EventHandler(this.lbMatKhauGr_Click);
             // 
             // guna2GradientButton2
             // 
@@ -435,7 +437,7 @@
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(473, 3);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(473, 2);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton2.Size = new System.Drawing.Size(45, 42);
@@ -449,7 +451,7 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(422, 3);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(423, 1);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.Size = new System.Drawing.Size(45, 42);
@@ -467,12 +469,26 @@
             this.guna2ImageRadioButton1.Size = new System.Drawing.Size(42, 42);
             this.guna2ImageRadioButton1.TabIndex = 0;
             // 
-            // Group_chat
+            // guna2ImageRadioButton2
+            // 
+            this.guna2ImageRadioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageRadioButton2.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.guna2ImageRadioButton2.Image = global::X_Plore.Properties.Resources.picture_7126547;
+            this.guna2ImageRadioButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageRadioButton2.ImageRotate = 0F;
+            this.guna2ImageRadioButton2.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageRadioButton2.Location = new System.Drawing.Point(420, 394);
+            this.guna2ImageRadioButton2.Name = "guna2ImageRadioButton2";
+            this.guna2ImageRadioButton2.Size = new System.Drawing.Size(41, 44);
+            this.guna2ImageRadioButton2.TabIndex = 73;
+            // 
+            // Group_chat_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.guna2ImageRadioButton2);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.GrPass);
             this.Controls.Add(this.guna2GradientButton1);
@@ -488,12 +504,12 @@
             this.Controls.Add(this.DataGridViewsMember);
             this.Controls.Add(this.lbMatKhauGr);
             this.Controls.Add(this.lbTenNhom);
-            this.Name = "Group_chat";
+            this.Name = "Group_chat_admin";
             this.Text = "Group_chat";
             this.pnLichSu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewsMember)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewsMember)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -524,5 +540,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButton2;
     }
 }
