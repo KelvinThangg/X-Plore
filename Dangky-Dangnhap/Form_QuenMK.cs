@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace X_Plore
+namespace X_Plore.Dangky_Dangnhap
 {
-    public partial class FormDangNhap : Form
+    public partial class Form_QuenMK : Form
     {
-        public FormDangNhap()
+        public Form_QuenMK()
         {
             InitializeComponent();
         }
 
-        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        private void sendRecoveryBtn_Click(object sender, EventArgs e)
         {
 
         }

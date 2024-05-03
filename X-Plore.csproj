@@ -88,6 +88,12 @@
     <Compile Include="Dangky-Dangnhap\FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dangky-Dangnhap\Form_QuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangky-Dangnhap\Form_QuenMK.Designer.cs">
+      <DependentUpon>Form_QuenMK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dangky-Dangnhap\Xac_thuc_dky.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dangky-Dangnhap\FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangky-Dangnhap\Form_QuenMK.resx">
+      <DependentUpon>Form_QuenMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dangky-Dangnhap\Xac_thuc_dky.resx">
       <DependentUpon>Xac_thuc_dky.cs</DependentUpon>

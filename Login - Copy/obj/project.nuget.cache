@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "mnTfZwHfdrvIfzHPZU/gEH1aAtGjCbNCOsGygmwUbcctB8dnmqjB3fuZrvNtBnyUsOMjwTEq3qZOQPqYzC2bfQ==",
+  "dgSpecHash": "CtFbxEidld0sqtwrm8aQokj2ltH6LIzyKErSDjfnSG558kLG6Y/YprK8bsrmSPSd4lZqCuc0bjXwq6ioYAkzdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dadad\\source\\repos\\login\\login.csproj",
+  "projectFilePath": "D:\\UIT\\HK2 Năm 2\\Lap trinh mang\\Demo\\Do an\\X-Plore\\Login - Copy\\login.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dadad\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
-    "C:\\Users\\dadad\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
-    "C:\\Users\\dadad\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+    "C:\\Users\\asus\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }
