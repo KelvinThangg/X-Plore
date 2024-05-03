@@ -20,7 +20,7 @@ namespace X_Plore.MaHoaFile
         {
             public static void EncryptFile(string inputFile, string outputFile, string key)
             {
-                byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+                byte[] keyBytes = GetSHA256Hash(key);
                 byte[] ivBytes = new byte[16];
 
                 using (var aes = Aes.Create())
@@ -39,9 +39,18 @@ namespace X_Plore.MaHoaFile
                 }
             }
 
+            private static byte[] GetSHA256Hash(string input)
+            {
+                using (var sha256 = SHA256.Create())
+                {
+                    byte[] bytes = Encoding.UTF8.GetBytes(input);
+                    return sha256.ComputeHash(bytes);
+                }
+            }
+
             public static void DecryptFile(string inputFile, string outputFile, string key)
             {
-                byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+                byte[] keyBytes = GetSHA256Hash(key);
                 byte[] ivBytes = new byte[16];
 
                 using (var aes = Aes.Create())
