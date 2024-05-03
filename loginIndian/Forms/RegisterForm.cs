@@ -12,6 +12,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace loginIndian.Forms
 {
@@ -21,7 +22,6 @@ namespace loginIndian.Forms
         {
             InitializeComponent();
         }
-
         private void BackToLoginBtn_Click(object sender, EventArgs e)
         {
             Hide();
@@ -46,6 +46,10 @@ namespace loginIndian.Forms
             DocumentReference docRef = db.Collection("UserData").Document(data.Username);
             docRef.SetAsync(data);
             MessageBox.Show("success");
+            Hide();
+            EmailVerify form = new EmailVerify(data.Email);
+            form.ShowDialog();
+            Close();
         }
 
         private bool ValidateFields()
@@ -90,7 +94,7 @@ namespace loginIndian.Forms
             string gender = GenBox.Text.Trim();
             string email = EmailBox.Text.Trim();
             string phone = TelBox.Text.Trim();
-
+            //EmailVerify userEmail = new EmailVerify(email);
             return new UserData()
             {
                 Username = username,
@@ -114,7 +118,7 @@ namespace loginIndian.Forms
             }
             return false;
         }
-
+        
         private void showPassBox_CheckedChanged(object sender, EventArgs e)
         {
             if (showPassBox.Checked==true)
@@ -126,5 +130,6 @@ namespace loginIndian.Forms
                 PassBox.UseSystemPasswordChar = true;
             }
         }
+        
     }
 }
