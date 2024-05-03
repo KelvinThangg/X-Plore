@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             label1 = new Label();
             confirmBtn = new Button();
             codeBox = new TextBox();
-            timvcode = new System.Windows.Forms.Timer(components);
             sendBtn = new Button();
             NotifcationTxT = new Label();
             SuspendLayout();
@@ -109,7 +107,6 @@
         private Label label1;
         private Button confirmBtn;
         private TextBox codeBox;
-        private System.Windows.Forms.Timer timvcode;
         private Button sendBtn;
         private Label NotifcationTxT;
     }

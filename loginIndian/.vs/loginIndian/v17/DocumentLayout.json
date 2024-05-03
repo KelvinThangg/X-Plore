@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\dadad\\source\\repos\\loginIndian\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\classes\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,20 +47,8 @@
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,23 +58,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 201,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmailVerify.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
-              "RelativeDocumentMoniker": "Forms\\EmailVerify.cs",
-              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs [Design]",
-              "RelativeToolTip": "Forms\\EmailVerify.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T14:16:44.06Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ForgottenPassword.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\ForgottenPassword.cs",
               "RelativeDocumentMoniker": "Forms\\ForgottenPassword.cs",
@@ -86,7 +74,70 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmailVerify.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
+              "RelativeDocumentMoniker": "Forms\\EmailVerify.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
+              "RelativeToolTip": "Forms\\EmailVerify.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAFIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:04:17.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
+              "RelativeToolTip": "Forms\\RegisterForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:16:31.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ForgottenPassword.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\ForgottenPassword.cs",
+              "RelativeDocumentMoniker": "Forms\\ForgottenPassword.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\ForgottenPassword.cs",
+              "RelativeToolTip": "Forms\\ForgottenPassword.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T12:52:40.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailVerify.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
+              "RelativeDocumentMoniker": "Forms\\EmailVerify.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs [Design]",
+              "RelativeToolTip": "Forms\\EmailVerify.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:16:44.06Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\UserData.cs",
+              "RelativeDocumentMoniker": "Classes\\UserData.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\UserData.cs",
+              "RelativeToolTip": "Classes\\UserData.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:54:52.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
@@ -98,20 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserData.cs",
-              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\UserData.cs",
-              "RelativeDocumentMoniker": "Classes\\UserData.cs",
-              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\UserData.cs",
-              "RelativeToolTip": "Classes\\UserData.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T15:54:52.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Security.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\Security.cs",
               "RelativeDocumentMoniker": "Classes\\Security.cs",
@@ -119,12 +157,11 @@
               "RelativeToolTip": "Classes\\Security.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAmwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T15:54:49.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T15:54:49.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FirestoreHelper.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\FirestoreHelper.cs",
               "RelativeDocumentMoniker": "Classes\\FirestoreHelper.cs",
@@ -132,12 +169,11 @@
               "RelativeToolTip": "Classes\\FirestoreHelper.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAuwA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T15:02:03.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T15:02:03.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "GenerateCode.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Classes\\GenerateCode.cs",
               "RelativeDocumentMoniker": "Classes\\GenerateCode.cs",
@@ -145,12 +181,11 @@
               "RelativeToolTip": "Classes\\GenerateCode.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T14:36:56.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T14:36:56.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
@@ -158,25 +193,11 @@
               "RelativeToolTip": "Forms\\LoginForm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T14:16:24.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T14:16:24.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterForm.cs",
-              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
-              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
-              "RelativeToolTip": "Forms\\RegisterForm.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAuwCYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T14:16:31.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
               "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
@@ -185,32 +206,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T14:16:29.496Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EmailVerify.cs",
-              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
-              "RelativeDocumentMoniker": "Forms\\EmailVerify.cs",
-              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
-              "RelativeToolTip": "Forms\\EmailVerify.cs",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAAADgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T14:04:17.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ForgottenPassword.cs",
-              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\ForgottenPassword.cs",
-              "RelativeDocumentMoniker": "Forms\\ForgottenPassword.cs",
-              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\ForgottenPassword.cs",
-              "RelativeToolTip": "Forms\\ForgottenPassword.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAAAIgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T12:52:40.887Z",
-              "EditorCaption": ""
             }
           ]
         },
@@ -221,6 +216,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Bookmark",
