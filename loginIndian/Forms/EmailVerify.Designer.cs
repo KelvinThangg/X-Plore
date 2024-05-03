@@ -36,12 +36,13 @@
             txtGmail = new Label();
             mailBox = new TextBox();
             sendBtn = new Button();
+            NotifcationTxT = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(64, 108);
+            label1.Location = new Point(65, 126);
             label1.Name = "label1";
             label1.Size = new Size(146, 25);
             label1.TabIndex = 0;
@@ -50,7 +51,7 @@
             // confirmBtn
             // 
             confirmBtn.Enabled = false;
-            confirmBtn.Location = new Point(317, 189);
+            confirmBtn.Location = new Point(318, 188);
             confirmBtn.Name = "confirmBtn";
             confirmBtn.Size = new Size(112, 34);
             confirmBtn.TabIndex = 1;
@@ -61,22 +62,16 @@
             // codeBox
             // 
             codeBox.Enabled = false;
-            codeBox.Location = new Point(216, 105);
+            codeBox.Location = new Point(217, 123);
             codeBox.MaxLength = 4;
             codeBox.Name = "codeBox";
             codeBox.Size = new Size(213, 31);
             codeBox.TabIndex = 2;
             // 
-            // timvcode
-            // 
-            timvcode.Enabled = true;
-            timvcode.Interval = 1000;
-            timvcode.Tick += timvcode_Tick;
-            // 
             // txtGmail
             // 
             txtGmail.AutoSize = true;
-            txtGmail.Location = new Point(153, 41);
+            txtGmail.Location = new Point(154, 59);
             txtGmail.Name = "txtGmail";
             txtGmail.Size = new Size(57, 25);
             txtGmail.TabIndex = 0;
@@ -84,7 +79,7 @@
             // 
             // mailBox
             // 
-            mailBox.Location = new Point(216, 38);
+            mailBox.Location = new Point(217, 59);
             mailBox.MaxLength = 100;
             mailBox.Name = "mailBox";
             mailBox.Size = new Size(213, 31);
@@ -92,7 +87,7 @@
             // 
             // sendBtn
             // 
-            sendBtn.Location = new Point(199, 189);
+            sendBtn.Location = new Point(200, 188);
             sendBtn.Name = "sendBtn";
             sendBtn.Size = new Size(112, 34);
             sendBtn.TabIndex = 3;
@@ -100,11 +95,22 @@
             sendBtn.UseVisualStyleBackColor = true;
             sendBtn.Click += sendBtn_Click;
             // 
+            // NotifcationTxT
+            // 
+            NotifcationTxT.AutoSize = true;
+            NotifcationTxT.Location = new Point(272, 20);
+            NotifcationTxT.Name = "NotifcationTxT";
+            NotifcationTxT.Size = new Size(103, 25);
+            NotifcationTxT.TabIndex = 4;
+            NotifcationTxT.Text = "Thông báo:";
+            NotifcationTxT.TextAlign = ContentAlignment.TopCenter;
+            // 
             // EmailVerify
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(NotifcationTxT);
             Controls.Add(sendBtn);
             Controls.Add(mailBox);
             Controls.Add(codeBox);
@@ -127,5 +133,6 @@
         private Label txtGmail;
         private TextBox mailBox;
         private Button sendBtn;
+        private Label NotifcationTxT;
     }
 }

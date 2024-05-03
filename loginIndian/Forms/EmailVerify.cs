@@ -1,4 +1,5 @@
-﻿using System;
+﻿using loginIndian.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,38 +15,67 @@ namespace loginIndian.Forms
 {
     public partial class EmailVerify : Form
     {
+        private System.Windows.Forms.Timer codeExpiryTimer;
+        private const int CODE_EXPIRY_SECONDS = 60;
         private string userEmail;
+        string verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric);
         
         public EmailVerify(string userEmail)
         {
             InitializeComponent();
             this.userEmail = userEmail;
+            NotifcationTxT.Text = " Sending mail to: " + userEmail;
+            InitializeCodeExpiryTimer(); // Initialize the timer
         }
-        int vCode = 1000;
+
+        int codeSended = 0;
+        int enterout = 0;
+        bool checkTimeout()
+        {
+            if (enterout == 3)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private void InitializeCodeExpiryTimer()
+        {
+            codeExpiryTimer = new System.Windows.Forms.Timer();
+            codeExpiryTimer.Interval = CODE_EXPIRY_SECONDS * 1000;  // 60 seconds
+            codeExpiryTimer.Tick += CodeExpiryTimer_Tick;
+        }
+
         private void confirmBtn_Click(object sender, EventArgs e)
         {
-            if (codeBox.Text == vCode.ToString())
+            if (string.IsNullOrEmpty(codeBox.Text)) 
+            {
+                MessageBox.Show("Enter Code!");
+                enterout += 1;
+            }
+            else
+            if (codeBox.Text == verificationCode)
             {
                 MessageBox.Show("Success");
             }
-        }
-
-        private void timvcode_Tick(object sender, EventArgs e)
-        {
-            vCode += 10;
-            if (vCode == 9999)
+            else 
             {
-                vCode = 1000;
+                MessageBox.Show("Wrong Code!");
+                enterout+=1;
+            }
+            if (checkTimeout())  // Check for termination condition
+            {
+                MessageBox.Show("You reach out the maximum attemps! Program Exit!");
+                Environment.Exit(1); // Forcefully exit the program
             }
         }
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            timvcode.Stop();
             string from, pass, mail;
-            string to = mailBox.Text;
+            string to = userEmail;
             from = "khabanhpro135@gmail.com";//Your gmail;
-            mail = vCode.ToString();
+            mail = verificationCode;
             pass = "xhkq hhfn tkkh lpuu";//Your app pass;
             MailMessage message = new MailMessage();
             message.To.Add(to);
@@ -62,12 +92,23 @@ namespace loginIndian.Forms
                 smtp.Send(message);
                 MessageBox.Show("Code send successful!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 codeBox.Enabled = true;
+                sendBtn.Enabled = false;
                 confirmBtn.Enabled = true;
+                codeExpiryTimer.Start(); // Start the timer
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+        private void CodeExpiryTimer_Tick(object sender, EventArgs e)
+        {
+
+            codeExpiryTimer.Stop(); // Stop the timer
+            verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // New code
+            MessageBox.Show("Verification code expired! Exit");
+            Environment.Exit(1); // Forcefully exit the program
+        }
+
     }
 }
