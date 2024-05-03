@@ -123,7 +123,7 @@
             // 
             GenBox.DropDownStyle = ComboBoxStyle.DropDownList;
             GenBox.FormattingEnabled = true;
-            GenBox.Items.AddRange(new object[] { "Male", "Female", "Non binary" });
+            GenBox.Items.AddRange(new object[] { "Male", "Female", "Non-binary" });
             GenBox.Location = new Point(266, 197);
             GenBox.Name = "GenBox";
             GenBox.Size = new Size(282, 33);

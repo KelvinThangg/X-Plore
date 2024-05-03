@@ -33,8 +33,6 @@
             confirmBtn = new Button();
             codeBox = new TextBox();
             timvcode = new System.Windows.Forms.Timer(components);
-            txtGmail = new Label();
-            mailBox = new TextBox();
             sendBtn = new Button();
             NotifcationTxT = new Label();
             SuspendLayout();
@@ -68,23 +66,6 @@
             codeBox.Size = new Size(213, 31);
             codeBox.TabIndex = 2;
             // 
-            // txtGmail
-            // 
-            txtGmail.AutoSize = true;
-            txtGmail.Location = new Point(154, 59);
-            txtGmail.Name = "txtGmail";
-            txtGmail.Size = new Size(57, 25);
-            txtGmail.TabIndex = 0;
-            txtGmail.Text = "Gmail";
-            // 
-            // mailBox
-            // 
-            mailBox.Location = new Point(217, 59);
-            mailBox.MaxLength = 100;
-            mailBox.Name = "mailBox";
-            mailBox.Size = new Size(213, 31);
-            mailBox.TabIndex = 2;
-            // 
             // sendBtn
             // 
             sendBtn.Location = new Point(200, 188);
@@ -100,9 +81,9 @@
             NotifcationTxT.AutoSize = true;
             NotifcationTxT.Location = new Point(272, 20);
             NotifcationTxT.Name = "NotifcationTxT";
-            NotifcationTxT.Size = new Size(103, 25);
+            NotifcationTxT.Size = new Size(99, 25);
             NotifcationTxT.TabIndex = 4;
-            NotifcationTxT.Text = "Thông báo:";
+            NotifcationTxT.Text = "Thông báo";
             NotifcationTxT.TextAlign = ContentAlignment.TopCenter;
             // 
             // EmailVerify
@@ -112,14 +93,13 @@
             ClientSize = new Size(800, 450);
             Controls.Add(NotifcationTxT);
             Controls.Add(sendBtn);
-            Controls.Add(mailBox);
             Controls.Add(codeBox);
-            Controls.Add(txtGmail);
             Controls.Add(confirmBtn);
             Controls.Add(label1);
             Name = "EmailVerify";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EmailVerify";
+            FormClosed += EmailVerify_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -130,8 +110,6 @@
         private Button confirmBtn;
         private TextBox codeBox;
         private System.Windows.Forms.Timer timvcode;
-        private Label txtGmail;
-        private TextBox mailBox;
         private Button sendBtn;
         private Label NotifcationTxT;
     }
