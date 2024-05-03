@@ -1,4 +1,5 @@
-﻿using loginIndian.Classes;
+﻿using Google.Cloud.Firestore;
+using loginIndian.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,16 +20,18 @@ namespace loginIndian.Forms
         private System.Windows.Forms.Timer codeExpiryTimer;
         private const int CODE_EXPIRY_SECONDS = 60;
         private string userEmail;
+        private string userName;
         string verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric);
-        
-        public EmailVerify(string userEmail)
+
+        public EmailVerify(string userEmail, string userName)
         {
             InitializeComponent();
             this.userEmail = userEmail;
+            this.userName = userName;
             NotifcationTxT.Text = " Sending mail to: " + userEmail;
             InitializeCodeExpiryTimer(); // Initialize the timer
         }
-
+        int flag = 0;
         int codeSended = 0;
         int enterout = 0;
         bool checkTimeout()
@@ -46,9 +50,11 @@ namespace loginIndian.Forms
             codeExpiryTimer.Tick += CodeExpiryTimer_Tick;
         }
 
-        private void confirmBtn_Click(object sender, EventArgs e)
+        private const string FIREBASE_DATABASE_URL = "your_firebase_database_url"; // Replace with your URL
+
+        private async void confirmBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(codeBox.Text)) 
+            if (string.IsNullOrEmpty(codeBox.Text))
             {
                 MessageBox.Show("Enter Code!");
                 enterout += 1;
@@ -57,15 +63,17 @@ namespace loginIndian.Forms
             if (codeBox.Text == verificationCode)
             {
                 MessageBox.Show("Success");
+                flag += 1;
             }
-            else 
+            else
             {
                 MessageBox.Show("Wrong Code!");
-                enterout+=1;
+                enterout += 1;
             }
             if (checkTimeout())  // Check for termination condition
             {
                 MessageBox.Show("You reach out the maximum attemps! Program Exit!");
+                await DeleteUserData();
                 Environment.Exit(1); // Forcefully exit the program
             }
         }
@@ -101,14 +109,40 @@ namespace loginIndian.Forms
                 MessageBox.Show(ex.Message);
             }
         }
-        private void CodeExpiryTimer_Tick(object sender, EventArgs e)
+
+        private async Task DeleteUserData()
+        {
+            FirestoreDb db = FirestoreHelper.Database;
+
+            try
+            {
+                DocumentReference docRef = db.Collection("UserData").Document(userName);
+                await docRef.DeleteAsync();
+                MessageBox.Show("Registration failed!"); // Optional success message
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+
+        private async void CodeExpiryTimer_Tick(object sender, EventArgs e)
         {
 
             codeExpiryTimer.Stop(); // Stop the timer
             verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // New code
             MessageBox.Show("Verification code expired! Exit");
+            await DeleteUserData();
             Environment.Exit(1); // Forcefully exit the program
         }
 
+        private async void EmailVerify_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (flag != 1)
+            {
+                await DeleteUserData();
+            }
+        }
     }
 }

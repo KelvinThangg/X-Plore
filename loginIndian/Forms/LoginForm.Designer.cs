@@ -52,11 +52,11 @@
             // BackToRegisterBtn
             // 
             BackToRegisterBtn.FlatStyle = FlatStyle.Flat;
-            BackToRegisterBtn.Location = new Point(213, 198);
+            BackToRegisterBtn.Location = new Point(232, 198);
             BackToRegisterBtn.Name = "BackToRegisterBtn";
-            BackToRegisterBtn.Size = new Size(175, 67);
+            BackToRegisterBtn.Size = new Size(156, 67);
             BackToRegisterBtn.TabIndex = 15;
-            BackToRegisterBtn.Text = "Back to Register";
+            BackToRegisterBtn.Text = "Register";
             BackToRegisterBtn.UseVisualStyleBackColor = true;
             BackToRegisterBtn.Click += BackToRegisterBtn_Click;
             // 

@@ -23,6 +23,9 @@ namespace loginIndian.Forms
         {
             InitializeComponent();
         }
+        int Uuser = 0;
+        int Uphone = 0;
+        int Umail = 0;
         private void BackToLoginBtn_Click(object sender, EventArgs e)
         {
             Hide();
@@ -31,7 +34,7 @@ namespace loginIndian.Forms
             Close();
         }
 
-        private void RegBtn_Click(object sender, EventArgs e)
+        private async void RegBtn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(UserBox.Text) || string.IsNullOrEmpty(PassBox.Text) || string.IsNullOrEmpty(EmailBox.Text) || string.IsNullOrEmpty(TelBox.Text) || GenBox.SelectedIndex == -1)
             {
@@ -43,9 +46,20 @@ namespace loginIndian.Forms
 
                 var db = FirestoreHelper.Database;
 
-                if (CheckIfUserAlreadyExist())
+                if (await CheckIfUserAlreadyExist())
                 {
-                    MessageBox.Show("User Already Exist");
+                    if (Uuser!=0) 
+                    {
+                        MessageBox.Show("User already Exist");
+                    }
+                    if (Umail!=0)
+                    {
+                        MessageBox.Show("Mail already used");
+                    }
+                    if (Uphone!=0)
+                    {
+                        MessageBox.Show("Phone numbers already used");
+                    }
                     return;
                 }
 
@@ -54,7 +68,8 @@ namespace loginIndian.Forms
                 docRef.SetAsync(data);
                 MessageBox.Show("success");
                 Hide();
-                EmailVerify form = new EmailVerify(data.Email);
+                //EmailVerify form = new EmailVerify(data.Email);
+                EmailVerify form = new EmailVerify(data.Email, data.Username);
                 form.ShowDialog();
                 Close();
             }
@@ -71,7 +86,7 @@ namespace loginIndian.Forms
             }
 
             // Phone number validation (Modify the regex as needed for your format)
-            Regex phoneRegex = new Regex(@"^\d{10}$");
+            Regex phoneRegex = new Regex(@"^\d{9,11}$");
             if (!phoneRegex.IsMatch(TelBox.Text.Trim()))
             {
                 MessageBox.Show("Invalid phone number format.");
@@ -102,7 +117,6 @@ namespace loginIndian.Forms
             string gender = GenBox.Text.Trim();
             string email = EmailBox.Text.Trim();
             string phone = TelBox.Text.Trim();
-            //EmailVerify userEmail = new EmailVerify(email);
             return new UserData()
             {
                 Username = username,
@@ -113,18 +127,41 @@ namespace loginIndian.Forms
             };
         }
 
-        private bool CheckIfUserAlreadyExist()
+        private async Task<bool> CheckIfUserAlreadyExist()
         {
             string username = UserBox.Text.Trim();
-
+            string email = EmailBox.Text.Trim();
+            string phone = TelBox.Text.Trim();
             var db = FirestoreHelper.Database;
+
+            // Check for existing User
             DocumentReference docRef = db.Collection("UserData").Document(username);
             UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
             if (data != null)
             {
-                return true;
+                Uuser += 1;
+                return true; // User exists
             }
-            return false;
+
+            // Check for existing email
+            var emailQuery = db.Collection("UserData").WhereEqualTo("Email", email);
+            var emailSnapshot = await emailQuery.GetSnapshotAsync();
+            if (emailSnapshot.Count > 0)
+            {
+                Umail += 1;
+                return true; // Email exists
+            }
+
+            // Check for existing phone
+            var phoneQuery = db.Collection("UserData").WhereEqualTo("Phone", phone);
+            var phoneSnapshot = await phoneQuery.GetSnapshotAsync();
+            if (phoneSnapshot.Count > 0)
+            {
+                Uphone += 1;
+                return true; // Phone exists
+            }
+
+            return false; // No duplicates found
         }
         
         private void showPassBox_CheckedChanged(object sender, EventArgs e)
