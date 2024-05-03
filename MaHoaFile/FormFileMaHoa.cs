@@ -7,17 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Security.Cryptography;
 
 namespace X_Plore.MaHoaFile
 {
     public partial class FormFileMaHoa : Form
     {
-        public FormFileMaHoa()
-        {
-            InitializeComponent();
-        }
-
-
         private void buttonEncrypt_Click(object sender, EventArgs e)
         {
             string key = textBoxKey.Text;
@@ -47,18 +43,54 @@ namespace X_Plore.MaHoaFile
         // Encryption logic here
         private string Encrypt(string input, string key)
         {
-            // Place your actual encryption algorithm here
-            return Convert.ToBase64String(Encoding.UTF8.GetBytes(input));
+            byte[] keyBytes = GetSHA256Hash(key);
+            byte[] ivBytes = new byte[16]; // Initialization vector
+
+            using (var aes = Aes.Create())
+            {
+                aes.Key = keyBytes;
+                aes.IV = ivBytes;
+
+                using (var memoryStream = new MemoryStream())
+                {
+                    using (var cryptoStream = new CryptoStream(memoryStream, aes.CreateEncryptor(), CryptoStreamMode.Write))
+                    {
+                        byte[] dataBytes = Encoding.UTF8.GetBytes(input);
+                        cryptoStream.Write(dataBytes, 0, dataBytes.Length);
+                        cryptoStream.FlushFinalBlock();
+                    }
+
+                    return Convert.ToBase64String(memoryStream.ToArray());
+                }
+            }
         }
 
         // Decryption logic here
         private string Decrypt(string cipherText, string key)
         {
-            // Place your actual decryption algorithm here
+            byte[] keyBytes = GetSHA256Hash(key);
+            byte[] ivBytes = new byte[16]; // Initialization vector
+
             try
             {
-                byte[] bytes = Convert.FromBase64String(cipherText);
-                return Encoding.UTF8.GetString(bytes);
+                byte[] cipherBytes = Convert.FromBase64String(cipherText);
+
+                using (var aes = Aes.Create())
+                {
+                    aes.Key = keyBytes;
+                    aes.IV = ivBytes;
+
+                    using (var memoryStream = new MemoryStream(cipherBytes))
+                    {
+                        using (var cryptoStream = new CryptoStream(memoryStream, aes.CreateDecryptor(), CryptoStreamMode.Read))
+                        {
+                            using (var streamReader = new StreamReader(cryptoStream))
+                            {
+                                return streamReader.ReadToEnd();
+                            }
+                        }
+                    }
+                }
             }
             catch
             {
@@ -67,12 +99,19 @@ namespace X_Plore.MaHoaFile
             }
         }
 
-        private void FormFileMaHoa_Load(object sender, EventArgs e)
+        // SHA256 hash for key
+        private byte[] GetSHA256Hash(string input)
         {
-
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(input);
+                return sha256.ComputeHash(bytes);
+            }
         }
 
-        
-        
+        public FormFileMaHoa()
+        {
+            InitializeComponent();
+        }
     }
 }

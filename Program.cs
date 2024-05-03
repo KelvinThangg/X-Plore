@@ -17,7 +17,7 @@ namespace X_Plore
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMaHoa2());
+            Application.Run(new FormFileMaHoa());
         }
     }
 }

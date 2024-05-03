@@ -90,7 +90,6 @@
             this.Controls.Add(this.richTextBoxInput);
             this.Name = "FormFileMaHoa";
             this.Text = "FormFileMaHoa";
-            this.Load += new System.EventHandler(this.FormFileMaHoa_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -90,11 +90,11 @@ namespace X_Plore.MaHoaFile
             if (!string.IsNullOrEmpty(inputFile) && File.Exists(inputFile) && !string.IsNullOrEmpty(key))
             {
                 FileEncryptor.EncryptFile(inputFile, outputFile, key);
-                MessageBox.Show("Encryption done. File saved at: " + outputFile);
+                MessageBox.Show("Thành công. File saved ở: " + outputFile);
             }
             else
             {
-                MessageBox.Show("Please enter a key and select a valid file.");
+                MessageBox.Show("Hãy nhập lại path file hoặc key");
             }
         }
 
