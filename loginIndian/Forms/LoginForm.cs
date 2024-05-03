@@ -14,6 +14,16 @@ namespace loginIndian.Forms
 {
     public partial class LoginForm : Form
     {
+        int enterout = 0;
+        bool checkTimeout()
+        {
+            if (enterout == 3)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public LoginForm()
         {
             InitializeComponent();
@@ -33,23 +43,40 @@ namespace loginIndian.Forms
             string password = PassBox.Text;
 
             var db = FirestoreHelper.Database;
-            DocumentReference docRef = db.Collection("UserData").Document(username);
-            UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
-            if (data != null)
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                if (password == Security.Decrypt(data.Password))
+                MessageBox.Show("User/Password missing!");
+                enterout += 1;
+
+            }
+            else 
+            {
+                DocumentReference docRef = db.Collection("UserData").Document(username);
+                UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
+                if (data != null)
                 {
-                    MessageBox.Show("Success");
+                    if (password == Security.Decrypt(data.Password))
+                    {
+                        MessageBox.Show("Success");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed");
+                        enterout += 1;
+                    }
                 }
+
                 else
                 {
                     MessageBox.Show("Failed");
+                    enterout += 1;
                 }
             }
 
-            else
+            if (checkTimeout())  // Check for termination condition
             {
-                MessageBox.Show("Failed");
+                MessageBox.Show("You reach out the maximum attemps! Program Exit!");
+                Environment.Exit(1); // Forcefully exit the program
             }
         }
 
@@ -63,6 +90,14 @@ namespace loginIndian.Forms
             {
                 PassBox.UseSystemPasswordChar = true;
             }
+        }
+
+        private void forgotPassBtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ForgottenPassword form = new ForgottenPassword();
+            form.ShowDialog();
+            Close();
         }
     }
 }

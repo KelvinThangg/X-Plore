@@ -35,6 +35,7 @@
             PassBox = new TextBox();
             UserBox = new TextBox();
             showPassBox = new CheckBox();
+            forgotPassBtn = new Button();
             SuspendLayout();
             // 
             // LoginBtn
@@ -80,6 +81,7 @@
             // PassBox
             // 
             PassBox.Location = new Point(296, 129);
+            PassBox.MaxLength = 30;
             PassBox.Name = "PassBox";
             PassBox.Size = new Size(282, 31);
             PassBox.TabIndex = 6;
@@ -88,6 +90,7 @@
             // UserBox
             // 
             UserBox.Location = new Point(296, 78);
+            UserBox.MaxLength = 30;
             UserBox.Name = "UserBox";
             UserBox.Size = new Size(282, 31);
             UserBox.TabIndex = 7;
@@ -103,11 +106,22 @@
             showPassBox.UseVisualStyleBackColor = true;
             showPassBox.CheckedChanged += showPassBox_CheckedChanged;
             // 
+            // forgotPassBtn
+            // 
+            forgotPassBtn.Location = new Point(296, 283);
+            forgotPassBtn.Name = "forgotPassBtn";
+            forgotPassBtn.Size = new Size(224, 34);
+            forgotPassBtn.TabIndex = 17;
+            forgotPassBtn.Text = "Forgot your Password!";
+            forgotPassBtn.UseVisualStyleBackColor = true;
+            forgotPassBtn.Click += forgotPassBtn_Click;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(forgotPassBtn);
             Controls.Add(showPassBox);
             Controls.Add(LoginBtn);
             Controls.Add(BackToRegisterBtn);
@@ -131,5 +145,6 @@
         private TextBox PassBox;
         private TextBox UserBox;
         private CheckBox showPassBox;
+        private Button forgotPassBtn;
     }
 }

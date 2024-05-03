@@ -40,3 +40,4 @@ C:\Users\dadad\source\repos\loginIndian\obj\Debug\net8.0-windows\loginIndian.pdb
 C:\Users\dadad\source\repos\loginIndian\obj\Debug\net8.0-windows\loginIndian.genruntimeconfig.cache
 C:\Users\dadad\source\repos\loginIndian\obj\Debug\net8.0-windows\ref\loginIndian.dll
 C:\Users\dadad\source\repos\loginIndian\obj\Debug\net8.0-windows\loginIndian.Forms.EmailVerify.resources
+C:\Users\dadad\source\repos\loginIndian\obj\Debug\net8.0-windows\loginIndian.Forms.ForgottenPassword.resources

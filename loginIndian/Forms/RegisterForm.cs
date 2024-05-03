@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace loginIndian.Forms
 {
@@ -32,24 +33,31 @@ namespace loginIndian.Forms
 
         private void RegBtn_Click(object sender, EventArgs e)
         {
-            if (!ValidateFields()) return; // Early exit if validation fails
-
-            var db = FirestoreHelper.Database;
-
-            if (CheckIfUserAlreadyExist())
+            if (string.IsNullOrEmpty(UserBox.Text) || string.IsNullOrEmpty(PassBox.Text) || string.IsNullOrEmpty(EmailBox.Text) || string.IsNullOrEmpty(TelBox.Text) || GenBox.SelectedIndex == -1)
             {
-                MessageBox.Show("User Already Exist");
-                return;
+                MessageBox.Show("Missing Data!");
             }
+            else
+            {
+                if (!ValidateFields()) return; // Early exit if validation fails
 
-            var data = GetWriteData();
-            DocumentReference docRef = db.Collection("UserData").Document(data.Username);
-            docRef.SetAsync(data);
-            MessageBox.Show("success");
-            Hide();
-            EmailVerify form = new EmailVerify(data.Email);
-            form.ShowDialog();
-            Close();
+                var db = FirestoreHelper.Database;
+
+                if (CheckIfUserAlreadyExist())
+                {
+                    MessageBox.Show("User Already Exist");
+                    return;
+                }
+
+                var data = GetWriteData();
+                DocumentReference docRef = db.Collection("UserData").Document(data.Username);
+                docRef.SetAsync(data);
+                MessageBox.Show("success");
+                Hide();
+                EmailVerify form = new EmailVerify(data.Email);
+                form.ShowDialog();
+                Close();
+            }
         }
 
         private bool ValidateFields()
