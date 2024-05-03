@@ -1,0 +1,6 @@
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\client-serv-multi-chat-room-main\client\Shared\bin\Debug\Shared.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\client-serv-multi-chat-room-main\client\Shared\bin\Debug\Shared.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\client-serv-multi-chat-room-main\client\Shared\obj\Debug\Shared.csproj.AssemblyReference.cache
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\client-serv-multi-chat-room-main\client\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\client-serv-multi-chat-room-main\client\Shared\obj\Debug\Shared.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\client-serv-multi-chat-room-main\client\Shared\obj\Debug\Shared.pdb
