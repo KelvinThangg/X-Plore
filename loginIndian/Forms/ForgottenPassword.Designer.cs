@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             label1 = new Label();
             registerMailBox = new TextBox();
             label2 = new Label();
             recoveryCodeBox = new TextBox();
             sendRecoveryBtn = new Button();
             confirmBtn = new Button();
-            timvcode = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // label1
@@ -119,6 +117,5 @@
         private TextBox recoveryCodeBox;
         private Button sendRecoveryBtn;
         private Button confirmBtn;
-        private System.Windows.Forms.Timer timvcode;
     }
 }

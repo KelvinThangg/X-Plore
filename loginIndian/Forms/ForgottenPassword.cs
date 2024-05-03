@@ -61,7 +61,6 @@ namespace loginIndian.Forms
             {
                 if (await CheckIfUserAlreadyExist())
                 {
-                    timvcode.Stop();
                     string from, pass, mail;
                     string to = registerMailBox.Text;
                     from = "khabanhpro135@gmail.com";//Your gmail;
