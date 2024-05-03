@@ -35,13 +35,13 @@ namespace loginIndian.Forms
             var db = FirestoreHelper.Database;
             DocumentReference docRef = db.Collection("UserData").Document(username);
             UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
-            if (data != null ) 
+            if (data != null)
             {
                 if (password == Security.Decrypt(data.Password))
                 {
                     MessageBox.Show("Success");
                 }
-                else 
+                else
                 {
                     MessageBox.Show("Failed");
                 }
@@ -50,6 +50,18 @@ namespace loginIndian.Forms
             else
             {
                 MessageBox.Show("Failed");
+            }
+        }
+
+        private void showPassBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (showPassBox.Checked == true)
+            {
+                PassBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                PassBox.UseSystemPasswordChar = true;
             }
         }
     }
