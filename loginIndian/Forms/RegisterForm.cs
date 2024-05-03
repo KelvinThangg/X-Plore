@@ -74,12 +74,19 @@ namespace loginIndian.Forms
                 return false;
             }
 
+            if (ReEnterPasswordBox.Text != PassBox.Text)
+            {
+                MessageBox.Show("The passwords you entered do not match. Please try again.");
+                return false;
+            }
+
             return true; // All validations passed
         }
         private UserData GetWriteData()
-        {          
+        {
             string username = UserBox.Text.Trim();
-            string password  = Security.Encrypt(PassBox.Text);
+            string password = Security.Encrypt(PassBox.Text);
+            string repassword = Security.Encrypt(ReEnterPasswordBox.Text);
             string gender = GenBox.Text.Trim();
             string email = EmailBox.Text.Trim();
             string phone = TelBox.Text.Trim();
@@ -106,6 +113,18 @@ namespace loginIndian.Forms
                 return true;
             }
             return false;
+        }
+
+        private void showPassBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (showPassBox.Checked==true)
+            {
+                PassBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                PassBox.UseSystemPasswordChar = true;
+            }
         }
     }
 }

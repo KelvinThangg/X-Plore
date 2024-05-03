@@ -34,6 +34,7 @@
             label1 = new Label();
             PassBox = new TextBox();
             UserBox = new TextBox();
+            showPassBox = new CheckBox();
             SuspendLayout();
             // 
             // LoginBtn
@@ -80,7 +81,6 @@
             // 
             PassBox.Location = new Point(296, 129);
             PassBox.Name = "PassBox";
-            PassBox.PasswordChar = '*';
             PassBox.Size = new Size(282, 31);
             PassBox.TabIndex = 6;
             PassBox.UseSystemPasswordChar = true;
@@ -92,11 +92,23 @@
             UserBox.Size = new Size(282, 31);
             UserBox.TabIndex = 7;
             // 
+            // showPassBox
+            // 
+            showPassBox.AutoSize = true;
+            showPassBox.Location = new Point(594, 131);
+            showPassBox.Name = "showPassBox";
+            showPassBox.Size = new Size(82, 29);
+            showPassBox.TabIndex = 16;
+            showPassBox.Text = "Show";
+            showPassBox.UseVisualStyleBackColor = true;
+            showPassBox.CheckedChanged += showPassBox_CheckedChanged;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(showPassBox);
             Controls.Add(LoginBtn);
             Controls.Add(BackToRegisterBtn);
             Controls.Add(label2);
@@ -118,5 +130,6 @@
         private Label label1;
         private TextBox PassBox;
         private TextBox UserBox;
+        private CheckBox showPassBox;
     }
 }

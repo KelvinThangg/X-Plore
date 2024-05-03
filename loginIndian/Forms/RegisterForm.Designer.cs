@@ -40,11 +40,14 @@
             GenBox = new ComboBox();
             BackToLoginBtn = new Button();
             RegBtn = new Button();
+            ReEnterPasswordBox = new TextBox();
+            label6 = new Label();
+            showPassBox = new CheckBox();
             SuspendLayout();
             // 
             // UserBox
             // 
-            UserBox.Location = new Point(266, 92);
+            UserBox.Location = new Point(266, 49);
             UserBox.Name = "UserBox";
             UserBox.Size = new Size(282, 31);
             UserBox.TabIndex = 0;
@@ -52,7 +55,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(165, 95);
+            label1.Location = new Point(165, 52);
             label1.Name = "label1";
             label1.Size = new Size(95, 25);
             label1.TabIndex = 1;
@@ -60,9 +63,8 @@
             // 
             // PassBox
             // 
-            PassBox.Location = new Point(266, 143);
+            PassBox.Location = new Point(266, 101);
             PassBox.Name = "PassBox";
-            PassBox.PasswordChar = '*';
             PassBox.Size = new Size(282, 31);
             PassBox.TabIndex = 0;
             PassBox.UseSystemPasswordChar = true;
@@ -70,7 +72,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(165, 146);
+            label2.Location = new Point(165, 104);
             label2.Name = "label2";
             label2.Size = new Size(91, 25);
             label2.TabIndex = 1;
@@ -113,9 +115,9 @@
             label5.AutoSize = true;
             label5.Location = new Point(165, 301);
             label5.Name = "label5";
-            label5.Size = new Size(36, 25);
+            label5.Size = new Size(66, 25);
             label5.TabIndex = 1;
-            label5.Text = "Tel:";
+            label5.Text = "Phone:";
             // 
             // GenBox
             // 
@@ -149,21 +151,53 @@
             RegBtn.UseVisualStyleBackColor = true;
             RegBtn.Click += RegBtn_Click;
             // 
+            // ReEnterPasswordBox
+            // 
+            ReEnterPasswordBox.Location = new Point(323, 148);
+            ReEnterPasswordBox.Name = "ReEnterPasswordBox";
+            ReEnterPasswordBox.PasswordChar = '*';
+            ReEnterPasswordBox.Size = new Size(225, 31);
+            ReEnterPasswordBox.TabIndex = 0;
+            ReEnterPasswordBox.UseSystemPasswordChar = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(165, 151);
+            label6.Name = "label6";
+            label6.Size = new Size(162, 25);
+            label6.TabIndex = 1;
+            label6.Text = "Re-enter Password:";
+            // 
+            // showPassBox
+            // 
+            showPassBox.AutoSize = true;
+            showPassBox.Location = new Point(565, 103);
+            showPassBox.Name = "showPassBox";
+            showPassBox.Size = new Size(82, 29);
+            showPassBox.TabIndex = 4;
+            showPassBox.Text = "Show";
+            showPassBox.UseVisualStyleBackColor = true;
+            showPassBox.CheckedChanged += showPassBox_CheckedChanged;
+            // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(showPassBox);
             Controls.Add(RegBtn);
             Controls.Add(BackToLoginBtn);
             Controls.Add(GenBox);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
+            Controls.Add(label6);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(TelBox);
             Controls.Add(EmailBox);
+            Controls.Add(ReEnterPasswordBox);
             Controls.Add(PassBox);
             Controls.Add(UserBox);
             Name = "RegisterForm";
@@ -187,5 +221,8 @@
         private ComboBox GenBox;
         private Button BackToLoginBtn;
         private Button RegBtn;
+        private TextBox ReEnterPasswordBox;
+        private Label label6;
+        private CheckBox showPassBox;
     }
 }
