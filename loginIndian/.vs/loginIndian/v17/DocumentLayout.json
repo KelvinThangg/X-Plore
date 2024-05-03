@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\dadad\\source\\repos\\loginIndian\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,19 +19,54 @@
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|c:\\users\\dadad\\source\\repos\\loginindian\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedHeight": 240,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmailVerify.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
+              "RelativeDocumentMoniker": "Forms\\EmailVerify.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
+              "RelativeToolTip": "Forms\\EmailVerify.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwDQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T08:51:25.522Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmailVerify.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs",
+              "RelativeDocumentMoniker": "Forms\\EmailVerify.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\EmailVerify.cs [Design]",
+              "RelativeToolTip": "Forms\\EmailVerify.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T08:49:41.687Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -52,13 +87,14 @@
               "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
               "ToolTip": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\RegisterForm.cs",
               "RelativeToolTip": "Forms\\RegisterForm.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAAAH4AAAANAAAA",
+              "ViewState": "AQIAAG0AAAAAAAAAAAASwHoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T07:28:06.877Z"
+              "WhenOpened": "2024-05-01T07:28:06.877Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
@@ -71,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
@@ -83,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\loginIndian\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -92,6 +128,20 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T07:23:18.634Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 74,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
