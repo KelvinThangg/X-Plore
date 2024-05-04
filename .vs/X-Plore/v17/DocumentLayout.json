@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\mahoafile\\formfilemahoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formfilemahoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\code\\course\\ltmcb\\zchat\\x-plore\\mahoafile\\formfilemahoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formfilemahoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\mahoafile\\formfilemahoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:mahoafile\\formfilemahoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,8 +86,7 @@
               "RelativeToolTip": "MaHoaFile\\FormMaHoa2.Designer.cs",
               "ViewState": "AQIAAD0AAAAAAAAAAAAnwEgAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T14:34:01.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T14:34:01.003Z"
             },
             {
               "$type": "Document",
@@ -99,8 +98,7 @@
               "RelativeToolTip": "MaHoaFile\\FormMaHoa2.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAAwE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T12:40:24.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:40:24.41Z"
             },
             {
               "$type": "Document",
@@ -111,8 +109,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormMaHoa2.cs [Design]",
               "RelativeToolTip": "MaHoaFile\\FormMaHoa2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T14:08:10.161Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-22T14:08:10.161Z"
             },
             {
               "$type": "Document",
@@ -124,12 +121,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T13:37:50.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T13:37:50.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FormFileMaHoa.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormFileMaHoa.Designer.cs",
               "RelativeDocumentMoniker": "MaHoaFile\\FormFileMaHoa.Designer.cs",
@@ -155,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormFileMaHoa.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\LTMCB\\ZChat\\X-Plore\\MaHoaFile\\FormFileMaHoa.cs",
               "RelativeDocumentMoniker": "MaHoaFile\\FormFileMaHoa.cs",
