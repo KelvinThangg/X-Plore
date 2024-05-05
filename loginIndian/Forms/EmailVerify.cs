@@ -64,6 +64,10 @@ namespace loginIndian.Forms
             {
                 MessageBox.Show("Success");
                 flag += 1;
+                Hide();
+                MainMenu form = new MainMenu();
+                form.ShowDialog();
+                Close();
             }
             else
             {
