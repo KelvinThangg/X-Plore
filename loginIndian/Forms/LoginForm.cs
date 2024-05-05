@@ -58,6 +58,10 @@ namespace loginIndian.Forms
                     if (password == Security.Decrypt(data.Password))
                     {
                         MessageBox.Show("Success");
+                        Hide();
+                        MainMenu form = new MainMenu();
+                        form.ShowDialog();
+                        Close();
                     }
                     else
                     {
