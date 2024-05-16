@@ -42,7 +42,7 @@
             label1 = new Label();
             btnSend = new Button();
             label6 = new Label();
-            button2 = new Button();
+            backtologinBtn = new Button();
             label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)picCCCD).BeginInit();
             SuspendLayout();
@@ -168,15 +168,15 @@
             label6.TabIndex = 7;
             label6.Text = "Short explain about your situation:";
             // 
-            // button2
+            // backtologinBtn
             // 
-            button2.Location = new Point(23, 15);
-            button2.Name = "button2";
-            button2.Size = new Size(150, 34);
-            button2.TabIndex = 12;
-            button2.Text = "Back to Login";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            backtologinBtn.Location = new Point(23, 15);
+            backtologinBtn.Name = "backtologinBtn";
+            backtologinBtn.Size = new Size(150, 34);
+            backtologinBtn.TabIndex = 12;
+            backtologinBtn.Text = "Back to Login";
+            backtologinBtn.UseVisualStyleBackColor = true;
+            backtologinBtn.Click += button2_Click;
             // 
             // label7
             // 
@@ -192,7 +192,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 379);
-            Controls.Add(button2);
+            Controls.Add(backtologinBtn);
             Controls.Add(GenBox);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -234,7 +234,7 @@
         private Label label6;
         private PictureBox picCCCD;
         private Button btnUpload;
-        private Button button2;
+        private Button backtologinBtn;
         private Label label7;
     }
 }

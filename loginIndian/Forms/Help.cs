@@ -41,7 +41,7 @@ namespace loginIndian.Forms
                 return false;
             }
 
-            return true; // All validations passed
+            return true; 
         }
 
         private void Sendbtn_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace loginIndian.Forms
                 MessageBox.Show("Please fill out all informations before sending request!");
             }
             else
-            if (!ValidateFields()) return; // Early exit if validation fails
+            if (!ValidateFields()) return;
             else 
             {
 
@@ -85,7 +85,6 @@ namespace loginIndian.Forms
                 {
                     MessageBox.Show(ex.Message);
                 }
-                //MessageBox.Show("Your request has been seen! Please wait, We will reply as soon as possible <3");
                 MessageBox.Show("Back to Login!");
                 Hide();
                 LoginForm form = new LoginForm("");
@@ -137,7 +136,6 @@ namespace loginIndian.Forms
 
             if (result == DialogResult.Yes)
             {
-                // Go to Main Menu
                 Hide();
                 LoginForm form = new LoginForm("");
                 form.ShowDialog();

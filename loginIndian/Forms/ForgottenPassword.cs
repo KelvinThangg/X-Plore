@@ -24,9 +24,9 @@ namespace loginIndian.Forms
         public ForgottenPassword()
         {
             InitializeComponent();
-            InitializeCodeExpiryTimer(); // Initialize the timer
+            InitializeCodeExpiryTimer();
         }
-        int codeSended = 0;
+ 
         int enterout = 0;
         string verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric);
         bool checkTimeout()
@@ -48,7 +48,6 @@ namespace loginIndian.Forms
         private async void button1_Click_1(object sender, EventArgs e)
         {
 
-
             var db = FirestoreHelper.Database;
 
             if (string.IsNullOrEmpty(registerMailBox.Text))
@@ -63,7 +62,7 @@ namespace loginIndian.Forms
                 {
                     string from, pass, mail;
                     string to = registerMailBox.Text;
-                    from = "khabanhpro135@gmail.com";//Your gmail;
+                    from = "khabanhpro135@gmail.com";
                     mail = verificationCode;
                     //pass = "xhkq hhfn tkkh lpuu";//Your app pass;
                     pass = "aavy rpyg xlhx atdo";
@@ -71,7 +70,7 @@ namespace loginIndian.Forms
                     message.To.Add(to);
                     message.From = new MailAddress(from);
                     message.Body = "Your Recovery code: " + mail;
-                    message.Subject = "Xplore - Recovery Code";//Mail subject
+                    message.Subject = "Xplore - Recovery Code";
                     SmtpClient smtp = new SmtpClient("smtp.gmail.com");
                     smtp.EnableSsl = true;
                     smtp.Port = 587;
@@ -81,10 +80,10 @@ namespace loginIndian.Forms
                     {
                         smtp.Send(message);
                         MessageBox.Show("Code send successful!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        sendRecoveryBtn.Enabled = false;
+                        sendBtn.Enabled = false;
                         recoveryCodeBox.Enabled = true;
                         confirmBtn.Enabled = true;
-                        codeExpiryTimer.Start(); // Start the timer
+                        codeExpiryTimer.Start(); 
                     }
                     catch (Exception ex)
                     {
@@ -126,10 +125,10 @@ namespace loginIndian.Forms
         private void CodeExpiryTimer_Tick(object sender, EventArgs e)
         {
 
-            codeExpiryTimer.Stop(); // Stop the timer
+            codeExpiryTimer.Stop(); 
             verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // New code
             MessageBox.Show("Verification code expired! Exit");
-            Environment.Exit(1); // Forcefully exit the program
+            Environment.Exit(1); 
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -154,10 +153,10 @@ namespace loginIndian.Forms
                 MessageBox.Show("Wrong code!");
                 enterout += 1;
             }
-            if (checkTimeout())  // Check for termination condition
+            if (checkTimeout())  
             {
                 MessageBox.Show("You reach out the maximum attemps! Program Exit!");
-                Environment.Exit(1); // Forcefully exit the program
+                Environment.Exit(1);
             }
         }
 

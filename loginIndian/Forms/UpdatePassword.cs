@@ -28,7 +28,6 @@ namespace loginIndian.Forms
 
         private bool ValidateFields()
         {
-            // Password validation
             if (ReEnterPasswordBox.Text != PassBox.Text)
             {
                 MessageBox.Show("The passwords you entered do not match. Please try again.");
@@ -42,17 +41,16 @@ namespace loginIndian.Forms
                 return false;
             }
 
-            return true; // All validations passed
+            return true; 
         }
 
         private async void UpdateBtn_Click(object sender, EventArgs e)
         {
-            if (!ValidateFields()) return; // Validate new password and confirmation
+            if (!ValidateFields()) return; 
 
             var db = FirestoreHelper.Database;
             try
             {
-                // Get the user document based on the email
                 var query = db.Collection("UserData").WhereEqualTo("Email", userEmail);
 
                 var querySnapshot = await query.GetSnapshotAsync();
@@ -61,7 +59,7 @@ namespace loginIndian.Forms
                 if (querySnapshot.Count > 0)
                 {
                     DocumentReference docRef = querySnapshot.Documents[0].Reference;
-                    await docRef.UpdateAsync("Password", Security.Encrypt(PassBox.Text)); // Encrypt new password
+                    await docRef.UpdateAsync("Password", Security.Encrypt(PassBox.Text));
                     MessageBox.Show("Password updated successfully!");
                     Hide();
                     LoginForm form = new LoginForm("");

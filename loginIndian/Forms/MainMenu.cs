@@ -49,7 +49,6 @@ namespace loginIndian.Forms
                 var db = FirestoreHelper.Database;
                 DocumentReference docRef = db.Collection("UserData").Document(username);
                 docRef.UpdateAsync("isLoggedIn", false);
-                // Go to Main Menu
                 MessageBox.Show("Exit successfully!");
                 Environment.Exit(1);
             }
@@ -57,10 +56,9 @@ namespace loginIndian.Forms
 
         private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // When the MainMenu form closes (user logs out or exits):
             var db = FirestoreHelper.Database;
             DocumentReference docRef = db.Collection("UserData").Document(username);
-            docRef.UpdateAsync("isLoggedIn", false); // Reset login status
+            docRef.UpdateAsync("isLoggedIn", false); 
         }
 
         private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)

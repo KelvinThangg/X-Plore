@@ -32,7 +32,7 @@
             registerMailBox = new TextBox();
             label2 = new Label();
             recoveryCodeBox = new TextBox();
-            sendRecoveryBtn = new Button();
+            sendBtn = new Button();
             confirmBtn = new Button();
             BacktologinBtn = new Button();
             helpBtn = new Button();
@@ -73,15 +73,15 @@
             recoveryCodeBox.Size = new Size(263, 31);
             recoveryCodeBox.TabIndex = 2;
             // 
-            // sendRecoveryBtn
+            // sendBtn
             // 
-            sendRecoveryBtn.Location = new Point(242, 150);
-            sendRecoveryBtn.Name = "sendRecoveryBtn";
-            sendRecoveryBtn.Size = new Size(112, 34);
-            sendRecoveryBtn.TabIndex = 3;
-            sendRecoveryBtn.Text = "Send";
-            sendRecoveryBtn.UseVisualStyleBackColor = true;
-            sendRecoveryBtn.Click += button1_Click_1;
+            sendBtn.Location = new Point(242, 150);
+            sendBtn.Name = "sendBtn";
+            sendBtn.Size = new Size(112, 34);
+            sendBtn.TabIndex = 3;
+            sendBtn.Text = "Send";
+            sendBtn.UseVisualStyleBackColor = true;
+            sendBtn.Click += button1_Click_1;
             // 
             // confirmBtn
             // 
@@ -122,7 +122,7 @@
             Controls.Add(helpBtn);
             Controls.Add(BacktologinBtn);
             Controls.Add(confirmBtn);
-            Controls.Add(sendRecoveryBtn);
+            Controls.Add(sendBtn);
             Controls.Add(recoveryCodeBox);
             Controls.Add(label2);
             Controls.Add(registerMailBox);
@@ -139,7 +139,7 @@
         private TextBox registerMailBox;
         private Label label2;
         private TextBox recoveryCodeBox;
-        private Button sendRecoveryBtn;
+        private Button sendBtn;
         private Button confirmBtn;
         private Button BacktologinBtn;
         private Button helpBtn;

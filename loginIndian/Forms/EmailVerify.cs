@@ -24,12 +24,10 @@ namespace loginIndian.Forms
         private string userEmail;
         private string userName;
         string verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric);
-        //public event Action<string, string> VerifiedAndBackToLogin;
 
         private void GoBackToLoginForm()
         {
             codeExpiryTimer.Stop();
-            //VerifiedAndBackToLogin?.Invoke(userName, ""); // Pass username, empty password for security
             Hide();
             LoginForm loginForm = new LoginForm(userName);
             loginForm.ShowDialog();
@@ -41,13 +39,13 @@ namespace loginIndian.Forms
             InitializeComponent();
             this.userEmail = userEmail;
             this.userName = userName;
-            NotifcationTxT.Text = " Sending mail to: " + userEmail;
-            InitializeCodeExpiryTimer(); // Initialize the timer
+            NotifcationTxT.Text = "Sending mail to: " + userEmail;
+            InitializeCodeExpiryTimer();
         }
         
         int flag = 0;
-        //int codeSended = 0;
         int enterout = 0;
+
         bool checkTimeout()
         {
             if (enterout == 3)
@@ -64,7 +62,7 @@ namespace loginIndian.Forms
             codeExpiryTimer.Tick += CodeExpiryTimer_Tick;
         }
 
-        private const string FIREBASE_DATABASE_URL = "your_firebase_database_url"; // Replace with your URL
+       // private const string FIREBASE_DATABASE_URL = "your_firebase_database_url"; // Replace with your URL
 
         private async void confirmBtn_Click(object sender, EventArgs e)
         {
@@ -79,11 +77,6 @@ namespace loginIndian.Forms
                 MessageBox.Show("Success");
                 codeExpiryTimer.Stop();
                 flag += 1;
-                //Hide();
-                // MainMenu form = new MainMenu();
-                //form.ShowDialog();
-                //Close();
-                // Ask user for the next action
                 DialogResult result = MessageBox.Show("Verification successful! Do you want to proceed to the Main Menu?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 FirestoreDb db = FirestoreHelper.Database;
                 if (result == DialogResult.Yes)
@@ -93,7 +86,6 @@ namespace loginIndian.Forms
                     DocumentReference docRef = db.Collection("UserData").Document(userName);
                     UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
                     await docRef.UpdateAsync("isLoggedIn", true);
-                    // Go to Main Menu
                     Hide();
                     MainMenu form = new MainMenu("");
                     form.ShowDialog();
@@ -109,11 +101,11 @@ namespace loginIndian.Forms
                 MessageBox.Show("Wrong Code!");
                 enterout += 1;
             }
-            if (checkTimeout())  // Check for termination condition
+            if (checkTimeout()) 
             {
                 MessageBox.Show("You reach out the maximum attemps! Program Exit!");
                 await DeleteUserData();
-                Environment.Exit(1); // Forcefully exit the program
+                Environment.Exit(1);
             }
         }
 
@@ -121,7 +113,7 @@ namespace loginIndian.Forms
         {
             string from, pass, mail;
             string to = userEmail;
-            from = "khabanhpro135@gmail.com";//Your gmail;
+            from = "khabanhpro135@gmail.com";
             mail = verificationCode;
             //pass = "xhkq hhfn tkkh lpuu";//Your app pass;
             pass = "aavy rpyg xlhx atdo";
@@ -129,7 +121,7 @@ namespace loginIndian.Forms
             message.To.Add(to);
             message.From = new MailAddress(from);
             message.Body = "Your verify code: " + mail;
-            message.Subject = "Xplore - Vertification Code";//Mail subject
+            message.Subject = "Xplore - Vertification Code";
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
             smtp.EnableSsl = true;
             smtp.Port = 587;
@@ -142,7 +134,7 @@ namespace loginIndian.Forms
                 codeBox.Enabled = true;
                 sendBtn.Enabled = false;
                 confirmBtn.Enabled = true;
-                codeExpiryTimer.Start(); // Start the timer
+                codeExpiryTimer.Start(); 
             }
             catch (Exception ex)
             {
@@ -158,7 +150,7 @@ namespace loginIndian.Forms
             {
                 DocumentReference docRef = db.Collection("UserData").Document(userName);
                 await docRef.DeleteAsync();
-                MessageBox.Show("Registration failed!"); // Optional success message
+                MessageBox.Show("Registration failed!");
             }
             catch (Exception ex)
             {
@@ -170,11 +162,11 @@ namespace loginIndian.Forms
         private async void CodeExpiryTimer_Tick(object sender, EventArgs e)
         {
 
-            codeExpiryTimer.Stop(); // Stop the timer
+            codeExpiryTimer.Stop();
             verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // New code
             MessageBox.Show("Verification code expired! Exit");
             await DeleteUserData();
-            Environment.Exit(1); // Forcefully exit the program
+            Environment.Exit(1); 
         }
 
         private async void EmailVerify_FormClosed(object sender, FormClosedEventArgs e)
