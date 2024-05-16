@@ -28,39 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbMaKhoa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxKey = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbDuongDan = new System.Windows.Forms.Label();
             this.flowLayoutFileList = new System.Windows.Forms.FlowLayoutPanel();
-            this.btChonFile = new Guna.UI2.WinForms.Guna2Button();
-            this.btTaiLen = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonSelectFile = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonEncrypt = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.buttonDecrypt = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.textBoxFilePath = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
-            // tbMaKhoa
+            // textBoxKey
             // 
-            this.tbMaKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbMaKhoa.BorderRadius = 10;
-            this.tbMaKhoa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbMaKhoa.DefaultText = "";
-            this.tbMaKhoa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbMaKhoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbMaKhoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbMaKhoa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbMaKhoa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbMaKhoa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbMaKhoa.ForeColor = System.Drawing.Color.Black;
-            this.tbMaKhoa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbMaKhoa.Location = new System.Drawing.Point(551, 393);
-            this.tbMaKhoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbMaKhoa.MaxLength = 20;
-            this.tbMaKhoa.Name = "tbMaKhoa";
-            this.tbMaKhoa.PasswordChar = '\0';
-            this.tbMaKhoa.PlaceholderText = "";
-            this.tbMaKhoa.SelectedText = "";
-            this.tbMaKhoa.Size = new System.Drawing.Size(133, 30);
-            this.tbMaKhoa.TabIndex = 63;
+            this.textBoxKey.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxKey.BorderRadius = 10;
+            this.textBoxKey.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxKey.DefaultText = "";
+            this.textBoxKey.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxKey.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxKey.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxKey.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxKey.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxKey.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textBoxKey.ForeColor = System.Drawing.Color.Black;
+            this.textBoxKey.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxKey.Location = new System.Drawing.Point(735, 484);
+            this.textBoxKey.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxKey.MaxLength = 20;
+            this.textBoxKey.Name = "textBoxKey";
+            this.textBoxKey.PasswordChar = '\0';
+            this.textBoxKey.PlaceholderText = "";
+            this.textBoxKey.SelectedText = "";
+            this.textBoxKey.Size = new System.Drawing.Size(177, 37);
+            this.textBoxKey.TabIndex = 63;
             // 
             // label1
             // 
@@ -68,9 +69,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(475, 399);
+            this.label1.Location = new System.Drawing.Point(633, 491);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.Size = new System.Drawing.Size(88, 25);
             this.label1.TabIndex = 61;
             this.label1.Text = "Mã khóa";
             // 
@@ -79,9 +81,10 @@
             this.lbDuongDan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbDuongDan.AutoSize = true;
             this.lbDuongDan.ForeColor = System.Drawing.Color.Silver;
-            this.lbDuongDan.Location = new System.Drawing.Point(115, 404);
+            this.lbDuongDan.Location = new System.Drawing.Point(153, 497);
+            this.lbDuongDan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDuongDan.Name = "lbDuongDan";
-            this.lbDuongDan.Size = new System.Drawing.Size(16, 13);
+            this.lbDuongDan.Size = new System.Drawing.Size(16, 16);
             this.lbDuongDan.TabIndex = 62;
             this.lbDuongDan.Text = "...";
             // 
@@ -93,93 +96,128 @@
             this.flowLayoutFileList.AutoScroll = true;
             this.flowLayoutFileList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.flowLayoutFileList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.flowLayoutFileList.Location = new System.Drawing.Point(12, 68);
+            this.flowLayoutFileList.Location = new System.Drawing.Point(16, 84);
+            this.flowLayoutFileList.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutFileList.Name = "flowLayoutFileList";
-            this.flowLayoutFileList.Size = new System.Drawing.Size(776, 315);
+            this.flowLayoutFileList.Size = new System.Drawing.Size(1035, 388);
             this.flowLayoutFileList.TabIndex = 60;
+            this.flowLayoutFileList.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutFileList_Paint);
             // 
-            // btChonFile
+            // buttonSelectFile
             // 
-            this.btChonFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btChonFile.Animated = true;
-            this.btChonFile.BackColor = System.Drawing.Color.Transparent;
-            this.btChonFile.BorderColor = System.Drawing.Color.Transparent;
-            this.btChonFile.BorderRadius = 10;
-            this.btChonFile.BorderThickness = 2;
-            this.btChonFile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btChonFile.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btChonFile.ForeColor = System.Drawing.Color.White;
-            this.btChonFile.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btChonFile.Location = new System.Drawing.Point(12, 388);
-            this.btChonFile.Name = "btChonFile";
-            this.btChonFile.Size = new System.Drawing.Size(96, 39);
-            this.btChonFile.TabIndex = 57;
-            this.btChonFile.Text = "Chọn file";
-            this.btChonFile.UseTransparentBackground = true;
+            this.buttonSelectFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonSelectFile.Animated = true;
+            this.buttonSelectFile.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSelectFile.BorderColor = System.Drawing.Color.Transparent;
+            this.buttonSelectFile.BorderRadius = 10;
+            this.buttonSelectFile.BorderThickness = 2;
+            this.buttonSelectFile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.buttonSelectFile.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonSelectFile.ForeColor = System.Drawing.Color.White;
+            this.buttonSelectFile.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonSelectFile.Location = new System.Drawing.Point(16, 478);
+            this.buttonSelectFile.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSelectFile.Name = "buttonSelectFile";
+            this.buttonSelectFile.Size = new System.Drawing.Size(128, 48);
+            this.buttonSelectFile.TabIndex = 57;
+            this.buttonSelectFile.Text = "Chọn file";
+            this.buttonSelectFile.UseTransparentBackground = true;
+            this.buttonSelectFile.Click += new System.EventHandler(this.buttonSelectFile_Click);
             // 
-            // btTaiLen
+            // buttonEncrypt
             // 
-            this.btTaiLen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btTaiLen.Animated = true;
-            this.btTaiLen.BackColor = System.Drawing.Color.Transparent;
-            this.btTaiLen.BorderColor = System.Drawing.Color.Cyan;
-            this.btTaiLen.BorderRadius = 10;
-            this.btTaiLen.BorderThickness = 2;
-            this.btTaiLen.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.btTaiLen.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btTaiLen.ForeColor = System.Drawing.Color.White;
-            this.btTaiLen.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btTaiLen.Location = new System.Drawing.Point(690, 388);
-            this.btTaiLen.Name = "btTaiLen";
-            this.btTaiLen.Size = new System.Drawing.Size(98, 39);
-            this.btTaiLen.TabIndex = 58;
-            this.btTaiLen.Text = "Tải lên";
-            this.btTaiLen.UseTransparentBackground = true;
+            this.buttonEncrypt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonEncrypt.Animated = true;
+            this.buttonEncrypt.BackColor = System.Drawing.Color.Transparent;
+            this.buttonEncrypt.BorderColor = System.Drawing.Color.Cyan;
+            this.buttonEncrypt.BorderRadius = 10;
+            this.buttonEncrypt.BorderThickness = 2;
+            this.buttonEncrypt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.buttonEncrypt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonEncrypt.ForeColor = System.Drawing.Color.White;
+            this.buttonEncrypt.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonEncrypt.Location = new System.Drawing.Point(920, 478);
+            this.buttonEncrypt.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonEncrypt.Name = "buttonEncrypt";
+            this.buttonEncrypt.Size = new System.Drawing.Size(131, 48);
+            this.buttonEncrypt.TabIndex = 58;
+            this.buttonEncrypt.Text = "Mã hóa file";
+            this.buttonEncrypt.UseTransparentBackground = true;
+            this.buttonEncrypt.Click += new System.EventHandler(this.buttonEncrypt_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(20, 34);
+            this.label5.Location = new System.Drawing.Point(27, 42);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(193, 22);
+            this.label5.Size = new System.Drawing.Size(233, 26);
             this.label5.TabIndex = 56;
             this.label5.Text = "Danh sách file của bạn";
             // 
-            // guna2GradientButton1
+            // buttonDecrypt
             // 
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 15;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(664, 21);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(123, 35);
-            this.guna2GradientButton1.TabIndex = 64;
-            this.guna2GradientButton1.Text = "Giải mã file";
+            this.buttonDecrypt.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDecrypt.BorderRadius = 15;
+            this.buttonDecrypt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonDecrypt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonDecrypt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonDecrypt.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonDecrypt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonDecrypt.FillColor = System.Drawing.Color.RoyalBlue;
+            this.buttonDecrypt.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.buttonDecrypt.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.buttonDecrypt.ForeColor = System.Drawing.Color.White;
+            this.buttonDecrypt.Location = new System.Drawing.Point(885, 26);
+            this.buttonDecrypt.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDecrypt.Name = "buttonDecrypt";
+            this.buttonDecrypt.Size = new System.Drawing.Size(164, 43);
+            this.buttonDecrypt.TabIndex = 64;
+            this.buttonDecrypt.Text = "Giải mã file";
+            this.buttonDecrypt.Click += new System.EventHandler(this.buttonDecrypt_Click);
+            // 
+            // textBoxFilePath
+            // 
+            this.textBoxFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxFilePath.BorderRadius = 10;
+            this.textBoxFilePath.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxFilePath.DefaultText = "";
+            this.textBoxFilePath.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxFilePath.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxFilePath.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxFilePath.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxFilePath.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxFilePath.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textBoxFilePath.ForeColor = System.Drawing.Color.Black;
+            this.textBoxFilePath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxFilePath.Location = new System.Drawing.Point(202, 484);
+            this.textBoxFilePath.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxFilePath.MaxLength = 20;
+            this.textBoxFilePath.Name = "textBoxFilePath";
+            this.textBoxFilePath.PasswordChar = '\0';
+            this.textBoxFilePath.PlaceholderText = "";
+            this.textBoxFilePath.SelectedText = "";
+            this.textBoxFilePath.Size = new System.Drawing.Size(345, 37);
+            this.textBoxFilePath.TabIndex = 65;
             // 
             // MaHoaFile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.guna2GradientButton1);
-            this.Controls.Add(this.tbMaKhoa);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.textBoxFilePath);
+            this.Controls.Add(this.buttonDecrypt);
+            this.Controls.Add(this.textBoxKey);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbDuongDan);
             this.Controls.Add(this.flowLayoutFileList);
-            this.Controls.Add(this.btChonFile);
-            this.Controls.Add(this.btTaiLen);
+            this.Controls.Add(this.buttonSelectFile);
+            this.Controls.Add(this.buttonEncrypt);
             this.Controls.Add(this.label5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MaHoaFile";
             this.Text = "MaHoaFile";
             this.ResumeLayout(false);
@@ -189,13 +227,14 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox tbMaKhoa;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxKey;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbDuongDan;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutFileList;
-        private Guna.UI2.WinForms.Guna2Button btChonFile;
-        private Guna.UI2.WinForms.Guna2Button btTaiLen;
+        private Guna.UI2.WinForms.Guna2Button buttonSelectFile;
+        private Guna.UI2.WinForms.Guna2Button buttonEncrypt;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonDecrypt;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxFilePath;
     }
 }
