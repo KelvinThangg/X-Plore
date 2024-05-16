@@ -35,6 +35,7 @@ namespace loginIndian.Forms
         {
             InitializeComponent();
         }
+
         int Uuser = 0;
         int Uphone = 0;
         int Umail = 0;
@@ -54,7 +55,7 @@ namespace loginIndian.Forms
             }
             else
             {
-                if (!ValidateFields()) return; // Early exit if validation fails
+                if (!ValidateFields()) return; 
 
                 var db = FirestoreHelper.Database;
 
@@ -80,11 +81,6 @@ namespace loginIndian.Forms
                 docRef.SetAsync(data);
                 MessageBox.Show("success");
                 Hide();
-                //EmailVerify form = new EmailVerify(data.Email);
-                //EmailVerify form = new EmailVerify(data.Email, data.Username);
-                //form.ShowDialog();
-                //Close();
-                // Pass username from UserBox to EmailVerify
                 EmailVerify form = new EmailVerify(data.Email, UserBox.Text.Trim());
                 LoginForm form1 = new(data.Username);
                 form.ShowDialog();
@@ -125,7 +121,7 @@ namespace loginIndian.Forms
                 return false;
             }
 
-            return true; // All validations passed
+            return true;
         }
         private UserData GetWriteData()
         {
@@ -179,7 +175,7 @@ namespace loginIndian.Forms
                 return true; // Phone exists
             }
 
-            return false; // No duplicates found
+            return false;
         }
 
         private void showPassBox_CheckedChanged(object sender, EventArgs e)
@@ -214,15 +210,6 @@ namespace loginIndian.Forms
             GenBox.Text = "Male";
             EmailBox.Text = "fuondai1314@gmail.com";
             TelBox.Text = "9999999999";
-        }
-
-        public void ClearStoredCredentials()
-        {
-            string credPath = @"C:\Users\dadad\source\repos\loginIndian - Copy\bin\Debug\net8.0-windows\SigninwithGG";
-            if (Directory.Exists(credPath))
-            {
-                Directory.Delete(credPath, true);
-            }
         }
 
         private async Task ClearStoredCredentialsAsync()

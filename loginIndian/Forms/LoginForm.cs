@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-using Newtonsoft.Json; // Add this for JSON serialization
+using Newtonsoft.Json;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.PeopleService.v1;
 using Google.Apis.Services;
@@ -26,8 +26,6 @@ namespace loginIndian.Forms
 {
     public partial class LoginForm : Form
     {
-       
-        //private string userName;
         private System.Windows.Forms.Timer codeExpiryTimer;
         private const int CODE_EXPIRY_SECONDS = 60;
         int enterout = 0;
@@ -41,26 +39,21 @@ namespace loginIndian.Forms
         }
 
         private Captcha captcha;
-        private PictureBox captchaPictureBox; // Add PictureBox for displaying captcha
+        private PictureBox captchaPictureBox;
 
         public LoginForm(string username)
         {
             InitializeComponent();
             InitializeCodeExpiryTimer();
             codeExpiryTimer.Start();
-            // Subscribe to the event from EmailVerify
             this.UserBox.Text = username;
             if (username != null)
             {
                 UserBox.Text = username;
-                LoadSettings(); // Load settings if username is provided
+                LoadSettings();
             }
-            // Initialize Captcha
-            //pictureBox1 = new PictureBox();
-            pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y); // Adjust location as needed
-            //pictureBox1.Size = new Size(200, 50);   // Adjust size as needed
-            //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.Controls.Add(pictureBox1);          // Add to form
+            pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y);
+            this.Controls.Add(pictureBox1);   
             GenerateCaptcha();
             this.Click += ResetTimer;
             this.KeyPress += ResetTimer;
@@ -75,14 +68,13 @@ namespace loginIndian.Forms
         private async void CodeExpiryTimer_Tick(object sender, EventArgs e)
         {
 
-            codeExpiryTimer.Stop(); // Stop the timer
+            codeExpiryTimer.Stop(); 
             MessageBox.Show("Verification login expired! Exit");
-            Environment.Exit(1); // Forcefully exit the program
+            Environment.Exit(1); 
         }
 
         private void ResetTimer(object sender, EventArgs e)
         {
-            // Restart the timer to reset the countdown
             codeExpiryTimer.Stop();
             codeExpiryTimer.Start();
         }
@@ -104,8 +96,7 @@ namespace loginIndian.Forms
             forgotPassBtn.Enabled = false;
             string username = UserBox.Text.Trim();
             string password = PassBox.Text;
-            string captchaInput = captchaTextBox.Text; // Get captcha input
-
+            string captchaInput = captchaTextBox.Text; 
             var db = FirestoreHelper.Database;
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
@@ -130,7 +121,7 @@ namespace loginIndian.Forms
                             LoginBtn.Enabled = true;
                             BackToRegisterBtn.Enabled = true;
                             forgotPassBtn.Enabled = true;
-                            return; // Prevent login
+                            return;
                         }
                         else
                         {
@@ -141,7 +132,7 @@ namespace loginIndian.Forms
                             }
                             else
                             {
-                                ClearSettings(); // Clear saved credentials
+                                ClearSettings(); 
                             }
                             codeExpiryTimer.Stop();
                             await docRef.UpdateAsync("isLoggedIn", true);
@@ -152,12 +143,11 @@ namespace loginIndian.Forms
                         }
                     else
                     {
-                        //MessageBox.Show("Failed");
                         MessageBox.Show("Invalid captcha or password!");
                         LoginBtn.Enabled = true;
                         BackToRegisterBtn.Enabled = true;
                         forgotPassBtn.Enabled = true;
-                        GenerateCaptcha(); // Generate a new captcha on failure
+                        GenerateCaptcha(); 
                         enterout += 1;
                     }
                 }
@@ -173,14 +163,14 @@ namespace loginIndian.Forms
             }
 
 
-            if (checkTimeout())  // Check for termination condition
+            if (checkTimeout()) 
             {
                 codeExpiryTimer.Stop();
                 MessageBox.Show("You reach out the maximum attemps! Program Exit!");
                 LoginBtn.Enabled = true;
                 BackToRegisterBtn.Enabled = true;
                 forgotPassBtn.Enabled = true;
-                Environment.Exit(1); // Forcefully exit the program
+                Environment.Exit(1);
             }
         }
 
@@ -189,7 +179,7 @@ namespace loginIndian.Forms
             captcha = new Captcha(pictureBox1.Width, pictureBox1.Height);
             pictureBox1.Image = captcha.Image;
             pictureBox1.Refresh();
-            captchaTextBox.Text = ""; // Clear the input box
+            captchaTextBox.Text = ""; 
         }
 
         private void showPassBox_CheckedChanged(object sender, EventArgs e)
@@ -228,11 +218,9 @@ namespace loginIndian.Forms
                     new { RememberMe = false, Username = "", Password = "" }
                 );
 
-                // Check if RememberMe is true AND the saved username matches the current input
                 if (settings.RememberMe && settings.Username == UserBox.Text)
                 {
                     PassBox.Text = settings.Password;
-                    //checkBox1.Checked = true;
                 }
             }
         }
@@ -256,7 +244,6 @@ namespace loginIndian.Forms
                 if (settings.RememberMe && settings.Username == UserBox.Text)
                 {
                     PassBox.Text = settings.Password;
-                    //checkBox1.Checked = true;
                 }
                 else { ClearSettings(); }
             }
@@ -274,11 +261,6 @@ namespace loginIndian.Forms
                 if (settings.RememberMe && settings.Username == UserBox.Text)
                 {
                     PassBox.Text = settings.Password;
-                    // checkBox1.Checked = true;
-                }
-                else
-                {
-                    //ClearSettings();
                 }
             }
         }
@@ -297,12 +279,12 @@ namespace loginIndian.Forms
             }
             else
             {
-                lblCapsLockStatus.Visible = false; // Ẩn khi Caps Lock tắt
+                lblCapsLockStatus.Visible = false;
             }
         }
 
 
-        private async Task<bool> CheckIfUserExists(string email, string phone)
+        private async Task<bool> CheckIfUserExists(string email)
         {
             var db = FirestoreHelper.Database;
 
@@ -312,14 +294,6 @@ namespace loginIndian.Forms
             if (emailSnapshot.Count > 0)
             {
                 return true; // Email đã tồn tại
-            }
-
-            // Kiểm tra số điện thoại
-            var phoneQuery = db.Collection("UserData").WhereEqualTo("Phone", phone);
-            var phoneSnapshot = await phoneQuery.GetSnapshotAsync();
-            if (phoneSnapshot.Count > 0)
-            {
-                return true; // Số điện thoại đã tồn tại
             }
 
             return false; // Không tìm thấy bản ghi nào
@@ -344,6 +318,7 @@ namespace loginIndian.Forms
                 await ClearStoredCredentialsAsync();
                 // Thực hiện quá trình đăng nhập mới
                 UserCredential credential;
+
                 using (var stream = new FileStream(@"C:\Users\dadad\Downloads\client_secret_716693675227-0huu2ruuqr969vbmujlmed2ulju8qle8.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
                 {
                     string[] scopes = {
@@ -381,24 +356,57 @@ namespace loginIndian.Forms
                             string phoneNumber = profile.PhoneNumbers?.FirstOrDefault()?.Value ?? "Unknown";
 
                             // Kiểm tra người dùng đã tồn tại chưa
-                            if (!await CheckIfUserExists(email, phoneNumber))
+                            if (!await CheckIfUserExists(email))
                             {
-                                // Nếu chưa tồn tại thì ghi thông tin mới vào database
                                 MessageBox.Show("Người dùng không tồn tại!");
                                 return;
                                
                             }
                             else
                             {
+                                /* var db = FirestoreHelper.Database;
+                                 DocumentReference docRef = db.Collection("UserData").Document(email);
+                                 await docRef.UpdateAsync("isLoggedIn", true);
+                                 MessageBox.Show("Đăng nhập thành công!");
+                                 codeExpiryTimer.Stop(); // Stop the timer
+                                 Hide();
+                                 MainMenu form = new MainMenu(name);
+                                 form.ShowDialog();
+                                 Close(); */
                                 var db = FirestoreHelper.Database;
-                                DocumentReference docRef = db.Collection("UserData").Document(name);
-                                await docRef.UpdateAsync("isLoggedIn", true);
-                                MessageBox.Show("Đăng nhập thành công!");
-                                codeExpiryTimer.Stop(); // Stop the timer
-                                Hide();
-                                MainMenu form = new MainMenu(name);
-                                form.ShowDialog();
-                                Close();
+                                var userDataCollection = db.Collection("UserData");
+
+                                try
+                                {
+                                    QuerySnapshot snapshot = await userDataCollection.WhereEqualTo("Email", email).GetSnapshotAsync();
+                                    DocumentSnapshot document = snapshot.Documents[0];
+                                    string username = document.GetValue<string>("Username");
+
+                                    if (snapshot.Documents.Count > 0)
+                                    {
+                                        DocumentReference docRef = snapshot.Documents[0].Reference;
+                                        
+                                        // Update Login Status
+                                        await docRef.UpdateAsync("isLoggedIn", true);
+
+                                        MessageBox.Show("Đăng nhập thành công!"); // Success message
+
+                                        codeExpiryTimer.Stop();
+                                        Hide();
+
+                                        MainMenu form = new MainMenu(username);
+                                        form.ShowDialog();
+                                        Close();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("User not found."); // Handle case where user doesn't exist
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show($"An error occurred: {ex.Message}"); // Catch other general exceptions
+                                }
                             }
 
                         }
