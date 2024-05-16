@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using X_Plore.Main;
 
 namespace X_Plore
 {
@@ -16,7 +17,7 @@ namespace X_Plore
         {
             Application.EnableVisualStyles(); 
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDangNhap());
+            Application.Run(new MaHoaFile());
         }
     }
 }
