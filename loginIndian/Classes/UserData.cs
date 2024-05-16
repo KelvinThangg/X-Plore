@@ -22,6 +22,8 @@ namespace loginIndian.Classes
         public string Phone { get; set; }
         [FirestoreProperty("isLoggedIn")]
         public bool IsLoggedIn { get; set; }
+        [FirestoreProperty]
+        public string DisplayName { get; set; }
 
     }
 }

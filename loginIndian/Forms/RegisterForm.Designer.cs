@@ -46,11 +46,13 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            label7 = new Label();
+            displayNameBox = new TextBox();
             SuspendLayout();
             // 
             // UserBox
             // 
-            UserBox.Location = new Point(153, 44);
+            UserBox.Location = new Point(153, 79);
             UserBox.Name = "UserBox";
             UserBox.Size = new Size(282, 31);
             UserBox.TabIndex = 0;
@@ -58,7 +60,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(52, 47);
+            label1.Location = new Point(52, 82);
             label1.Name = "label1";
             label1.Size = new Size(95, 25);
             label1.TabIndex = 1;
@@ -66,7 +68,7 @@
             // 
             // PassBox
             // 
-            PassBox.Location = new Point(153, 96);
+            PassBox.Location = new Point(153, 131);
             PassBox.Name = "PassBox";
             PassBox.Size = new Size(282, 31);
             PassBox.TabIndex = 0;
@@ -75,7 +77,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(52, 99);
+            label2.Location = new Point(52, 134);
             label2.Name = "label2";
             label2.Size = new Size(91, 25);
             label2.TabIndex = 1;
@@ -84,7 +86,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(52, 195);
+            label3.Location = new Point(52, 230);
             label3.Name = "label3";
             label3.Size = new Size(73, 25);
             label3.TabIndex = 1;
@@ -92,7 +94,7 @@
             // 
             // EmailBox
             // 
-            EmailBox.Location = new Point(153, 245);
+            EmailBox.Location = new Point(153, 280);
             EmailBox.Name = "EmailBox";
             EmailBox.Size = new Size(282, 31);
             EmailBox.TabIndex = 0;
@@ -100,7 +102,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(52, 248);
+            label4.Location = new Point(52, 283);
             label4.Name = "label4";
             label4.Size = new Size(61, 25);
             label4.TabIndex = 1;
@@ -108,7 +110,7 @@
             // 
             // TelBox
             // 
-            TelBox.Location = new Point(153, 293);
+            TelBox.Location = new Point(153, 328);
             TelBox.Name = "TelBox";
             TelBox.Size = new Size(282, 31);
             TelBox.TabIndex = 0;
@@ -116,7 +118,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(52, 296);
+            label5.Location = new Point(52, 331);
             label5.Name = "label5";
             label5.Size = new Size(66, 25);
             label5.TabIndex = 1;
@@ -127,7 +129,7 @@
             GenBox.DropDownStyle = ComboBoxStyle.DropDownList;
             GenBox.FormattingEnabled = true;
             GenBox.Items.AddRange(new object[] { "Male", "Female", "Non-binary" });
-            GenBox.Location = new Point(153, 192);
+            GenBox.Location = new Point(153, 227);
             GenBox.Name = "GenBox";
             GenBox.Size = new Size(282, 33);
             GenBox.TabIndex = 2;
@@ -135,7 +137,7 @@
             // BackToLoginBtn
             // 
             BackToLoginBtn.FlatStyle = FlatStyle.Flat;
-            BackToLoginBtn.Location = new Point(118, 352);
+            BackToLoginBtn.Location = new Point(118, 387);
             BackToLoginBtn.Name = "BackToLoginBtn";
             BackToLoginBtn.Size = new Size(142, 67);
             BackToLoginBtn.TabIndex = 3;
@@ -146,7 +148,7 @@
             // RegBtn
             // 
             RegBtn.FlatStyle = FlatStyle.Flat;
-            RegBtn.Location = new Point(279, 352);
+            RegBtn.Location = new Point(279, 387);
             RegBtn.Name = "RegBtn";
             RegBtn.Size = new Size(142, 67);
             RegBtn.TabIndex = 3;
@@ -156,7 +158,7 @@
             // 
             // ReEnterPasswordBox
             // 
-            ReEnterPasswordBox.Location = new Point(210, 143);
+            ReEnterPasswordBox.Location = new Point(210, 178);
             ReEnterPasswordBox.Name = "ReEnterPasswordBox";
             ReEnterPasswordBox.Size = new Size(225, 31);
             ReEnterPasswordBox.TabIndex = 0;
@@ -165,7 +167,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(52, 146);
+            label6.Location = new Point(52, 181);
             label6.Name = "label6";
             label6.Size = new Size(162, 25);
             label6.TabIndex = 1;
@@ -174,7 +176,7 @@
             // showPassBox
             // 
             showPassBox.AutoSize = true;
-            showPassBox.Location = new Point(452, 98);
+            showPassBox.Location = new Point(452, 133);
             showPassBox.Name = "showPassBox";
             showPassBox.Size = new Size(82, 29);
             showPassBox.TabIndex = 4;
@@ -184,7 +186,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(452, 232);
+            button1.Location = new Point(452, 267);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 6;
@@ -194,7 +196,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(452, 272);
+            button2.Location = new Point(452, 307);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 7;
@@ -204,7 +206,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(452, 192);
+            button3.Location = new Point(452, 227);
             button3.Name = "button3";
             button3.Size = new Size(112, 34);
             button3.TabIndex = 8;
@@ -212,11 +214,29 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(52, 35);
+            label7.Name = "label7";
+            label7.Size = new Size(123, 25);
+            label7.TabIndex = 9;
+            label7.Text = "Display name:";
+            // 
+            // displayNameBox
+            // 
+            displayNameBox.Location = new Point(181, 29);
+            displayNameBox.Name = "displayNameBox";
+            displayNameBox.Size = new Size(254, 31);
+            displayNameBox.TabIndex = 10;
+            // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(587, 450);
+            ClientSize = new Size(587, 483);
+            Controls.Add(displayNameBox);
+            Controls.Add(label7);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -262,5 +282,7 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Label label7;
+        private TextBox displayNameBox;
     }
 }
