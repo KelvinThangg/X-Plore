@@ -43,11 +43,14 @@
             ReEnterPasswordBox = new TextBox();
             label6 = new Label();
             showPassBox = new CheckBox();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // UserBox
             // 
-            UserBox.Location = new Point(266, 49);
+            UserBox.Location = new Point(153, 44);
             UserBox.Name = "UserBox";
             UserBox.Size = new Size(282, 31);
             UserBox.TabIndex = 0;
@@ -55,7 +58,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(165, 52);
+            label1.Location = new Point(52, 47);
             label1.Name = "label1";
             label1.Size = new Size(95, 25);
             label1.TabIndex = 1;
@@ -63,7 +66,7 @@
             // 
             // PassBox
             // 
-            PassBox.Location = new Point(266, 101);
+            PassBox.Location = new Point(153, 96);
             PassBox.Name = "PassBox";
             PassBox.Size = new Size(282, 31);
             PassBox.TabIndex = 0;
@@ -72,7 +75,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(165, 104);
+            label2.Location = new Point(52, 99);
             label2.Name = "label2";
             label2.Size = new Size(91, 25);
             label2.TabIndex = 1;
@@ -81,7 +84,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(165, 200);
+            label3.Location = new Point(52, 195);
             label3.Name = "label3";
             label3.Size = new Size(73, 25);
             label3.TabIndex = 1;
@@ -89,7 +92,7 @@
             // 
             // EmailBox
             // 
-            EmailBox.Location = new Point(266, 250);
+            EmailBox.Location = new Point(153, 245);
             EmailBox.Name = "EmailBox";
             EmailBox.Size = new Size(282, 31);
             EmailBox.TabIndex = 0;
@@ -97,7 +100,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(165, 253);
+            label4.Location = new Point(52, 248);
             label4.Name = "label4";
             label4.Size = new Size(61, 25);
             label4.TabIndex = 1;
@@ -105,7 +108,7 @@
             // 
             // TelBox
             // 
-            TelBox.Location = new Point(266, 298);
+            TelBox.Location = new Point(153, 293);
             TelBox.Name = "TelBox";
             TelBox.Size = new Size(282, 31);
             TelBox.TabIndex = 0;
@@ -113,7 +116,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(165, 301);
+            label5.Location = new Point(52, 296);
             label5.Name = "label5";
             label5.Size = new Size(66, 25);
             label5.TabIndex = 1;
@@ -124,7 +127,7 @@
             GenBox.DropDownStyle = ComboBoxStyle.DropDownList;
             GenBox.FormattingEnabled = true;
             GenBox.Items.AddRange(new object[] { "Male", "Female", "Non-binary" });
-            GenBox.Location = new Point(266, 197);
+            GenBox.Location = new Point(153, 192);
             GenBox.Name = "GenBox";
             GenBox.Size = new Size(282, 33);
             GenBox.TabIndex = 2;
@@ -132,7 +135,7 @@
             // BackToLoginBtn
             // 
             BackToLoginBtn.FlatStyle = FlatStyle.Flat;
-            BackToLoginBtn.Location = new Point(231, 357);
+            BackToLoginBtn.Location = new Point(118, 352);
             BackToLoginBtn.Name = "BackToLoginBtn";
             BackToLoginBtn.Size = new Size(142, 67);
             BackToLoginBtn.TabIndex = 3;
@@ -143,7 +146,7 @@
             // RegBtn
             // 
             RegBtn.FlatStyle = FlatStyle.Flat;
-            RegBtn.Location = new Point(392, 357);
+            RegBtn.Location = new Point(279, 352);
             RegBtn.Name = "RegBtn";
             RegBtn.Size = new Size(142, 67);
             RegBtn.TabIndex = 3;
@@ -153,9 +156,8 @@
             // 
             // ReEnterPasswordBox
             // 
-            ReEnterPasswordBox.Location = new Point(323, 148);
+            ReEnterPasswordBox.Location = new Point(210, 143);
             ReEnterPasswordBox.Name = "ReEnterPasswordBox";
-            ReEnterPasswordBox.PasswordChar = '*';
             ReEnterPasswordBox.Size = new Size(225, 31);
             ReEnterPasswordBox.TabIndex = 0;
             ReEnterPasswordBox.UseSystemPasswordChar = true;
@@ -163,7 +165,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(165, 151);
+            label6.Location = new Point(52, 146);
             label6.Name = "label6";
             label6.Size = new Size(162, 25);
             label6.TabIndex = 1;
@@ -172,7 +174,7 @@
             // showPassBox
             // 
             showPassBox.AutoSize = true;
-            showPassBox.Location = new Point(565, 103);
+            showPassBox.Location = new Point(452, 98);
             showPassBox.Name = "showPassBox";
             showPassBox.Size = new Size(82, 29);
             showPassBox.TabIndex = 4;
@@ -180,11 +182,44 @@
             showPassBox.UseVisualStyleBackColor = true;
             showPassBox.CheckedChanged += showPassBox_CheckedChanged;
             // 
+            // button1
+            // 
+            button1.Location = new Point(452, 232);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 6;
+            button1.Text = "Auto Fill (Tester)";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(452, 272);
+            button2.Name = "button2";
+            button2.Size = new Size(112, 34);
+            button2.TabIndex = 7;
+            button2.Text = "Auto Fill (Admin)";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(452, 192);
+            button3.Name = "button3";
+            button3.Size = new Size(112, 34);
+            button3.TabIndex = 8;
+            button3.Text = "Google";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(587, 450);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(showPassBox);
             Controls.Add(RegBtn);
             Controls.Add(BackToLoginBtn);
@@ -224,5 +259,8 @@
         private TextBox ReEnterPasswordBox;
         private Label label6;
         private CheckBox showPassBox;
+        private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Google.Cloud.Firestore;
 using loginIndian.Classes;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +15,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.PeopleService.v1;
+using Google.Apis.Services;
+using Google.Api.Gax;
+using Google.Apis.Util;
+using Google.Apis.Gmail.v1;
+using Google.Apis.PeopleService.v1.Data;
+using Google.Apis.Util.Store;
+using System.Diagnostics;
 
 namespace loginIndian.Forms
 {
     public partial class RegisterForm : Form
     {
+        private bool isLoggedIn = false;
+
         public RegisterForm()
         {
             InitializeComponent();
@@ -29,7 +41,7 @@ namespace loginIndian.Forms
         private void BackToLoginBtn_Click(object sender, EventArgs e)
         {
             Hide();
-            LoginForm form = new LoginForm();
+            LoginForm form = new LoginForm("");
             form.ShowDialog();
             Close();
         }
@@ -48,15 +60,15 @@ namespace loginIndian.Forms
 
                 if (await CheckIfUserAlreadyExist())
                 {
-                    if (Uuser!=0) 
+                    if (Uuser != 0)
                     {
                         MessageBox.Show("User already Exist");
                     }
-                    if (Umail!=0)
+                    if (Umail != 0)
                     {
                         MessageBox.Show("Mail already used");
                     }
-                    if (Uphone!=0)
+                    if (Uphone != 0)
                     {
                         MessageBox.Show("Phone numbers already used");
                     }
@@ -69,9 +81,15 @@ namespace loginIndian.Forms
                 MessageBox.Show("success");
                 Hide();
                 //EmailVerify form = new EmailVerify(data.Email);
-                EmailVerify form = new EmailVerify(data.Email, data.Username);
+                //EmailVerify form = new EmailVerify(data.Email, data.Username);
+                //form.ShowDialog();
+                //Close();
+                // Pass username from UserBox to EmailVerify
+                EmailVerify form = new EmailVerify(data.Email, UserBox.Text.Trim());
+                LoginForm form1 = new(data.Username);
                 form.ShowDialog();
                 Close();
+
             }
         }
 
@@ -94,16 +112,16 @@ namespace loginIndian.Forms
             }
 
             // Password validation
+            if (ReEnterPasswordBox.Text != PassBox.Text)
+            {
+                MessageBox.Show("The passwords you entered do not match. Please try again.");
+                return false;
+            }
+
             Regex passwordRegex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
             if (!passwordRegex.IsMatch(PassBox.Text))
             {
                 MessageBox.Show("Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character.");
-                return false;
-            }
-
-            if (ReEnterPasswordBox.Text != PassBox.Text)
-            {
-                MessageBox.Show("The passwords you entered do not match. Please try again.");
                 return false;
             }
 
@@ -163,18 +181,163 @@ namespace loginIndian.Forms
 
             return false; // No duplicates found
         }
-        
+
         private void showPassBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (showPassBox.Checked==true)
+            if (showPassBox.Checked == true)
             {
                 PassBox.UseSystemPasswordChar = false;
+                ReEnterPasswordBox.UseSystemPasswordChar = false;
             }
             else
             {
                 PassBox.UseSystemPasswordChar = true;
+                ReEnterPasswordBox.UseSystemPasswordChar = true;
             }
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserBox.Text = "dai";
+            PassBox.Text = "123abcA!";
+            ReEnterPasswordBox.Text = "123abcA!";
+            GenBox.Text = "Male";
+            EmailBox.Text = "foundai1314@gmail.com";
+            TelBox.Text = "999999999";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UserBox.Text = "admin";
+            PassBox.Text = "123abcA!";
+            ReEnterPasswordBox.Text = "123abcA!";
+            GenBox.Text = "Male";
+            EmailBox.Text = "fuondai1314@gmail.com";
+            TelBox.Text = "9999999999";
+        }
+
+        public void ClearStoredCredentials()
+        {
+            string credPath = @"C:\Users\dadad\source\repos\loginIndian - Copy\bin\Debug\net8.0-windows\SigninwithGG";
+            if (Directory.Exists(credPath))
+            {
+                Directory.Delete(credPath, true);
+            }
+        }
+
+        private async Task ClearStoredCredentialsAsync()
+        {
+            string credPath = @"C:\Users\dadad\source\repos\loginIndian - Final\bin\Debug\net8.0-windows\SigninwithGG";
+            if (Directory.Exists(credPath))
+            {
+                Directory.Delete(credPath, true);
+            }
+
+            await Task.Yield(); // Đảm bảo thư mục được xóa bất đồng bộ
+        }
+
+        private async Task<bool> CheckIfUserExists(string email, string phone)
+        {
+            var db = FirestoreHelper.Database;
+
+            // Kiểm tra email
+            var emailQuery = db.Collection("UserData").WhereEqualTo("Email", email);
+            var emailSnapshot = await emailQuery.GetSnapshotAsync();
+            if (emailSnapshot.Count > 0)
+            {
+                return true; // Email đã tồn tại
+            }
+
+            return false; // Không tìm thấy bản ghi nào
+        }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Xóa thông tin đăng nhập trước đó
+                await ClearStoredCredentialsAsync();
+
+                // Thực hiện quá trình đăng nhập mới
+                UserCredential credential;
+                using (var stream = new FileStream(@"C:\Users\dadad\Downloads\client_secret_716693675227-0huu2ruuqr969vbmujlmed2ulju8qle8.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
+                {
+                    string[] scopes = {
+                PeopleServiceService.Scope.UserinfoProfile,
+                PeopleServiceService.Scope.UserinfoEmail,
+                "https://www.googleapis.com/auth/user.phonenumbers.read"
+            };
+
+                    credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                        GoogleClientSecrets.Load(stream).Secrets,
+                        scopes,
+                        "user",
+                        CancellationToken.None,
+                        new FileDataStore("SigninwithGG", true));
+                }
+
+                if (credential != null)
+                {
+                    using (var peopleService = new PeopleServiceService(new BaseClientService.Initializer()
+                    {
+                        HttpClientInitializer = credential,
+                        ApplicationName = "GoogleLoginWinforms",
+                    }))
+                    {
+                        // Request thông tin người dùng
+                        PeopleResource.GetRequest peopleRequest = peopleService.People.Get("people/me");
+                        peopleRequest.RequestMaskIncludeField = "person.names,person.emailAddresses,person.genders,person.phoneNumbers";
+                        Person profile = await peopleRequest.ExecuteAsync();
+
+                        if (profile != null)
+                        {
+                            string name = profile.Names?.FirstOrDefault()?.DisplayName ?? "Unknown";
+                            string email = profile.EmailAddresses?.FirstOrDefault()?.Value ?? "Unknown";
+                            string gender = profile.Genders?.FirstOrDefault()?.Value ?? "Unknown";
+                            string phoneNumber = profile.PhoneNumbers?.FirstOrDefault()?.Value ?? "Unknown";
+
+                            // Kiểm tra người dùng đã tồn tại chưa
+                            if (!await CheckIfUserExists(email, phoneNumber))
+                            {
+                                // Nếu chưa tồn tại thì ghi thông tin mới vào database
+                                var newUser = new UserData()
+                                {
+                                    Username = name,
+                                    Email = email,
+                                    Gender = gender,
+                                    Phone = phoneNumber
+                                };
+
+                                var db = FirestoreHelper.Database;
+                                DocumentReference docRef = db.Collection("UserData").Document(name);
+                                await docRef.SetAsync(newUser);
+
+                                MessageBox.Show($"Đăng ký thành công! Name: {name}, Email: {email}, Gender: {gender}, Phone Number: {phoneNumber}");
+                                MessageBox.Show($"Vui lòng tạo mật khẩu mới!");
+                                Hide();
+                                UpdatePassword form = new UpdatePassword(email);
+                                form.ShowDialog();
+                                Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Người dùng đã tồn tại.");
+                            }
+
+                            // Đặt trạng thái đăng nhập thành true
+                            isLoggedIn = true;
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Không thể lấy thông tin đăng nhập. Vui lòng thử lại.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi đăng nhập: {ex.Message}");
+            }
+        }
     }
 }
