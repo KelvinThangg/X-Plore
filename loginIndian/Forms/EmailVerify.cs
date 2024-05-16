@@ -12,6 +12,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace loginIndian.Forms
@@ -79,15 +80,20 @@ namespace loginIndian.Forms
                 flag += 1;
                 DialogResult result = MessageBox.Show("Verification successful! Do you want to proceed to the Main Menu?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 FirestoreDb db = FirestoreHelper.Database;
+                var userDataCollection = db.Collection("UserData");
                 if (result == DialogResult.Yes)
                 {
-                   
+              
+                    QuerySnapshot snapshot = await userDataCollection.WhereEqualTo("Email", userEmail).GetSnapshotAsync();
+                    DocumentSnapshot document = snapshot.Documents[0];
+                    string DisplayName = document.GetValue<string>("DisplayName");
+
                     codeExpiryTimer.Stop();
                     DocumentReference docRef = db.Collection("UserData").Document(userName);
                     UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
                     await docRef.UpdateAsync("isLoggedIn", true);
                     Hide();
-                    MainMenu form = new MainMenu("");
+                    MainMenu form = new MainMenu(DisplayName, userName);
                     form.ShowDialog();
                     Close();
                 }

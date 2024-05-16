@@ -49,7 +49,11 @@ namespace loginIndian.Forms
 
         private async void RegBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(UserBox.Text) || string.IsNullOrEmpty(PassBox.Text) || string.IsNullOrEmpty(EmailBox.Text) || string.IsNullOrEmpty(TelBox.Text) || GenBox.SelectedIndex == -1)
+            Uuser = 0;
+            Uphone = 0;
+            Umail = 0;
+
+            if (string.IsNullOrEmpty(displayNameBox.Text) || string.IsNullOrEmpty(UserBox.Text) || string.IsNullOrEmpty(PassBox.Text) || string.IsNullOrEmpty(EmailBox.Text) || string.IsNullOrEmpty(TelBox.Text) || GenBox.SelectedIndex == -1)
             {
                 MessageBox.Show("Missing Data!");
             }
@@ -125,6 +129,7 @@ namespace loginIndian.Forms
         }
         private UserData GetWriteData()
         {
+            string displayname = displayNameBox.Text.Trim();
             string username = UserBox.Text.Trim();
             string password = Security.Encrypt(PassBox.Text);
             string repassword = Security.Encrypt(ReEnterPasswordBox.Text);
@@ -133,6 +138,7 @@ namespace loginIndian.Forms
             string phone = TelBox.Text.Trim();
             return new UserData()
             {
+                DisplayName = displayname,
                 Username = username,
                 Password = password,
                 Gender = gender,
@@ -194,6 +200,7 @@ namespace loginIndian.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            displayNameBox.Text = "Đại";
             UserBox.Text = "dai";
             PassBox.Text = "123abcA!";
             ReEnterPasswordBox.Text = "123abcA!";
@@ -204,6 +211,7 @@ namespace loginIndian.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
+            displayNameBox.Text = "ADMINISTRATOR";
             UserBox.Text = "admin";
             PassBox.Text = "123abcA!";
             ReEnterPasswordBox.Text = "123abcA!";
@@ -289,6 +297,7 @@ namespace loginIndian.Forms
                                 // Nếu chưa tồn tại thì ghi thông tin mới vào database
                                 var newUser = new UserData()
                                 {
+                                    DisplayName = name,
                                     Username = name,
                                     Email = email,
                                     Gender = gender,

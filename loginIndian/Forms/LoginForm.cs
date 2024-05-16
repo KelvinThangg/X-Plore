@@ -111,8 +111,12 @@ namespace loginIndian.Forms
             {
                 DocumentReference docRef = db.Collection("UserData").Document(username);
                 UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
+                var userDataCollection = db.Collection("UserData");
+                QuerySnapshot snapshot = await userDataCollection.WhereEqualTo("Username", username).GetSnapshotAsync();
+                DocumentSnapshot document = snapshot.Documents[0];
+                string DisplayName = document.GetValue<string>("DisplayName");
 
-                if (data != null)
+                    if (data != null)
                 {
                     if (password == Security.Decrypt(data.Password) && captchaInput == captcha.Text)
                         if (data.IsLoggedIn == true)
@@ -137,7 +141,7 @@ namespace loginIndian.Forms
                             codeExpiryTimer.Stop();
                             await docRef.UpdateAsync("isLoggedIn", true);
                             Hide();
-                            MainMenu form = new MainMenu(username);
+                            MainMenu form = new MainMenu(DisplayName, username);
                             form.ShowDialog();
                             Close();
                         }
@@ -364,29 +368,19 @@ namespace loginIndian.Forms
                             }
                             else
                             {
-                                /* var db = FirestoreHelper.Database;
-                                 DocumentReference docRef = db.Collection("UserData").Document(email);
-                                 await docRef.UpdateAsync("isLoggedIn", true);
-                                 MessageBox.Show("Đăng nhập thành công!");
-                                 codeExpiryTimer.Stop(); // Stop the timer
-                                 Hide();
-                                 MainMenu form = new MainMenu(name);
-                                 form.ShowDialog();
-                                 Close(); */
                                 var db = FirestoreHelper.Database;
                                 var userDataCollection = db.Collection("UserData");
-
+                         
                                 try
                                 {
                                     QuerySnapshot snapshot = await userDataCollection.WhereEqualTo("Email", email).GetSnapshotAsync();
                                     DocumentSnapshot document = snapshot.Documents[0];
-                                    string username = document.GetValue<string>("Username");
-
+                                    string Displayname = document.GetValue<string>("DisplayName");
+                                    string Username = document.GetValue<string>("Username");
                                     if (snapshot.Documents.Count > 0)
                                     {
                                         DocumentReference docRef = snapshot.Documents[0].Reference;
-                                        
-                                        // Update Login Status
+                                    
                                         await docRef.UpdateAsync("isLoggedIn", true);
 
                                         MessageBox.Show("Đăng nhập thành công!"); // Success message
@@ -394,7 +388,7 @@ namespace loginIndian.Forms
                                         codeExpiryTimer.Stop();
                                         Hide();
 
-                                        MainMenu form = new MainMenu(username);
+                                        MainMenu form = new MainMenu(Displayname, Username);
                                         form.ShowDialog();
                                         Close();
                                     }

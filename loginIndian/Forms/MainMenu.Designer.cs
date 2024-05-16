@@ -31,6 +31,7 @@
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
+            DisplayLbl = new Label();
             SuspendLayout();
             // 
             // label1
@@ -63,11 +64,21 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // DisplayLbl
+            // 
+            DisplayLbl.AutoSize = true;
+            DisplayLbl.Location = new Point(356, 342);
+            DisplayLbl.Name = "DisplayLbl";
+            DisplayLbl.Size = new Size(59, 25);
+            DisplayLbl.TabIndex = 3;
+            DisplayLbl.Text = "label2";
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(DisplayLbl);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
@@ -85,5 +96,6 @@
         private Label label1;
         private Button button1;
         private Button button2;
+        private Label DisplayLbl;
     }
 }

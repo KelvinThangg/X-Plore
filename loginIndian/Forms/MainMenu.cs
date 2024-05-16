@@ -15,12 +15,15 @@ namespace loginIndian.Forms
     public partial class MainMenu : Form
     {
         private string username;
+        private string displayname;
 
-        public MainMenu(string username)
+        public MainMenu(string DisplayName, string username)
         {
             InitializeComponent();
             this.username = username;
-            MessageBox.Show("Welcome: " + username);
+            this.displayname = DisplayName;
+            MessageBox.Show("Welcome: " + DisplayName);
+            DisplayLbl.Text = DisplayName;
         }
 
         private void button1_Click(object sender, EventArgs e)
