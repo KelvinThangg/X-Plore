@@ -44,7 +44,7 @@ namespace loginIndian.Forms
             codeExpiryTimer.Interval = CODE_EXPIRY_SECONDS * 1000;  // 60 seconds
             codeExpiryTimer.Tick += CodeExpiryTimer_Tick;
         }
- 
+
         private async void button1_Click_1(object sender, EventArgs e)
         {
 
@@ -55,7 +55,7 @@ namespace loginIndian.Forms
             {
                 MessageBox.Show("Enter Recovery Mail!");
                 enterout += 1;
-                
+
             }
             else
             {
@@ -65,7 +65,8 @@ namespace loginIndian.Forms
                     string to = registerMailBox.Text;
                     from = "khabanhpro135@gmail.com";//Your gmail;
                     mail = verificationCode;
-                    pass = "xhkq hhfn tkkh lpuu";//Your app pass;
+                    //pass = "xhkq hhfn tkkh lpuu";//Your app pass;
+                    pass = "aavy rpyg xlhx atdo";
                     MailMessage message = new MailMessage();
                     message.To.Add(to);
                     message.From = new MailAddress(from);
@@ -107,7 +108,7 @@ namespace loginIndian.Forms
             }
         }
 
-        
+
         private async Task<bool> CheckIfUserAlreadyExist()
         {
             string mail = registerMailBox.Text;
@@ -142,7 +143,11 @@ namespace loginIndian.Forms
             if (recoveryCodeBox.Text == verificationCode)
             {
                 MessageBox.Show("Success");
-
+                codeExpiryTimer.Stop();
+                Hide();
+                UpdatePassword form = new UpdatePassword(registerMailBox.Text);
+                form.ShowDialog();
+                Close();
             }
             else
             {
@@ -154,6 +159,22 @@ namespace loginIndian.Forms
                 MessageBox.Show("You reach out the maximum attemps! Program Exit!");
                 Environment.Exit(1); // Forcefully exit the program
             }
+        }
+
+        private void BacktologinBtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            LoginForm form = new LoginForm("");
+            form.ShowDialog();
+            Close();
+        }
+
+        private void helpBtn_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Help form = new Help();
+            form.ShowDialog();
+            Close();
         }
     }
 }

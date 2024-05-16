@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Google.Cloud.Firestore;
+using loginIndian.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,24 +14,60 @@ namespace loginIndian.Forms
 {
     public partial class MainMenu : Form
     {
-        public MainMenu()
+        private string username;
+
+        public MainMenu(string username)
         {
             InitializeComponent();
+            this.username = username;
+            MessageBox.Show("Welcome: " + username);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("You are out! Back to Login");
-            Hide();
-            LoginForm form = new LoginForm();
-            form.ShowDialog();
-            Close();
+            DialogResult result = MessageBox.Show("Do you want to proceed to the Login page?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                var db = FirestoreHelper.Database;
+                DocumentReference docRef = db.Collection("UserData").Document(username);
+                docRef.UpdateAsync("isLoggedIn", false);
+                MessageBox.Show("You are out! Back to Login");
+                Hide();
+                LoginForm form = new LoginForm(username);
+                form.ShowDialog();
+                Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Program exit!");
-            Environment.Exit(1);
+            DialogResult result = MessageBox.Show("Do you want to exit the program?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                var db = FirestoreHelper.Database;
+                DocumentReference docRef = db.Collection("UserData").Document(username);
+                docRef.UpdateAsync("isLoggedIn", false);
+                // Go to Main Menu
+                MessageBox.Show("Exit successfully!");
+                Environment.Exit(1);
+            }
+        }
+
+        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // When the MainMenu form closes (user logs out or exits):
+            var db = FirestoreHelper.Database;
+            DocumentReference docRef = db.Collection("UserData").Document(username);
+            docRef.UpdateAsync("isLoggedIn", false); // Reset login status
+        }
+
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var db = FirestoreHelper.Database;
+            DocumentReference docRef = db.Collection("UserData").Document(username);
+            docRef.UpdateAsync("isLoggedIn", false);
         }
     }
 }

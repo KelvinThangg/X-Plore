@@ -15,7 +15,7 @@ namespace loginIndian
             // see https://aka.ms/applicationconfiguration.
             FirestoreHelper.SetEnvironmentVariable();
             ApplicationConfiguration.Initialize();
-            Application.Run(new LoginForm());
+            Application.Run(new LoginForm(""));
         }
     }
 }

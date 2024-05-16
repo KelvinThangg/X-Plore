@@ -6,22 +6,35 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Net;
+using System.Net;   
 using System.Net.Mail;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace loginIndian.Forms
 {
     public partial class EmailVerify : Form
     {
+         
         private System.Windows.Forms.Timer codeExpiryTimer;
         private const int CODE_EXPIRY_SECONDS = 60;
         private string userEmail;
         private string userName;
         string verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric);
+        //public event Action<string, string> VerifiedAndBackToLogin;
+
+        private void GoBackToLoginForm()
+        {
+            codeExpiryTimer.Stop();
+            //VerifiedAndBackToLogin?.Invoke(userName, ""); // Pass username, empty password for security
+            Hide();
+            LoginForm loginForm = new LoginForm(userName);
+            loginForm.ShowDialog();
+            Close();
+        }
 
         public EmailVerify(string userEmail, string userName)
         {
@@ -31,8 +44,9 @@ namespace loginIndian.Forms
             NotifcationTxT.Text = " Sending mail to: " + userEmail;
             InitializeCodeExpiryTimer(); // Initialize the timer
         }
+        
         int flag = 0;
-        int codeSended = 0;
+        //int codeSended = 0;
         int enterout = 0;
         bool checkTimeout()
         {
@@ -63,11 +77,32 @@ namespace loginIndian.Forms
             if (codeBox.Text == verificationCode)
             {
                 MessageBox.Show("Success");
+                codeExpiryTimer.Stop();
                 flag += 1;
-                Hide();
-                MainMenu form = new MainMenu();
-                form.ShowDialog();
-                Close();
+                //Hide();
+                // MainMenu form = new MainMenu();
+                //form.ShowDialog();
+                //Close();
+                // Ask user for the next action
+                DialogResult result = MessageBox.Show("Verification successful! Do you want to proceed to the Main Menu?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                FirestoreDb db = FirestoreHelper.Database;
+                if (result == DialogResult.Yes)
+                {
+                   
+                    codeExpiryTimer.Stop();
+                    DocumentReference docRef = db.Collection("UserData").Document(userName);
+                    UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
+                    await docRef.UpdateAsync("isLoggedIn", true);
+                    // Go to Main Menu
+                    Hide();
+                    MainMenu form = new MainMenu("");
+                    form.ShowDialog();
+                    Close();
+                }
+                else
+                {
+                    GoBackToLoginForm();
+                }
             }
             else
             {
@@ -88,7 +123,8 @@ namespace loginIndian.Forms
             string to = userEmail;
             from = "khabanhpro135@gmail.com";//Your gmail;
             mail = verificationCode;
-            pass = "xhkq hhfn tkkh lpuu";//Your app pass;
+            //pass = "xhkq hhfn tkkh lpuu";//Your app pass;
+            pass = "aavy rpyg xlhx atdo";
             MailMessage message = new MailMessage();
             message.To.Add(to);
             message.From = new MailAddress(from);
@@ -143,6 +179,7 @@ namespace loginIndian.Forms
 
         private async void EmailVerify_FormClosed(object sender, FormClosedEventArgs e)
         {
+            codeExpiryTimer.Stop();
             if (flag != 1)
             {
                 await DeleteUserData();

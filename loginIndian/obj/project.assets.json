@@ -60,10 +60,10 @@
           }
         }
       },
-      "Google.Apis/1.67.0": {
+      "Google.Apis/1.68.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.67.0"
+          "Google.Apis.Core": "1.68.0"
         },
         "compile": {
           "lib/net6.0/Google.Apis.dll": {
@@ -76,11 +76,11 @@
           }
         }
       },
-      "Google.Apis.Auth/1.67.0": {
+      "Google.Apis.Auth/1.68.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.67.0",
-          "Google.Apis.Core": "1.67.0",
+          "Google.Apis": "1.68.0",
+          "Google.Apis.Core": "1.68.0",
           "System.Management": "7.0.2"
         },
         "compile": {
@@ -94,7 +94,7 @@
           }
         }
       },
-      "Google.Apis.Core/1.67.0": {
+      "Google.Apis.Core/1.68.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
@@ -106,6 +106,40 @@
         },
         "runtime": {
           "lib/net6.0/Google.Apis.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Apis.Gmail.v1/1.68.0.3399": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.68.0",
+          "Google.Apis.Auth": "1.68.0"
+        },
+        "compile": {
+          "lib/net6.0/Google.Apis.Gmail.v1.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Google.Apis.Gmail.v1.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Google.Apis.PeopleService.v1/1.68.0.3359": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.68.0",
+          "Google.Apis.Auth": "1.68.0"
+        },
+        "compile": {
+          "lib/net6.0/Google.Apis.PeopleService.v1.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Google.Apis.PeopleService.v1.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -521,16 +555,16 @@
         "lib/netstandard2.0/Google.Api.Gax.Grpc.xml"
       ]
     },
-    "Google.Apis/1.67.0": {
-      "sha512": "XM8/fViJaB1pN61OdXy5RMZoQEqd3hKlWvA/K431gFSb5XtQ48BynfgrbBkUtFcPbSRa4BdjBHzSbkBh/skyMg==",
+    "Google.Apis/1.68.0": {
+      "sha512": "s2MymhdpH+ybZNBeZ2J5uFgFHApBp+QXf9FjZSdM1lk/vx5VqIknJwnaWiuAzXxPrLEkesX0Q+UsiWn39yZ9zw==",
       "type": "package",
-      "path": "google.apis/1.67.0",
+      "path": "google.apis/1.68.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.1.67.0.nupkg.sha512",
+        "google.apis.1.68.0.nupkg.sha512",
         "google.apis.nuspec",
         "lib/net462/Google.Apis.dll",
         "lib/net462/Google.Apis.pdb",
@@ -543,16 +577,16 @@
         "lib/netstandard2.0/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.67.0": {
-      "sha512": "Bs9BlbZ12Y4NXzMONjpzQhZr9VbwLUTGMHkcQRF36aYnk2fYrmj5HNVNh7PPHDDq1fcEQpCtPic2nSlpYQLKXw==",
+    "Google.Apis.Auth/1.68.0": {
+      "sha512": "hFx8Qz5bZ4w0hpnn4tSmZaaFpjAMsgVElZ+ZgVLUZ2r9i+AKcoVgwiNfv1pruNS5cCvpXqhKECbruBCfRezPHA==",
       "type": "package",
-      "path": "google.apis.auth/1.67.0",
+      "path": "google.apis.auth/1.68.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.auth.1.67.0.nupkg.sha512",
+        "google.apis.auth.1.68.0.nupkg.sha512",
         "google.apis.auth.nuspec",
         "lib/net462/Google.Apis.Auth.dll",
         "lib/net462/Google.Apis.Auth.pdb",
@@ -565,16 +599,16 @@
         "lib/netstandard2.0/Google.Apis.Auth.xml"
       ]
     },
-    "Google.Apis.Core/1.67.0": {
-      "sha512": "IPq0I3B01NYZraPoMl8muELFLg4Vr2sbfyZp4PR2Xe3MAhHkZCiKyV28Yh1L14zIKUb0X0snol1sR5/mx4S6Iw==",
+    "Google.Apis.Core/1.68.0": {
+      "sha512": "pAqwa6pfu53UXCR2b7A/PAPXeuVg6L1OFw38WckN27NU2+mf+KTjoEg2YGv/f0UyKxzz7DxF1urOTKg/6dTP9g==",
       "type": "package",
-      "path": "google.apis.core/1.67.0",
+      "path": "google.apis.core/1.68.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.core.1.67.0.nupkg.sha512",
+        "google.apis.core.1.68.0.nupkg.sha512",
         "google.apis.core.nuspec",
         "lib/net462/Google.Apis.Core.dll",
         "lib/net462/Google.Apis.Core.pdb",
@@ -585,6 +619,50 @@
         "lib/netstandard2.0/Google.Apis.Core.dll",
         "lib/netstandard2.0/Google.Apis.Core.pdb",
         "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
+    "Google.Apis.Gmail.v1/1.68.0.3399": {
+      "sha512": "WyzseTRffWUablrrOiASZ9+MlKsu/Wi5sH33qbkSz6wWBIc2Ty1XiiGSShJHGTVVTBsCN2R6kdD7i8WqG7Jk5w==",
+      "type": "package",
+      "path": "google.apis.gmail.v1/1.68.0.3399",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.gmail.v1.1.68.0.3399.nupkg.sha512",
+        "google.apis.gmail.v1.nuspec",
+        "lib/net462/Google.Apis.Gmail.v1.dll",
+        "lib/net462/Google.Apis.Gmail.v1.pdb",
+        "lib/net462/Google.Apis.Gmail.v1.xml",
+        "lib/net6.0/Google.Apis.Gmail.v1.dll",
+        "lib/net6.0/Google.Apis.Gmail.v1.pdb",
+        "lib/net6.0/Google.Apis.Gmail.v1.xml",
+        "lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
+        "lib/netstandard2.0/Google.Apis.Gmail.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.Gmail.v1.xml"
+      ]
+    },
+    "Google.Apis.PeopleService.v1/1.68.0.3359": {
+      "sha512": "zD4nrGQDZqkbap9mET1c9VlpyjjAqz0hZIR0tcqT8aLPlOTj+J1Mvzm+otZ6lFpt8JEltKUZNj+pDu0D7nNVGg==",
+      "type": "package",
+      "path": "google.apis.peopleservice.v1/1.68.0.3359",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.peopleservice.v1.1.68.0.3359.nupkg.sha512",
+        "google.apis.peopleservice.v1.nuspec",
+        "lib/net462/Google.Apis.PeopleService.v1.dll",
+        "lib/net462/Google.Apis.PeopleService.v1.pdb",
+        "lib/net462/Google.Apis.PeopleService.v1.xml",
+        "lib/net6.0/Google.Apis.PeopleService.v1.dll",
+        "lib/net6.0/Google.Apis.PeopleService.v1.pdb",
+        "lib/net6.0/Google.Apis.PeopleService.v1.xml",
+        "lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
+        "lib/netstandard2.0/Google.Apis.PeopleService.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.PeopleService.v1.xml"
       ]
     },
     "Google.Cloud.Firestore/3.6.0": {
@@ -1047,7 +1125,11 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "Google.Cloud.Firestore >= 3.6.0"
+      "Google.Apis.Auth >= 1.68.0",
+      "Google.Apis.Gmail.v1 >= 1.68.0.3399",
+      "Google.Apis.PeopleService.v1 >= 1.68.0.3359",
+      "Google.Cloud.Firestore >= 3.6.0",
+      "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
@@ -1056,11 +1138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dadad\\source\\repos\\loginIndian\\loginIndian.csproj",
+      "projectUniqueName": "C:\\Users\\dadad\\source\\repos\\loginIndian - Final\\loginIndian.csproj",
       "projectName": "loginIndian",
-      "projectPath": "C:\\Users\\dadad\\source\\repos\\loginIndian\\loginIndian.csproj",
+      "projectPath": "C:\\Users\\dadad\\source\\repos\\loginIndian - Final\\loginIndian.csproj",
       "packagesPath": "C:\\Users\\dadad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dadad\\source\\repos\\loginIndian\\obj\\",
+      "outputPath": "C:\\Users\\dadad\\source\\repos\\loginIndian - Final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dadad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1094,9 +1176,25 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "Google.Apis.Auth": {
+            "target": "Package",
+            "version": "[1.68.0, )"
+          },
+          "Google.Apis.Gmail.v1": {
+            "target": "Package",
+            "version": "[1.68.0.3399, )"
+          },
+          "Google.Apis.PeopleService.v1": {
+            "target": "Package",
+            "version": "[1.68.0.3359, )"
+          },
           "Google.Cloud.Firestore": {
             "target": "Package",
             "version": "[3.6.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           }
         },
         "imports": [

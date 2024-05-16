@@ -20,6 +20,8 @@ namespace loginIndian.Classes
         public string Email { get; set; }
         [FirestoreProperty]
         public string Phone { get; set; }
-        
+        [FirestoreProperty("isLoggedIn")]
+        public bool IsLoggedIn { get; set; }
+
     }
 }

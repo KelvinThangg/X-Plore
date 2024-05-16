@@ -7,6 +7,9 @@
     <Compile Update="Forms\ForgottenPassword.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,6 +17,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\UpdatePassword.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

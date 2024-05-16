@@ -38,7 +38,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(65, 126);
+            label1.Location = new Point(43, 70);
             label1.Name = "label1";
             label1.Size = new Size(146, 25);
             label1.TabIndex = 0;
@@ -47,7 +47,7 @@
             // confirmBtn
             // 
             confirmBtn.Enabled = false;
-            confirmBtn.Location = new Point(318, 188);
+            confirmBtn.Location = new Point(296, 132);
             confirmBtn.Name = "confirmBtn";
             confirmBtn.Size = new Size(112, 34);
             confirmBtn.TabIndex = 1;
@@ -58,7 +58,7 @@
             // codeBox
             // 
             codeBox.Enabled = false;
-            codeBox.Location = new Point(217, 123);
+            codeBox.Location = new Point(195, 67);
             codeBox.MaxLength = 4;
             codeBox.Name = "codeBox";
             codeBox.Size = new Size(213, 31);
@@ -66,7 +66,7 @@
             // 
             // sendBtn
             // 
-            sendBtn.Location = new Point(200, 188);
+            sendBtn.Location = new Point(178, 132);
             sendBtn.Name = "sendBtn";
             sendBtn.Size = new Size(112, 34);
             sendBtn.TabIndex = 3;
@@ -77,7 +77,7 @@
             // NotifcationTxT
             // 
             NotifcationTxT.AutoSize = true;
-            NotifcationTxT.Location = new Point(272, 20);
+            NotifcationTxT.Location = new Point(43, 20);
             NotifcationTxT.Name = "NotifcationTxT";
             NotifcationTxT.Size = new Size(99, 25);
             NotifcationTxT.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(488, 211);
             Controls.Add(NotifcationTxT);
             Controls.Add(sendBtn);
             Controls.Add(codeBox);
