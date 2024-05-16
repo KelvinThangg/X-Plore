@@ -61,7 +61,7 @@ namespace loginIndian.Forms
         {
             var db = FirestoreHelper.Database;
             DocumentReference docRef = db.Collection("UserData").Document(username);
-            docRef.UpdateAsync("isLoggedIn", false); 
+            docRef.UpdateAsync("isLoggedIn", false);
         }
 
         private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
@@ -70,5 +70,19 @@ namespace loginIndian.Forms
             DocumentReference docRef = db.Collection("UserData").Document(username);
             docRef.UpdateAsync("isLoggedIn", false);
         }
+
+        private void DisplayLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Ẩn MainMenu
+            Home home = new Home(username); // Truyền username sang Home Form
+            home.ShowDialog(); // Hiển thị Home Form
+            this.Show(); // Hiển thị lại MainMenu khi Home Form đóng;
+        }
+
     }
 }

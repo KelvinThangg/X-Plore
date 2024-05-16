@@ -32,23 +32,26 @@
             button1 = new Button();
             button2 = new Button();
             DisplayLbl = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Stencil", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(46, 165);
+            label1.Location = new Point(32, 99);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(680, 85);
+            label1.Size = new Size(459, 57);
             label1.TabIndex = 0;
             label1.Text = "WELCOME TO MAIN";
             // 
             // button1
             // 
-            button1.Location = new Point(558, 12);
+            button1.Location = new Point(391, 7);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(78, 20);
             button1.TabIndex = 1;
             button1.Text = "Log out";
             button1.UseVisualStyleBackColor = true;
@@ -56,9 +59,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(676, 12);
+            button2.Location = new Point(473, 7);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(112, 34);
+            button2.Size = new Size(78, 20);
             button2.TabIndex = 2;
             button2.Text = "Exit";
             button2.UseVisualStyleBackColor = true;
@@ -67,21 +71,35 @@
             // DisplayLbl
             // 
             DisplayLbl.AutoSize = true;
-            DisplayLbl.Location = new Point(356, 342);
+            DisplayLbl.Location = new Point(249, 205);
+            DisplayLbl.Margin = new Padding(2, 0, 2, 0);
             DisplayLbl.Name = "DisplayLbl";
-            DisplayLbl.Size = new Size(59, 25);
+            DisplayLbl.Size = new Size(38, 15);
             DisplayLbl.TabIndex = 3;
             DisplayLbl.Text = "label2";
+            DisplayLbl.Click += DisplayLbl_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(12, 34);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 37);
+            button3.TabIndex = 4;
+            button3.Text = "Homescreen";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // MainMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 270);
+            Controls.Add(button3);
             Controls.Add(DisplayLbl);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "MainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MainMenu";
@@ -97,5 +115,6 @@
         private Button button1;
         private Button button2;
         private Label DisplayLbl;
+        private Button button3;
     }
 }

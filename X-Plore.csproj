@@ -76,6 +76,11 @@
     <Compile Include="Chat\InviteUser.Designer.cs">
       <DependentUpon>InviteUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class\Captcha.cs" />
+    <Compile Include="Class\FirestoreHelper.cs" />
+    <Compile Include="Class\GenerateCode.cs" />
+    <Compile Include="Class\Security.cs" />
+    <Compile Include="Class\UserData.cs" />
     <Compile Include="Dangky-Dangnhap\FormDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +92,12 @@
     </Compile>
     <Compile Include="Dangky-Dangnhap\FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangky-Dangnhap\Form_QuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangky-Dangnhap\Form_QuenMK.Designer.cs">
+      <DependentUpon>Form_QuenMK.cs</DependentUpon>
     </Compile>
     <Compile Include="Dangky-Dangnhap\Xac_thuc_dky.cs">
       <SubType>Form</SubType>
