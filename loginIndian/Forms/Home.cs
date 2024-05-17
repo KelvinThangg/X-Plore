@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
@@ -15,10 +16,15 @@ namespace loginIndian.Forms
     {
         private string username;
         private string displayname;
+
         public Home(string username)
         {
             this.username = username;
             InitializeComponent();
+            panelDoipass.Hide();
+            NhapPassPn.Hide();
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,7 +45,7 @@ namespace loginIndian.Forms
             }
 
             // 3. Lấy thông tin UserData hiện tại 
-           UserData userData = await GetCurrentUserData();
+            UserData userData = await GetCurrentUserData();
 
             // 4. Cập nhật DisplayName
             userData.DisplayName = newDisplayName;
@@ -70,6 +76,62 @@ namespace loginIndian.Forms
             await docRef.SetAsync(userData);
         }
 
+        // Doipass
+        private bool ValidateFields()
+        {
+            if (ReEnterPasswordBox.Text != PassBox.Text)
+            {
+                MessageBox.Show("The passwords you entered do not match. Please try again.");
+                return false;
+            }
+
+            Regex passwordRegex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$");
+            if (!passwordRegex.IsMatch(PassBox.Text) || !passwordRegex.IsMatch(OldpassBox.Text))
+            {
+                MessageBox.Show("Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character.");
+                return false;
+            }
+
+            return true;
+        }
+
+        private async void button3_Click(object sender, EventArgs e)
+        { 
+            
+            panelDoipass.Show();
+        
+        
+            if (!ValidateFields())
+            {
+                return; // Dừng nếu mật khẩu không hợp lệ
+            }
+
+            string oldPassword = OldpassBox.Text;
+            string newPassword = PassBox.Text;
+            string reEnteredPassword = ReEnterPasswordBox.Text;
+
+            UserData userData = await GetCurrentUserData();
+
+            // Kiểm tra xem mật khẩu cũ có khớp với mật khẩu đã lưu hay không
+            if (Security.Encrypt(oldPassword) != userData.Password)
+            {
+                MessageBox.Show("Mật khẩu cũ không chính xác.");
+                return;
+            }
+
+            // Cập nhật mật khẩu mới
+            userData.Password = Security.Encrypt(newPassword);
+
+            await UpdateUserData(userData);
+
+            MessageBox.Show("Đổi mật khẩu thành công!");
+
+            // Xóa nội dung của các textbox mật khẩu
+            OldpassBox.Clear();
+            PassBox.Clear();
+            ReEnterPasswordBox.Clear();
+        }
     }
     
+
 }

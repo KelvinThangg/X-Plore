@@ -78,10 +78,12 @@ namespace loginIndian.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide(); // Ẩn MainMenu
-            Home home = new Home(username); // Truyền username sang Home Form
-            home.ShowDialog(); // Hiển thị Home Form
-            this.Show(); // Hiển thị lại MainMenu khi Home Form đóng;
+            Home home = new Home(username); // Tạo instance Home Form
+            home.TopLevel = false; // Thiết lập Home Form không phải top-level form
+            home.FormBorderStyle = FormBorderStyle.None; // Loại bỏ border của Home Form
+            home.Dock = DockStyle.Fill; // Cho Home Form lấp đầy Panel chứa nó
+            panel1.Controls.Add(home); // Thêm Home Form vào Panel
+            home.Show(); // Hiển thị Home Form
         }
 
     }

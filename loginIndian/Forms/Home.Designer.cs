@@ -38,18 +38,19 @@
             NhapPassPn = new Panel();
             label4 = new Label();
             textBox3 = new TextBox();
-            panel2 = new Panel();
+            panelDoipass = new Panel();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
+            button3 = new Button();
+            ReEnterPasswordBox = new TextBox();
+            PassBox = new TextBox();
+            OldpassBox = new TextBox();
             ChangeDisplaynameBtn = new Button();
-            button4 = new Button();
             label8 = new Label();
+            button4 = new Button();
             NhapPassPn.SuspendLayout();
-            panel2.SuspendLayout();
+            panelDoipass.SuspendLayout();
             SuspendLayout();
             // 
             // txtDisplayName
@@ -118,7 +119,7 @@
             // 
             NhapPassPn.Controls.Add(label4);
             NhapPassPn.Controls.Add(textBox3);
-            NhapPassPn.Location = new Point(479, 151);
+            NhapPassPn.Location = new Point(479, 145);
             NhapPassPn.Name = "NhapPassPn";
             NhapPassPn.Size = new Size(186, 182);
             NhapPassPn.TabIndex = 3;
@@ -140,18 +141,19 @@
             textBox3.Size = new Size(140, 23);
             textBox3.TabIndex = 0;
             // 
-            // panel2
+            // panelDoipass
             // 
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(textBox5);
-            panel2.Controls.Add(textBox4);
-            panel2.Location = new Point(465, 147);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(200, 186);
-            panel2.TabIndex = 4;
+            panelDoipass.Controls.Add(label7);
+            panelDoipass.Controls.Add(label6);
+            panelDoipass.Controls.Add(label5);
+            panelDoipass.Controls.Add(button3);
+            panelDoipass.Controls.Add(ReEnterPasswordBox);
+            panelDoipass.Controls.Add(PassBox);
+            panelDoipass.Controls.Add(OldpassBox);
+            panelDoipass.Location = new Point(479, 145);
+            panelDoipass.Name = "panelDoipass";
+            panelDoipass.Size = new Size(200, 216);
+            panelDoipass.TabIndex = 4;
             // 
             // label7
             // 
@@ -183,26 +185,36 @@
             label5.Text = "MK cũ";
             label5.Click += label1_Click;
             // 
-            // textBox6
+            // button3
             // 
-            textBox6.Location = new Point(17, 139);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(140, 23);
-            textBox6.TabIndex = 0;
+            button3.Location = new Point(31, 182);
+            button3.Name = "button3";
+            button3.Size = new Size(126, 23);
+            button3.TabIndex = 2;
+            button3.Text = "Đổi";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
-            // textBox5
+            // ReEnterPasswordBox
             // 
-            textBox5.Location = new Point(17, 82);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(140, 23);
-            textBox5.TabIndex = 0;
+            ReEnterPasswordBox.Location = new Point(17, 139);
+            ReEnterPasswordBox.Name = "ReEnterPasswordBox";
+            ReEnterPasswordBox.Size = new Size(140, 23);
+            ReEnterPasswordBox.TabIndex = 0;
             // 
-            // textBox4
+            // PassBox
             // 
-            textBox4.Location = new Point(17, 22);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(140, 23);
-            textBox4.TabIndex = 0;
+            PassBox.Location = new Point(17, 82);
+            PassBox.Name = "PassBox";
+            PassBox.Size = new Size(140, 23);
+            PassBox.TabIndex = 0;
+            // 
+            // OldpassBox
+            // 
+            OldpassBox.Location = new Point(17, 22);
+            OldpassBox.Name = "OldpassBox";
+            OldpassBox.Size = new Size(140, 23);
+            OldpassBox.TabIndex = 0;
             // 
             // ChangeDisplaynameBtn
             // 
@@ -214,16 +226,6 @@
             ChangeDisplaynameBtn.UseVisualStyleBackColor = true;
             ChangeDisplaynameBtn.Click += button1_Click;
             // 
-            // button4
-            // 
-            button4.Location = new Point(80, 268);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 2;
-            button4.Text = "Đổi";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button1_Click;
-            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -233,16 +235,25 @@
             label8.TabIndex = 5;
             label8.Text = "Display name";
             // 
+            // button4
+            // 
+            button4.Location = new Point(98, 262);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 6;
+            button4.Text = "Đổi";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(label8);
-            Controls.Add(panel2);
+            Controls.Add(panelDoipass);
             Controls.Add(NhapPassPn);
             Controls.Add(button2);
-            Controls.Add(button4);
             Controls.Add(ChangeDisplaynameBtn);
             Controls.Add(button1);
             Controls.Add(label2);
@@ -254,8 +265,8 @@
             Text = "Home";
             NhapPassPn.ResumeLayout(false);
             NhapPassPn.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            panelDoipass.ResumeLayout(false);
+            panelDoipass.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -272,15 +283,16 @@
         private Panel NhapPassPn;
         private Label label4;
         private TextBox textBox3;
-        private Panel panel2;
+        private Panel panelDoipass;
         private Label label7;
         private Label label6;
         private Label label5;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
+        private TextBox ReEnterPasswordBox;
+        private TextBox PassBox;
+        private TextBox OldpassBox;
         private Button ChangeDisplaynameBtn;
-        private Button button4;
         private Label label8;
+        private Button button3;
+        private Button button4;
     }
 }
