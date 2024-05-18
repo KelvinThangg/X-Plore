@@ -122,7 +122,7 @@
               "RelativeDocumentMoniker": "Client\\Form\\MemberChat.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\MemberChat.cs",
               "RelativeToolTip": "Client\\Form\\MemberChat.cs",
-              "ViewState": "AQIAALABAAAAAAAAAAAqwL8BAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T13:59:49.876Z",
               "EditorCaption": ""
@@ -170,7 +170,8 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\MemberChat.cs [Design]",
               "RelativeToolTip": "Client\\Form\\MemberChat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:59:49.883Z"
+              "WhenOpened": "2024-05-17T13:59:49.883Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -194,7 +195,8 @@
               "RelativeToolTip": "Client\\Form\\MemberChat.Designer.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAQwEMAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:59:49.887Z"
+              "WhenOpened": "2024-05-17T13:59:49.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
