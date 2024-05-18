@@ -45,7 +45,7 @@ namespace Client
             {
                 Directory.CreateDirectory(imgDir);
             }
-            if (!Directory.Exists(fileDir))
+            else if (!Directory.Exists(fileDir))
             {
                 Directory.CreateDirectory(fileDir);
             }
@@ -114,6 +114,7 @@ namespace Client
 
         private void DisplayMessage(MessageNode message)
         {
+            /*
             if (message.IsFile)
             {
                 string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
@@ -145,11 +146,47 @@ namespace Client
                     }
                 };
             }
+            */
+            if (message.IsFile)
+            {
+                string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
+                listBox1.Items.Add(fileMessage);
+
+                bool fileClicked = false;
+
+                listBox1.MouseClick += async (s, e) =>
+                {
+                    if (!fileClicked && listBox1.SelectedItem != null && listBox1.SelectedItem.ToString() == fileMessage)
+                    {
+                        fileClicked = true;
+
+                        string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
+                        string fileExtension = Path.GetExtension(message.FileName).ToLower();
+                        string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
+                            Path.Combine(projectDir, "Client", "Data", "IMG") :
+                            Path.Combine(projectDir, "Client", "Data", "File");
+
+                        string filePath = Path.Combine(targetDir, message.FileName);
+
+                        byte[] fileData = Convert.FromBase64String(message.Message);
+                        File.WriteAllBytes(filePath, fileData);
+
+                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                        {
+                            FileName = filePath,
+                            UseShellExecute = true
+                        });
+                    }
+                };
+            }
+
+
             else if (!listBox1.Items.Cast<string>().Any(item => item.Contains(message.Message)))
             {
                 string newMessage = $"{message.Sender}: {message.Message}";
                 listBox1.Items.Add(newMessage);
             }
+            
         }
 
         private async void sendTextButton_Click(object sender, EventArgs e)
@@ -161,7 +198,7 @@ namespace Client
                 return;
             }
 
-            if (!string.IsNullOrWhiteSpace(message))
+            if (message.Length > 0)
             {
                 // Định nghĩa từ điển để ánh xạ biểu tượng cảm xúc thành emoji
                 Dictionary<string, string> emoticonToEmoji = new Dictionary<string, string>
