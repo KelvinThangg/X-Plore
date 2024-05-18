@@ -25,7 +25,7 @@ namespace loginIndian.Forms
             MessageBox.Show("Welcome: " + DisplayName);
             DisplayLbl.Text = DisplayName;
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to proceed to the Login page?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -78,6 +78,7 @@ namespace loginIndian.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
+            label1.Hide();
             Home home = new Home(username); // Tạo instance Home Form
             home.TopLevel = false; // Thiết lập Home Form không phải top-level form
             home.FormBorderStyle = FormBorderStyle.None; // Loại bỏ border của Home Form
@@ -86,5 +87,9 @@ namespace loginIndian.Forms
             home.Show(); // Hiển thị Home Form
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

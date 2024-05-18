@@ -33,22 +33,24 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            button1 = new Button();
             button2 = new Button();
             NhapPassPn = new Panel();
+            confirm2Btn = new Button();
             label4 = new Label();
-            textBox3 = new TextBox();
+            EnterPasstb = new TextBox();
             panelDoipass = new Panel();
+            confirm1Btn = new Button();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
-            button3 = new Button();
             ReEnterPasswordBox = new TextBox();
             PassBox = new TextBox();
             OldpassBox = new TextBox();
             ChangeDisplaynameBtn = new Button();
             label8 = new Label();
             button4 = new Button();
+            twofaBtn = new Button();
+            Trangthai = new Label();
             NhapPassPn.SuspendLayout();
             panelDoipass.SuspendLayout();
             SuspendLayout();
@@ -96,16 +98,6 @@
             label3.Text = "Bảo vệ 2 lớp";
             label3.Click += label1_Click;
             // 
-            // button1
-            // 
-            button1.Location = new Point(463, 103);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Bật/tắt";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // button2
             // 
             button2.Location = new Point(556, 103);
@@ -117,12 +109,23 @@
             // 
             // NhapPassPn
             // 
+            NhapPassPn.Controls.Add(confirm2Btn);
             NhapPassPn.Controls.Add(label4);
-            NhapPassPn.Controls.Add(textBox3);
+            NhapPassPn.Controls.Add(EnterPasstb);
             NhapPassPn.Location = new Point(479, 145);
             NhapPassPn.Name = "NhapPassPn";
             NhapPassPn.Size = new Size(186, 182);
             NhapPassPn.TabIndex = 3;
+            // 
+            // confirm2Btn
+            // 
+            confirm2Btn.Location = new Point(37, 126);
+            confirm2Btn.Name = "confirm2Btn";
+            confirm2Btn.Size = new Size(114, 23);
+            confirm2Btn.TabIndex = 2;
+            confirm2Btn.Text = "Xác nhận";
+            confirm2Btn.UseVisualStyleBackColor = true;
+            confirm2Btn.Click += confirm2Btn_Click;
             // 
             // label4
             // 
@@ -134,26 +137,35 @@
             label4.Text = "Nhập lại mk";
             label4.Click += label1_Click;
             // 
-            // textBox3
+            // EnterPasstb
             // 
-            textBox3.Location = new Point(26, 31);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(140, 23);
-            textBox3.TabIndex = 0;
+            EnterPasstb.Location = new Point(26, 31);
+            EnterPasstb.Name = "EnterPasstb";
+            EnterPasstb.Size = new Size(140, 23);
+            EnterPasstb.TabIndex = 0;
             // 
             // panelDoipass
             // 
+            panelDoipass.Controls.Add(confirm1Btn);
             panelDoipass.Controls.Add(label7);
             panelDoipass.Controls.Add(label6);
             panelDoipass.Controls.Add(label5);
-            panelDoipass.Controls.Add(button3);
             panelDoipass.Controls.Add(ReEnterPasswordBox);
             panelDoipass.Controls.Add(PassBox);
             panelDoipass.Controls.Add(OldpassBox);
-            panelDoipass.Location = new Point(479, 145);
+            panelDoipass.Location = new Point(482, 145);
             panelDoipass.Name = "panelDoipass";
             panelDoipass.Size = new Size(200, 216);
             panelDoipass.TabIndex = 4;
+            // 
+            // confirm1Btn
+            // 
+            confirm1Btn.Location = new Point(44, 178);
+            confirm1Btn.Name = "confirm1Btn";
+            confirm1Btn.Size = new Size(94, 23);
+            confirm1Btn.TabIndex = 2;
+            confirm1Btn.Text = "Xác nhận";
+            confirm1Btn.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -184,16 +196,6 @@
             label5.TabIndex = 1;
             label5.Text = "MK cũ";
             label5.Click += label1_Click;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(31, 182);
-            button3.Name = "button3";
-            button3.Size = new Size(126, 23);
-            button3.TabIndex = 2;
-            button3.Text = "Đổi";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
             // ReEnterPasswordBox
             // 
@@ -244,18 +246,38 @@
             button4.Text = "Đổi";
             button4.UseVisualStyleBackColor = true;
             // 
+            // twofaBtn
+            // 
+            twofaBtn.Location = new Point(475, 103);
+            twofaBtn.Name = "twofaBtn";
+            twofaBtn.Size = new Size(75, 23);
+            twofaBtn.TabIndex = 7;
+            twofaBtn.Text = "Bật";
+            twofaBtn.UseVisualStyleBackColor = true;
+            twofaBtn.Click += twofaBtn_Click;
+            // 
+            // Trangthai
+            // 
+            Trangthai.AutoSize = true;
+            Trangthai.Location = new Point(589, 49);
+            Trangthai.Name = "Trangthai";
+            Trangthai.Size = new Size(38, 15);
+            Trangthai.TabIndex = 8;
+            Trangthai.Text = "label9";
+            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Trangthai);
+            Controls.Add(twofaBtn);
             Controls.Add(button4);
             Controls.Add(label8);
             Controls.Add(panelDoipass);
             Controls.Add(NhapPassPn);
             Controls.Add(button2);
             Controls.Add(ChangeDisplaynameBtn);
-            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(label1);
@@ -278,11 +300,10 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private Button button1;
         private Button button2;
         private Panel NhapPassPn;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox EnterPasstb;
         private Panel panelDoipass;
         private Label label7;
         private Label label6;
@@ -292,7 +313,10 @@
         private TextBox OldpassBox;
         private Button ChangeDisplaynameBtn;
         private Label label8;
-        private Button button3;
         private Button button4;
+        private Button twofaBtn;
+        private Button confirm2Btn;
+        private Button confirm1Btn;
+        private Label Trangthai;
     }
 }

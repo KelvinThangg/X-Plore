@@ -41,7 +41,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Stencil", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(41, 75);
+            label1.Location = new Point(154, 144);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(357, 44);
@@ -96,14 +96,15 @@
             panel1.Controls.Add(label1);
             panel1.Location = new Point(112, 41);
             panel1.Name = "panel1";
-            panel1.Size = new Size(436, 226);
+            panel1.Size = new Size(649, 340);
             panel1.TabIndex = 5;
+            panel1.Paint += panel1_Paint;
             // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(560, 270);
+            ClientSize = new Size(773, 386);
             Controls.Add(panel1);
             Controls.Add(button3);
             Controls.Add(DisplayLbl);

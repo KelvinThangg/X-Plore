@@ -16,7 +16,7 @@ namespace loginIndian.Forms
     {
         private string username;
         private string displayname;
-
+        private bool isButtonEnabled = true;
         public Home(string username)
         {
             this.username = username;
@@ -96,11 +96,11 @@ namespace loginIndian.Forms
         }
 
         private async void button3_Click(object sender, EventArgs e)
-        { 
-            
+        {
+
             panelDoipass.Show();
-        
-        
+
+
             if (!ValidateFields())
             {
                 return; // Dừng nếu mật khẩu không hợp lệ
@@ -131,7 +131,70 @@ namespace loginIndian.Forms
             PassBox.Clear();
             ReEnterPasswordBox.Clear();
         }
-    }
-    
 
-}
+        private async void twofaBtn_Click(object sender, EventArgs e)
+        {
+            UserData userData = await GetCurrentUserData();
+            bool is2FAEnabled = userData.Is2FAEnabled;
+            if (is2FAEnabled)
+            {
+                // Tắt 2FA
+                NhapPassPn.Show();
+                EnterPasstb.Focus();
+            }
+            else
+            {
+                // Hiển thị panel nhập mật khẩu
+                NhapPassPn.Show();
+               EnterPasstb.Focus(); // Đặt focus vào textbox mật khẩu
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            NhapPassPn.Hide();
+            panelDoipass.Show();
+        }
+
+        private async void confirm2Btn_Click(object sender, EventArgs e)
+        {
+            string enteredPassword = EnterPasstb.Text;
+            UserData userData = await GetCurrentUserData();
+            if (Security.Encrypt(enteredPassword) == userData.Password)
+            {
+                // Đảo ngược trạng thái 2FA
+                userData.Is2FAEnabled = !userData.Is2FAEnabled;
+
+                // Cập nhật text button và ẩn panel
+                twofaBtn.Text = userData.Is2FAEnabled ? "Tắt" : "Bật";
+                NhapPassPn.Hide();
+
+                await UpdateUserData(userData); // Lưu thay đổi về Firestore
+            }
+            else
+            {
+                MessageBox.Show("Mật khẩu không chính xác.");
+            }
+
+            EnterPasstb.Clear(); // Xóa mật khẩu đã nhập
+
+        }
+        private async void Update2FAStatus()
+        {
+            UserData userData = await GetCurrentUserData();
+            if (userData.Is2FAEnabled)
+            {
+                Trangthai.ForeColor = Color.Green; // Chuyển sang màu xanh lá
+                Trangthai.Text = "Đang bật";
+            }
+            else
+            {
+                Trangthai.ForeColor = Color.Red; // Chuyển sang màu đỏ (hoặc màu mặc định)
+                Trangthai.Text = "Đang tắt";
+            }
+        }
+    }
+    }
+
+
+

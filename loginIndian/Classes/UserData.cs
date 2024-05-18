@@ -25,5 +25,9 @@ namespace loginIndian.Classes
         [FirestoreProperty]
         public string DisplayName { get; set; }
 
+        [FirestoreProperty("2FAEnable")]
+        public bool Is2FAEnabled { get; set; } = false;
+        [FirestoreProperty]
+        public string Key { get; set; }
     }
 }

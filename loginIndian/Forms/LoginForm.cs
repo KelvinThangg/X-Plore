@@ -26,6 +26,7 @@ namespace loginIndian.Forms
 {
     public partial class LoginForm : Form
     {
+        
         private System.Windows.Forms.Timer codeExpiryTimer;
         private const int CODE_EXPIRY_SECONDS = 60;
         int enterout = 0;
@@ -40,7 +41,7 @@ namespace loginIndian.Forms
 
         private Captcha captcha;
         private PictureBox captchaPictureBox;
-
+      
         public LoginForm(string username)
         {
             InitializeComponent();
@@ -91,6 +92,7 @@ namespace loginIndian.Forms
         private const string settingsFilePath = @"C:\Users\dadad\OneDrive\Documents\UserData\user_settings.json"; // File to store settings
         private async void LoginBtn_Click(object sender, EventArgs e)
         {
+            
             LoginBtn.Enabled = false;
             BackToRegisterBtn.Enabled = false;
             forgotPassBtn.Enabled = false;
@@ -125,6 +127,13 @@ namespace loginIndian.Forms
                             LoginBtn.Enabled = true;
                             BackToRegisterBtn.Enabled = true;
                             forgotPassBtn.Enabled = true;
+
+                            return;
+                        }
+                        else if (data.Is2FAEnabled)
+                        {
+                            _2FAMailVerify form2 = new _2FAMailVerify(data.Email, username);
+                            form2.ShowDialog();
                             return;
                         }
                         else
@@ -313,8 +322,8 @@ namespace loginIndian.Forms
             await Task.Yield(); // Đảm bảo thư mục được xóa bất đồng bộ
         }
 
-
-        private async void signInGGbtn_Click(object sender, EventArgs e)
+       
+            private async void signInGGbtn_Click(object sender, EventArgs e)
         {
             try
             {
@@ -370,20 +379,26 @@ namespace loginIndian.Forms
                             {
                                 var db = FirestoreHelper.Database;
                                 var userDataCollection = db.Collection("UserData");
-                         
+
                                 try
                                 {
                                     QuerySnapshot snapshot = await userDataCollection.WhereEqualTo("Email", email).GetSnapshotAsync();
                                     DocumentSnapshot document = snapshot.Documents[0];
                                     string Displayname = document.GetValue<string>("DisplayName");
                                     string Username = document.GetValue<string>("Username");
+                                    bool Is2FAEnabled = document.GetValue<bool>("2FAEnable"); // Lấy giá trị 2FAEnable
+                                    string Email = document.GetValue<string>("Email");
+
+                                    
                                     if (snapshot.Documents.Count > 0)
                                     {
                                         DocumentReference docRef = snapshot.Documents[0].Reference;
-                                    
+                                        
+
+                                       
                                         await docRef.UpdateAsync("isLoggedIn", true);
 
-                                        MessageBox.Show("Đăng nhập thành công!"); // Success message
+                                        MessageBox.Show("Đăng nhập thành công!");
 
                                         codeExpiryTimer.Stop();
                                         Hide();
@@ -394,12 +409,12 @@ namespace loginIndian.Forms
                                     }
                                     else
                                     {
-                                        MessageBox.Show("User not found."); // Handle case where user doesn't exist
+                                        MessageBox.Show("User not found.");
                                     }
                                 }
                                 catch (Exception ex)
                                 {
-                                    MessageBox.Show($"An error occurred: {ex.Message}"); // Catch other general exceptions
+                                    MessageBox.Show($"An error occurred: {ex.Message}");
                                 }
                             }
 
