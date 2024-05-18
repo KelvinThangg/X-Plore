@@ -1,0 +1,222 @@
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\grpc_csharp_ext.x86.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\grpc_csharp_ext.x64.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Client.exe.config
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Client.exe
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Firebase.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.CommonProtos.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Grpc.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Rest.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Auth.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Core.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.V1.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Location.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.LongRunning.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Protobuf.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Auth.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.Api.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Client.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Common.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\LiteDB.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Newtonsoft.Json.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Buffers.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.CodeDom.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Collections.Immutable.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Linq.Async.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Memory.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Net.Http.WinHttpHandler.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Numerics.Vectors.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Reactive.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.ValueTuple.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Firebase.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\FirebaseAdmin.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.CommonProtos.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.CommonProtos.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Grpc.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Grpc.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Rest.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Auth.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Auth.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Core.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Core.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.V1.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.V1.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Location.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Location.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.LongRunning.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.LongRunning.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Protobuf.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Google.Protobuf.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Auth.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Auth.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.Api.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.Api.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Client.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Client.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Common.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Common.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\LiteDB.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Newtonsoft.Json.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Buffers.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.CodeDom.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Collections.Immutable.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Linq.Async.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Memory.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Net.Http.WinHttpHandler.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Numerics.Vectors.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Reactive.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.ValueTuple.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.AdminChat.resources
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.Form1.resources
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.FormTaoPhong.resources
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.MemberChat.resources
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.csproj.CopyComplete
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.exe
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\obj\Debug\Client.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\Client.pdb
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\FireSharp.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\RestSharp.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\RestSharp.xml
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Linq.Async.Queryable.dll
+C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\ChatClientServer\Client\Client\bin\Debug\System.Linq.Async.Queryable.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Client.exe
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Firebase.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Reactive.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Client.exe.config
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\FireSharp.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.CommonProtos.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Grpc.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Auth.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Core.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.V1.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Location.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.LongRunning.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Protobuf.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Auth.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.Api.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Client.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Common.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\LiteDB.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\RestSharp.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Buffers.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.CodeDom.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Linq.Async.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Linq.Async.Queryable.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Memory.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Net.Http.WinHttpHandler.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.ValueTuple.dll
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Firebase.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.CommonProtos.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.CommonProtos.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Grpc.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Grpc.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Auth.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Core.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Apis.Core.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.V1.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Firestore.V1.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Location.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Cloud.Location.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.LongRunning.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.LongRunning.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Protobuf.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Google.Protobuf.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Auth.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Auth.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Core.Api.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Client.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Client.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Common.pdb
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Grpc.Net.Common.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\LiteDB.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\RestSharp.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Buffers.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.CodeDom.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Linq.Async.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Linq.Async.Queryable.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Memory.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Net.Http.WinHttpHandler.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Reactive.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\bin\Debug\System.ValueTuple.xml
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.AdminChat.resources
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.Form1.resources
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.FormTaoPhong.resources
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.MemberChat.resources
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.csproj.Up2Date
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.exe
+C:\Users\Lenovo\Desktop\CODE\Course\Temp\ChatClientServer\Client\Client\obj\Debug\Client.pdb
