@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Linq;
 using System.Windows.Forms;
 using Firebase.Database;
@@ -7,6 +6,8 @@ using Firebase.Database.Query;
 using System.IO;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Media;
 
 namespace Client
 {
@@ -28,6 +29,7 @@ namespace Client
             InitializeFirebase();
             LoadChatHistory();
             CreateDataDirectories();
+
         }
 
         private void InitializeFirebase()
@@ -45,7 +47,7 @@ namespace Client
             {
                 Directory.CreateDirectory(imgDir);
             }
-            else if (!Directory.Exists(fileDir))
+            if (!Directory.Exists(fileDir))
             {
                 Directory.CreateDirectory(fileDir);
             }
@@ -78,6 +80,9 @@ namespace Client
             public DateTime Timestamp { get; set; }
             public bool IsFile { get; set; } = false;
             public string FileName { get; set; }
+
+            public bool IsDisplayed { get; set; }
+ 
         }
 
         private async Task SaveMessageToFirebase(string message)
@@ -112,95 +117,63 @@ namespace Client
             }
         }
 
+
         private void DisplayMessage(MessageNode message)
         {
-            /*
             if (message.IsFile)
             {
-                string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
-                listBox1.Items.Add(fileMessage);
-
-                // Gán sự kiện click vào tin nhắn tệp trong listbox để tải và mở tệp
-                listBox1.SelectedIndexChanged += async (s, e) =>
+                if (!message.IsDisplayed)
                 {
-                    if (listBox1.SelectedItem != null && listBox1.SelectedItem.ToString() == fileMessage)
+                    string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
+                    listBox1.Items.Add(fileMessage);
+
+                    string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
+                    string fileExtension = Path.GetExtension(message.FileName).ToLower();
+                    string targetDir = Path.Combine(projectDir, "Client", "Data", "File");
+
+                    if (new[] { ".jpg", ".jpeg", ".png", ".gif" }.Contains(fileExtension))
                     {
-                        string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
-                        string fileExtension = Path.GetExtension(message.FileName).ToLower();
-                        string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
-                            Path.Combine(projectDir, "Client", "Data", "IMG") :
-                            Path.Combine(projectDir, "Client", "Data", "File");
-
-                        string filePath = Path.Combine(targetDir, message.FileName);
-
-                        // Tải file từ Firebase dưới dạng chuỗi base64 và chuyển nó lại thành mảng byte
-                        byte[] fileData = Convert.FromBase64String(message.Message);
-                        File.WriteAllBytes(filePath, fileData);
-
-                        // Mở file
-                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                        {
-                            FileName = filePath,
-                            UseShellExecute = true
-                        });
+                        targetDir = Path.Combine(projectDir, "Client", "Data", "IMG");
                     }
-                };
-            }
-            */
-            if (message.IsFile)
-            {
-                string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
-                listBox1.Items.Add(fileMessage);
-
-                bool fileClicked = false;
-
-                listBox1.MouseClick += async (s, e) =>
-                {
-                    if (!fileClicked && listBox1.SelectedItem != null && listBox1.SelectedItem.ToString() == fileMessage)
+                    else if (new[] { ".mp3", ".wav" }.Contains(fileExtension))
                     {
-                        fileClicked = true;
-
-                        string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
-                        string fileExtension = Path.GetExtension(message.FileName).ToLower();
-                        string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
-                            Path.Combine(projectDir, "Client", "Data", "IMG") :
-                            Path.Combine(projectDir, "Client", "Data", "File");
-
-                        string filePath = Path.Combine(targetDir, message.FileName);
-
-                        byte[] fileData = Convert.FromBase64String(message.Message);
-                        File.WriteAllBytes(filePath, fileData);
-
-                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                        {
-                            FileName = filePath,
-                            UseShellExecute = true
-                        });
+                        targetDir = Path.Combine(projectDir, "Client", "Data", "Sound");
                     }
-                };
+                    else if (new[] { ".mp4", ".avi", ".mov" }.Contains(fileExtension))
+                    {
+                        targetDir = Path.Combine(projectDir, "Client", "Data", "Video");
+                    }
+
+                    string filePath = Path.Combine(targetDir, message.FileName);
+
+                    byte[] fileData = Convert.FromBase64String(message.Message);
+                    File.WriteAllBytes(filePath, fileData);
+
+                    // Đánh dấu tin nhắn đã được hiển thị
+                    message.IsDisplayed = true;
+                }
             }
-
-
-            else if (!listBox1.Items.Cast<string>().Any(item => item.Contains(message.Message)))
+            else
             {
                 string newMessage = $"{message.Sender}: {message.Message}";
                 listBox1.Items.Add(newMessage);
             }
-            
         }
+
+       
+
+
 
         private async void sendTextButton_Click(object sender, EventArgs e)
         {
             string message = textBox1.Text.Trim();
             if (isSavingMessage)
             {
-                // Đang xử lý tin nhắn trước đó, không cho phép gửi tin nhắn mới
                 return;
             }
 
-            if (message.Length > 0)
+            if (!string.IsNullOrWhiteSpace(message))
             {
-                // Định nghĩa từ điển để ánh xạ biểu tượng cảm xúc thành emoji
                 Dictionary<string, string> emoticonToEmoji = new Dictionary<string, string>
                 {
                     { ":)", "😊" },
@@ -249,7 +222,6 @@ namespace Client
                     { "O.o", "😲" }
                 };
 
-                // Thay thế các ký tự biểu tượng cảm xúc bằng emoji
                 foreach (var pair in emoticonToEmoji)
                 {
                     message = message.Replace(pair.Key, pair.Value);
@@ -257,8 +229,7 @@ namespace Client
 
                 try
                 {
-                    isSavingMessage = true; // Bắt đầu quá trình lưu tin nhắn
-
+                    isSavingMessage = true;
                     await SaveMessageToFirebase(message);
                     DisplayMessage(new MessageNode { Message = message, Sender = memberName, Timestamp = DateTime.Now });
                     textBox1.Text = "";
@@ -269,7 +240,7 @@ namespace Client
                 }
                 finally
                 {
-                    isSavingMessage = false; // Kết thúc quá trình lưu tin nhắn
+                    isSavingMessage = false;
                 }
             }
             else
@@ -313,13 +284,9 @@ namespace Client
 
                     try
                     {
-                        // Đọc tệp vào một mảng byte
                         byte[] fileBytes = File.ReadAllBytes(filePath);
-
-                        // Chuyển đổi mảng byte thành chuỗi base64
                         string base64File = Convert.ToBase64String(fileBytes);
 
-                        // Tạo một đối tượng tin nhắn với loại tệp
                         var messageNode = new MessageNode
                         {
                             Message = base64File,
