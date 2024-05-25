@@ -143,6 +143,9 @@
     <EmbeddedResource Include="Dangky-Dangnhap\FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dangky-Dangnhap\Form_QuenMK.resx">
+      <DependentUpon>Form_QuenMK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dangky-Dangnhap\Xac_thuc_dky.resx">
       <DependentUpon>Xac_thuc_dky.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +277,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\picture_7126547.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_12108539.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mesa de trabajo 1 copia%404x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

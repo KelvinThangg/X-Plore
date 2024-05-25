@@ -106,6 +106,7 @@
             button2.TabIndex = 2;
             button2.Text = "Đổi mật khảu";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // NhapPassPn
             // 
@@ -166,6 +167,7 @@
             confirm1Btn.TabIndex = 2;
             confirm1Btn.Text = "Xác nhận";
             confirm1Btn.UseVisualStyleBackColor = true;
+            confirm1Btn.Click += confirm1Btn_Click;
             // 
             // label7
             // 
@@ -261,9 +263,9 @@
             Trangthai.AutoSize = true;
             Trangthai.Location = new Point(589, 49);
             Trangthai.Name = "Trangthai";
-            Trangthai.Size = new Size(38, 15);
+            Trangthai.Size = new Size(59, 15);
             Trangthai.TabIndex = 8;
-            Trangthai.Text = "label9";
+            Trangthai.Text = "Trạng thái";
             // 
             // Home
             // 

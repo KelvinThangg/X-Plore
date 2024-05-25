@@ -50,10 +50,10 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.lbDem);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.SlateGray;
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.SlateGray;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-1, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(439, 187);
@@ -62,17 +62,17 @@
             // confirmBtn
             // 
             this.confirmBtn.BackColor = System.Drawing.Color.Transparent;
-            this.confirmBtn.BorderRadius = 15;
+            this.confirmBtn.BorderRadius = 10;
             this.confirmBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.confirmBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.confirmBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.confirmBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.confirmBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.confirmBtn.FillColor = System.Drawing.Color.RoyalBlue;
-            this.confirmBtn.FillColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.confirmBtn.Font = new System.Drawing.Font("Shopee Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.confirmBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.confirmBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmBtn.ForeColor = System.Drawing.Color.White;
-            this.confirmBtn.Location = new System.Drawing.Point(152, 149);
+            this.confirmBtn.Location = new System.Drawing.Point(166, 149);
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(82, 28);
             this.confirmBtn.TabIndex = 8;
@@ -81,17 +81,17 @@
             // sendRecoveryBtn
             // 
             this.sendRecoveryBtn.BackColor = System.Drawing.Color.Transparent;
-            this.sendRecoveryBtn.BorderRadius = 15;
+            this.sendRecoveryBtn.BorderRadius = 10;
             this.sendRecoveryBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.sendRecoveryBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.sendRecoveryBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.sendRecoveryBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.sendRecoveryBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.sendRecoveryBtn.FillColor = System.Drawing.Color.RoyalBlue;
-            this.sendRecoveryBtn.FillColor2 = System.Drawing.Color.DeepSkyBlue;
-            this.sendRecoveryBtn.Font = new System.Drawing.Font("Shopee Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sendRecoveryBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.sendRecoveryBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.sendRecoveryBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sendRecoveryBtn.ForeColor = System.Drawing.Color.White;
-            this.sendRecoveryBtn.Location = new System.Drawing.Point(152, 73);
+            this.sendRecoveryBtn.Location = new System.Drawing.Point(171, 70);
             this.sendRecoveryBtn.Name = "sendRecoveryBtn";
             this.sendRecoveryBtn.Size = new System.Drawing.Size(71, 28);
             this.sendRecoveryBtn.TabIndex = 8;
@@ -100,7 +100,7 @@
             // recoveryCodeBox
             // 
             this.recoveryCodeBox.BackColor = System.Drawing.Color.Transparent;
-            this.recoveryCodeBox.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.recoveryCodeBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
             this.recoveryCodeBox.BorderRadius = 10;
             this.recoveryCodeBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.recoveryCodeBox.DefaultText = "";
@@ -123,7 +123,7 @@
             // registerMailBox
             // 
             this.registerMailBox.BackColor = System.Drawing.Color.Transparent;
-            this.registerMailBox.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.registerMailBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
             this.registerMailBox.BorderRadius = 10;
             this.registerMailBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.registerMailBox.DefaultText = "";
@@ -146,11 +146,11 @@
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Snow;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(22, 107);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(139, 25);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(144, 23);
             this.guna2HtmlLabel2.TabIndex = 6;
             this.guna2HtmlLabel2.Text = "Nhập mã phục hồi";
             // 
@@ -159,7 +159,7 @@
             this.lbDem.BackColor = System.Drawing.Color.Transparent;
             this.lbDem.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDem.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lbDem.Location = new System.Drawing.Point(250, 149);
+            this.lbDem.Location = new System.Drawing.Point(332, 149);
             this.lbDem.Name = "lbDem";
             this.lbDem.Size = new System.Drawing.Size(83, 25);
             this.lbDem.TabIndex = 6;
@@ -168,11 +168,11 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Snow;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(22, 31);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(167, 25);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(171, 23);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Nhập mail đã đăng ký";
             // 

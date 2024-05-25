@@ -95,7 +95,7 @@ namespace loginIndian.Forms
             return true;
         }
 
-        private async void button3_Click(object sender, EventArgs e)
+        private async void confirm1Btn_Click(object sender, EventArgs e)
         {
 
             panelDoipass.Show();
@@ -146,7 +146,7 @@ namespace loginIndian.Forms
             {
                 // Hiển thị panel nhập mật khẩu
                 NhapPassPn.Show();
-               EnterPasstb.Focus(); // Đặt focus vào textbox mật khẩu
+                EnterPasstb.Focus(); // Đặt focus vào textbox mật khẩu
             }
         }
 
@@ -182,7 +182,7 @@ namespace loginIndian.Forms
         private async void Update2FAStatus()
         {
             UserData userData = await GetCurrentUserData();
-            if (userData.Is2FAEnabled)
+            if (userData.Is2FAEnabled || twofaBtn.Text == "Tắt")
             {
                 Trangthai.ForeColor = Color.Green; // Chuyển sang màu xanh lá
                 Trangthai.Text = "Đang bật";
@@ -193,8 +193,18 @@ namespace loginIndian.Forms
                 Trangthai.Text = "Đang tắt";
             }
         }
+
+        private void confirm1Btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
-    }
+}
 
 
 

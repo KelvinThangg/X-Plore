@@ -33,6 +33,7 @@
             this.guna2TileButton4 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2TileButton3 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
+            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -40,11 +41,12 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CustomGradientPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel4
@@ -55,13 +57,14 @@
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2TileButton2);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2TileButton1);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2PictureBox1);
-            this.guna2CustomGradientPanel4.FillColor = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel4.FillColor2 = System.Drawing.Color.SteelBlue;
-            this.guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.SteelBlue;
-            this.guna2CustomGradientPanel4.FillColor4 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(3, 0);
+            this.guna2CustomGradientPanel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2CustomGradientPanel4.FillColor = System.Drawing.Color.Navy;
+            this.guna2CustomGradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel4.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel4.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel4.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel4.Name = "guna2CustomGradientPanel4";
-            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(179, 450);
+            this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(153, 450);
             this.guna2CustomGradientPanel4.TabIndex = 12;
             // 
             // guna2TileButton5
@@ -75,7 +78,7 @@
             this.guna2TileButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2TileButton5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2TileButton5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton5.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TileButton5.ForeColor = System.Drawing.Color.White;
             this.guna2TileButton5.Image = global::X_Plore.Properties.Resources.gopy;
             this.guna2TileButton5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -100,7 +103,7 @@
             this.guna2TileButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2TileButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2TileButton4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton4.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TileButton4.ForeColor = System.Drawing.Color.White;
             this.guna2TileButton4.Image = global::X_Plore.Properties.Resources.usic;
             this.guna2TileButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -125,7 +128,7 @@
             this.guna2TileButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2TileButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2TileButton3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton3.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TileButton3.ForeColor = System.Drawing.Color.White;
             this.guna2TileButton3.Image = global::X_Plore.Properties.Resources.mahoa;
             this.guna2TileButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -150,7 +153,7 @@
             this.guna2TileButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2TileButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2TileButton2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton2.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TileButton2.ForeColor = System.Drawing.Color.White;
             this.guna2TileButton2.Image = global::X_Plore.Properties.Resources.chatic;
             this.guna2TileButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -163,6 +166,31 @@
             this.guna2TileButton2.Text = "Nhắn tin nhóm";
             this.guna2TileButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2TileButton2.TextOffset = new System.Drawing.Point(0, -5);
+            // 
+            // guna2TileButton1
+            // 
+            this.guna2TileButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TileButton1.BorderColor = System.Drawing.Color.GhostWhite;
+            this.guna2TileButton1.BorderRadius = 1;
+            this.guna2TileButton1.BorderThickness = 1;
+            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2TileButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2TileButton1.Image = global::X_Plore.Properties.Resources.home;
+            this.guna2TileButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2TileButton1.ImageOffset = new System.Drawing.Point(0, 5);
+            this.guna2TileButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2TileButton1.Location = new System.Drawing.Point(0, 70);
+            this.guna2TileButton1.Name = "guna2TileButton1";
+            this.guna2TileButton1.Size = new System.Drawing.Size(798, 58);
+            this.guna2TileButton1.TabIndex = 1;
+            this.guna2TileButton1.Text = "Trang chủ";
+            this.guna2TileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2TileButton1.TextOffset = new System.Drawing.Point(0, -5);
             // 
             // guna2PictureBox1
             // 
@@ -178,15 +206,15 @@
             // 
             // guna2CustomGradientPanel1
             // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox2);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel4);
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Black;
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2Panel1);
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Black;
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Black;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-3, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(807, 450);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(804, 450);
             this.guna2CustomGradientPanel1.TabIndex = 8;
             // 
             // guna2PictureBox2
@@ -194,9 +222,9 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::X_Plore.Properties.Resources._22;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(311, 37);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(193, 70);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(378, 333);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(291, 276);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox2.TabIndex = 13;
             this.guna2PictureBox2.TabStop = false;
@@ -245,30 +273,15 @@
             this.guna2HtmlLabel3.TabIndex = 7;
             this.guna2HtmlLabel3.Text = "Mã khóa của bạn";
             // 
-            // guna2TileButton1
+            // guna2Panel1
             // 
-            this.guna2TileButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton1.BorderColor = System.Drawing.Color.GhostWhite;
-            this.guna2TileButton1.BorderRadius = 1;
-            this.guna2TileButton1.BorderThickness = 1;
-            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2TileButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton1.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2TileButton1.Image = global::X_Plore.Properties.Resources.home;
-            this.guna2TileButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2TileButton1.ImageOffset = new System.Drawing.Point(0, 5);
-            this.guna2TileButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2TileButton1.Location = new System.Drawing.Point(0, 70);
-            this.guna2TileButton1.Name = "guna2TileButton1";
-            this.guna2TileButton1.Size = new System.Drawing.Size(798, 58);
-            this.guna2TileButton1.TabIndex = 1;
-            this.guna2TileButton1.Text = "Trang chủ";
-            this.guna2TileButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2TileButton1.TextOffset = new System.Drawing.Point(0, -5);
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel1.Location = new System.Drawing.Point(140, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(664, 450);
+            this.guna2Panel1.TabIndex = 14;
             // 
             // MainMenu
             // 
@@ -282,6 +295,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -301,5 +315,6 @@
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

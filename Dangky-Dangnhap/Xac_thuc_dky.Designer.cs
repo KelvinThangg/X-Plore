@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Xac_thuc_dky));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.lbDem = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.sendBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.confirmBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.codeBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.exitBtn = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.lbDem = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.lbDem);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
@@ -51,37 +51,36 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.confirmBtn);
             this.guna2CustomGradientPanel1.Controls.Add(this.codeBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.exitBtn);
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.SlateGray;
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.SlateGray;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-8, -19);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(417, 425);
             this.guna2CustomGradientPanel1.TabIndex = 1;
             // 
+            // lbDem
+            // 
+            this.lbDem.BackColor = System.Drawing.Color.Transparent;
+            this.lbDem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDem.ForeColor = System.Drawing.Color.Chartreuse;
+            this.lbDem.Location = new System.Drawing.Point(253, 340);
+            this.lbDem.Name = "lbDem";
+            this.lbDem.Size = new System.Drawing.Size(87, 23);
+            this.lbDem.TabIndex = 10;
+            this.lbDem.Text = "Demnguoc";
+            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Shopee Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(54, 336);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(184, 30);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(193, 27);
             this.guna2HtmlLabel2.TabIndex = 9;
             this.guna2HtmlLabel2.Text = "Mã còn hiệu lực trong: ";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Shopee Display ExtBd", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(54, 144);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(313, 41);
-            this.guna2HtmlLabel1.TabIndex = 9;
-            this.guna2HtmlLabel1.Text = "Nhập mã xác thực email";
             // 
             // sendBtn
             // 
@@ -92,8 +91,8 @@
             this.sendBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.sendBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.sendBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.sendBtn.FillColor = System.Drawing.Color.RoyalBlue;
-            this.sendBtn.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.sendBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.sendBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.sendBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.sendBtn.ForeColor = System.Drawing.Color.White;
             this.sendBtn.Location = new System.Drawing.Point(225, 273);
@@ -101,7 +100,7 @@
             this.sendBtn.Size = new System.Drawing.Size(140, 45);
             this.sendBtn.TabIndex = 8;
             this.sendBtn.Text = "Gửi lại";
-            this.sendBtn.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+           
             // 
             // confirmBtn
             // 
@@ -112,8 +111,8 @@
             this.confirmBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.confirmBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.confirmBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.confirmBtn.FillColor = System.Drawing.Color.RoyalBlue;
-            this.confirmBtn.FillColor2 = System.Drawing.Color.DeepSkyBlue;
+            this.confirmBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.confirmBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.confirmBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.confirmBtn.ForeColor = System.Drawing.Color.White;
             this.confirmBtn.Location = new System.Drawing.Point(54, 273);
@@ -121,13 +120,13 @@
             this.confirmBtn.Size = new System.Drawing.Size(139, 45);
             this.confirmBtn.TabIndex = 8;
             this.confirmBtn.Text = "Xác nhận";
-            this.confirmBtn.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+         
             // 
             // codeBox
             // 
             this.codeBox.BackColor = System.Drawing.Color.Transparent;
-            this.codeBox.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.codeBox.BorderRadius = 20;
+            this.codeBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
+            this.codeBox.BorderRadius = 15;
             this.codeBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.codeBox.DefaultText = "";
             this.codeBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -158,29 +157,27 @@
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // exitBtn
+            // guna2ControlBox1
             // 
-            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.exitBtn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.exitBtn.Image = global::X_Plore.Properties.Resources.extttt;
-            this.exitBtn.ImageOffset = new System.Drawing.Point(0, 0);
-            this.exitBtn.ImageRotate = 0F;
-            this.exitBtn.ImageSize = new System.Drawing.Size(40, 40);
-            this.exitBtn.Location = new System.Drawing.Point(356, 12);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(49, 43);
-            this.exitBtn.TabIndex = 2;
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(362, 31);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
+            this.guna2ControlBox1.TabIndex = 11;
             // 
-            // lbDem
+            // guna2HtmlLabel1
             // 
-            this.lbDem.BackColor = System.Drawing.Color.Transparent;
-            this.lbDem.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDem.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lbDem.Location = new System.Drawing.Point(245, 341);
-            this.lbDem.Name = "lbDem";
-            this.lbDem.Size = new System.Drawing.Size(83, 25);
-            this.lbDem.TabIndex = 11;
-            this.lbDem.Text = "Demnguoc";
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(54, 144);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(312, 39);
+            this.guna2HtmlLabel1.TabIndex = 9;
+            this.guna2HtmlLabel1.Text = "Nhập mã xác thực email";
             // 
             // Xac_thuc_dky
             // 
@@ -204,10 +201,10 @@
         private Guna.UI2.WinForms.Guna2GradientButton confirmBtn;
         private Guna.UI2.WinForms.Guna2TextBox codeBox;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2ImageRadioButton exitBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2GradientButton sendBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbDem;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

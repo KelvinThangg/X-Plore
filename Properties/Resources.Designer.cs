@@ -273,6 +273,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mesa_de_trabajo_1_copia_4x {
+            get {
+                object obj = ResourceManager.GetObject("Mesa de trabajo 1 copia@4x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap password_12795700 {
             get {
                 object obj = ResourceManager.GetObject("password_12795700", resourceCulture);
@@ -306,6 +316,16 @@ namespace X_Plore.Properties {
         internal static System.Drawing.Bitmap picture_7126547 {
             get {
                 object obj = ResourceManager.GetObject("picture_7126547", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redo_12108539 {
+            get {
+                object obj = ResourceManager.GetObject("redo_12108539", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
