@@ -27,7 +27,7 @@ namespace Client
         private HashSet<string> displayedMessages = new HashSet<string>(); // HashSet để lưu trữ các tin nhắn đã hiển thị
         private List<Form> openForms = new List<Form>();
         private bool isSavingMessage = false;
-
+        private bool isSendingFile = false;
         public AdminChat(string roomName, string roomCreator, string adminName)
         {
             InitializeComponent();
@@ -39,15 +39,7 @@ namespace Client
             ListenForMessages();
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
         }
-        public class MessageNode
-        {
-            public string Message { get; set; }
-            public string Sender { get; set; }
-            public DateTime Timestamp { get; set; }
-            public bool IsFile { get; set; } = false;
-            public string FileName { get; set; }
-        }
-
+        
         private void InitializeFirebase()
         {
             firebaseClient = new FirebaseClient(FirebaseURL);
@@ -88,6 +80,9 @@ namespace Client
         {
             try
             {
+                listBox1.Items.Clear();
+                displayedMessages.Clear();
+
                 var chatHistory = await firebaseClient.Child("RoomNames")
                                                       .Child(roomName)
                                                       .Child("messages")
@@ -129,52 +124,45 @@ namespace Client
 
         private void DisplayMessage(MessageNode message)
         {
-            string displayText;
+            string uniqueMessageIdentifier = message.IsFile ? $"{message.Sender}-{message.FileName}-{message.Timestamp}" : $"{message.Sender}-{message.Message}-{message.Timestamp}";
 
-            if (message.IsFile)
+            if (!displayedMessages.Contains(uniqueMessageIdentifier))
             {
-                displayText = $"{message.Sender} đã gửi tệp: {message.FileName}";
-            }
-            else
-            {
-                displayText = $"{message.Sender}: {message.Message}";
-            }
-
-            if (!listBox1.Items.Cast<string>().Any(item => item.Equals(displayText)))
-            {
-                listBox1.Items.Add(displayText);
-            }
-
-            if (message.IsFile)
-            {
-                string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
-                listBox1.Items.Add(fileMessage);
-
-                // Lưu tệp vào thư mục tạm thời và mở nó khi người dùng nhấp vào tin nhắn
-                string tempFilePath = Path.Combine(Path.GetTempPath(), message.FileName);
-                File.WriteAllBytes(tempFilePath, Convert.FromBase64String(message.Message));
-
-                // Thêm hành động nhấp chuột để mở tệp
-                listBox1.SelectedIndexChanged += (s, e) =>
+                if (message.IsFile)
                 {
-                    if (listBox1.SelectedItem != null && listBox1.SelectedItem.ToString() == fileMessage)
-                    {
-                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                        {
-                            FileName = tempFilePath,
-                            UseShellExecute = true
-                        });
-                    }
-                };
-            }
-            else
-            {
-                string newMessage = $"{message.Sender}: {message.Message}";
-                listBox1.Items.Add(newMessage);
-            }
+                    string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
+                    listBox1.Items.Add(fileMessage);
+                    displayedMessages.Add(uniqueMessageIdentifier);
 
-            // Thêm tin nhắn vào HashSet
-            displayedMessages.Add(message.Message);
+                    // Lưu tệp vào thư mục tạm thời khi tin nhắn được hiển thị lần đầu
+                    string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
+                    string fileExtension = Path.GetExtension(message.FileName).ToLower();
+                    string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
+                        Path.Combine(projectDir, "Client", "Data", "IMG") :
+                        Path.Combine(projectDir, "Client", "Data", "File");
+
+                    string filePath = Path.Combine(targetDir, message.FileName);
+                    File.WriteAllBytes(filePath, Convert.FromBase64String(message.Message));
+
+                    listBox1.MouseClick += (s, e) =>
+                    {
+                        if (listBox1.SelectedItem != null && listBox1.SelectedItem.ToString() == fileMessage)
+                        {
+                            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                            {
+                                FileName = filePath,
+                                UseShellExecute = true
+                            });
+                        }
+                    };
+                }
+                else
+                {
+                    string newMessage = $"{message.Sender}: {message.Message}";
+                    listBox1.Items.Add(newMessage);
+                    displayedMessages.Add(uniqueMessageIdentifier);
+                }
+            }
         }
 
 
@@ -271,35 +259,35 @@ namespace Client
         private void ListenForMessages()
         {
             firebaseClient
-                .Child("RoomNames")
-                .Child(roomName)
-                .Child("messages")
-                .AsObservable<MessageNode>()
-                .Subscribe(d =>
-                {
-                    if (d.Object != null)
-                    {
-                        if (this.IsHandleCreated) // Kiểm tra xem handle của control đã được tạo chưa
-                        {
-                            this.Invoke((MethodInvoker)delegate
-                            {
-                                DisplayMessage(d.Object);
-                                UpdateSenderNames(d.Object.Sender);
-                            });
-                        }
-                    }
-                });
+                 .Child("RoomNames")
+                 .Child(roomName)
+                 .Child("messages")
+                 .AsObservable<MessageNode>()
+                 .Subscribe(d =>
+                 {
+                     if (d.Object != null)
+                     {
+                         if (this.IsHandleCreated) // Kiểm tra xem handle của control đã được tạo chưa
+                         {
+                             this.Invoke((MethodInvoker)delegate
+                             {
+                                 string uniqueMessageIdentifier = d.Object.IsFile ? $"{d.Object.Sender}-{d.Object.FileName}-{d.Object.Timestamp}" : $"{d.Object.Sender}-{d.Object.Message}-{d.Object.Timestamp}";
+
+                                 if (!displayedMessages.Contains(uniqueMessageIdentifier))
+                                 {
+                                     DisplayMessage(d.Object);
+                                 }
+                             });
+                         }
+                     }
+                 });
         }
 
         private void AdminChat_Load_1(object sender, EventArgs e)
         {
             ListenForMessages();
         }
-        private void AddForm(Form form)
-        {
-            openForms.Add(form);
-        }
-
+        
         private void RemoveForm(Form form)
         {
             openForms.Remove(form);
@@ -351,7 +339,13 @@ namespace Client
 
         private async void file_Click(object sender, EventArgs e)
         {
-            
+
+            if (isSendingFile)
+            {
+                // Nếu đang trong quá trình gửi file, không cho phép gửi tiếp
+                return;
+            }
+
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -361,6 +355,8 @@ namespace Client
 
                     try
                     {
+                        isSendingFile = true;
+
                         // Đọc tệp vào một mảng byte
                         byte[] fileBytes = File.ReadAllBytes(filePath);
 
@@ -371,13 +367,12 @@ namespace Client
                         var messageNode = new MessageNode
                         {
                             Message = base64File,
-                            FileName = fileName,
-                            IsFile = true,
                             Sender = adminName,
-                            Timestamp = DateTime.Now
+                            Timestamp = DateTime.Now,
+                            IsFile = true,
+                            FileName = fileName
                         };
 
-                        // Chú ý: sử dụng await ở đây
                         await firebaseClient.Child("RoomNames")
                                             .Child(roomName)
                                             .Child("messages")
@@ -388,6 +383,10 @@ namespace Client
                     catch (Exception ex)
                     {
                         MessageBox.Show("Lỗi gửi tệp: " + ex.Message);
+                    }
+                    finally
+                    {
+                        isSendingFile = false;
                     }
                 }
             }

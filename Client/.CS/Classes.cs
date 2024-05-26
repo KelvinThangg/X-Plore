@@ -11,6 +11,9 @@ namespace Client
         public string Message { get; set; }
         public string Sender { get; set; }
         public DateTime Timestamp { get; set; }
+        public bool IsFile { get; set; } = false;
+        public string FileName { get; set; }
+        public bool IsDisplayed { get; set; }
     }
 
     public class Room

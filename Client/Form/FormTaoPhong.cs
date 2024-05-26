@@ -19,7 +19,7 @@ namespace Client
         private static string appId = Guid.NewGuid().ToString();
         private string currentUserName;
         private List<string> adminRooms;
-        private bool isDeletingRoom = false; // Biến để theo dõi trạng thái xóa phòng
+       
         public FormTaoPhong(string userName)
         {
             InitializeComponent();
@@ -183,12 +183,22 @@ namespace Client
         {
             string tenPhong = textBox2.Text;
             string matKhau = textBox1.Text;
+
             try
             {
+                // Check if the room already exists
+                var existingRoom = await firebaseClient.Child("rooms").Child(tenPhong).OnceSingleAsync<Room>();
+                if (existingRoom != null)
+                {
+                    MessageBox.Show("Phòng đã tồn tại. Vui lòng chọn tên phòng khác.");
+                    return;
+                }
+
+                // If the room does not exist, proceed to create the new room
                 var room = new Room { Name = tenPhong, Password = matKhau, IsAdmin = true, AppId = appId };
                 await firebaseClient.Child("rooms").Child(tenPhong).PutAsync(room);
 
-                // Liên kết phòng với người dùng
+                // Link the room with the user
                 var user = await firebaseClient.Child("users").Child(currentUserName).OnceSingleAsync<Users>();
                 if (user != null)
                 {
@@ -205,10 +215,10 @@ namespace Client
                     await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
                 }
 
-                // Cập nhật danh sách adminRooms
+                // Update the adminRooms list
                 adminRooms.Add(tenPhong);
 
-                // Load lại danh sách phòng admin
+                // Reload the admin room list
                 LoadRooms();
             }
             catch (Exception ex)
@@ -220,48 +230,48 @@ namespace Client
         {
             string tenPhong = textBox2.Text;
             string matKhauNhap = textBox1.Text;
-        try
-        {
-            var room = await firebaseClient.Child("rooms").Child(tenPhong).OnceSingleAsync<Room>();
-            if (room != null)
+            try
             {
-                if (room.Password == matKhauNhap && adminRooms.Contains(tenPhong)) // Kiểm tra quyền admin
+                var room = await firebaseClient.Child("rooms").Child(tenPhong).OnceSingleAsync<Room>();
+                if (room != null)
                 {
-                    // Xóa tất cả các tin nhắn trong phòng
-                    await firebaseClient.Child("RoomNames").Child(tenPhong).Child("messages").DeleteAsync();///
-
-                    // Xóa phòng
-                    await firebaseClient.Child("rooms").Child(tenPhong).DeleteAsync();
-
-                    // Xóa phòng khỏi danh sách của người dùng
-                    var user = await firebaseClient.Child("users").Child(currentUserName).OnceSingleAsync<Users>();
-                    if (user != null && user.RoomNames != null)
+                    if (room.Password == matKhauNhap && adminRooms.Contains(tenPhong)) // Kiểm tra quyền admin
                     {
-                        user.RoomNames.Remove(tenPhong);
-                        await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
+                        // Xóa tất cả các tin nhắn trong phòng
+                        await firebaseClient.Child("RoomNames").Child(tenPhong).Child("messages").DeleteAsync();///
+
+                        // Xóa phòng
+                        await firebaseClient.Child("rooms").Child(tenPhong).DeleteAsync();
+
+                        // Xóa phòng khỏi danh sách của người dùng
+                        var user = await firebaseClient.Child("users").Child(currentUserName).OnceSingleAsync<Users>();
+                        if (user != null && user.RoomNames != null)
+                        {
+                            user.RoomNames.Remove(tenPhong);
+                            await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
+                        }
+
+                        // Xóa phòng khỏi danh sách adminRooms
+                        adminRooms.Remove(tenPhong);
+
+                        LoadRooms();  // Tải lại danh sách phòng sau khi xóa
+                        MessageBox.Show("Phòng đã xóa: " + tenPhong);
                     }
-
-                // Xóa phòng khỏi danh sách adminRooms
-                adminRooms.Remove(tenPhong);
-
-                LoadRooms();  // Tải lại danh sách phòng sau khi xóa
-                MessageBox.Show("Phòng đã xóa: " + tenPhong);
+                    else
+                    {
+                        MessageBox.Show("Không có quyền xóa phòng.");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Không có quyền xóa phòng.");
+                    MessageBox.Show("Phòng không tồn tại.");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Phòng không tồn tại.");
+                MessageBox.Show("Lỗi khi xóa phòng: " + ex.Message);
             }
         }
-        catch (Exception ex)
-        {
-            MessageBox.Show("Lỗi khi xóa phòng: " + ex.Message);
-        }
-    }
 
         private void OpenRoomForm(string roomName, bool isAdmin)
         {

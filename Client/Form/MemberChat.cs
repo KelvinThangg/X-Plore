@@ -22,6 +22,7 @@ namespace Client
         private bool isSendingMessage = false;
         private bool isSavingMessage = false;
         private string encryptionKey = null;
+        private HashSet<string> displayedMessages = new HashSet<string>();
 
         public MemberChat(string roomName, string memberName)
         {
@@ -75,15 +76,7 @@ namespace Client
             }
         }
 
-        public class MessageNode
-        {
-            public string Message { get; set; }
-            public string Sender { get; set; }
-            public DateTime Timestamp { get; set; }
-            public bool IsFile { get; set; } = false;
-            public string FileName { get; set; }
-            public bool IsDisplayed { get; set; }
-        }
+        
 
         private async Task SaveMessageToFirebase(string message)
         {
@@ -119,44 +112,49 @@ namespace Client
 
         private void DisplayMessage(MessageNode message)
         {
+            // Sử dụng encryptionKey nếu có
             string decryptedMessage = encryptionKey == null ? message.Message : Security.Decrypt(message.Message, encryptionKey);
 
-            if (message.IsFile)
+            // Tạo mã nhận diện duy nhất cho tin nhắn
+            string uniqueMessageIdentifier = message.IsFile ? $"{message.Sender}-{message.FileName}-{message.Timestamp}" : $"{message.Sender}-{decryptedMessage}-{message.Timestamp}";
+
+            // Kiểm tra xem tin nhắn đã được hiển thị hay chưa
+            if (!displayedMessages.Contains(uniqueMessageIdentifier))
             {
-                if (!message.IsDisplayed)
+                if (message.IsFile)
                 {
                     string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
                     listBox1.Items.Add(fileMessage);
+                    displayedMessages.Add(uniqueMessageIdentifier);
 
+                    // Lưu tệp vào thư mục tạm thời khi tin nhắn được hiển thị lần đầu
                     string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
                     string fileExtension = Path.GetExtension(message.FileName).ToLower();
-                    string targetDir = Path.Combine(projectDir, "Client", "Data", "File");
-
-                    if (new[] { ".jpg", ".jpeg", ".png", ".gif" }.Contains(fileExtension))
-                    {
-                        targetDir = Path.Combine(projectDir, "Client", "Data", "IMG");
-                    }
-                    else if (new[] { ".mp3", ".wav" }.Contains(fileExtension))
-                    {
-                        targetDir = Path.Combine(projectDir, "Client", "Data", "Sound");
-                    }
-                    else if (new[] { ".mp4", ".avi", ".mov" }.Contains(fileExtension))
-                    {
-                        targetDir = Path.Combine(projectDir, "Client", "Data", "Video");
-                    }
+                    string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
+                        Path.Combine(projectDir, "Client", "Data", "IMG") :
+                        Path.Combine(projectDir, "Client", "Data", "File");
 
                     string filePath = Path.Combine(targetDir, message.FileName);
-                    byte[] fileData = Convert.FromBase64String(decryptedMessage);
-                    File.WriteAllBytes(filePath, fileData);
+                    File.WriteAllBytes(filePath, Convert.FromBase64String(decryptedMessage));
 
-                    // Đánh dấu tin nhắn đã được hiển thị
-                    message.IsDisplayed = true;
+                    listBox1.MouseClick += (s, e) =>
+                    {
+                        if (listBox1.SelectedItem != null && listBox1.SelectedItem.ToString() == fileMessage)
+                        {
+                            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                            {
+                                FileName = filePath,
+                                UseShellExecute = true
+                            });
+                        }
+                    };
                 }
-            }
-            else
-            {
-                string newMessage = $"{message.Sender}: {decryptedMessage}";
-                listBox1.Items.Add(newMessage);
+                else
+                {
+                    string newMessage = $"{message.Sender}: {decryptedMessage}";
+                    listBox1.Items.Add(newMessage);
+                    displayedMessages.Add(uniqueMessageIdentifier);
+                }
             }
         }
 
@@ -165,59 +163,62 @@ namespace Client
             string message = textBox1.Text.Trim();
             if (isSavingMessage)
             {
+                // Đang xử lý tin nhắn trước đó, không cho phép gửi tin nhắn mới
                 return;
             }
 
             if (!string.IsNullOrWhiteSpace(message))
             {
+                // Định nghĩa từ điển để ánh xạ biểu tượng cảm xúc thành emoji
                 Dictionary<string, string> emoticonToEmoji = new Dictionary<string, string>
-                {
-                    { ":)", "😊" },
-                    { ":D", "😃" },
-                    { ":(", "😢" },
-                    { ";)", "😉" },
-                    { ":P", "😛" },
-                    { ":O", "😮" },
-                    { "XD", "😂" },
-                    { ":'(", "😭" },
-                    { ":|", "😐" },
-                    { ":*", "😘" },
-                    { "<3", "❤️" },
-                    { ":@", "😡" },
-                    { "B)", "😎" },
-                    { "O:)", "😇" },
-                    { ":S", "😖" },
-                    { "8)", "😬" },
-                    { "D:", "😦" },
-                    { ":$", "😳" },
-                    { ":/", "😕" },
-                    { ">:(", "😠" },
-                    { "3:)", "😈" },
-                    { "o.O", "😲" },
-                    { ":-X", "😷" },
-                    { ":-#", "🤐" },
-                    { ">:O", "😱" },
-                    { ":-)", "😊" },
-                    { ":-D", "😃" },
-                    { ":-(", "😢" },
-                    { ";-)", "😉" },
-                    { ":-P", "😛" },
-                    { ":-o", "😮" },
-                    { "X-D", "😂" },
-                    { ":'-(", "😭" },
-                    { ":-|", "😐" },
-                    { ":-*", "😘" },
-                    { ":-@", "😡" },
-                    { "B-)", "😎" },
-                    { "O:-)", "😇" },
-                    { ":-S", "😖" },
-                    { "8-)", "😬" },
-                    { ":-$", "😳" },
-                    { ":-/", "😕" },
-                    { "3:-)", "😈" },
-                    { "O.o", "😲" }
-                };
+        {
+            { ":)", "😊" },
+            { ":D", "😃" },
+            { ":(", "😢" },
+            { ";)", "😉" },
+            { ":P", "😛" },
+            { ":O", "😮" },
+            { "XD", "😂" },
+            { ":'(", "😭" },
+            { ":|", "😐" },
+            { ":*", "😘" },
+            { "<3", "❤️" },
+            { ":@", "😡" },
+            { "B)", "😎" },
+            { "O:)", "😇" },
+            { ":S", "😖" },
+            { "8)", "😬" },
+            { "D:", "😦" },
+            { ":$", "😳" },
+            { ":/", "😕" },
+            { ">:(", "😠" },
+            { "3:)", "😈" },
+            { "o.O", "😲" },
+            { ":-X", "😷" },
+            { ":-#", "🤐" },
+            { ">:O", "😱" },
+            { ":-)", "😊" },
+            { ":-D", "😃" },
+            { ":-(", "😢" },
+            { ";-)", "😉" },
+            { ":-P", "😛" },
+            { ":-o", "😮" },
+            { "X-D", "😂" },
+            { ":'-(", "😭" },
+            { ":-|", "😐" },
+            { ":-*", "😘" },
+            { ":-@", "😡" },
+            { "B-)", "😎" },
+            { "O:-)", "😇" },
+            { ":-S", "😖" },
+            { "8-)", "😬" },
+            { ":-$", "😳" },
+            { ":-/", "😕" },
+            { "3:-)", "😈" },
+            { "O.o", "😲" }
+        };
 
+                // Thay thế các ký tự biểu tượng cảm xúc bằng emoji
                 foreach (var pair in emoticonToEmoji)
                 {
                     message = message.Replace(pair.Key, pair.Value);
@@ -225,9 +226,13 @@ namespace Client
 
                 try
                 {
-                    isSavingMessage = true;
+                    isSavingMessage = true; // Bắt đầu quá trình lưu tin nhắn
+
                     await SaveMessageToFirebase(message);
-                    DisplayMessage(new MessageNode { Message = encryptionKey == null ? message : Security.Encrypt(message, encryptionKey), Sender = memberName, Timestamp = DateTime.Now });
+
+                    // Sử dụng encryptionKey nếu có
+                    string displayMessage = encryptionKey == null ? message : Security.Encrypt(message, encryptionKey);
+                    DisplayMessage(new MessageNode { Message = displayMessage, Sender = memberName, Timestamp = DateTime.Now });
                     textBox1.Text = "";
                 }
                 catch (Exception ex)
@@ -236,7 +241,7 @@ namespace Client
                 }
                 finally
                 {
-                    isSavingMessage = false;
+                    isSavingMessage = false; // Kết thúc quá trình lưu tin nhắn
                 }
             }
             else
@@ -254,20 +259,20 @@ namespace Client
                 .AsObservable<MessageNode>()
                 .Subscribe(d =>
                 {
-                    if (d.Object != null)
-                    {
-                        this.Invoke((MethodInvoker)delegate
-                        {
-                            DisplayMessage(d.Object);
-                        });
-                    }
+                if (d.Object != null)
+                {
+                    this.Invoke((MethodInvoker)delegate
+                {
+                   DisplayMessage(d.Object);
                 });
+                }
+       });
         }
 
         private void MemberChat_Load(object sender, EventArgs e)
         {
-            ListenForMessages();
-            LoadChatHistory();
+            ListenForMessages(); // Sau đó lắng nghe các tin nhắn mới
+            LoadChatHistory(); // Tải lịch sử trò chuyện trước
         }
 
         private async void file_Click(object sender, EventArgs e)
