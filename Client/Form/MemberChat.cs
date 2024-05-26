@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Media;
+using Client.CS; // Ensure this namespace matches the location of your Security class
 
 namespace Client
 {
@@ -20,6 +21,7 @@ namespace Client
         private string memberName;
         private bool isSendingMessage = false;
         private bool isSavingMessage = false;
+        private string encryptionKey = null;
 
         public MemberChat(string roomName, string memberName)
         {
@@ -27,9 +29,7 @@ namespace Client
             this.roomName = roomName;
             this.memberName = memberName;
             InitializeFirebase();
-            LoadChatHistory();
             CreateDataDirectories();
-
         }
 
         private void InitializeFirebase()
@@ -62,6 +62,8 @@ namespace Client
                                                       .Child("messages")
                                                       .OnceAsync<MessageNode>();
 
+                listBox1.Items.Clear(); // Clear existing messages
+
                 foreach (var messageNode in chatHistory)
                 {
                     DisplayMessage(messageNode.Object);
@@ -80,9 +82,7 @@ namespace Client
             public DateTime Timestamp { get; set; }
             public bool IsFile { get; set; } = false;
             public string FileName { get; set; }
-
             public bool IsDisplayed { get; set; }
- 
         }
 
         private async Task SaveMessageToFirebase(string message)
@@ -94,7 +94,7 @@ namespace Client
                 {
                     var messageNode = new MessageNode
                     {
-                        Message = message,
+                        Message = encryptionKey == null ? message : Security.Encrypt(message, encryptionKey),
                         Sender = memberName,
                         Timestamp = DateTime.Now
                     };
@@ -117,9 +117,10 @@ namespace Client
             }
         }
 
-
         private void DisplayMessage(MessageNode message)
         {
+            string decryptedMessage = encryptionKey == null ? message.Message : Security.Decrypt(message.Message, encryptionKey);
+
             if (message.IsFile)
             {
                 if (!message.IsDisplayed)
@@ -145,8 +146,7 @@ namespace Client
                     }
 
                     string filePath = Path.Combine(targetDir, message.FileName);
-
-                    byte[] fileData = Convert.FromBase64String(message.Message);
+                    byte[] fileData = Convert.FromBase64String(decryptedMessage);
                     File.WriteAllBytes(filePath, fileData);
 
                     // Đánh dấu tin nhắn đã được hiển thị
@@ -155,14 +155,10 @@ namespace Client
             }
             else
             {
-                string newMessage = $"{message.Sender}: {message.Message}";
+                string newMessage = $"{message.Sender}: {decryptedMessage}";
                 listBox1.Items.Add(newMessage);
             }
         }
-
-       
-
-
 
         private async void sendTextButton_Click(object sender, EventArgs e)
         {
@@ -231,7 +227,7 @@ namespace Client
                 {
                     isSavingMessage = true;
                     await SaveMessageToFirebase(message);
-                    DisplayMessage(new MessageNode { Message = message, Sender = memberName, Timestamp = DateTime.Now });
+                    DisplayMessage(new MessageNode { Message = encryptionKey == null ? message : Security.Encrypt(message, encryptionKey), Sender = memberName, Timestamp = DateTime.Now });
                     textBox1.Text = "";
                 }
                 catch (Exception ex)
@@ -271,6 +267,7 @@ namespace Client
         private void MemberChat_Load(object sender, EventArgs e)
         {
             ListenForMessages();
+            LoadChatHistory();
         }
 
         private async void file_Click(object sender, EventArgs e)
@@ -289,7 +286,7 @@ namespace Client
 
                         var messageNode = new MessageNode
                         {
-                            Message = base64File,
+                            Message = encryptionKey == null ? base64File : Security.Encrypt(base64File, encryptionKey),
                             Sender = memberName,
                             Timestamp = DateTime.Now,
                             IsFile = true,
@@ -308,6 +305,20 @@ namespace Client
                         MessageBox.Show("Lỗi gửi tệp: " + ex.Message);
                     }
                 }
+            }
+        }
+
+        private void keyInput_Click(object sender, EventArgs e)
+        {
+            encryptionKey = keytextBox.Text.Trim();
+            if (string.IsNullOrEmpty(encryptionKey))
+            {
+                MessageBox.Show("Vui lòng nhập khóa.");
+            }
+            else
+            {
+                MessageBox.Show("Khóa đã được cập nhật.");
+                LoadChatHistory();
             }
         }
     }

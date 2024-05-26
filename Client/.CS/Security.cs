@@ -1,42 +1,78 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Client.CS
 {
-    internal class Security
+    public static class Security
     {
-        public static string Encrypt(string text)
+        // Encryption logic here
+        public static string Encrypt(string input, string key)
         {
-            var b = Encoding.UTF8.GetBytes(text);
-            var encrypted = getAes().CreateEncryptor().TransformFinalBlock(b, 0, b.Length);
-            return Convert.ToBase64String(encrypted);
+            byte[] keyBytes = GetSHA256Hash(key);
+            byte[] ivBytes = new byte[16]; // Initialization vector
+
+            using (var aes = Aes.Create())
+            {
+                aes.Key = keyBytes;
+                aes.IV = ivBytes;
+
+                using (var memoryStream = new MemoryStream())
+                {
+                    using (var cryptoStream = new CryptoStream(memoryStream, aes.CreateEncryptor(), CryptoStreamMode.Write))
+                    {
+                        byte[] dataBytes = Encoding.UTF8.GetBytes(input);
+                        cryptoStream.Write(dataBytes, 0, dataBytes.Length);
+                        cryptoStream.FlushFinalBlock();
+                    }
+
+                    return Convert.ToBase64String(memoryStream.ToArray());
+                }
+            }
         }
 
-        public static string Decrypt(string encrypted)
+        // Decryption logic here
+        public static string Decrypt(string cipherText, string key)
         {
-            var b = Convert.FromBase64String(encrypted);
-            var decrypted = getAes().CreateDecryptor().TransformFinalBlock(b, 0, b.Length);
-            return Encoding.UTF8.GetString(decrypted);
+            byte[] keyBytes = GetSHA256Hash(key);
+            byte[] ivBytes = new byte[16]; // Initialization vector
+
+            try
+            {
+                byte[] cipherBytes = Convert.FromBase64String(cipherText);
+
+                using (var aes = Aes.Create())
+                {
+                    aes.Key = keyBytes;
+                    aes.IV = ivBytes;
+
+                    using (var memoryStream = new MemoryStream(cipherBytes))
+                    {
+                        using (var cryptoStream = new CryptoStream(memoryStream, aes.CreateDecryptor(), CryptoStreamMode.Read))
+                        {
+                            using (var streamReader = new StreamReader(cryptoStream))
+                            {
+                                return streamReader.ReadToEnd();
+                            }
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                throw new Exception("Invalid cipher text.");
+            }
         }
 
-        static Aes getAes()
+        // SHA256 hash for key
+        private static byte[] GetSHA256Hash(string input)
         {
-            var keyBytes = new byte[16];
-            var skeyBytes = Encoding.UTF8.GetBytes("12345678901234567890123456789012");
-            Array.Copy(skeyBytes, keyBytes, Math.Min(keyBytes.Length, skeyBytes.Length));
-
-            Aes aes = Aes.Create();
-            aes.Mode = CipherMode.CBC;
-            aes.Padding = PaddingMode.PKCS7;
-            aes.KeySize = 128;
-            aes.Key = keyBytes;
-            aes.IV = keyBytes;
-
-            return aes;
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(input);
+                return sha256.ComputeHash(bytes);
+            }
         }
     }
 }

@@ -33,6 +33,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.file = new System.Windows.Forms.Button();
+            this.keyInput = new System.Windows.Forms.Button();
+            this.keytextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -65,7 +67,6 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "Disconnect";
             this.button1.UseVisualStyleBackColor = true;
-       
             // 
             // listBox1
             // 
@@ -88,11 +89,30 @@
             this.file.UseVisualStyleBackColor = true;
             this.file.Click += new System.EventHandler(this.file_Click);
             // 
+            // keyInput
+            // 
+            this.keyInput.Location = new System.Drawing.Point(385, 5);
+            this.keyInput.Name = "keyInput";
+            this.keyInput.Size = new System.Drawing.Size(116, 28);
+            this.keyInput.TabIndex = 26;
+            this.keyInput.Text = "Key";
+            this.keyInput.UseVisualStyleBackColor = true;
+            this.keyInput.Click += new System.EventHandler(this.keyInput_Click);
+            // 
+            // keytextBox
+            // 
+            this.keytextBox.Location = new System.Drawing.Point(245, 10);
+            this.keytextBox.Name = "keytextBox";
+            this.keytextBox.Size = new System.Drawing.Size(121, 22);
+            this.keytextBox.TabIndex = 27;
+            // 
             // MemberChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 380);
+            this.Controls.Add(this.keytextBox);
+            this.Controls.Add(this.keyInput);
             this.Controls.Add(this.file);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
@@ -113,5 +133,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button file;
+        private System.Windows.Forms.Button keyInput;
+        private System.Windows.Forms.TextBox keytextBox;
     }
 }
