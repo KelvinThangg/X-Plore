@@ -54,7 +54,7 @@ namespace Client
             }
         }
 
-        private async void LoadChatHistory()
+        private async Task LoadChatHistory()
         {
             try
             {
@@ -313,7 +313,7 @@ namespace Client
             }
         }
 
-        private void keyInput_Click(object sender, EventArgs e)
+        private async void keyInput_Click(object sender, EventArgs e)
         {
             encryptionKey = keytextBox.Text.Trim();
             if (string.IsNullOrEmpty(encryptionKey))
@@ -323,7 +323,7 @@ namespace Client
             else
             {
                 MessageBox.Show("Khóa đã được cập nhật.");
-                LoadChatHistory();
+                await LoadChatHistory();
             }
         }
     }
