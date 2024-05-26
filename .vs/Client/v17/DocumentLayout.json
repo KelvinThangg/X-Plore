@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\form\\memberchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|c:\\users\\lenovo\\desktop\\code\\course\\temp\\v2\\x-plore-chatv2\\client\\client\\form\\memberchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\form\\memberchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\form\\memberchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|c:\\users\\lenovo\\desktop\\code\\course\\temp\\v2\\x-plore-chatv2\\client\\client\\.cs\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\.cs\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\.cs\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -122,7 +122,7 @@
               "RelativeDocumentMoniker": "Client\\Form\\MemberChat.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\MemberChat.cs",
               "RelativeToolTip": "Client\\Form\\MemberChat.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwAoAAABAAAAA",
+              "ViewState": "AQIAADUBAAAAAAAAAAAAwDYBAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T13:59:49.876Z",
               "EditorCaption": ""
@@ -181,7 +181,7 @@
               "RelativeDocumentMoniker": "Client\\.CS\\Security.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\.CS\\Security.cs",
               "RelativeToolTip": "Client\\.CS\\Security.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAAAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwDYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T13:59:49.885Z",
               "EditorCaption": ""
