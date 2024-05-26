@@ -419,6 +419,11 @@ namespace Client
                 }
             }
         }
+
+        private void keyInput_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

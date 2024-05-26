@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.sendTextButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.file = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.delChat = new System.Windows.Forms.Button();
+            this.keytextBox = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.keyInput = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,11 +105,36 @@
             this.delChat.UseVisualStyleBackColor = true;
             this.delChat.Click += new System.EventHandler(this.delChat_Click);
             // 
+            // keytextBox
+            // 
+            this.keytextBox.Location = new System.Drawing.Point(523, 70);
+            this.keytextBox.Name = "keytextBox";
+            this.keytextBox.Size = new System.Drawing.Size(100, 22);
+            this.keytextBox.TabIndex = 21;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // keyInput
+            // 
+            this.keyInput.Location = new System.Drawing.Point(523, 116);
+            this.keyInput.Name = "keyInput";
+            this.keyInput.Size = new System.Drawing.Size(100, 30);
+            this.keyInput.TabIndex = 23;
+            this.keyInput.Text = "keyInput";
+            this.keyInput.UseVisualStyleBackColor = true;
+            this.keyInput.Click += new System.EventHandler(this.keyInput_Click);
+            // 
             // AdminChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(965, 455);
+            this.Controls.Add(this.keyInput);
+            this.Controls.Add(this.keytextBox);
             this.Controls.Add(this.delChat);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.file);
@@ -129,6 +158,9 @@
         private System.Windows.Forms.ListBox listBox1;
         public System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button delChat;
+        private System.Windows.Forms.TextBox keytextBox;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button keyInput;
     }
 }
 

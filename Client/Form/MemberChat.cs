@@ -1,13 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Firebase.Database;
 using Firebase.Database.Query;
-using System.IO;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Media;
 using Client.CS; // Ensure this namespace matches the location of your Security class
 
 namespace Client
@@ -264,10 +262,10 @@ namespace Client
                 });
         }
 
-        private void MemberChat_Load(object sender, EventArgs e)
+        private async void MemberChat_Load(object sender, EventArgs e)
         {
             ListenForMessages();
-            LoadChatHistory();
+            await LoadChatHistory();
         }
 
         private async void file_Click(object sender, EventArgs e)

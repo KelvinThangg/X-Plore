@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\form\\adminchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\form\\adminchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|c:\\users\\lenovo\\desktop\\code\\course\\temp\\v2\\x-plore-chatv2\\client\\client\\form\\memberchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\form\\memberchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\form\\adminchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\form\\adminchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\form\\memberchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -25,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\form\\formtaophong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\form\\formtaophong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\form\\adminchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\form\\adminchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\form\\adminchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|solutionrelative:client\\form\\adminchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E05276F-6C7A-4204-B94B-D33BD5D7D23A}|Client\\Client.csproj|C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\client\\form\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -69,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -104,39 +104,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "AdminChat.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\AdminChat.cs",
               "RelativeDocumentMoniker": "Client\\Form\\AdminChat.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\AdminChat.cs",
               "RelativeToolTip": "Client\\Form\\AdminChat.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKgBAAAAAAAA",
+              "ViewState": "AQIAADYBAAAAAAAAAAAqwKsBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:59:49.861Z"
+              "WhenOpened": "2024-05-17T13:59:49.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MemberChat.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\MemberChat.cs",
               "RelativeDocumentMoniker": "Client\\Form\\MemberChat.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\MemberChat.cs",
               "RelativeToolTip": "Client\\Form\\MemberChat.cs",
-              "ViewState": "AQIAADUBAAAAAAAAAAAAwDYBAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T13:59:49.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "AdminChat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\AdminChat.cs",
               "RelativeDocumentMoniker": "Client\\Form\\AdminChat.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\AdminChat.cs [Design]",
               "RelativeToolTip": "Client\\Form\\AdminChat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:59:49.877Z"
+              "WhenOpened": "2024-05-17T13:59:49.877Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -152,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FormTaoPhong.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\FormTaoPhong.cs",
               "RelativeDocumentMoniker": "Client\\Form\\FormTaoPhong.cs",
@@ -163,19 +165,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MemberChat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\MemberChat.cs",
               "RelativeDocumentMoniker": "Client\\Form\\MemberChat.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\MemberChat.cs [Design]",
               "RelativeToolTip": "Client\\Form\\MemberChat.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:59:49.883Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-17T13:59:49.883Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Security.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\.CS\\Security.cs",
               "RelativeDocumentMoniker": "Client\\.CS\\Security.cs",
@@ -183,12 +184,11 @@
               "RelativeToolTip": "Client\\.CS\\Security.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAgwDYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:59:49.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T13:59:49.885Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MemberChat.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\Form\\MemberChat.Designer.cs",
               "RelativeDocumentMoniker": "Client\\Form\\MemberChat.Designer.cs",
@@ -196,8 +196,7 @@
               "RelativeToolTip": "Client\\Form\\MemberChat.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:59:49.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T13:59:49.887Z"
             },
             {
               "$type": "Document",
@@ -209,7 +208,8 @@
               "RelativeToolTip": "Client\\Form\\AdminChat.Designer.cs",
               "ViewState": "AQIAAEMAAAAAAAAAAAAgwE4AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:59:49.889Z"
+              "WhenOpened": "2024-05-17T13:59:49.889Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -248,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\CODE\\Course\\Temp\\v2\\X-Plore-chatv2\\Client\\Client\\.CS\\Program.cs",
               "RelativeDocumentMoniker": "Client\\.CS\\Program.cs",
