@@ -284,5 +284,11 @@
   <ItemGroup>
     <None Include="Resources\Mesa de trabajo 1 copia%404x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating_6724067.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attach_11068082.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

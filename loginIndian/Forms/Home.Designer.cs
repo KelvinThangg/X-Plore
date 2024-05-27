@@ -167,7 +167,7 @@
             confirm1Btn.TabIndex = 2;
             confirm1Btn.Text = "Xác nhận";
             confirm1Btn.UseVisualStyleBackColor = true;
-            confirm1Btn.Click += confirm1Btn_Click;
+          
             // 
             // label7
             // 

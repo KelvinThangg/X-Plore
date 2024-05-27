@@ -233,7 +233,6 @@
             // 
             this.Name.Animated = true;
             this.Name.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.Name.BorderRadius = 6;
             this.Name.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Name.DefaultText = "";
             this.Name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

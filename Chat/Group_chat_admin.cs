@@ -86,5 +86,10 @@ namespace X_Plore.Chat
         {
 
         }
+
+        private void Group_chat_admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
