@@ -28,6 +28,8 @@ namespace Client
         private List<Form> openForms = new List<Form>();
         private bool isSavingMessage = false;
         private bool isSendingFile = false;
+        private string encryptionKey = null; // Add this line to store the encryption key
+
         public AdminChat(string roomName, string roomCreator, string adminName)
         {
             InitializeComponent();
@@ -39,7 +41,7 @@ namespace Client
             ListenForMessages();
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
         }
-        
+       
         private void InitializeFirebase()
         {
             firebaseClient = new FirebaseClient(FirebaseURL);
@@ -100,15 +102,20 @@ namespace Client
             }
         }
 
-        private async Task SaveMessageToFirebase(string message)
+        private async Task SaveMessageToFirebase(string message, bool isFile = false, string fileName = "")
         {
             try
             {
+                // Mã hóa tin nhắn trước khi lưu
+                string encryptedMessage = encryptionKey == null ? message : Security.Encrypt(message, encryptionKey);
+
                 var messageNode = new MessageNode
                 {
-                    Message = message,
-                    Sender = roomCreator,
-                    Timestamp = DateTime.Now
+                    Message = encryptedMessage,
+                    Sender = adminName,
+                    Timestamp = DateTime.Now,
+                    IsFile = isFile,
+                    FileName = fileName
                 };
 
                 await firebaseClient.Child("RoomNames")
@@ -124,8 +131,13 @@ namespace Client
 
         private void DisplayMessage(MessageNode message)
         {
-            string uniqueMessageIdentifier = message.IsFile ? $"{message.Sender}-{message.FileName}-{message.Timestamp}" : $"{message.Sender}-{message.Message}-{message.Timestamp}";
+            // Use encryptionKey if available and if the message is not a file
+            string decryptedMessage = message.IsFile ? message.Message : (encryptionKey == null ? message.Message : Security.Decrypt(message.Message, encryptionKey));
 
+            // Unique identifier for the message
+            string uniqueMessageIdentifier = message.IsFile ? $"{message.Sender}-{message.FileName}-{message.Timestamp}" : $"{message.Sender}-{decryptedMessage}-{message.Timestamp}";
+
+            // Check if the message has been displayed already
             if (!displayedMessages.Contains(uniqueMessageIdentifier))
             {
                 if (message.IsFile)
@@ -134,7 +146,7 @@ namespace Client
                     listBox1.Items.Add(fileMessage);
                     displayedMessages.Add(uniqueMessageIdentifier);
 
-                    // Lưu tệp vào thư mục tạm thời khi tin nhắn được hiển thị lần đầu
+                    // Save the file to a temporary directory when the message is displayed for the first time
                     string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
                     string fileExtension = Path.GetExtension(message.FileName).ToLower();
                     string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
@@ -142,7 +154,21 @@ namespace Client
                         Path.Combine(projectDir, "Client", "Data", "File");
 
                     string filePath = Path.Combine(targetDir, message.FileName);
-                    File.WriteAllBytes(filePath, Convert.FromBase64String(message.Message));
+
+                    // Decrypt the file content if necessary
+                    byte[] fileBytes;
+                    if (encryptionKey != null)
+                    {
+                        // Decrypt the file content if encryptionKey is available
+                        string decryptedBase64File = Security.Decrypt(message.Message, encryptionKey);
+                        fileBytes = Convert.FromBase64String(decryptedBase64File);
+                    }
+                    else
+                    {
+                        // No decryption needed, just convert from base64 to byte
+                        fileBytes = Convert.FromBase64String(message.Message);
+                    }
+                    File.WriteAllBytes(filePath, fileBytes);
 
                     listBox1.MouseClick += (s, e) =>
                     {
@@ -158,13 +184,12 @@ namespace Client
                 }
                 else
                 {
-                    string newMessage = $"{message.Sender}: {message.Message}";
+                    string newMessage = $"{message.Sender}: {decryptedMessage}";
                     listBox1.Items.Add(newMessage);
                     displayedMessages.Add(uniqueMessageIdentifier);
                 }
             }
         }
-
 
         private async void sendTextButton_Click(object sender, EventArgs e)
         {
@@ -255,7 +280,6 @@ namespace Client
             }
         }
 
-
         private void ListenForMessages()
         {
             firebaseClient
@@ -287,7 +311,7 @@ namespace Client
         {
             ListenForMessages();
         }
-        
+
         private void RemoveForm(Form form)
         {
             openForms.Remove(form);
@@ -339,7 +363,6 @@ namespace Client
 
         private async void file_Click(object sender, EventArgs e)
         {
-
             if (isSendingFile)
             {
                 // Nếu đang trong quá trình gửi file, không cho phép gửi tiếp
@@ -363,10 +386,13 @@ namespace Client
                         // Chuyển đổi mảng byte thành chuỗi base64
                         string base64File = Convert.ToBase64String(fileBytes);
 
+                        // Mã hóa nội dung tệp
+                        string encryptedFile = encryptionKey == null ? base64File : Security.Encrypt(base64File, encryptionKey);
+
                         // Tạo một đối tượng tin nhắn với loại tệp
                         var messageNode = new MessageNode
                         {
-                            Message = base64File,
+                            Message = encryptedFile,
                             Sender = adminName,
                             Timestamp = DateTime.Now,
                             IsFile = true,
@@ -418,6 +444,22 @@ namespace Client
                 }
             }
         }
-    }
 
+        // Add this method to handle key input button click
+       
+
+        private void keyInput_Click(object sender, EventArgs e)
+        {
+            encryptionKey = keytextBox.Text.Trim();
+            if (string.IsNullOrEmpty(encryptionKey))
+            {
+                MessageBox.Show("Vui lòng nhập khóa.");
+            }
+            else
+            {
+                MessageBox.Show("Khóa đã được cập nhật.");
+                LoadChatHistory(); // Call the method synchronously
+            }
+        }
+    }
 }

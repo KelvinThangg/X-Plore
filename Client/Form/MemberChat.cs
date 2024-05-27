@@ -64,6 +64,7 @@ namespace Client
                                                       .OnceAsync<MessageNode>();
 
                 listBox1.Items.Clear(); // Clear existing messages
+                displayedMessages.Clear(); // Clear the set of displayed messages
 
                 foreach (var messageNode in chatHistory)
                 {
@@ -112,8 +113,8 @@ namespace Client
 
         private void DisplayMessage(MessageNode message)
         {
-            // Sử dụng encryptionKey nếu có
-            string decryptedMessage = encryptionKey == null ? message.Message : Security.Decrypt(message.Message, encryptionKey);
+            // Sử dụng encryptionKey nếu có và nếu tin nhắn không phải là file
+            string decryptedMessage = message.IsFile ? message.Message : (encryptionKey == null ? message.Message : Security.Decrypt(message.Message, encryptionKey));
 
             // Tạo mã nhận diện duy nhất cho tin nhắn
             string uniqueMessageIdentifier = message.IsFile ? $"{message.Sender}-{message.FileName}-{message.Timestamp}" : $"{message.Sender}-{decryptedMessage}-{message.Timestamp}";
@@ -135,7 +136,21 @@ namespace Client
                         Path.Combine(projectDir, "Client", "Data", "File");
 
                     string filePath = Path.Combine(targetDir, message.FileName);
-                    File.WriteAllBytes(filePath, Convert.FromBase64String(decryptedMessage));
+
+                    // Giải mã nội dung tệp nếu cần
+                    byte[] fileBytes;
+                    if (encryptionKey != null)
+                    {
+                        // Giải mã nội dung tệp nếu có encryptionKey
+                        string decryptedBase64File = Security.Decrypt(message.Message, encryptionKey);
+                        fileBytes = Convert.FromBase64String(decryptedBase64File);
+                    }
+                    else
+                    {
+                        // Không cần giải mã, chỉ cần chuyển đổi từ base64 sang byte
+                        fileBytes = Convert.FromBase64String(message.Message);
+                    }
+                    File.WriteAllBytes(filePath, fileBytes);
 
                     listBox1.MouseClick += (s, e) =>
                     {
@@ -160,10 +175,13 @@ namespace Client
 
         private async void sendTextButton_Click(object sender, EventArgs e)
         {
+           
+
             string message = textBox1.Text.Trim();
             if (isSavingMessage)
             {
                 // Đang xử lý tin nhắn trước đó, không cho phép gửi tin nhắn mới
+                sendTextButton.Enabled = true;
                 return;
             }
 
@@ -230,9 +248,8 @@ namespace Client
 
                     await SaveMessageToFirebase(message);
 
-                    // Sử dụng encryptionKey nếu có
-                    string displayMessage = encryptionKey == null ? message : Security.Encrypt(message, encryptionKey);
-                    DisplayMessage(new MessageNode { Message = displayMessage, Sender = memberName, Timestamp = DateTime.Now });
+                    // Không cần hiển thị tin nhắn ở đây nữa vì `DisplayMessage` sẽ được gọi từ Firebase lắng nghe
+
                     textBox1.Text = "";
                 }
                 catch (Exception ex)
@@ -242,11 +259,13 @@ namespace Client
                 finally
                 {
                     isSavingMessage = false; // Kết thúc quá trình lưu tin nhắn
+                    sendTextButton.Enabled = true; // Kích hoạt lại nút
                 }
             }
             else
             {
                 MessageBox.Show("Vui lòng nhập tin nhắn.");
+                sendTextButton.Enabled = true; // Kích hoạt lại nút
             }
         }
 
@@ -269,10 +288,10 @@ namespace Client
        });
         }
 
-        private void MemberChat_Load(object sender, EventArgs e)
+        private async void MemberChat_Load(object sender, EventArgs e)
         {
             ListenForMessages(); // Sau đó lắng nghe các tin nhắn mới
-            LoadChatHistory(); // Tải lịch sử trò chuyện trước
+            await LoadChatHistory(); // Tải lịch sử trò chuyện trước
         }
 
         private async void file_Click(object sender, EventArgs e)
