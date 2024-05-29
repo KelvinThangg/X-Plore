@@ -23,7 +23,7 @@ namespace loginIndian.Forms
             InitializeComponent();
             panelDoipass.Hide();
             NhapPassPn.Hide();
-
+          //  ListenFor2FAStatusChanges();
 
         }
 
@@ -167,6 +167,8 @@ namespace loginIndian.Forms
 
                 // Cập nhật text button và ẩn panel
                 twofaBtn.Text = userData.Is2FAEnabled ? "Tắt" : "Bật";
+                Trangthai.Text = userData.Is2FAEnabled ? "Đang bật" : "Đang tắt";
+                Trangthai.ForeColor = userData.Is2FAEnabled ? Color.Green : Color.Red;
                 NhapPassPn.Hide();
 
                 await UpdateUserData(userData); // Lưu thay đổi về Firestore
@@ -179,25 +181,29 @@ namespace loginIndian.Forms
             EnterPasstb.Clear(); // Xóa mật khẩu đã nhập
 
         }
-        private async void Update2FAStatus()
+     /*   private async void ListenFor2FAStatusChanges()
         {
-            UserData userData = await GetCurrentUserData();
-            if (userData.Is2FAEnabled || twofaBtn.Text == "Tắt")
+            var db = FirestoreHelper.Database;
+            DocumentReference docRef = db.Collection("UserData").Document(username);
+            docRef.Listen(snapshot =>
             {
-                Trangthai.ForeColor = Color.Green; // Chuyển sang màu xanh lá
-                Trangthai.Text = "Đang bật";
-            }
-            else
-            {
-                Trangthai.ForeColor = Color.Red; // Chuyển sang màu đỏ (hoặc màu mặc định)
-                Trangthai.Text = "Đang tắt";
-            }
-        }
+                if (snapshot.Exists)
+                {
+                    Dictionary<string, object> user = snapshot.ToDictionary();
+                    if (user.ContainsKey("Is2FAEnabled"))
+                    {
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            // Update Trangthai with the new 2FA status
+                            bool is2FAEnabled = (bool)user["Is2FAEnabled"];
+                            Trangthai.ForeColor = is2FAEnabled ? Color.Green : Color.Red;
+                            Trangthai.Text = is2FAEnabled ? "Đang bật" : "Đang tắt";
+                        });
+                    }
+                }
+            });
+        }*/
 
-        private void confirm1Btn_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click_1(object sender, EventArgs e)
         {

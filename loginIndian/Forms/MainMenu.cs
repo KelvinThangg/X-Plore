@@ -17,6 +17,7 @@ namespace loginIndian.Forms
         private string username;
         private string displayname;
 
+
         public MainMenu(string DisplayName, string username)
         {
             InitializeComponent();
@@ -24,8 +25,32 @@ namespace loginIndian.Forms
             this.displayname = DisplayName;
             MessageBox.Show("Welcome: " + DisplayName);
             DisplayLbl.Text = DisplayName;
+
+            // Listen for changes in Firestore
+            ListenForDisplayNameChanges();
         }
-        
+
+        private async void ListenForDisplayNameChanges()
+        {
+            var db = FirestoreHelper.Database;
+            DocumentReference docRef = db.Collection("UserData").Document(username);
+            docRef.Listen(snapshot =>
+            {
+                if (snapshot.Exists)
+                {
+                    Dictionary<string, object> user = snapshot.ToDictionary();
+                    if (user.ContainsKey("DisplayName"))
+                    {
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            // Update DisplayLbl with the new displayName
+                            DisplayLbl.Text = user["DisplayName"].ToString();
+                        });
+                    }
+                }
+            });
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Do you want to proceed to the Login page?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

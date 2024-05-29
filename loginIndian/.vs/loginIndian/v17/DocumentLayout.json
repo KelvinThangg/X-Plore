@@ -3,64 +3,48 @@
   "WorkspaceRootPath": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\new folder\\x-plore\\loginindian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\new folder\\x-plore\\loginindian\\forms\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\classes\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:classes\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\new folder\\x-plore\\loginindian\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\forms\\emailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,35 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Help.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Help.cs",
-              "RelativeDocumentMoniker": "Forms\\Help.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Help.cs [Design]",
-              "RelativeToolTip": "Forms\\Help.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Home.cs",
+              "RelativeDocumentMoniker": "Forms\\Home.cs",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Home.cs",
+              "RelativeToolTip": "Forms\\Home.cs",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAAALQAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T18:05:53.131Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-16T08:45:06.527Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "Forms\\RegisterForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T19:00:45.67Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Home.cs",
               "RelativeDocumentMoniker": "Forms\\Home.cs",
@@ -134,45 +107,20 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Forms\\MainMenu.cs",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\MainMenu.cs",
+              "RelativeToolTip": "Forms\\MainMenu.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAACkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T10:49:51.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\LoginForm.cs [Design]",
-              "RelativeToolTip": "Forms\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T08:29:17.26Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UpdatePassword.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\UpdatePassword.cs",
-              "RelativeDocumentMoniker": "Forms\\UpdatePassword.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\UpdatePassword.cs",
-              "RelativeToolTip": "Forms\\UpdatePassword.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAAAEgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T10:06:48.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\LoginForm.cs",
-              "RelativeToolTip": "Forms\\LoginForm.cs",
-              "ViewState": "AQIAAJEBAAAAAAAAAAAAAB0AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T12:10:14.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "UpdatePassword.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\UpdatePassword.cs",
               "RelativeDocumentMoniker": "Forms\\UpdatePassword.cs",
@@ -184,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "EmailVerify.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\EmailVerify.cs",
               "RelativeDocumentMoniker": "Forms\\EmailVerify.cs",
@@ -197,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "2FAMailVerify.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\2FAMailVerify.cs",
               "RelativeDocumentMoniker": "Forms\\2FAMailVerify.cs",
@@ -209,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "EmailVerify.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\EmailVerify.cs",
               "RelativeDocumentMoniker": "Forms\\EmailVerify.cs",
@@ -221,12 +169,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "2FAMailVerify.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\2FAMailVerify.cs",
+              "RelativeDocumentMoniker": "Forms\\2FAMailVerify.cs",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\2FAMailVerify.cs",
+              "RelativeToolTip": "Forms\\2FAMailVerify.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T10:42:43.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "Forms\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T19:00:45.67Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "Forms\\LoginForm.cs",
+              "ViewState": "AQIAAMgAAAAAAAAAAAAkwN0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T12:10:14.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Home.Designer.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Home.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Home.Designer.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Home.Designer.cs*",
-              "RelativeToolTip": "Forms\\Home.Designer.cs*",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Home.Designer.cs",
+              "RelativeToolTip": "Forms\\Home.Designer.cs",
               "ViewState": "AQIAAJMAAAAAAAAAAAAowKkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T18:37:19.954Z",
@@ -234,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 13,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\RegisterForm.cs",
               "RelativeDocumentMoniker": "Forms\\RegisterForm.cs",
@@ -242,73 +228,23 @@
               "RelativeToolTip": "Forms\\RegisterForm.cs",
               "ViewState": "AQIAAI4AAAAAAAAAAAAAAIEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T19:26:07.873Z"
+              "WhenOpened": "2024-05-17T19:26:07.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ForgottenPassword.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\ForgottenPassword.cs",
               "RelativeDocumentMoniker": "Forms\\ForgottenPassword.cs",
               "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\ForgottenPassword.cs [Design]",
               "RelativeToolTip": "Forms\\ForgottenPassword.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T13:47:29.366Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Home.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Home.cs",
-              "RelativeDocumentMoniker": "Forms\\Home.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\Home.cs",
-              "RelativeToolTip": "Forms\\Home.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAAAGEAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T08:45:06.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Forms\\MainMenu.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\MainMenu.cs",
-              "RelativeToolTip": "Forms\\MainMenu.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAQwD4AAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T10:49:51.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserData.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Classes\\UserData.cs",
-              "RelativeDocumentMoniker": "Classes\\UserData.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Classes\\UserData.cs",
-              "RelativeToolTip": "Classes\\UserData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T12:08:23.678Z"
+              "WhenOpened": "2024-05-14T13:47:29.366Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "2FAMailVerify.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\2FAMailVerify.cs",
-              "RelativeDocumentMoniker": "Forms\\2FAMailVerify.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\2FAMailVerify.cs",
-              "RelativeToolTip": "Forms\\2FAMailVerify.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAAAKoAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T10:42:43.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "FirestoreHelper.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Classes\\FirestoreHelper.cs",
               "RelativeDocumentMoniker": "Classes\\FirestoreHelper.cs",
@@ -320,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "Security.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Classes\\Security.cs",
               "RelativeDocumentMoniker": "Classes\\Security.cs",
@@ -332,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
               "Title": "ForgottenPassword.Designer.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Forms\\ForgottenPassword.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\ForgottenPassword.Designer.cs",
@@ -340,12 +276,11 @@
               "RelativeToolTip": "Forms\\ForgottenPassword.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T02:59:55.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T02:59:55.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "Captcha.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\loginIndian\\Classes\\Captcha.cs",
               "RelativeDocumentMoniker": "Classes\\Captcha.cs",

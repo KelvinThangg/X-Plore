@@ -49,18 +49,19 @@
             // 
             confirmBtn.Enabled = false;
             confirmBtn.Location = new Point(207, 79);
-            confirmBtn.Margin = new Padding(2, 2, 2, 2);
+            confirmBtn.Margin = new Padding(2);
             confirmBtn.Name = "confirmBtn";
             confirmBtn.Size = new Size(78, 20);
             confirmBtn.TabIndex = 1;
             confirmBtn.Text = "&Confirm";
             confirmBtn.UseVisualStyleBackColor = true;
+            confirmBtn.Click += confirmBtn_Click_1;
             // 
             // codeBox
             // 
             codeBox.Enabled = false;
             codeBox.Location = new Point(136, 40);
-            codeBox.Margin = new Padding(2, 2, 2, 2);
+            codeBox.Margin = new Padding(2);
             codeBox.MaxLength = 4;
             codeBox.Name = "codeBox";
             codeBox.Size = new Size(150, 23);
@@ -69,7 +70,7 @@
             // sendBtn
             // 
             sendBtn.Location = new Point(125, 79);
-            sendBtn.Margin = new Padding(2, 2, 2, 2);
+            sendBtn.Margin = new Padding(2);
             sendBtn.Name = "sendBtn";
             sendBtn.Size = new Size(78, 20);
             sendBtn.TabIndex = 3;
@@ -98,7 +99,7 @@
             Controls.Add(codeBox);
             Controls.Add(confirmBtn);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "_2FAMailVerify";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EmailVerify";

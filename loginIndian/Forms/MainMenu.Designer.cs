@@ -34,6 +34,7 @@
             DisplayLbl = new Label();
             button3 = new Button();
             panel1 = new Panel();
+            button4 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -73,7 +74,7 @@
             // DisplayLbl
             // 
             DisplayLbl.AutoSize = true;
-            DisplayLbl.Location = new Point(125, 23);
+            DisplayLbl.Location = new Point(128, 12);
             DisplayLbl.Margin = new Padding(2, 0, 2, 0);
             DisplayLbl.Name = "DisplayLbl";
             DisplayLbl.Size = new Size(38, 15);
@@ -94,11 +95,21 @@
             // panel1
             // 
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(112, 41);
+            panel1.Location = new Point(112, 38);
             panel1.Name = "panel1";
             panel1.Size = new Size(649, 340);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(12, 79);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 37);
+            button4.TabIndex = 4;
+            button4.Text = "Chat";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button3_Click;
             // 
             // MainMenu
             // 
@@ -106,6 +117,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(773, 386);
             Controls.Add(panel1);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(DisplayLbl);
             Controls.Add(button2);
@@ -130,5 +142,6 @@
         private Label DisplayLbl;
         private Button button3;
         private Panel panel1;
+        private Button button4;
     }
 }

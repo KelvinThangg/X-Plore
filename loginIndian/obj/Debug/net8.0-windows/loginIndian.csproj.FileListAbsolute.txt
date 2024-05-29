@@ -192,3 +192,4 @@ D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\loginIndian\obj\De
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\loginIndian\obj\Debug\net8.0-windows\loginIndian.pdb
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\loginIndian\obj\Debug\net8.0-windows\loginIndian.genruntimeconfig.cache
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\loginIndian\obj\Debug\net8.0-windows\ref\loginIndian.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\loginIndian\obj\Debug\net8.0-windows\loginIndian.Forms._2FAMailVerify.resources

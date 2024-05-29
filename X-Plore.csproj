@@ -81,6 +81,12 @@
     <Compile Include="Class\GenerateCode.cs" />
     <Compile Include="Class\Security.cs" />
     <Compile Include="Class\UserData.cs" />
+    <Compile Include="Dangky-Dangnhap\2FAMailVerify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangky-Dangnhap\2FAMailVerify.Designer.cs">
+      <DependentUpon>2FAMailVerify.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dangky-Dangnhap\FormDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     </Compile>
     <Compile Include="Dangky-Dangnhap\Form_QuenMK.Designer.cs">
       <DependentUpon>Form_QuenMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangky-Dangnhap\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangky-Dangnhap\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
     </Compile>
     <Compile Include="Dangky-Dangnhap\Xac_thuc_dky.cs">
       <SubType>Form</SubType>
@@ -145,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dangky-Dangnhap\Form_QuenMK.resx">
       <DependentUpon>Form_QuenMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangky-Dangnhap\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dangky-Dangnhap\Xac_thuc_dky.resx">
       <DependentUpon>Xac_thuc_dky.cs</DependentUpon>
@@ -289,6 +304,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\attach_11068082.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_9694125.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

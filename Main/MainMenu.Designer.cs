@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2TileButton5 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2TileButton4 = new Guna.UI2.WinForms.Guna2TileButton();
@@ -46,17 +47,21 @@
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel4
             // 
-            this.guna2CustomGradientPanel4.BorderColor = System.Drawing.Color.White;
+            this.guna2CustomGradientPanel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2CustomGradientPanel4.BorderThickness = 2;
+            this.guna2CustomGradientPanel4.Controls.Add(this.guna2DateTimePicker1);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2TileButton5);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2TileButton4);
             this.guna2CustomGradientPanel4.Controls.Add(this.guna2TileButton3);
@@ -76,7 +81,7 @@
             // guna2TileButton5
             // 
             this.guna2TileButton5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton5.BorderColor = System.Drawing.Color.GhostWhite;
+            this.guna2TileButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2TileButton5.BorderRadius = 1;
             this.guna2TileButton5.BorderThickness = 1;
             this.guna2TileButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -101,7 +106,7 @@
             // guna2TileButton4
             // 
             this.guna2TileButton4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton4.BorderColor = System.Drawing.Color.GhostWhite;
+            this.guna2TileButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2TileButton4.BorderRadius = 1;
             this.guna2TileButton4.BorderThickness = 1;
             this.guna2TileButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -126,7 +131,7 @@
             // guna2TileButton3
             // 
             this.guna2TileButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton3.BorderColor = System.Drawing.Color.GhostWhite;
+            this.guna2TileButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2TileButton3.BorderRadius = 1;
             this.guna2TileButton3.BorderThickness = 1;
             this.guna2TileButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -151,7 +156,7 @@
             // guna2TileButton2
             // 
             this.guna2TileButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton2.BorderColor = System.Drawing.Color.GhostWhite;
+            this.guna2TileButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2TileButton2.BorderRadius = 1;
             this.guna2TileButton2.BorderThickness = 1;
             this.guna2TileButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -176,7 +181,7 @@
             // guna2TileButton1
             // 
             this.guna2TileButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton1.BorderColor = System.Drawing.Color.GhostWhite;
+            this.guna2TileButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2TileButton1.BorderRadius = 1;
             this.guna2TileButton1.BorderThickness = 1;
             this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -229,6 +234,7 @@
             this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Panel1.Location = new System.Drawing.Point(151, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -260,14 +266,15 @@
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::X_Plore.Properties.Resources._22;
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(193, 70);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(-126, -221);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(291, 276);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 13;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(898, 881);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 6;
             this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
             // 
             // guna2HtmlLabel1
             // 
@@ -319,6 +326,34 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(0, 405);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(150, 33);
+            this.guna2DateTimePicker1.TabIndex = 2;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 5, 29, 0, 6, 56, 708);
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Image = global::X_Plore.Properties.Resources._3;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(294, 0);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(79, 71);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 0;
+            this.guna2PictureBox3.TabStop = false;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,6 +368,7 @@
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,11 +386,13 @@
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton4;
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton3;
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
     }
 }

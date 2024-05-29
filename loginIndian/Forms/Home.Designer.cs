@@ -47,7 +47,6 @@
             PassBox = new TextBox();
             OldpassBox = new TextBox();
             ChangeDisplaynameBtn = new Button();
-            label8 = new Label();
             button4 = new Button();
             twofaBtn = new Button();
             Trangthai = new Label();
@@ -167,7 +166,6 @@
             confirm1Btn.TabIndex = 2;
             confirm1Btn.Text = "Xác nhận";
             confirm1Btn.UseVisualStyleBackColor = true;
-          
             // 
             // label7
             // 
@@ -230,15 +228,6 @@
             ChangeDisplaynameBtn.UseVisualStyleBackColor = true;
             ChangeDisplaynameBtn.Click += button1_Click;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(31, 20);
-            label8.Name = "label8";
-            label8.Size = new Size(78, 15);
-            label8.TabIndex = 5;
-            label8.Text = "Display name";
-            // 
             // button4
             // 
             button4.Location = new Point(98, 262);
@@ -275,7 +264,6 @@
             Controls.Add(Trangthai);
             Controls.Add(twofaBtn);
             Controls.Add(button4);
-            Controls.Add(label8);
             Controls.Add(panelDoipass);
             Controls.Add(NhapPassPn);
             Controls.Add(button2);
@@ -314,7 +302,6 @@
         private TextBox PassBox;
         private TextBox OldpassBox;
         private Button ChangeDisplaynameBtn;
-        private Label label8;
         private Button button4;
         private Button twofaBtn;
         private Button confirm2Btn;

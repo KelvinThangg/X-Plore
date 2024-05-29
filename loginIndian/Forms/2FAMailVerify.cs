@@ -66,7 +66,7 @@ namespace loginIndian.Forms
 
         // private const string FIREBASE_DATABASE_URL = "your_firebase_database_url"; // Replace with your URL
 
-        private async void confirmBtn_Click(object sender, EventArgs e)
+        private async void confirmBtn_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(codeBox.Text))
             {
@@ -111,7 +111,7 @@ namespace loginIndian.Forms
             if (checkTimeout())
             {
                 MessageBox.Show("You reach out the maximum attemps! Program Exit!");
-                
+
                 Environment.Exit(1);
             }
         }
@@ -149,7 +149,7 @@ namespace loginIndian.Forms
             }
         }
 
-       
+
 
 
         private async void CodeExpiryTimer_Tick(object sender, EventArgs e)
@@ -158,7 +158,7 @@ namespace loginIndian.Forms
             codeExpiryTimer.Stop();
             verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // New code
             MessageBox.Show("Verification code expired! Exit");
-           
+
             Environment.Exit(1);
         }
 
@@ -167,10 +167,12 @@ namespace loginIndian.Forms
             codeExpiryTimer.Stop();
             if (flag != 1)
             {
-               MessageBox.Show("Exit");
+                MessageBox.Show("Exit");
                 Environment.Exit(1);
             }
         }
+
+       
     }
 }
 
