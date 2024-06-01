@@ -19,7 +19,6 @@ namespace Client
         private static string appId = Guid.NewGuid().ToString();
         private string currentUserName;
         private List<string> adminRooms;
-       
         public FormTaoPhong(string userName)
         {
             InitializeComponent();
@@ -32,7 +31,6 @@ namespace Client
             button1.Click += button1_Click;
             button2.Click += button2_Click;
             button3.Click += button3_Click;
-
         }
 
         private void InitializeFirebase()
@@ -64,13 +62,100 @@ namespace Client
         {
             try
             {
-                var rooms = await firebaseClient.Child("rooms").OnceAsync<Room>();
-                panel1.Controls.Clear();
-                int xOffset = 0; // Offset theo chiều ngang
-                int yOffset = 0; // Offset theo chiều dọc
-                int buttonWidth = 200; // Chiều rộng của button
-                int buttonHeight = 50; // Chiều cao của button
-                int spacing = 10; // Khoảng cách giữa các button
+                // Tải danh sách phòng mà người dùng đã tạo và tìm thấy
+                var user = await firebaseClient.Child("users").Child(currentUserName).OnceSingleAsync<Users>();
+                var roomNames = new List<string>();
+
+                if (user?.RoomNames != null)
+                {
+                    roomNames.AddRange(user.RoomNames);
+                }
+
+                if (user?.FoundRooms != null)
+                {
+                    roomNames.AddRange(user.FoundRooms.Where(roomName => !roomNames.Contains(roomName)));
+                }
+
+                var rooms = new List<Room>();
+                foreach (var roomName in roomNames)
+                {
+                    var room = await firebaseClient.Child("rooms").Child(roomName).OnceSingleAsync<Room>();
+                    if (room != null)
+                    {
+                        rooms.Add(room);
+                    }
+                }
+
+                // Lấy vị trí cuối cùng của các điều khiển hiện có trong panel1 để thêm các phòng mới mà không bị chồng chéo
+                int xOffset = 0;
+                int yOffset = 0;
+                int buttonWidth = 200;
+                int buttonHeight = 50;
+                int spacing = 10;
+
+                if (panel1.Controls.Count > 0)
+                {
+                    var lastButton = panel1.Controls[panel1.Controls.Count - 1] as Button;
+                    if (lastButton != null)
+                    {
+                        xOffset = lastButton.Left;
+                        yOffset = lastButton.Top + lastButton.Height + spacing;
+                    }
+                }
+
+                foreach (var room in rooms)
+                {
+                    string roomName = room.Name;
+
+                    // Kiểm tra xem phòng này đã tồn tại trong panel1 chưa
+                    bool roomAlreadyDisplayed = false;
+                    foreach (Control control in panel1.Controls)
+                    {
+                        if (control is Button button && button.Tag.ToString() == roomName)
+                        {
+                            roomAlreadyDisplayed = true;
+                            break;
+                        }
+                    }
+                    if (!roomAlreadyDisplayed)
+                    {
+                        if (xOffset + buttonWidth > panel1.Width)
+                        {
+                            // Nếu vượt quá chiều ngang của panel1, đặt xuống dòng
+                            xOffset = 0;
+                            yOffset += buttonHeight + spacing;
+                        }
+
+                        Button roomButton = new Button
+                        {
+                            Text = roomName + (adminRooms.Contains(roomName) ? " (admin)" : ""),
+                            Width = buttonWidth,
+                            Height = buttonHeight,
+                            Tag = roomName,
+                            Left = xOffset,
+                            Top = yOffset
+                        };
+                        roomButton.Click += (s, args) => OpenRoomForm(roomName, adminRooms.Contains(roomName));
+                        panel1.Controls.Add(roomButton);
+
+                        xOffset += buttonWidth + spacing;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải danh sách phòng: " + ex.Message);
+            }
+        }
+
+        private void DisplayRooms(List<Room> rooms)
+        {
+            panel1.Controls.Clear();
+            int xOffset = 0; // Offset theo chiều ngang
+            int yOffset = 0; // Offset theo chiều dọc
+            int buttonWidth = 200; // Chiều rộng của button
+            int buttonHeight = 50; // Chiều cao của button
+            int spacing = 10; // Khoảng cách giữa các button
 
             foreach (var room in rooms)
             {
@@ -81,28 +166,22 @@ namespace Client
                     yOffset += buttonHeight + spacing;
                 }
 
-            string roomName = room.Object.Name;
+                string roomName = room.Name;
 
-            Button roomButton = new Button
-            {
-                Text = roomName + (adminRooms.Contains(roomName) ? " (admin)" : ""),
-                Width = buttonWidth,
-                Height = buttonHeight,
-                Tag = roomName,
-                Left = xOffset,
-                Top = yOffset
-            };
-            roomButton.Click += (s, args) => OpenRoomForm(roomName, adminRooms.Contains(roomName));
-            panel1.Controls.Add(roomButton);
-
-            xOffset += buttonWidth + spacing;
+                Button roomButton = new Button
+                {
+                    Text = roomName + (adminRooms.Contains(roomName) ? " (admin)" : ""),
+                    Width = buttonWidth,
+                    Height = buttonHeight,
+                    Tag = roomName,
+                    Left = xOffset,
+                    Top = yOffset
+                };
+                roomButton.Click += (s, args) => OpenRoomForm(roomName, adminRooms.Contains(roomName));
+                panel1.Controls.Add(roomButton);
+                xOffset += buttonWidth + spacing;
+            }
         }
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show("Lỗi khi tải danh sách phòng: " + ex.Message);
-        }
-    }
 
         private async void button1_Click(object sender, EventArgs e)
         {
@@ -114,55 +193,30 @@ namespace Client
                 if (room != null)
                 {
                     bool isAdminRoom = adminRooms.Contains(room.Name);
-
                     // Kiểm tra xem mật khẩu nhập vào có khớp với mật khẩu của phòng không
                     if (room.Password == matKhau)
                     {
-                        // Kiểm tra xem phòng đã tồn tại trong danh sách hiển thị chưa
-                        bool roomAlreadyDisplayed = false;
-                        foreach (Control control in panel1.Controls)
+                        // Thêm phòng vào danh sách phòng đã tìm thấy của người dùng
+                        var user = await firebaseClient.Child("users").Child(currentUserName).OnceSingleAsync<Users>();
+                        if (user != null)
                         {
-                            if (control is Button button && button.Tag.ToString() == room.Name)
+                            if (user.FoundRooms == null)
                             {
-                                roomAlreadyDisplayed = true;
-                                break;
+                                user.FoundRooms = new List<string>();
+                            }
+                            if (!user.FoundRooms.Contains(tenPhong))
+                            {
+                                user.FoundRooms.Add(tenPhong);
+                                await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
                             }
                         }
-
-                        if (!roomAlreadyDisplayed)
+                        else
                         {
-                            int xOffset = 0;
-                            int yOffset = 0;
-                            int buttonWidth = 200;
-                            int buttonHeight = 50;
-                            int spacing = 10;
-
-                            if (panel1.Controls.Count > 0)
-                            {
-                                var lastButton = panel1.Controls[panel1.Controls.Count - 1] as Button;
-                                xOffset = lastButton.Left + buttonWidth + spacing;
-                                yOffset = lastButton.Top;
-
-                                if (xOffset + buttonWidth > panel1.Width)
-                                {
-                                    // Nếu vượt quá chiều ngang của panel1, đặt xuống dòng
-                                    xOffset = 0;
-                                    yOffset += buttonHeight + spacing;
-                                }
-                            }
-
-                            Button roomButton = new Button
-                            {
-                                Text = room.Name + (isAdminRoom ? " (admin)" : ""),
-                                Width = buttonWidth,
-                                Height = buttonHeight,
-                                Tag = room.Name,
-                                Left = xOffset,
-                                Top = yOffset
-                            };
-                            roomButton.Click += (s, args) => OpenRoomForm(room.Name, isAdminRoom);
-                            panel1.Controls.Add(roomButton);
+                            user = new Users { UserName = currentUserName, FoundRooms = new List<string> { tenPhong } };
+                            await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
                         }
+                        // Hiển thị phòng tìm thấy
+                        DisplayRooms(new List<Room> { room });
                     }
                     else
                     {
@@ -183,22 +237,11 @@ namespace Client
         {
             string tenPhong = textBox2.Text;
             string matKhau = textBox1.Text;
-
             try
             {
-                // Check if the room already exists
-                var existingRoom = await firebaseClient.Child("rooms").Child(tenPhong).OnceSingleAsync<Room>();
-                if (existingRoom != null)
-                {
-                    MessageBox.Show("Phòng đã tồn tại. Vui lòng chọn tên phòng khác.");
-                    return;
-                }
-
-                // If the room does not exist, proceed to create the new room
                 var room = new Room { Name = tenPhong, Password = matKhau, IsAdmin = true, AppId = appId };
                 await firebaseClient.Child("rooms").Child(tenPhong).PutAsync(room);
-
-                // Link the room with the user
+                // Liên kết phòng với người dùng
                 var user = await firebaseClient.Child("users").Child(currentUserName).OnceSingleAsync<Users>();
                 if (user != null)
                 {
@@ -206,19 +249,20 @@ namespace Client
                     {
                         user.RoomNames = new List<string>();
                     }
-                    user.RoomNames.Add(tenPhong);
-                    await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
+                    if (!user.RoomNames.Contains(tenPhong))
+                    {
+                        user.RoomNames.Add(tenPhong);
+                        await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
+                    }
                 }
                 else
                 {
                     user = new Users { UserName = currentUserName, RoomNames = new List<string> { tenPhong } };
                     await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
                 }
-
-                // Update the adminRooms list
+                // Cập nhật danh sách adminRooms
                 adminRooms.Add(tenPhong);
-
-                // Reload the admin room list
+                // Load lại danh sách phòng admin
                 LoadRooms();
             }
             catch (Exception ex)
@@ -239,21 +283,24 @@ namespace Client
                     {
                         // Xóa tất cả các tin nhắn trong phòng
                         await firebaseClient.Child("RoomNames").Child(tenPhong).Child("messages").DeleteAsync();///
-
                         // Xóa phòng
                         await firebaseClient.Child("rooms").Child(tenPhong).DeleteAsync();
-
                         // Xóa phòng khỏi danh sách của người dùng
                         var user = await firebaseClient.Child("users").Child(currentUserName).OnceSingleAsync<Users>();
-                        if (user != null && user.RoomNames != null)
+                        if (user != null)
                         {
-                            user.RoomNames.Remove(tenPhong);
+                            if (user.RoomNames != null)
+                            {
+                                user.RoomNames.Remove(tenPhong);
+                            }
+                            if (user.FoundRooms != null)
+                            {
+                                user.FoundRooms.Remove(tenPhong);
+                            }
                             await firebaseClient.Child("users").Child(currentUserName).PutAsync(user);
                         }
-
                         // Xóa phòng khỏi danh sách adminRooms
                         adminRooms.Remove(tenPhong);
-
                         LoadRooms();  // Tải lại danh sách phòng sau khi xóa
                         MessageBox.Show("Phòng đã xóa: " + tenPhong);
                     }
@@ -291,7 +338,10 @@ namespace Client
         {
 
         }
-    }
 
-    
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

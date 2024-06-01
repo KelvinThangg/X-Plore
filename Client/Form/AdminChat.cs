@@ -283,28 +283,28 @@ namespace Client
         private void ListenForMessages()
         {
             firebaseClient
-                 .Child("RoomNames")
-                 .Child(roomName)
-                 .Child("messages")
-                 .AsObservable<MessageNode>()
-                 .Subscribe(d =>
+         .Child("RoomNames")
+         .Child(roomName)
+         .Child("messages")
+         .AsObservable<MessageNode>()
+         .Subscribe(d =>
+         {
+             if (d.Object != null)
+             {
+                 if (this.IsHandleCreated) // Kiểm tra xem handle của control đã được tạo chưa
                  {
-                     if (d.Object != null)
+                     this.Invoke((MethodInvoker)delegate
                      {
-                         if (this.IsHandleCreated) // Kiểm tra xem handle của control đã được tạo chưa
-                         {
-                             this.Invoke((MethodInvoker)delegate
-                             {
-                                 string uniqueMessageIdentifier = d.Object.IsFile ? $"{d.Object.Sender}-{d.Object.FileName}-{d.Object.Timestamp}" : $"{d.Object.Sender}-{d.Object.Message}-{d.Object.Timestamp}";
+                         string uniqueMessageIdentifier = d.Object.IsFile ? $"{d.Object.Sender}-{d.Object.FileName}-{d.Object.Timestamp}" : $"{d.Object.Sender}-{d.Object.Message}-{d.Object.Timestamp}";
 
-                                 if (!displayedMessages.Contains(uniqueMessageIdentifier))
-                                 {
-                                     DisplayMessage(d.Object);
-                                 }
-                             });
+                         if (!displayedMessages.Contains(uniqueMessageIdentifier))
+                         {
+                             DisplayMessage(d.Object);
                          }
-                     }
-                 });
+                     });
+                 }
+             }
+         });
         }
 
         private void AdminChat_Load_1(object sender, EventArgs e)
