@@ -34,27 +34,27 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.BackToRegisterBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.LoginBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.GenBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.showPassBox = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.RegBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.BackToLoginBtn = new Guna.UI2.WinForms.Guna2Button();
             this.PassBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.TelBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EmailBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.ReEnterPasswordBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Name = new Guna.UI2.WinForms.Guna2TextBox();
+            this.displayNameBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.UserBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,15 +73,15 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel2.Controls.Add(this.guna2ComboBox1);
-            this.guna2Panel2.Controls.Add(this.guna2ImageButton2);
-            this.guna2Panel2.Controls.Add(this.BackToRegisterBtn);
-            this.guna2Panel2.Controls.Add(this.LoginBtn);
+            this.guna2Panel2.Controls.Add(this.GenBox);
+            this.guna2Panel2.Controls.Add(this.showPassBox);
+            this.guna2Panel2.Controls.Add(this.RegBtn);
+            this.guna2Panel2.Controls.Add(this.BackToLoginBtn);
             this.guna2Panel2.Controls.Add(this.PassBox);
             this.guna2Panel2.Controls.Add(this.TelBox);
             this.guna2Panel2.Controls.Add(this.EmailBox);
             this.guna2Panel2.Controls.Add(this.ReEnterPasswordBox);
-            this.guna2Panel2.Controls.Add(this.Name);
+            this.guna2Panel2.Controls.Add(this.displayNameBox);
             this.guna2Panel2.Controls.Add(this.UserBox);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -90,63 +90,91 @@
             this.guna2Panel2.Size = new System.Drawing.Size(331, 666);
             this.guna2Panel2.TabIndex = 3;
             // 
-            // guna2ComboBox1
+            // guna2HtmlLabel1
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.guna2ComboBox1.BorderRadius = 6;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Enabled = false;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Silver;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(46, 243);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(41, 15);
+            this.guna2HtmlLabel1.TabIndex = 13;
+            this.guna2HtmlLabel1.Text = "Gender";
+            // 
+            // GenBox
+            // 
+            this.GenBox.BackColor = System.Drawing.Color.Transparent;
+            this.GenBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
+            this.GenBox.BorderRadius = 6;
+            this.GenBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.GenBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GenBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.GenBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.GenBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.GenBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
+            this.GenBox.ItemHeight = 30;
+            this.GenBox.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Non-binary"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(34, 233);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(250, 36);
-            this.guna2ComboBox1.TabIndex = 12;
+            this.GenBox.Location = new System.Drawing.Point(34, 233);
+            this.GenBox.Name = "GenBox";
+            this.GenBox.Size = new System.Drawing.Size(250, 36);
+            this.GenBox.TabIndex = 12;
             // 
-            // BackToRegisterBtn
+            // showPassBox
             // 
-            this.BackToRegisterBtn.Animated = true;
-            this.BackToRegisterBtn.BackColor = System.Drawing.Color.Transparent;
-            this.BackToRegisterBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.BackToRegisterBtn.BorderRadius = 10;
-            this.BackToRegisterBtn.BorderThickness = 2;
-            this.BackToRegisterBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.BackToRegisterBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BackToRegisterBtn.ForeColor = System.Drawing.Color.White;
-            this.BackToRegisterBtn.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.BackToRegisterBtn.Location = new System.Drawing.Point(157, 516);
-            this.BackToRegisterBtn.Name = "BackToRegisterBtn";
-            this.BackToRegisterBtn.Size = new System.Drawing.Size(98, 39);
-            this.BackToRegisterBtn.TabIndex = 7;
-            this.BackToRegisterBtn.Text = "Sign up";
-            this.BackToRegisterBtn.UseTransparentBackground = true;
+            this.showPassBox.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.showPassBox.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.showPassBox.Image = ((System.Drawing.Image)(resources.GetObject("showPassBox.Image")));
+            this.showPassBox.ImageOffset = new System.Drawing.Point(0, 0);
+            this.showPassBox.ImageRotate = 0F;
+            this.showPassBox.ImageSize = new System.Drawing.Size(16, 16);
+            this.showPassBox.Location = new System.Drawing.Point(248, 286);
+            this.showPassBox.Name = "showPassBox";
+            this.showPassBox.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.showPassBox.Size = new System.Drawing.Size(26, 20);
+            this.showPassBox.TabIndex = 11;
             // 
-            // LoginBtn
+            // RegBtn
             // 
-            this.LoginBtn.Animated = true;
-            this.LoginBtn.BackColor = System.Drawing.Color.Transparent;
-            this.LoginBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.LoginBtn.BorderRadius = 10;
-            this.LoginBtn.BorderThickness = 2;
-            this.LoginBtn.FillColor = System.Drawing.Color.Transparent;
-            this.LoginBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.LoginBtn.ForeColor = System.Drawing.Color.White;
-            this.LoginBtn.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.LoginBtn.Location = new System.Drawing.Point(53, 516);
-            this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(98, 39);
-            this.LoginBtn.TabIndex = 6;
-            this.LoginBtn.Text = "Login";
-            this.LoginBtn.UseTransparentBackground = true;
+            this.RegBtn.Animated = true;
+            this.RegBtn.BackColor = System.Drawing.Color.Transparent;
+            this.RegBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.RegBtn.BorderRadius = 10;
+            this.RegBtn.BorderThickness = 2;
+            this.RegBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.RegBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RegBtn.ForeColor = System.Drawing.Color.White;
+            this.RegBtn.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.RegBtn.Location = new System.Drawing.Point(157, 516);
+            this.RegBtn.Name = "RegBtn";
+            this.RegBtn.Size = new System.Drawing.Size(98, 39);
+            this.RegBtn.TabIndex = 7;
+            this.RegBtn.Text = "Sign up";
+            this.RegBtn.UseTransparentBackground = true;
+            this.RegBtn.Click += new System.EventHandler(this.RegBtn_Click);
+            // 
+            // BackToLoginBtn
+            // 
+            this.BackToLoginBtn.Animated = true;
+            this.BackToLoginBtn.BackColor = System.Drawing.Color.Transparent;
+            this.BackToLoginBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.BackToLoginBtn.BorderRadius = 10;
+            this.BackToLoginBtn.BorderThickness = 2;
+            this.BackToLoginBtn.FillColor = System.Drawing.Color.Transparent;
+            this.BackToLoginBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BackToLoginBtn.ForeColor = System.Drawing.Color.White;
+            this.BackToLoginBtn.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BackToLoginBtn.Location = new System.Drawing.Point(53, 516);
+            this.BackToLoginBtn.Name = "BackToLoginBtn";
+            this.BackToLoginBtn.Size = new System.Drawing.Size(98, 39);
+            this.BackToLoginBtn.TabIndex = 6;
+            this.BackToLoginBtn.Text = "Login";
+            this.BackToLoginBtn.UseTransparentBackground = true;
+            this.BackToLoginBtn.Click += new System.EventHandler(this.BackToLoginBtn_Click);
             // 
             // PassBox
             // 
@@ -241,27 +269,27 @@
             this.ReEnterPasswordBox.Size = new System.Drawing.Size(251, 36);
             this.ReEnterPasswordBox.TabIndex = 1;
             // 
-            // Name
+            // displayNameBox
             // 
-            this.Name.Animated = true;
-            this.Name.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.Name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Name.DefaultText = "";
-            this.Name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Name.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Name.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Name.Location = new System.Drawing.Point(34, 140);
-            this.Name.Name = "Name";
-            this.Name.PasswordChar = '\0';
-            this.Name.PlaceholderText = "Display name";
-            this.Name.SelectedText = "";
-            this.Name.Size = new System.Drawing.Size(251, 36);
-            this.Name.TabIndex = 1;
+            this.displayNameBox.Animated = true;
+            this.displayNameBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
+            this.displayNameBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.displayNameBox.DefaultText = "";
+            this.displayNameBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.displayNameBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.displayNameBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.displayNameBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.displayNameBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.displayNameBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.displayNameBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.displayNameBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.displayNameBox.Location = new System.Drawing.Point(34, 140);
+            this.displayNameBox.Name = "displayNameBox";
+            this.displayNameBox.PasswordChar = '\0';
+            this.displayNameBox.PlaceholderText = "Display name";
+            this.displayNameBox.SelectedText = "";
+            this.displayNameBox.Size = new System.Drawing.Size(251, 36);
+            this.displayNameBox.TabIndex = 1;
             // 
             // UserBox
             // 
@@ -285,6 +313,19 @@
             this.UserBox.SelectedText = "";
             this.UserBox.Size = new System.Drawing.Size(251, 36);
             this.UserBox.TabIndex = 1;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::X_Plore.Properties.Resources._22;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(64, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(182, 144);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // guna2Panel1
             // 
@@ -319,56 +360,6 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
             this.guna2ControlBox1.TabIndex = 2;
             // 
-            // guna2ShadowForm1
-            // 
-            this.guna2ShadowForm1.BorderRadius = 6;
-            this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.guna2ShadowForm1.TargetForm = this;
-            // 
-            // guna2AnimateWindow1
-            // 
-            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_POSITIVE;
-            this.guna2AnimateWindow1.TargetForm = this;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Enabled = false;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Silver;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(46, 243);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(41, 15);
-            this.guna2HtmlLabel1.TabIndex = 13;
-            this.guna2HtmlLabel1.Text = "Gender";
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
-            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(16, 16);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(248, 286);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(26, 20);
-            this.guna2ImageButton2.TabIndex = 11;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::X_Plore.Properties.Resources._22;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(64, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(182, 144);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -381,6 +372,17 @@
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
+            // guna2ShadowForm1
+            // 
+            this.guna2ShadowForm1.BorderRadius = 6;
+            this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.guna2ShadowForm1.TargetForm = this;
+            // 
+            // guna2AnimateWindow1
+            // 
+            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_POSITIVE;
+            this.guna2AnimateWindow1.TargetForm = this;
             // 
             // FormDangKy
             // 
@@ -395,8 +397,8 @@
             this.Text = "Form1";
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -408,8 +410,8 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button BackToRegisterBtn;
-        private Guna.UI2.WinForms.Guna2Button LoginBtn;
+        private Guna.UI2.WinForms.Guna2Button RegBtn;
+        private Guna.UI2.WinForms.Guna2Button BackToLoginBtn;
         private Guna.UI2.WinForms.Guna2TextBox PassBox;
         private Guna.UI2.WinForms.Guna2TextBox UserBox;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
@@ -418,12 +420,12 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        private Guna.UI2.WinForms.Guna2ImageButton showPassBox;
         private Guna.UI2.WinForms.Guna2TextBox TelBox;
         private Guna.UI2.WinForms.Guna2TextBox EmailBox;
         private Guna.UI2.WinForms.Guna2TextBox ReEnterPasswordBox;
-        private Guna.UI2.WinForms.Guna2TextBox Name;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2TextBox displayNameBox;
+        private Guna.UI2.WinForms.Guna2ComboBox GenBox;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

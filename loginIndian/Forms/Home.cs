@@ -23,7 +23,7 @@ namespace loginIndian.Forms
             InitializeComponent();
             panelDoipass.Hide();
             NhapPassPn.Hide();
-          //  ListenFor2FAStatusChanges();
+            //  ListenFor2FAStatusChanges();
 
         }
 
@@ -181,31 +181,36 @@ namespace loginIndian.Forms
             EnterPasstb.Clear(); // Xóa mật khẩu đã nhập
 
         }
-     /*   private async void ListenFor2FAStatusChanges()
-        {
-            var db = FirestoreHelper.Database;
-            DocumentReference docRef = db.Collection("UserData").Document(username);
-            docRef.Listen(snapshot =>
-            {
-                if (snapshot.Exists)
-                {
-                    Dictionary<string, object> user = snapshot.ToDictionary();
-                    if (user.ContainsKey("Is2FAEnabled"))
-                    {
-                        this.Invoke((MethodInvoker)delegate
-                        {
-                            // Update Trangthai with the new 2FA status
-                            bool is2FAEnabled = (bool)user["Is2FAEnabled"];
-                            Trangthai.ForeColor = is2FAEnabled ? Color.Green : Color.Red;
-                            Trangthai.Text = is2FAEnabled ? "Đang bật" : "Đang tắt";
-                        });
-                    }
-                }
-            });
-        }*/
+        /*   private async void ListenFor2FAStatusChanges()
+           {
+               var db = FirestoreHelper.Database;
+               DocumentReference docRef = db.Collection("UserData").Document(username);
+               docRef.Listen(snapshot =>
+               {
+                   if (snapshot.Exists)
+                   {
+                       Dictionary<string, object> user = snapshot.ToDictionary();
+                       if (user.ContainsKey("Is2FAEnabled"))
+                       {
+                           this.Invoke((MethodInvoker)delegate
+                           {
+                               // Update Trangthai with the new 2FA status
+                               bool is2FAEnabled = (bool)user["Is2FAEnabled"];
+                               Trangthai.ForeColor = is2FAEnabled ? Color.Green : Color.Red;
+                               Trangthai.Text = is2FAEnabled ? "Đang bật" : "Đang tắt";
+                           });
+                       }
+                   }
+               });
+           }*/
 
 
         private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void confirm1Btn_Click_1(object sender, EventArgs e)
         {
 
         }

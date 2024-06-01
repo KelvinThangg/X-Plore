@@ -383,6 +383,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2024_05_28_194735 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2024-05-28 194735", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap send_3354313 {
             get {
                 object obj = ResourceManager.GetObject("send_3354313", resourceCulture);

@@ -37,6 +37,7 @@
             this.confirmBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.codeBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.NotifcationTxT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -45,6 +46,7 @@
             // 
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2ControlBox1);
             this.guna2CustomGradientPanel1.Controls.Add(this.lbDem);
+            this.guna2CustomGradientPanel1.Controls.Add(this.NotifcationTxT);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2CustomGradientPanel1.Controls.Add(this.sendBtn);
@@ -117,11 +119,12 @@
             this.sendBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.sendBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.sendBtn.ForeColor = System.Drawing.Color.White;
-            this.sendBtn.Location = new System.Drawing.Point(225, 273);
+            this.sendBtn.Location = new System.Drawing.Point(54, 273);
             this.sendBtn.Name = "sendBtn";
             this.sendBtn.Size = new System.Drawing.Size(140, 45);
             this.sendBtn.TabIndex = 8;
             this.sendBtn.Text = "Gửi lại";
+            this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
             // 
             // confirmBtn
             // 
@@ -136,11 +139,12 @@
             this.confirmBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.confirmBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.confirmBtn.ForeColor = System.Drawing.Color.White;
-            this.confirmBtn.Location = new System.Drawing.Point(54, 273);
+            this.confirmBtn.Location = new System.Drawing.Point(227, 273);
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(139, 45);
             this.confirmBtn.TabIndex = 8;
             this.confirmBtn.Text = "Xác nhận";
+            this.confirmBtn.Click += new System.EventHandler(this.confirmBtn_Click);
             // 
             // codeBox
             // 
@@ -177,6 +181,17 @@
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // NotifcationTxT
+            // 
+            this.NotifcationTxT.BackColor = System.Drawing.Color.Transparent;
+            this.NotifcationTxT.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotifcationTxT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.NotifcationTxT.Location = new System.Drawing.Point(163, 369);
+            this.NotifcationTxT.Name = "NotifcationTxT";
+            this.NotifcationTxT.Size = new System.Drawing.Size(94, 27);
+            this.NotifcationTxT.TabIndex = 9;
+            this.NotifcationTxT.Text = "Thông báo";
+            // 
             // Xac_thuc_dky
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,5 +219,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lbDem;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel NotifcationTxT;
     }
 }

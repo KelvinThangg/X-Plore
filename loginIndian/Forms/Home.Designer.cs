@@ -153,7 +153,7 @@
             panelDoipass.Controls.Add(ReEnterPasswordBox);
             panelDoipass.Controls.Add(PassBox);
             panelDoipass.Controls.Add(OldpassBox);
-            panelDoipass.Location = new Point(482, 145);
+            panelDoipass.Location = new Point(273, 145);
             panelDoipass.Name = "panelDoipass";
             panelDoipass.Size = new Size(200, 216);
             panelDoipass.TabIndex = 4;
@@ -166,6 +166,7 @@
             confirm1Btn.TabIndex = 2;
             confirm1Btn.Text = "Xác nhận";
             confirm1Btn.UseVisualStyleBackColor = true;
+            confirm1Btn.Click += confirm1Btn_Click_1;
             // 
             // label7
             // 

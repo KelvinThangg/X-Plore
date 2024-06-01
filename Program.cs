@@ -1,9 +1,12 @@
-﻿using System;
+﻿using loginIndian.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using X_Plore.Main;
+using X_Plore.Dangky_Dangnhap;
+using System.Configuration;
 
 namespace X_Plore
 {
@@ -15,9 +18,15 @@ namespace X_Plore
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles(); 
+            // Set environment variable for Firestore
+            FirestoreHelper.SetEnvironmentVariable();
+
+            // Enable visual styles and set compatible text rendering default
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MaHoaFile());
+
+            // Run the application with the login form
+            Application.Run(new FormDangNhap(""));
         }
     }
 }

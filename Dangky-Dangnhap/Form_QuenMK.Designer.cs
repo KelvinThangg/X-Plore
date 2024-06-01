@@ -30,8 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.BacktologinBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.helpBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.confirmBtn = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.sendRecoveryBtn = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.sendBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.recoveryCodeBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.registerMailBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -43,8 +45,10 @@
             // 
             // guna2CustomGradientPanel1
             // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.BacktologinBtn);
+            this.guna2CustomGradientPanel1.Controls.Add(this.helpBtn);
             this.guna2CustomGradientPanel1.Controls.Add(this.confirmBtn);
-            this.guna2CustomGradientPanel1.Controls.Add(this.sendRecoveryBtn);
+            this.guna2CustomGradientPanel1.Controls.Add(this.sendBtn);
             this.guna2CustomGradientPanel1.Controls.Add(this.recoveryCodeBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.registerMailBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel2);
@@ -54,10 +58,54 @@
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-1, 0);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(439, 187);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(451, 279);
             this.guna2CustomGradientPanel1.TabIndex = 0;
+            // 
+            // BacktologinBtn
+            // 
+            this.BacktologinBtn.BackColor = System.Drawing.Color.Transparent;
+            this.BacktologinBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.BacktologinBtn.BorderRadius = 10;
+            this.BacktologinBtn.BorderThickness = 2;
+            this.BacktologinBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BacktologinBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BacktologinBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BacktologinBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BacktologinBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BacktologinBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.BacktologinBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.BacktologinBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BacktologinBtn.ForeColor = System.Drawing.Color.White;
+            this.BacktologinBtn.Location = new System.Drawing.Point(135, 236);
+            this.BacktologinBtn.Name = "BacktologinBtn";
+            this.BacktologinBtn.Size = new System.Drawing.Size(175, 29);
+            this.BacktologinBtn.TabIndex = 8;
+            this.BacktologinBtn.Text = "Quay lại đăng nhập";
+            this.BacktologinBtn.Click += new System.EventHandler(this.BacktologinBtn_Click);
+            // 
+            // helpBtn
+            // 
+            this.helpBtn.BackColor = System.Drawing.Color.Transparent;
+            this.helpBtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.helpBtn.BorderRadius = 10;
+            this.helpBtn.BorderThickness = 2;
+            this.helpBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.helpBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.helpBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.helpBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.helpBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.helpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.helpBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.helpBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpBtn.ForeColor = System.Drawing.Color.White;
+            this.helpBtn.Location = new System.Drawing.Point(135, 207);
+            this.helpBtn.Name = "helpBtn";
+            this.helpBtn.Size = new System.Drawing.Size(175, 26);
+            this.helpBtn.TabIndex = 8;
+            this.helpBtn.Text = "Không thể truy cập Mail?";
+            this.helpBtn.Click += new System.EventHandler(this.helpBtn_Click);
             // 
             // confirmBtn
             // 
@@ -72,30 +120,32 @@
             this.confirmBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.confirmBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmBtn.ForeColor = System.Drawing.Color.White;
-            this.confirmBtn.Location = new System.Drawing.Point(166, 149);
+            this.confirmBtn.Location = new System.Drawing.Point(254, 149);
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(82, 28);
             this.confirmBtn.TabIndex = 8;
             this.confirmBtn.Text = "Xác nhận";
+            this.confirmBtn.Click += new System.EventHandler(this.confirmBtn_Click);
             // 
-            // sendRecoveryBtn
+            // sendBtn
             // 
-            this.sendRecoveryBtn.BackColor = System.Drawing.Color.Transparent;
-            this.sendRecoveryBtn.BorderRadius = 10;
-            this.sendRecoveryBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.sendRecoveryBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.sendRecoveryBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sendRecoveryBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sendRecoveryBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.sendRecoveryBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.sendRecoveryBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.sendRecoveryBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sendRecoveryBtn.ForeColor = System.Drawing.Color.White;
-            this.sendRecoveryBtn.Location = new System.Drawing.Point(171, 70);
-            this.sendRecoveryBtn.Name = "sendRecoveryBtn";
-            this.sendRecoveryBtn.Size = new System.Drawing.Size(71, 28);
-            this.sendRecoveryBtn.TabIndex = 8;
-            this.sendRecoveryBtn.Text = "Gửi mã";
+            this.sendBtn.BackColor = System.Drawing.Color.Transparent;
+            this.sendBtn.BorderRadius = 10;
+            this.sendBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.sendBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.sendBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.sendBtn.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.sendBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.sendBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.sendBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.sendBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sendBtn.ForeColor = System.Drawing.Color.White;
+            this.sendBtn.Location = new System.Drawing.Point(257, 67);
+            this.sendBtn.Name = "sendBtn";
+            this.sendBtn.Size = new System.Drawing.Size(71, 28);
+            this.sendBtn.TabIndex = 8;
+            this.sendBtn.Text = "Gửi mã";
+            this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
             // 
             // recoveryCodeBox
             // 
@@ -159,7 +209,7 @@
             this.lbDem.BackColor = System.Drawing.Color.Transparent;
             this.lbDem.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDem.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lbDem.Location = new System.Drawing.Point(332, 149);
+            this.lbDem.Location = new System.Drawing.Point(181, 177);
             this.lbDem.Name = "lbDem";
             this.lbDem.Size = new System.Drawing.Size(83, 25);
             this.lbDem.TabIndex = 6;
@@ -186,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 185);
+            this.ClientSize = new System.Drawing.Size(449, 277);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_QuenMK";
@@ -205,8 +255,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox recoveryCodeBox;
         private Guna.UI2.WinForms.Guna2TextBox registerMailBox;
-        private Guna.UI2.WinForms.Guna2GradientButton sendRecoveryBtn;
+        private Guna.UI2.WinForms.Guna2GradientButton sendBtn;
         private Guna.UI2.WinForms.Guna2GradientButton confirmBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbDem;
+        private Guna.UI2.WinForms.Guna2GradientButton helpBtn;
+        private Guna.UI2.WinForms.Guna2GradientButton BacktologinBtn;
     }
 }

@@ -6,7 +6,7 @@ using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Drawing;
 namespace loginIndian.Classes
 {
     internal class Captcha
