@@ -29,6 +29,8 @@ namespace loginIndian.Classes
         public bool Is2FAEnabled { get; set; } = false;
         [FirestoreProperty]
         public string Key { get; set; }
+        [FirestoreProperty]
+        public string AvatarUrl { get; set; }
 
     }
 }

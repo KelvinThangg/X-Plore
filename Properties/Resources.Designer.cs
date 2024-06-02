@@ -243,6 +243,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eye_12918930 {
+            get {
+                object obj = ResourceManager.GetObject("eye_12918930", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gopy {
             get {
                 object obj = ResourceManager.GetObject("gopy", resourceCulture);

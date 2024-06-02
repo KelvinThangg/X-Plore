@@ -188,3 +188,12 @@ D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\BotDetec
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\BotDetect.Web.Mvc.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\System.Data.SQLite.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\System.Data.SQLite.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.Core.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.S3.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.SecurityToken.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.Core.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.Core.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.S3.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.S3.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.SecurityToken.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\New folder\X-Plore\bin\Debug\AWSSDK.SecurityToken.xml

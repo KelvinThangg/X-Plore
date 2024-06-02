@@ -11,14 +11,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace X_Plore.Main
 {
     public partial class MainMenu : Form
     {
         private string username;
         private string displayname;
-
 
         public MainMenu(string DisplayName, string username)
         {
@@ -30,6 +28,9 @@ namespace X_Plore.Main
 
             // Listen for changes in Firestore
             ListenForDisplayNameChanges();
+
+            // Handle form resize event to resize the panel and contained controls
+            this.Resize += new EventHandler(MainMenu_Resize);
         }
 
         private async void ListenForDisplayNameChanges()
@@ -105,20 +106,31 @@ namespace X_Plore.Main
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //label1.Hide();
+            // Hide unnecessary controls
             guna2PictureBox2.Hide();
-            HomeScreen home = new HomeScreen(username); // Tạo instance Home Form
-            home.TopLevel = false; // Thiết lập Home Form không phải top-level form
-            home.FormBorderStyle = FormBorderStyle.None; // Loại bỏ border của Home Form
-            home.Dock = DockStyle.Fill; // Cho Home Form lấp đầy Panel chứa nó
-            panel1.Controls.Add(home); // Thêm Home Form vào Panel
-            home.Show(); // Hiển thị Home Form
+
+            // Create instance of HomeScreen
+            HomeScreen home = new HomeScreen(username);
+            home.TopLevel = false;
+            home.FormBorderStyle = FormBorderStyle.None;
+            home.Dock = DockStyle.Fill;
+
+            // Clear previous controls in panel1
+            panel1.Controls.Clear();
+
+            // Add HomeScreen to panel1
+            panel1.Controls.Add(home);
+            home.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void MainMenu_Resize(object sender, EventArgs e)
+        {
+            panel1.Invalidate(); // Forces the panel to redraw itself
+        }
     }
 }
-

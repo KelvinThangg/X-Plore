@@ -163,7 +163,7 @@ namespace X_Plore.Dangky_Dangnhap
             Environment.Exit(1);
         }
 
-        private async void EmailVerify_FormClosed(object sender, FormClosedEventArgs e)
+      /*  private async void EmailVerify_FormClosed(object sender, FormClosedEventArgs e)
         {
             codeExpiryTimer.Stop();
             if (flag != 1)
@@ -171,7 +171,7 @@ namespace X_Plore.Dangky_Dangnhap
                 MessageBox.Show("Exit");
                 Environment.Exit(1);
             }
-        }
+        }*/
 
 
     }

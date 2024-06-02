@@ -1,5 +1,6 @@
 ﻿using Google.Cloud.Firestore;
 using loginIndian.Classes;
+using Microsoft.CodeAnalysis.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,12 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Amazon;
+using Amazon.S3;
+using Amazon.S3.Model;
+using System.IO;
+using Amazon.SecurityToken;
+using System.Net;
 
 namespace X_Plore.Main
 {
@@ -24,15 +31,33 @@ namespace X_Plore.Main
             InitializeComponent();
             panelDoipass.Hide();
             NhapPassPn.Hide();
-            //  ListenFor2FAStatusChanges();
+            LoadAvatarFromS3();
 
+
+            // Check and update 2FA status when the form loads
+            CheckAndUpdate2FAStatus();
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
+     private async void CheckAndUpdate2FAStatus()
+        {
+            UserData userData = await GetCurrentUserData();
+            UpdateTrangthaiLabel(userData.Is2FAEnabled);
+        }
+
+
+
+
+        private void UpdateTrangthaiLabel(bool is2FAEnabled)
+        {
+            Trangthai.ForeColor = is2FAEnabled ? Color.Green : Color.Red;
+            Trangthai.Text = is2FAEnabled ? "Đang bật" : "Đang tắt";
+        }
         private async void ChangeDisplaynameBtn_Click(object sender, EventArgs e)
         {
             // 1. Lấy tên từ textbox
@@ -135,6 +160,7 @@ namespace X_Plore.Main
 
         private async void twofaBtn_Click(object sender, EventArgs e)
         {
+            panelDoipass.Hide();
             UserData userData = await GetCurrentUserData();
             bool is2FAEnabled = userData.Is2FAEnabled;
             if (is2FAEnabled)
@@ -156,7 +182,7 @@ namespace X_Plore.Main
             NhapPassPn.Hide();
             panelDoipass.Show();
         }
-
+        
         private async void confirmBtn2_Click(object sender, EventArgs e)
         {
             string enteredPassword = EnterPasstb.Text;
@@ -182,5 +208,134 @@ namespace X_Plore.Main
             EnterPasstb.Clear(); // Xóa mật khẩu đã nhập
 
         }
+
+        private const string AccessKey = "ASIAZD7PBJSZSNFV2KOG";
+        private const string SecretKey = "KZ1eOPdNoq1Fe9+7bcOMfl3sJlI/IDu4secCRAKK";
+        private const string SessionToken = "IQoJb3JpZ2luX2VjEPH//////////wEaCXVzLXdlc3QtMiJHMEUCIQDxxBswHFKlZdAxGE0inu6B4Dlre7eGpl9oEPK7MiKe1wIgYkfcy1n5D3sxrHIyUhWRiUBJ1XWNYkzruEhOGz/cWRYqsAIIeRAAGgw2MjcwMjk2NTg4MDMiDNqiw9PpBGswA7gaAiqNAifK+oXYiOwc9LmTKC12v/hVcBjWWQh1xDlkn+I44EMTrmx2EhfFrYSXUQ865Ij6YbU88sOirc3Jzr6wTTfYlBLRp7RmiGZM4eg7NER+Ov1tEY3GKrwdQqOPTs12DjzjufOtX7k66yI8w4jt9/B2Wvt4v9Qr3JdY+C6e6fE7UoD9JslhCLWK+jDElcyjjCKzdZRWuv17RIrQMdKpFBm5IxMfRM0EvhIxrktiX7GsFwMK/bV7EEOmuDuTx2cwo5qkA2EKNu+YVvbeES7nRZ1XZjyKM3SIFqS5s6OPdb0zv+oDolYmYV1C8qjyjs5APr+Vb8j3oHmbMVtp+j+2UcuCS+Qlk23FPhUE5a4gJ52RMK638rIGOp0BinRF+a/mgd2obK18Qn6CaCMOgiV3xAMqBfz+zELY3jSaMPW7QDEfrDFikv/DLAAnslk3nbN0esURT2L08WH2l8SOUkqWma1I6rPgppn+AaltZM4O/idEHaYH7ECkX2PkjDaGDqTZ79AaSJwK1GjwdnFuH50iPaRhAZIi/etNTNB2qX7rxcQDRPmBl0UxAYRVWX4r+4u37wkijwYDCQ==";
+        private const string BucketName = "xplorer-bucket"; // Thay thế bằng tên bucket của bạn
+
+        private async void ChangeAvatarBtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.jpg, *.jpeg, *.png)|*.jpg;*.jpeg;*.png";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+                Image avatarImage = Image.FromFile(filePath);
+
+                // Cập nhật ảnh trong PictureBox
+                guna2CirclePictureBox1.Image = avatarImage;
+
+                // Tải ảnh lên AWS S3
+                string avatarUrl = await UploadAvatarToS3(filePath);
+
+                // Lưu URL ảnh vào Firestore
+                await UpdateAvatarUrl(avatarUrl);
+            }
+        }
+        private async Task UpdateAvatarUrl(string avatarUrl)
+        {
+            try
+            {
+                // Lấy UserData hiện tại dựa trên username
+                UserData userData = await GetCurrentUserData();
+
+                // Cập nhật AvatarUrl
+                userData.AvatarUrl = avatarUrl;
+
+                // Lưu userData đã cập nhật vào Firestore
+                FirestoreHelper.SetEnvironmentVariable(); 
+                DocumentReference docRef = FirestoreHelper.Database.Collection("UserData").Document(userData.Username);
+                await docRef.SetAsync(userData);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi cập nhật Avatar URL: {ex.Message}");
+                // Xử lý lỗi, ví dụ: ghi log hoặc thông báo cho người dùng
+            }
+        }
+        // Hàm tải ảnh lên AWS S3
+        private async Task<string> UploadAvatarToS3(string filePath)
+        {
+            try
+            {
+                var credentials = new Amazon.Runtime.SessionAWSCredentials(AccessKey, SecretKey, SessionToken);
+                var config = new AmazonS3Config
+                {
+                    RegionEndpoint = RegionEndpoint.USEast1 // Chọn Region của bạn
+                };
+
+                using (var client = new AmazonS3Client(credentials, config))
+                {
+                    var putRequest = new PutObjectRequest
+                    {
+                        BucketName = BucketName,
+                        Key = $"{username}_avatar.png", // Tên tệp tin
+                        FilePath = filePath,
+                        ContentType = "image/png" // Kiểu dữ liệu ảnh
+                    };
+
+                    // Tải ảnh lên S3
+                    await client.PutObjectAsync(putRequest);
+
+                    // Trả về URL của ảnh
+                    return $"https://{BucketName}.s3.{RegionEndpoint.USEast1}.amazonaws.com/{username}_avatar.png";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải ảnh lên S3: {ex.Message}");
+                return null;
+            }
+        }
+        private async Task LoadAvatarFromS3()
+        {
+            try
+            {
+                // Tạo tên tệp tin avatar dựa trên username
+                string avatarFileName = $"{username}_avatar.png";
+
+                // Tạo request để lấy ảnh từ S3
+                var request = new GetObjectRequest
+                {
+                    BucketName = BucketName,
+                    Key = avatarFileName
+                };
+
+                // Lấy thông tin đăng nhập AWS
+                var credentials = new Amazon.Runtime.SessionAWSCredentials(AccessKey, SecretKey, SessionToken);
+
+                // Tạo AmazonS3Client
+                using (var client = new AmazonS3Client(credentials, RegionEndpoint.USEast1)) 
+                {
+                    // Thực hiện request để lấy ảnh
+                    using (var response = await client.GetObjectAsync(request))
+                    {
+                        // Kiểm tra xem ảnh có tồn tại hay không
+                        if (response.HttpStatusCode == HttpStatusCode.OK)
+                        {
+                            // Tải ảnh và hiển thị trong PictureBox
+                            using (var stream = new MemoryStream())
+                            {
+                                await response.ResponseStream.CopyToAsync(stream);
+                                guna2CirclePictureBox1.Image = Image.FromStream(stream);
+                            }
+                        }
+                        else
+                        {
+                            // Xử lý trường hợp không tìm thấy ảnh (ví dụ: hiển thị ảnh mặc định)
+                            guna2CirclePictureBox1.Image = Properties.Resources.avatardefault_92824;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải ảnh đại diện: {ex.Message}");
+                // Xử lý lỗi, ví dụ: ghi log hoặc hiển thị thông báo cho người dùng
+            }
+        }
+
     }
 }

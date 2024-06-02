@@ -267,10 +267,10 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.guna2PictureBox2);
             this.panel1.Controls.Add(this.guna2PictureBox3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(151, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(653, 450);
+            this.panel1.Size = new System.Drawing.Size(804, 450);
             this.panel1.TabIndex = 14;
             // 
             // guna2ControlBox2
@@ -279,7 +279,7 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(569, 12);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(720, 12);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
             this.guna2ControlBox2.TabIndex = 5;
@@ -290,7 +290,7 @@
             this.button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.button2.HoverState.FillColor = System.Drawing.Color.Red;
             this.button2.IconColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(610, 12);
+            this.button2.Location = new System.Drawing.Point(761, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 28);
             this.button2.TabIndex = 4;
@@ -301,9 +301,9 @@
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(-126, -221);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(15, -218);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(898, 881);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(924, 881);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 6;
             this.guna2PictureBox2.TabStop = false;

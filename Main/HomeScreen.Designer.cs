@@ -393,7 +393,7 @@
             this.twofaBtn.Name = "twofaBtn";
             this.twofaBtn.Size = new System.Drawing.Size(81, 35);
             this.twofaBtn.TabIndex = 8;
-            this.twofaBtn.Text = "Bật/Tắt";
+            this.twofaBtn.Text = "Bật";
             this.twofaBtn.Click += new System.EventHandler(this.twofaBtn_Click);
             // 
             // ChangeAvatarBtn
@@ -414,6 +414,7 @@
             this.ChangeAvatarBtn.Size = new System.Drawing.Size(81, 35);
             this.ChangeAvatarBtn.TabIndex = 8;
             this.ChangeAvatarBtn.Text = "Đổi ảnh";
+            this.ChangeAvatarBtn.Click += new System.EventHandler(this.ChangeAvatarBtn_Click);
             // 
             // ChangeDisplaynameBtn
             // 
@@ -442,9 +443,9 @@
             this.Trangthai.ForeColor = System.Drawing.Color.LawnGreen;
             this.Trangthai.Location = new System.Drawing.Point(595, 45);
             this.Trangthai.Name = "Trangthai";
-            this.Trangthai.Size = new System.Drawing.Size(28, 23);
+            this.Trangthai.Size = new System.Drawing.Size(81, 23);
             this.Trangthai.TabIndex = 7;
-            this.Trangthai.Text = "Bật";
+            this.Trangthai.Text = "Trạng thái";
             // 
             // guna2HtmlLabel4
             // 
