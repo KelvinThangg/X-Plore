@@ -131,13 +131,13 @@ namespace Client
 
         private void DisplayMessage(MessageNode message)
         {
-            // Use encryptionKey if available and if the message is not a file
+            // Sử dụng encryptionKey nếu có và nếu tin nhắn không phải là file
             string decryptedMessage = message.IsFile ? message.Message : (encryptionKey == null ? message.Message : Security.Decrypt(message.Message, encryptionKey));
 
-            // Unique identifier for the message
+            // Tạo mã nhận diện duy nhất cho tin nhắn
             string uniqueMessageIdentifier = message.IsFile ? $"{message.Sender}-{message.FileName}-{message.Timestamp}" : $"{message.Sender}-{decryptedMessage}-{message.Timestamp}";
 
-            // Check if the message has been displayed already
+            // Kiểm tra xem tin nhắn đã được hiển thị hay chưa
             if (!displayedMessages.Contains(uniqueMessageIdentifier))
             {
                 if (message.IsFile)
@@ -146,7 +146,7 @@ namespace Client
                     listBox1.Items.Add(fileMessage);
                     displayedMessages.Add(uniqueMessageIdentifier);
 
-                    // Save the file to a temporary directory when the message is displayed for the first time
+                    // Lưu tệp vào thư mục tạm thời khi tin nhắn được hiển thị lần đầu
                     string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
                     string fileExtension = Path.GetExtension(message.FileName).ToLower();
                     string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
@@ -155,17 +155,17 @@ namespace Client
 
                     string filePath = Path.Combine(targetDir, message.FileName);
 
-                    // Decrypt the file content if necessary
+                    // Giải mã nội dung tệp nếu cần
                     byte[] fileBytes;
                     if (encryptionKey != null)
                     {
-                        // Decrypt the file content if encryptionKey is available
+                        // Giải mã nội dung tệp nếu có encryptionKey
                         string decryptedBase64File = Security.Decrypt(message.Message, encryptionKey);
                         fileBytes = Convert.FromBase64String(decryptedBase64File);
                     }
                     else
                     {
-                        // No decryption needed, just convert from base64 to byte
+                        // Không cần giải mã, chỉ cần chuyển đổi từ base64 sang byte
                         fileBytes = Convert.FromBase64String(message.Message);
                     }
                     File.WriteAllBytes(filePath, fileBytes);
@@ -193,10 +193,13 @@ namespace Client
 
         private async void sendTextButton_Click(object sender, EventArgs e)
         {
+
+
             string message = textBox1.Text.Trim();
             if (isSavingMessage)
             {
                 // Đang xử lý tin nhắn trước đó, không cho phép gửi tin nhắn mới
+                sendTextButton.Enabled = true;
                 return;
             }
 
@@ -262,7 +265,9 @@ namespace Client
                     isSavingMessage = true; // Bắt đầu quá trình lưu tin nhắn
 
                     await SaveMessageToFirebase(message);
-                    DisplayMessage(new MessageNode { Message = message, Sender = adminName, Timestamp = DateTime.Now });
+
+                    // Không cần hiển thị tin nhắn ở đây nữa vì `DisplayMessage` sẽ được gọi từ Firebase lắng nghe
+
                     textBox1.Text = "";
                 }
                 catch (Exception ex)
@@ -272,11 +277,13 @@ namespace Client
                 finally
                 {
                     isSavingMessage = false; // Kết thúc quá trình lưu tin nhắn
+                    sendTextButton.Enabled = true; // Kích hoạt lại nút
                 }
             }
             else
             {
                 MessageBox.Show("Vui lòng nhập tin nhắn.");
+                sendTextButton.Enabled = true; // Kích hoạt lại nút
             }
         }
 
