@@ -1,0 +1,128 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|c:\\users\\dadad\\source\\repos\\chat video project\\webcamsender\\webcamreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|solutionrelative:webcamreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\mainform .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|solutionrelative:mainform .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\mainform .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|solutionrelative:mainform .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\webcamreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|solutionrelative:webcamreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\webcamreceiver.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|solutionrelative:webcamreceiver.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A36B6A-6207-46D8-BD72-DE34E5DDD34B}|WebcamSender.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 201,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WebcamReceiver.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\WebcamReceiver.cs",
+              "RelativeDocumentMoniker": "WebcamReceiver.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\WebcamReceiver.cs [Design]",
+              "RelativeToolTip": "WebcamReceiver.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:41:15.706Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm .cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\MainForm .cs",
+              "RelativeDocumentMoniker": "MainForm .cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\MainForm .cs",
+              "RelativeToolTip": "MainForm .cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwGgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:38:15.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebcamReceiver.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\WebcamReceiver.cs",
+              "RelativeDocumentMoniker": "WebcamReceiver.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\WebcamReceiver.cs",
+              "RelativeToolTip": "WebcamReceiver.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwBMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:41:35.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm .cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\MainForm .cs",
+              "RelativeDocumentMoniker": "MainForm .cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\WebcamSender\\MainForm .cs [Design]",
+              "RelativeToolTip": "..\\..\\WebcamSender\\MainForm .cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:37:01.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebcamReceiver.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\WebcamReceiver.Designer.cs",
+              "RelativeDocumentMoniker": "WebcamReceiver.Designer.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\WebcamReceiver.Designer.cs",
+              "RelativeToolTip": "WebcamReceiver.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:48:54.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebcamSender\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:45:00.604Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

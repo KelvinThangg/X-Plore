@@ -1,0 +1,40 @@
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.exe
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.deps.json
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.runtimeconfig.json
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.dll
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.pdb
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\AForge.dll
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\AForge.Video.dll
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\AForge.Video.DirectShow.dll
+C:\Users\dadad\source\repos\WebSocketServerApp\bin\Debug\net8.0\websocket-sharp.dll
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.csproj.AssemblyReference.cache
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.AssemblyInfoInputs.cache
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.AssemblyInfo.cs
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.csproj.CoreCompileInputs.cache
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocke.252BFCA1.Up2Date
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.dll
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\refint\WebSocketServerApp.dll
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.pdb
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.genruntimeconfig.cache
+C:\Users\dadad\source\repos\WebSocketServerApp\obj\Debug\net8.0\ref\WebSocketServerApp.dll
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.exe
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.deps.json
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.runtimeconfig.json
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.dll
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.pdb
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\AForge.dll
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\AForge.Video.dll
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\AForge.Video.DirectShow.dll
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\bin\Debug\net8.0\websocket-sharp.dll
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.csproj.AssemblyReference.cache
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.AssemblyInfoInputs.cache
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.AssemblyInfo.cs
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.csproj.CoreCompileInputs.cache
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocke.252BFCA1.Up2Date
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.dll
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\refint\WebSocketServerApp.dll
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.pdb
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.genruntimeconfig.cache
+C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\ref\WebSocketServerApp.dll
