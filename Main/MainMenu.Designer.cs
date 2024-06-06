@@ -207,6 +207,7 @@
             this.guna2TileButton2.Text = "Nhắn tin nhóm";
             this.guna2TileButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2TileButton2.TextOffset = new System.Drawing.Point(0, -5);
+            this.guna2TileButton2.Click += new System.EventHandler(this.guna2TileButton2_Click);
             // 
             // button3
             // 
@@ -324,44 +325,44 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Snow;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(227, 71);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(93, 25);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(97, 22);
             this.guna2HtmlLabel1.TabIndex = 7;
             this.guna2HtmlLabel1.Text = "Tên hiển thị";
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.Snow;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(542, 71);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(98, 25);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(107, 22);
             this.guna2HtmlLabel4.TabIndex = 7;
             this.guna2HtmlLabel4.Text = "Bảo vệ 2 lớp:";
             // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.LawnGreen;
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(646, 71);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(28, 25);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(31, 22);
             this.guna2HtmlLabel5.TabIndex = 7;
             this.guna2HtmlLabel5.Text = "Bật";
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Snow;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(264, 225);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(130, 25);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(140, 22);
             this.guna2HtmlLabel3.TabIndex = 7;
             this.guna2HtmlLabel3.Text = "Mã khóa của bạn";
             // 

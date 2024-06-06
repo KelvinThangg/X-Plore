@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using X_Plore.Chat;
 
 namespace X_Plore.Main
 {
@@ -131,6 +132,14 @@ namespace X_Plore.Main
         private void MainMenu_Resize(object sender, EventArgs e)
         {
             panel1.Invalidate(); // Forces the panel to redraw itself
+        }
+
+        private void guna2TileButton2_Click(object sender, EventArgs e)
+        {
+            InviteUser inviteUserForm = new InviteUser();
+
+            // Mở form InviteUser
+            inviteUserForm.ShowDialog();
         }
     }
 }
