@@ -162,8 +162,8 @@ namespace X_Plore.Chat
                     string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
                     string fileExtension = Path.GetExtension(message.FileName).ToLower();
                     string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
-                        Path.Combine(projectDir,"X-Plore", "Chat", "Data", "IMG") :
-                        Path.Combine(projectDir,"X-Plore", "Chat", "Data", "File");
+                        Path.Combine(projectDir, "X-Plore", "Chat", "Data", "IMG") :
+                        Path.Combine(projectDir, "X-Plore", "Chat", "Data", "File");
 
                     string filePath = Path.Combine(targetDir, message.FileName);
 
@@ -182,7 +182,7 @@ namespace X_Plore.Chat
                     }
                     File.WriteAllBytes(filePath, fileBytes);
 
-                    panel.MouseClick += (s, e) =>
+                    listBox1.MouseClick += (s, e) =>
                     {
                         if (listBox1.SelectedItem != null && listBox1.SelectedItem.ToString() == fileMessage)
                         {
@@ -203,7 +203,7 @@ namespace X_Plore.Chat
             }
         }
 
-       
+
         private void ListenForMessages()
         {
             firebaseClient

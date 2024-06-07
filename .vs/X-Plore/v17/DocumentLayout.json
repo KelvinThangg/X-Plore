@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,19 +27,19 @@
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\dangky-dangnhap\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\dangky-dangnhap\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\updatepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\dangky-dangnhap\\form_quenmk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\dangky-dangnhap\\form_quenmk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\form_quenmk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -47,11 +47,11 @@
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\dangky-dangnhap\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\dangky-dangnhap\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\dangky-dangnhap\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\dangky-dangnhap\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -59,7 +59,7 @@
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv2\\x-plore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -128,7 +128,7 @@
               "RelativeDocumentMoniker": "Chat\\Form\\GroupChat_Member.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Chat\\Form\\GroupChat_Member.cs",
               "RelativeToolTip": "Chat\\Form\\GroupChat_Member.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAjwH0AAAANAAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAEwK8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T14:16:15.31Z",
               "EditorCaption": ""
@@ -141,7 +141,7 @@
               "RelativeDocumentMoniker": "Chat\\Form\\Group_chat_admin.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
               "RelativeToolTip": "Chat\\Form\\Group_chat_admin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKcAAAA8AAAA",
+              "ViewState": "AQIAAOkAAAAAAAAAAAAwwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T03:18:39.133Z",
               "EditorCaption": ""
@@ -167,8 +167,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Dangky-Dangnhap\\UpdatePassword.cs [Design]",
               "RelativeToolTip": "Dangky-Dangnhap\\UpdatePassword.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:36:01.635Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T13:36:01.635Z"
             },
             {
               "$type": "Document",
@@ -179,8 +178,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs [Design]",
               "RelativeToolTip": "Dangky-Dangnhap\\Xac_thuc_dky.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:36:00.595Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T13:36:00.595Z"
             },
             {
               "$type": "Document",
@@ -191,8 +189,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Dangky-Dangnhap\\Form_QuenMK.cs [Design]",
               "RelativeToolTip": "Dangky-Dangnhap\\Form_QuenMK.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:35:56.728Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T13:35:56.728Z"
             },
             {
               "$type": "Document",
@@ -203,8 +200,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Dangky-Dangnhap\\FormDangKy.cs [Design]",
               "RelativeToolTip": "Dangky-Dangnhap\\FormDangKy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:35:55.61Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T13:35:55.61Z"
             },
             {
               "$type": "Document",
@@ -216,8 +212,7 @@
               "RelativeToolTip": "Dangky-Dangnhap\\Help.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAQwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:35:47.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T13:35:47.102Z"
             },
             {
               "$type": "Document",
@@ -228,8 +223,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Dangky-Dangnhap\\Help.cs [Design]",
               "RelativeToolTip": "Dangky-Dangnhap\\Help.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:35:42.775Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T13:35:42.775Z"
             },
             {
               "$type": "Document",
@@ -265,8 +259,7 @@
               "RelativeToolTip": "Chat\\Form\\General.Designer.cs",
               "ViewState": "AQIAAFMAAAAAAAAAAAAowGkAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:21:08.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T03:21:08.225Z"
             },
             {
               "$type": "Document",
@@ -278,8 +271,7 @@
               "RelativeToolTip": "Chat\\Form\\General.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAowCUAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:20:19.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T03:20:19.671Z"
             },
             {
               "$type": "Document",
@@ -290,8 +282,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Chat\\Form\\General.cs [Design]",
               "RelativeToolTip": "Chat\\Form\\General.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:20:11.786Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T03:20:11.786Z"
             },
             {
               "$type": "Document",
@@ -303,8 +294,7 @@
               "RelativeToolTip": "Chat\\Form\\InviteUser.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAqwEAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:20:00.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T03:20:00.968Z"
             },
             {
               "$type": "Document",
@@ -315,8 +305,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Chat\\Form\\InviteUser.cs [Design]",
               "RelativeToolTip": "Chat\\Form\\InviteUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:19:59.068Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T03:19:59.068Z"
             },
             {
               "$type": "Document",
@@ -327,8 +316,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Chat\\Form\\Group_chat_admin.cs [Design]",
               "RelativeToolTip": "Chat\\Form\\Group_chat_admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T17:35:27.6Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-06T17:35:27.6Z"
             },
             {
               "$type": "Document",
@@ -364,8 +352,7 @@
               "RelativeToolTip": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
               "ViewState": "AQIAAI8AAAAAAAAAAAAAAEIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T04:02:54.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T04:02:54.79Z"
             },
             {
               "$type": "Document",
@@ -386,8 +373,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv2\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs [Design]",
               "RelativeToolTip": "Dangky-Dangnhap\\FormDangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T04:57:05.409Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-01T04:57:05.409Z"
             },
             {
               "$type": "Document",
@@ -411,8 +397,7 @@
               "RelativeToolTip": "Dangky-Dangnhap\\FormDangNhap.cs",
               "ViewState": "AQIAAAkBAAAAAAAAAAAqwGYAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T03:49:43.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T03:49:43.01Z"
             },
             {
               "$type": "Document",
@@ -424,8 +409,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAASwBwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T04:04:11.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-01T04:04:11.817Z"
             }
           ]
         }
