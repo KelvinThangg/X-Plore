@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\.cs\\classeschat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -78,11 +78,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ClassesChat.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\.CS\\ClassesChat.cs",
               "RelativeDocumentMoniker": "Chat\\.CS\\ClassesChat.cs",
@@ -95,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Main\\MainMenu.cs",
               "RelativeDocumentMoniker": "Main\\MainMenu.cs",
@@ -108,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "General.Designer.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.Designer.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\General.Designer.cs",
@@ -121,13 +121,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "General.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\General.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs*",
-              "RelativeToolTip": "Chat\\Form\\General.cs*",
-              "ViewState": "AQIAABkAAAAAAAAAAAAowCUAAAA/AAAA",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs",
+              "RelativeToolTip": "Chat\\Form\\General.cs",
+              "ViewState": "AQIAAO8AAAAAAAAAAAAQwCoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T03:20:19.671Z",
               "EditorCaption": ""
@@ -138,15 +138,15 @@
               "Title": "General.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\General.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs [Design]*",
-              "RelativeToolTip": "Chat\\Form\\General.cs [Design]*",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs [Design]",
+              "RelativeToolTip": "Chat\\Form\\General.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T03:20:11.786Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "InviteUser.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\InviteUser.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\InviteUser.cs",
@@ -171,20 +171,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Group_chat_admin.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\Group_chat_admin.cs",
               "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
               "RelativeToolTip": "Chat\\Form\\Group_chat_admin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkCAAABAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAIwGUAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T03:18:39.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Group_chat_admin.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\Group_chat_admin.cs",
