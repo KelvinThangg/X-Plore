@@ -24,7 +24,6 @@ using Google.Apis.Gmail.v1;
 using Google.Apis.PeopleService.v1.Data;
 using Google.Apis.Util.Store;
 using System.Diagnostics;
-using System.IO;
 
 namespace loginIndian.Forms
 {
@@ -145,6 +144,7 @@ namespace loginIndian.Forms
                 Gender = gender,
                 Email = email,
                 Phone = phone,
+                IsLoggedIn = true
             };
         }
 
@@ -302,7 +302,8 @@ namespace loginIndian.Forms
                                     Username = name,
                                     Email = email,
                                     Gender = gender,
-                                    Phone = phoneNumber
+                                    Phone = phoneNumber,
+                                    IsLoggedIn = true
                                 };
 
                                 var db = FirestoreHelper.Database;

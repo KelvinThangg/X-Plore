@@ -1,4 +1,5 @@
 ﻿using Google.Cloud.Firestore;
+using Lab5_LTM;
 using loginIndian.Classes;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,6 @@ namespace loginIndian.Forms
         private string username;
         private string displayname;
 
-
         public MainMenu(string DisplayName, string username)
         {
             InitializeComponent();
@@ -25,30 +25,6 @@ namespace loginIndian.Forms
             this.displayname = DisplayName;
             MessageBox.Show("Welcome: " + DisplayName);
             DisplayLbl.Text = DisplayName;
-
-            // Listen for changes in Firestore
-            ListenForDisplayNameChanges();
-        }
-
-        private async void ListenForDisplayNameChanges()
-        {
-            var db = FirestoreHelper.Database;
-            DocumentReference docRef = db.Collection("UserData").Document(username);
-            docRef.Listen(snapshot =>
-            {
-                if (snapshot.Exists)
-                {
-                    Dictionary<string, object> user = snapshot.ToDictionary();
-                    if (user.ContainsKey("DisplayName"))
-                    {
-                        this.Invoke((MethodInvoker)delegate
-                        {
-                            // Update DisplayLbl with the new displayName
-                            DisplayLbl.Text = user["DisplayName"].ToString();
-                        });
-                    }
-                }
-            });
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,13 +33,15 @@ namespace loginIndian.Forms
 
             if (result == DialogResult.Yes)
             {
+                
+                Hide();
+                LoginForm form = new LoginForm(username);
                 var db = FirestoreHelper.Database;
                 DocumentReference docRef = db.Collection("UserData").Document(username);
                 docRef.UpdateAsync("isLoggedIn", false);
                 MessageBox.Show("You are out! Back to Login");
-                Hide();
-                LoginForm form = new LoginForm(username);
                 form.ShowDialog();
+
                 Close();
             }
         }
@@ -96,25 +74,12 @@ namespace loginIndian.Forms
             docRef.UpdateAsync("isLoggedIn", false);
         }
 
-        private void DisplayLbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            label1.Hide();
-            Home home = new Home(username); // Tạo instance Home Form
-            home.TopLevel = false; // Thiết lập Home Form không phải top-level form
-            home.FormBorderStyle = FormBorderStyle.None; // Loại bỏ border của Home Form
-            home.Dock = DockStyle.Fill; // Cho Home Form lấp đầy Panel chứa nó
-            panel1.Controls.Add(home); // Thêm Home Form vào Panel
-            home.Show(); // Hiển thị Home Form
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            Hide();
+            Feedback form = new Feedback(displayname, username);
+            form.ShowDialog();
+            Close();
         }
     }
 }
