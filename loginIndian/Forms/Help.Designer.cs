@@ -50,19 +50,17 @@
             // picCCCD
             // 
             picCCCD.BorderStyle = BorderStyle.FixedSingle;
-            picCCCD.Location = new Point(16, 33);
-            picCCCD.Margin = new Padding(2, 2, 2, 2);
+            picCCCD.Location = new Point(23, 55);
             picCCCD.Name = "picCCCD";
-            picCCCD.Size = new Size(270, 120);
+            picCCCD.Size = new Size(385, 198);
             picCCCD.TabIndex = 0;
             picCCCD.TabStop = false;
             // 
             // btnUpload
             // 
-            btnUpload.Location = new Point(16, 164);
-            btnUpload.Margin = new Padding(2, 2, 2, 2);
+            btnUpload.Location = new Point(23, 273);
             btnUpload.Name = "btnUpload";
-            btnUpload.Size = new Size(111, 23);
+            btnUpload.Size = new Size(159, 39);
             btnUpload.TabIndex = 1;
             btnUpload.Text = "Upload Picture";
             btnUpload.UseVisualStyleBackColor = true;
@@ -70,105 +68,92 @@
             // 
             // shortexplainBox
             // 
-            shortexplainBox.ForeColor = SystemColors.Info;
-            shortexplainBox.Location = new Point(132, 174);
-            shortexplainBox.Margin = new Padding(2, 2, 2, 2);
+            shortexplainBox.Location = new Point(188, 290);
             shortexplainBox.Multiline = true;
             shortexplainBox.Name = "shortexplainBox";
-            shortexplainBox.Size = new Size(409, 42);
+            shortexplainBox.Size = new Size(583, 67);
             shortexplainBox.TabIndex = 3;
-            shortexplainBox.Text = "Miêu tả ngắn gọn tình trạng của bạn";
             // 
             // GenBox
             // 
             GenBox.DropDownStyle = ComboBoxStyle.DropDownList;
             GenBox.FormattingEnabled = true;
             GenBox.Items.AddRange(new object[] { "Male", "Female", "Non-binary" });
-            GenBox.Location = new Point(366, 66);
-            GenBox.Margin = new Padding(2, 2, 2, 2);
+            GenBox.Location = new Point(523, 110);
             GenBox.Name = "GenBox";
-            GenBox.Size = new Size(175, 23);
+            GenBox.Size = new Size(248, 33);
             GenBox.TabIndex = 11;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(295, 135);
-            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Location = new Point(422, 225);
             label5.Name = "label5";
-            label5.Size = new Size(44, 15);
+            label5.Size = new Size(66, 25);
             label5.TabIndex = 7;
             label5.Text = "Phone:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(295, 102);
-            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Location = new Point(422, 170);
             label4.Name = "label4";
-            label4.Size = new Size(41, 15);
+            label4.Size = new Size(61, 25);
             label4.TabIndex = 8;
             label4.Text = "Gmail:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(295, 68);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Location = new Point(422, 114);
             label3.Name = "label3";
-            label3.Size = new Size(48, 15);
+            label3.Size = new Size(73, 25);
             label3.TabIndex = 9;
             label3.Text = "Gender:";
             // 
             // TelBox
             // 
-            TelBox.Location = new Point(366, 133);
-            TelBox.Margin = new Padding(2, 2, 2, 2);
+            TelBox.Location = new Point(523, 222);
             TelBox.Name = "TelBox";
-            TelBox.Size = new Size(175, 23);
+            TelBox.Size = new Size(248, 31);
             TelBox.TabIndex = 4;
             // 
             // EmailBox
             // 
-            EmailBox.Location = new Point(366, 100);
-            EmailBox.Margin = new Padding(2, 2, 2, 2);
+            EmailBox.Location = new Point(523, 167);
             EmailBox.Name = "EmailBox";
-            EmailBox.Size = new Size(175, 23);
+            EmailBox.Size = new Size(248, 31);
             EmailBox.TabIndex = 5;
             // 
             // UserBox
             // 
-            UserBox.Location = new Point(366, 33);
-            UserBox.Margin = new Padding(2, 2, 2, 2);
+            UserBox.Location = new Point(523, 55);
             UserBox.Name = "UserBox";
-            UserBox.Size = new Size(175, 23);
+            UserBox.Size = new Size(248, 31);
             UserBox.TabIndex = 6;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(290, 49);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(414, 82);
             label2.Name = "label2";
-            label2.Size = new Size(0, 15);
+            label2.Size = new Size(0, 25);
             label2.TabIndex = 10;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(295, 33);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(422, 55);
             label1.Name = "label1";
-            label1.Size = new Size(63, 15);
+            label1.Size = new Size(95, 25);
             label1.TabIndex = 9;
             label1.Text = "Username:";
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(16, 191);
-            btnSend.Margin = new Padding(2, 2, 2, 2);
+            btnSend.Location = new Point(23, 318);
             btnSend.Name = "btnSend";
-            btnSend.Size = new Size(111, 23);
+            btnSend.Size = new Size(159, 39);
             btnSend.TabIndex = 1;
             btnSend.Text = "Send";
             btnSend.UseVisualStyleBackColor = true;
@@ -177,19 +162,17 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(132, 157);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Location = new Point(188, 262);
             label6.Name = "label6";
-            label6.Size = new Size(189, 15);
+            label6.Size = new Size(285, 25);
             label6.TabIndex = 7;
             label6.Text = "Short explain about your situation:";
             // 
             // backtologinBtn
             // 
-            backtologinBtn.Location = new Point(16, 9);
-            backtologinBtn.Margin = new Padding(2, 2, 2, 2);
+            backtologinBtn.Location = new Point(23, 15);
             backtologinBtn.Name = "backtologinBtn";
-            backtologinBtn.Size = new Size(105, 20);
+            backtologinBtn.Size = new Size(150, 34);
             backtologinBtn.TabIndex = 12;
             backtologinBtn.Text = "Back to Login";
             backtologinBtn.UseVisualStyleBackColor = true;
@@ -198,18 +181,17 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(167, 12);
-            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Location = new Point(238, 20);
             label7.Name = "label7";
-            label7.Size = new Size(110, 15);
+            label7.Size = new Size(166, 25);
             label7.TabIndex = 7;
             label7.Text = "Upload your CCCD:";
             // 
             // Help
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(560, 227);
+            ClientSize = new Size(800, 379);
             Controls.Add(backtologinBtn);
             Controls.Add(GenBox);
             Controls.Add(label7);
@@ -226,7 +208,6 @@
             Controls.Add(btnSend);
             Controls.Add(btnUpload);
             Controls.Add(picCCCD);
-            Margin = new Padding(2, 2, 2, 2);
             Name = "Help";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Help";

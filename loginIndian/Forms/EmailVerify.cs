@@ -99,6 +99,10 @@ namespace loginIndian.Forms
                 }
                 else
                 {
+                    DocumentReference docRef = db.Collection("UserData").Document(userName);
+                    UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
+                    await docRef.UpdateAsync("isLoggedIn", false);
+                    codeExpiryTimer.Stop();
                     GoBackToLoginForm();
                 }
             }
@@ -109,6 +113,7 @@ namespace loginIndian.Forms
             }
             if (checkTimeout()) 
             {
+                codeExpiryTimer.Stop();
                 MessageBox.Show("You reach out the maximum attemps! Program Exit!");
                 await DeleteUserData();
                 Environment.Exit(1);

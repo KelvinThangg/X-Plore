@@ -118,7 +118,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(575, 241);
+            ClientSize = new Size(537, 266);
             Controls.Add(helpBtn);
             Controls.Add(BacktologinBtn);
             Controls.Add(confirmBtn);
