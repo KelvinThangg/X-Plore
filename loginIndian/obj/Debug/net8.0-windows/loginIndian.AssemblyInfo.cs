@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("loginIndian")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06b39a622967445cfc960e8e1d3b27ddd9d8fd81")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("loginIndian")]
 [assembly: System.Reflection.AssemblyTitleAttribute("loginIndian")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
