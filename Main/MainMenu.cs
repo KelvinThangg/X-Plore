@@ -136,7 +136,7 @@ namespace X_Plore.Main
 
         private void guna2TileButton2_Click(object sender, EventArgs e)
         {
-            InviteUser inviteUserForm = new InviteUser();
+            InviteUser inviteUserForm = new InviteUser(username,displayname);
 
             // Mở form InviteUser
             inviteUserForm.ShowDialog();

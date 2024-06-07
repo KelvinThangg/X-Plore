@@ -32,6 +32,7 @@ namespace X_Plore.Chat.CS
     public class Users
     {
         public string UserName { get; set; }
+        public string DisplayName { get; set; }
         public List<string> RoomNames { get; set; } // Danh sách tên phòng mà người dùng tham gia
         public List<string> FoundRooms { get; set; } // Danh sách các phòng mà người dùng đã tìm thấy
         public Users()

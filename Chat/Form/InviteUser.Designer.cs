@@ -83,7 +83,7 @@
             // 
             this.textBox1.BorderRadius = 15;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.DefaultText = "ID";
+            this.textBox1.DefaultText = "";
             this.textBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -95,7 +95,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '\0';
-            this.textBox1.PlaceholderText = "";
+            this.textBox1.PlaceholderText = "ID";
             this.textBox1.SelectedText = "";
             this.textBox1.Size = new System.Drawing.Size(161, 32);
             this.textBox1.TabIndex = 59;

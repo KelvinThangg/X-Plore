@@ -9,19 +9,29 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Firebase.Database;
 using Firebase.Database.Query;
+using Google.Cloud.Firestore;
+using loginIndian.Classes;
 using X_Plore.Chat.CS;
 
 namespace X_Plore.Chat
 {
     public partial class InviteUser : Form
     {
+        private string Displayname;
+        private string username;
         private const string FirebaseURL = "https://checkdatabase-1fbc9-default-rtdb.firebaseio.com/";
         private FirebaseClient firebaseClient;
-        public InviteUser()
+        public InviteUser(string username, string Displayname)
         {
+            this.username = username;
+            this.Displayname = Displayname;
             InitializeComponent();
             InitializeFirebase();
+
+            textBox1.Text = username;
         }
+
+
         private void InitializeFirebase()
         {
             firebaseClient = new FirebaseClient(FirebaseURL);
@@ -30,40 +40,44 @@ namespace X_Plore.Chat
         private async void button1_Click(object sender, EventArgs e)
         {
             string userName = textBox1.Text.Trim();
-            if (string.IsNullOrEmpty(userName))
-            {
-                MessageBox.Show("Vui lòng nhập tên người dùng.");
-                return;
-            }
+            string displayname = Displayname;
+
             if (await IsUserExists(userName))
             {
-                MessageBox.Show("Người dùng đã tồn tại. Vui lòng chọn tên khác.");
+                // User exists, open the General form
+                General formTaoPhong = new General(userName, displayname);
+                formTaoPhong.Show();
+                MessageBox.Show("DN thành công!");
+                this.Close();
             }
             else
             {
-                Users newUser = new Users { UserName = userName };
-                await Task.Run(async () =>
-                {
-                    await firebaseClient.Child("users").Child(userName).PutAsync(newUser);
-                });
-                MessageBox.Show("Đăng ký thành công.");
+                // Create a new user and wait for completion
+                Users newUser = new Users { UserName = userName, DisplayName = displayname };
+                await firebaseClient.Child("users").Child(userName).PutAsync(newUser);
+
+                // Now, the user exists, open the General form
+                General formTaoPhong = new General(userName, displayname);
+                formTaoPhong.Show();
+                MessageBox.Show("Tạo tk thành công!");
+                this.Close();
             }
         }
 
         private async void button2_Click_1(object sender, EventArgs e)
         {
-            string userName = textBox1.Text.Trim();
+            this.Close();
 
-            if (await IsUserExists(userName))
-            {
-                General formTaoPhong = new General(userName); // Truyền userName vào constructor
-                formTaoPhong.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Bạn cần đăng ký trước khi tạo phòng!");
-            }
+            /* if (await IsUserExists(userName))
+             {
+                 General formTaoPhong = new General(userName); // Truyền userName vào constructor
+                 formTaoPhong.Show();
+                 this.Hide();
+             }
+             else
+             {
+                 MessageBox.Show("Bạn cần đăng ký trước khi tạo phòng!");
+             }*/
         }
 
         private async Task<bool> IsUserExists(string userName)

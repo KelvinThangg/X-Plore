@@ -103,6 +103,7 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Xóa nhóm";
             this.button3.UseTransparentBackground = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button2
             // 
@@ -119,6 +120,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Tạo nhóm";
             this.button2.UseTransparentBackground = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -135,6 +137,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Tìm nhóm";
             this.button1.UseTransparentBackground = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // guna2HtmlLabel3
             // 
