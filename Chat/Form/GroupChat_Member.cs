@@ -31,6 +31,7 @@ namespace X_Plore.Chat
             InitializeComponent();
             this.roomName = roomName;
             this.memberName = memberName;
+        
             InitializeFirebase();
             CreateDataDirectories();
         }
@@ -412,7 +413,35 @@ namespace X_Plore.Chat
                 }
             }
         }
+        public void UpdateDisplayedMessagesForNameChange(string oldName, string newName)
+        {
+            // 1. Update displayed messages in listBox1
+            for (int i = 0; i < listBox1.Items.Count; i++)
+            {
+                string currentMessage = listBox1.Items[i].ToString();
 
+                // Check if the message starts with the old name
+                if (currentMessage.StartsWith($"{oldName}: ") ||
+                    currentMessage.StartsWith($"{oldName} đã gửi một tệp: "))
+                {
+                    // Replace the old name with the new name
+                    string updatedMessage = currentMessage.Replace(oldName, newName);
+                    listBox1.Items[i] = updatedMessage;
+                }
+            }
+
+            // 2. Update the displayedMessages set (optional, but recommended)
+            // This step is important if you rely on the displayedMessages set 
+            // to prevent duplicate messages from being displayed. 
+            displayedMessages = new HashSet<string>(displayedMessages.Select(msg =>
+            {
+                if (msg.StartsWith($"{oldName}-"))
+                {
+                    return msg.Replace($"{oldName}-", $"{newName}-");
+                }
+                return msg;
+            }));
+        }
         private void keytextBox_TextChanged(object sender, EventArgs e)
         {
 

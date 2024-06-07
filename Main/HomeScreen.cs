@@ -17,6 +17,7 @@ using Amazon.S3.Model;
 using System.IO;
 using Amazon.SecurityToken;
 using System.Net;
+using X_Plore.Chat;
 
 namespace X_Plore.Main
 {
@@ -24,10 +25,12 @@ namespace X_Plore.Main
     {
         private string username;
         private string displayname;
+
         private bool isButtonEnabled = true;
         public HomeScreen(string username)
         {
             this.username = username;
+         
             InitializeComponent();
             panelDoipass.Hide();
             NhapPassPn.Hide();
@@ -58,10 +61,22 @@ namespace X_Plore.Main
             Trangthai.ForeColor = is2FAEnabled ? Color.Green : Color.Red;
             Trangthai.Text = is2FAEnabled ? "Đang bật" : "Đang tắt";
         }
+        private GroupChat_Member FindOpenGroupChatMemberForm()
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is GroupChat_Member memberForm)
+                {
+                    return memberForm;
+                }
+            }
+            return null; // Or handle the case where the form isn't found
+        }
         private async void ChangeDisplaynameBtn_Click(object sender, EventArgs e)
         {
-            // 1. Lấy tên từ textbox
-            string newDisplayName = txtDisplayName.Text.Trim(); // Giả sử textbox tên là txtDisplayName
+             string oldName = displayname;
+        // 1. Lấy tên từ textbox
+        string newDisplayName = txtDisplayName.Text.Trim(); // Giả sử textbox tên là txtDisplayName
 
             // 2. Kiểm tra xem tên có hợp lệ hay không (ví dụ: không được để trống)
             if (string.IsNullOrEmpty(newDisplayName))
@@ -78,6 +93,18 @@ namespace X_Plore.Main
 
             // 5. Lưu UserData đã cập nhật vào database
             await UpdateUserData(userData);
+            GroupChat_Member groupChatMemberForm = FindOpenGroupChatMemberForm();
+
+            // If the form is found, update the messages
+            if (groupChatMemberForm != null)
+            {
+                groupChatMemberForm.UpdateDisplayedMessagesForNameChange(oldName, newDisplayName);
+            }
+            else
+            {
+                // Handle the case where the form is not found
+                MessageBox.Show("Group chat form not found!");
+            }
 
             // 6. Thông báo thành công
             MessageBox.Show("Đã đổi tên hiển thị thành công!");

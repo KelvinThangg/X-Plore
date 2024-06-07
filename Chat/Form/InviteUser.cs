@@ -24,13 +24,41 @@ namespace X_Plore.Chat
         public InviteUser(string username, string Displayname)
         {
             this.username = username;
+            ListenForDisplayNameChanges();
             this.Displayname = Displayname;
             InitializeComponent();
             InitializeFirebase();
 
             textBox1.Text = username;
         }
-
+        private async void ListenForDisplayNameChanges()
+        {
+            var db = FirestoreHelper.Database;
+            DocumentReference docRef = db.Collection("UserData").Document(username);
+            docRef.Listen(snapshot =>
+            {
+                if (snapshot.Exists)
+                {
+                    Dictionary<string, object> user = snapshot.ToDictionary();
+                    if (user.ContainsKey("DisplayName"))
+                    {
+                        // *** FIX: Check if InvokeRequired before invoking ***
+                        if (this.InvokeRequired)
+                        {
+                            this.Invoke((MethodInvoker)delegate
+                            {
+                                Displayname = user["DisplayName"].ToString();
+                            });
+                        }
+                        else
+                        {
+                            // Already on the UI thread, update directly
+                            Displayname = user["DisplayName"].ToString();
+                        }
+                    }
+                }
+            });
+        }
 
         private void InitializeFirebase()
         {

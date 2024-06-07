@@ -14,6 +14,7 @@ namespace X_Plore.Chat.CS
         public bool IsFile { get; set; } = false;
         public string FileName { get; set; }
         public bool IsDisplayed { get; set; }
+        public string DisplayName { get; set; }
     }
 
     public class Room
