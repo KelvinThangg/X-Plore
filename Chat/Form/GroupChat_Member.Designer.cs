@@ -56,7 +56,7 @@
             this.textBox1.BorderRadius = 8;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.CustomizableEdges.TopLeft = false;
-            this.textBox1.DefaultText = "Nhập tin nhắn...";
+            this.textBox1.DefaultText = "";
             this.textBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -65,13 +65,13 @@
             this.textBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox1.Location = new System.Drawing.Point(12, 353);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Location = new System.Drawing.Point(16, 434);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '\0';
             this.textBox1.PlaceholderText = "";
             this.textBox1.SelectedText = "";
-            this.textBox1.Size = new System.Drawing.Size(389, 36);
+            this.textBox1.Size = new System.Drawing.Size(519, 44);
             this.textBox1.TabIndex = 77;
             // 
             // pnLichSu
@@ -80,9 +80,10 @@
             this.pnLichSu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.pnLichSu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnLichSu.Controls.Add(this.listBox1);
-            this.pnLichSu.Location = new System.Drawing.Point(10, 109);
+            this.pnLichSu.Location = new System.Drawing.Point(13, 134);
+            this.pnLichSu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnLichSu.Name = "pnLichSu";
-            this.pnLichSu.Size = new System.Drawing.Size(598, 238);
+            this.pnLichSu.Size = new System.Drawing.Size(797, 292);
             this.pnLichSu.TabIndex = 73;
             // 
             // listBox1
@@ -91,10 +92,11 @@
             this.listBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
+            this.listBox1.ItemHeight = 19;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(597, 229);
+            this.listBox1.Size = new System.Drawing.Size(795, 270);
             this.listBox1.TabIndex = 78;
             // 
             // label1
@@ -102,9 +104,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 12);
+            this.label1.Location = new System.Drawing.Point(71, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 21);
+            this.label1.Size = new System.Drawing.Size(74, 28);
             this.label1.TabIndex = 60;
             this.label1.Text = "LTMCB";
             // 
@@ -119,18 +122,20 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(620, 46);
+            this.panel1.Size = new System.Drawing.Size(827, 57);
             this.panel1.TabIndex = 60;
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::X_Plore.Properties.Resources.cat1;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(10, 3);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(13, 4);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(37, 38);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(49, 47);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 62;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -143,9 +148,10 @@
             this.exitBtn.ImageOffset = new System.Drawing.Point(0, 0);
             this.exitBtn.ImageRotate = 0F;
             this.exitBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.exitBtn.Location = new System.Drawing.Point(578, 6);
+            this.exitBtn.Location = new System.Drawing.Point(771, 7);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(35, 32);
+            this.exitBtn.Size = new System.Drawing.Size(47, 39);
             this.exitBtn.TabIndex = 3;
             this.exitBtn.CheckedChanged += new System.EventHandler(this.exitBtn_CheckedChanged);
             // 
@@ -157,10 +163,11 @@
             this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(527, 1);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(703, 1);
+            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(45, 42);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(60, 52);
             this.guna2ImageButton2.TabIndex = 61;
             // 
             // guna2ImageButton1
@@ -171,10 +178,11 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(476, 1);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(635, 1);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(45, 42);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(60, 52);
             this.guna2ImageButton1.TabIndex = 61;
             // 
             // sendTextButton
@@ -191,9 +199,10 @@
             this.sendTextButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.sendTextButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.sendTextButton.ForeColor = System.Drawing.Color.White;
-            this.sendTextButton.Location = new System.Drawing.Point(527, 355);
+            this.sendTextButton.Location = new System.Drawing.Point(703, 437);
+            this.sendTextButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sendTextButton.Name = "sendTextButton";
-            this.sendTextButton.Size = new System.Drawing.Size(81, 35);
+            this.sendTextButton.Size = new System.Drawing.Size(108, 43);
             this.sendTextButton.TabIndex = 75;
             this.sendTextButton.Text = "Gửi";
             this.sendTextButton.Click += new System.EventHandler(this.sendTextButton_Click);
@@ -212,9 +221,10 @@
             this.iconButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.iconButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.iconButton.ForeColor = System.Drawing.Color.White;
-            this.iconButton.Location = new System.Drawing.Point(418, 355);
+            this.iconButton.Location = new System.Drawing.Point(557, 437);
+            this.iconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton.Name = "iconButton";
-            this.iconButton.Size = new System.Drawing.Size(63, 35);
+            this.iconButton.Size = new System.Drawing.Size(84, 43);
             this.iconButton.TabIndex = 79;
             this.iconButton.Text = "Icon";
             this.iconButton.Click += new System.EventHandler(this.iconButton_Click_1);
@@ -227,9 +237,10 @@
             this.HideorShowpassCb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
             this.HideorShowpassCb.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(1)))), ((int)(((byte)(88)))));
             this.HideorShowpassCb.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.HideorShowpassCb.Location = new System.Drawing.Point(479, 66);
+            this.HideorShowpassCb.Location = new System.Drawing.Point(639, 81);
+            this.HideorShowpassCb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HideorShowpassCb.Name = "HideorShowpassCb";
-            this.HideorShowpassCb.Size = new System.Drawing.Size(35, 20);
+            this.HideorShowpassCb.Size = new System.Drawing.Size(47, 25);
             this.HideorShowpassCb.TabIndex = 83;
             this.HideorShowpassCb.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
             this.HideorShowpassCb.UncheckedState.BorderThickness = 2;
@@ -252,14 +263,15 @@
             this.keytextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.keytextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.keytextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.keytextBox.Location = new System.Drawing.Point(351, 64);
-            this.keytextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.keytextBox.Location = new System.Drawing.Point(468, 79);
+            this.keytextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.keytextBox.Name = "keytextBox";
             this.keytextBox.PasswordChar = '\0';
-            this.keytextBox.PlaceholderText = "***";
+            this.keytextBox.PlaceholderText = "";
             this.keytextBox.SelectedText = "";
-            this.keytextBox.Size = new System.Drawing.Size(112, 24);
+            this.keytextBox.Size = new System.Drawing.Size(149, 30);
             this.keytextBox.TabIndex = 82;
+            this.keytextBox.TextChanged += new System.EventHandler(this.keytextBox_TextChanged);
             // 
             // keyInput
             // 
@@ -274,9 +286,10 @@
             this.keyInput.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.keyInput.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.keyInput.ForeColor = System.Drawing.Color.White;
-            this.keyInput.Location = new System.Drawing.Point(531, 57);
+            this.keyInput.Location = new System.Drawing.Point(708, 70);
+            this.keyInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.keyInput.Name = "keyInput";
-            this.keyInput.Size = new System.Drawing.Size(81, 35);
+            this.keyInput.Size = new System.Drawing.Size(108, 43);
             this.keyInput.TabIndex = 81;
             this.keyInput.Text = "key";
             this.keyInput.Click += new System.EventHandler(this.keyInput_Click_1);
@@ -286,9 +299,10 @@
             this.lbMatKhauGr.AutoSize = true;
             this.lbMatKhauGr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMatKhauGr.ForeColor = System.Drawing.Color.White;
-            this.lbMatKhauGr.Location = new System.Drawing.Point(272, 66);
+            this.lbMatKhauGr.Location = new System.Drawing.Point(363, 81);
+            this.lbMatKhauGr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMatKhauGr.Name = "lbMatKhauGr";
-            this.lbMatKhauGr.Size = new System.Drawing.Size(73, 18);
+            this.lbMatKhauGr.Size = new System.Drawing.Size(91, 24);
             this.lbMatKhauGr.TabIndex = 80;
             this.lbMatKhauGr.Text = "Mật khẩu ";
             // 
@@ -306,19 +320,20 @@
             this.file.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.file.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.file.ForeColor = System.Drawing.Color.White;
-            this.file.Location = new System.Drawing.Point(487, 354);
+            this.file.Location = new System.Drawing.Point(649, 436);
+            this.file.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.file.Name = "file";
-            this.file.Size = new System.Drawing.Size(34, 35);
+            this.file.Size = new System.Drawing.Size(45, 43);
             this.file.TabIndex = 84;
             this.file.Text = "📦";
             this.file.Click += new System.EventHandler(this.file_Click);
             // 
             // GroupChat_Member
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.ClientSize = new System.Drawing.Size(620, 402);
+            this.ClientSize = new System.Drawing.Size(827, 495);
             this.Controls.Add(this.file);
             this.Controls.Add(this.HideorShowpassCb);
             this.Controls.Add(this.keytextBox);
@@ -330,6 +345,7 @@
             this.Controls.Add(this.sendTextButton);
             this.Controls.Add(this.pnLichSu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GroupChat_Member";
             this.Text = "GroupChat_Member";
             this.Load += new System.EventHandler(this.GroupChat_Member_Load);

@@ -64,9 +64,10 @@
             this.confirmBtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.confirmBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.confirmBtn.ForeColor = System.Drawing.Color.White;
-            this.confirmBtn.Location = new System.Drawing.Point(12, 12);
+            this.confirmBtn.Location = new System.Drawing.Point(16, 15);
+            this.confirmBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.confirmBtn.Name = "confirmBtn";
-            this.confirmBtn.Size = new System.Drawing.Size(164, 39);
+            this.confirmBtn.Size = new System.Drawing.Size(219, 48);
             this.confirmBtn.TabIndex = 9;
             this.confirmBtn.Text = "< Quay lại đăng nhập";
             // 
@@ -87,9 +88,10 @@
             "Male",
             "Female",
             "Non-binary"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(473, 145);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(631, 178);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(252, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(335, 36);
             this.guna2ComboBox1.TabIndex = 16;
             // 
             // TelBox
@@ -107,12 +109,13 @@
             this.TelBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TelBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TelBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TelBox.Location = new System.Drawing.Point(473, 250);
+            this.TelBox.Location = new System.Drawing.Point(631, 308);
+            this.TelBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TelBox.Name = "TelBox";
             this.TelBox.PasswordChar = '\0';
             this.TelBox.PlaceholderText = "Phone number";
             this.TelBox.SelectedText = "";
-            this.TelBox.Size = new System.Drawing.Size(251, 36);
+            this.TelBox.Size = new System.Drawing.Size(335, 44);
             this.TelBox.TabIndex = 13;
             // 
             // EmailBox
@@ -130,12 +133,13 @@
             this.EmailBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EmailBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.EmailBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.EmailBox.Location = new System.Drawing.Point(473, 197);
+            this.EmailBox.Location = new System.Drawing.Point(631, 242);
+            this.EmailBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.EmailBox.Name = "EmailBox";
             this.EmailBox.PasswordChar = '\0';
             this.EmailBox.PlaceholderText = "Email";
             this.EmailBox.SelectedText = "";
-            this.EmailBox.Size = new System.Drawing.Size(251, 36);
+            this.EmailBox.Size = new System.Drawing.Size(335, 44);
             this.EmailBox.TabIndex = 14;
             // 
             // UserBox
@@ -153,12 +157,13 @@
             this.UserBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UserBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.UserBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UserBox.Location = new System.Drawing.Point(474, 97);
+            this.UserBox.Location = new System.Drawing.Point(632, 119);
+            this.UserBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.UserBox.Name = "UserBox";
             this.UserBox.PasswordChar = '\0';
             this.UserBox.PlaceholderText = "Username";
             this.UserBox.SelectedText = "";
-            this.UserBox.Size = new System.Drawing.Size(251, 36);
+            this.UserBox.Size = new System.Drawing.Size(335, 44);
             this.UserBox.TabIndex = 15;
             // 
             // guna2HtmlLabel1
@@ -167,9 +172,10 @@
             this.guna2HtmlLabel1.Enabled = false;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Silver;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(486, 156);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(648, 192);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(41, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(48, 21);
             this.guna2HtmlLabel1.TabIndex = 17;
             this.guna2HtmlLabel1.Text = "Gender";
             // 
@@ -186,11 +192,13 @@
             this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(641, 383);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(855, 471);
+            this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(147, 39);
+            this.guna2GradientButton2.Size = new System.Drawing.Size(196, 48);
             this.guna2GradientButton2.TabIndex = 9;
             this.guna2GradientButton2.Text = "Xác nhận";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2ImageButton1
             // 
@@ -200,10 +208,11 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(38, 390);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(51, 480);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(43, 39);
             this.guna2ImageButton1.TabIndex = 18;
             // 
             // guna2PictureBox1
@@ -211,9 +220,10 @@
             this.guna2PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2PictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(8)))), ((int)(((byte)(60)))));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 92);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(16, 113);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(419, 237);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(558, 291);
             this.guna2PictureBox1.TabIndex = 10;
             this.guna2PictureBox1.TabStop = false;
             // 
@@ -231,12 +241,13 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(97, 374);
+            this.guna2TextBox1.Location = new System.Drawing.Point(129, 460);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(528, 64);
+            this.guna2TextBox1.Size = new System.Drawing.Size(704, 79);
             this.guna2TextBox1.TabIndex = 19;
             // 
             // guna2HtmlLabel2
@@ -244,9 +255,10 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(97, 349);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(129, 430);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(232, 19);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(270, 23);
             this.guna2HtmlLabel2.TabIndex = 20;
             this.guna2HtmlLabel2.Text = "Miêu tả ngắn gọn tình trạng của bạn:";
             // 
@@ -255,18 +267,19 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(97, 60);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(129, 74);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(152, 19);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(177, 23);
             this.guna2HtmlLabel3.TabIndex = 20;
             this.guna2HtmlLabel3.Text = "Đăng tải hình ảnh CCCD:";
             // 
             // Help
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2TextBox1);
@@ -280,6 +293,7 @@
             this.Controls.Add(this.guna2GradientButton2);
             this.Controls.Add(this.confirmBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Help";
             this.Text = "Help";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

@@ -16,5 +16,10 @@ namespace X_Plore.Dangky_Dangnhap
         {
             InitializeComponent();
         }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

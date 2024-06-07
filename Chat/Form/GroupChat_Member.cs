@@ -43,8 +43,8 @@ namespace X_Plore.Chat
         private void CreateDataDirectories()
         {
             string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
-            string imgDir = Path.Combine(projectDir, "Client", "Data", "IMG");
-            string fileDir = Path.Combine(projectDir, "Client", "Data", "File");
+            string imgDir = Path.Combine(projectDir, "X-Plore", "Chat", "Data", "IMG");
+            string fileDir = Path.Combine(projectDir,"X-Plore", "Chat", "Data", "File");
 
             if (!Directory.Exists(imgDir))
             {
@@ -134,8 +134,8 @@ namespace X_Plore.Chat
                     string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
                     string fileExtension = Path.GetExtension(message.FileName).ToLower();
                     string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
-                        Path.Combine(projectDir, "Client", "Data", "IMG") :
-                        Path.Combine(projectDir, "Client", "Data", "File");
+                        Path.Combine(projectDir,"X-Plore", "Chat", "Data", "IMG") :
+                        Path.Combine(projectDir,"X-Plore", "Chat", "Data", "File");
 
                     string filePath = Path.Combine(targetDir, message.FileName);
 
@@ -411,6 +411,11 @@ namespace X_Plore.Chat
                     }
                 }
             }
+        }
+
+        private void keytextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

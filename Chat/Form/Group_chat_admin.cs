@@ -36,6 +36,7 @@ namespace X_Plore.Chat
             InitializeFirebase();
             LoadChatHistory();
             ListenForMessages();
+            CreateDataDirectories();
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
         }
 
@@ -43,7 +44,21 @@ namespace X_Plore.Chat
         {
             firebaseClient = new FirebaseClient(FirebaseURL);
         }
+        private void CreateDataDirectories()
+        {
+            string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
+            string imgDir = Path.Combine(projectDir, "X-Plore", "Chat", "Data", "IMG");
+            string fileDir = Path.Combine(projectDir, "X-Plore", "Chat", "Data", "File");
 
+            if (!Directory.Exists(imgDir))
+            {
+                Directory.CreateDirectory(imgDir);
+            }
+            if (!Directory.Exists(fileDir))
+            {
+                Directory.CreateDirectory(fileDir);
+            }
+        }
         public void UpdateSenderNames(string senderName)
         {
             // Kiểm tra xem cột "Sender" đã tồn tại trong DataGridView chưa, nếu chưa thì thêm
@@ -147,8 +162,8 @@ namespace X_Plore.Chat
                     string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
                     string fileExtension = Path.GetExtension(message.FileName).ToLower();
                     string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
-                        Path.Combine(projectDir, "Client", "Data", "IMG") :
-                        Path.Combine(projectDir, "Client", "Data", "File");
+                        Path.Combine(projectDir,"X-Plore", "Chat", "Data", "IMG") :
+                        Path.Combine(projectDir,"X-Plore", "Chat", "Data", "File");
 
                     string filePath = Path.Combine(targetDir, message.FileName);
 
