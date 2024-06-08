@@ -1097,3 +1097,6 @@ C:\Users\Lenovo\Desktop\chatv3\X-Plore\obj\Debug\X-Plore.csproj.CoreCompileInput
 C:\Users\Lenovo\Desktop\chatv3\X-Plore\obj\Debug\X-Plore.csproj.Up2Date
 C:\Users\Lenovo\Desktop\chatv3\X-Plore\obj\Debug\X-Plore.exe
 C:\Users\Lenovo\Desktop\chatv3\X-Plore\obj\Debug\X-Plore.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NLipsum.Core.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NLipsum.Core.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Main.FeedBack.resources

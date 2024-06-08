@@ -113,6 +113,7 @@
             this.guna2TileButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.guna2TileButton5.BorderRadius = 1;
             this.guna2TileButton5.BorderThickness = 1;
+            this.guna2TileButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2TileButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2TileButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2TileButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -131,6 +132,7 @@
             this.guna2TileButton5.Text = "Góp ý, báo lỗi";
             this.guna2TileButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2TileButton5.TextOffset = new System.Drawing.Point(0, -5);
+            this.guna2TileButton5.Click += new System.EventHandler(this.guna2TileButton5_Click);
             // 
             // guna2TileButton4
             // 

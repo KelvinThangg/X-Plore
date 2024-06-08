@@ -141,5 +141,24 @@ namespace X_Plore.Main
             // Mở form InviteUser
             inviteUserForm.ShowDialog();
         }
+
+        private void guna2TileButton5_Click(object sender, EventArgs e)
+        {
+            // Hide unnecessary controls
+            guna2PictureBox2.Hide();
+
+            // Create instance of HomeScreen
+            FeedBack feedback = new FeedBack(displayname, username);
+            feedback.TopLevel = false;
+            feedback.FormBorderStyle = FormBorderStyle.None;
+            feedback.Dock = DockStyle.Fill;
+
+            // Clear previous controls in panel1
+            panel1.Controls.Clear();
+
+            // Add HomeScreen to panel1
+            panel1.Controls.Add(feedback);
+            feedback.Show();
+        }
     }
 }
