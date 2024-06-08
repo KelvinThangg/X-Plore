@@ -318,7 +318,7 @@ namespace X_Plore.Chat
             }
             else
             {
-                GroupChat_Member formMemberChat = new GroupChat_Member(roomName, username,currentUserName); // Truyền currentUserName vào MemberChat
+                GroupChat_Member formMemberChat = new GroupChat_Member(roomName, username,currentUserName); 
                 formMemberChat.Show();
             }
         }

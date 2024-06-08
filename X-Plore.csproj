@@ -293,6 +293,12 @@
     <Compile Include="Dangky-Dangnhap\Xac_thuc_dky.Designer.cs">
       <DependentUpon>Xac_thuc_dky.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\FeedBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FeedBack.Designer.cs">
+      <DependentUpon>FeedBack.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>

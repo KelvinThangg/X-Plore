@@ -34,11 +34,12 @@ namespace X_Plore.Chat
             this.memberName = memberName;
             this.displayName = displayName;
             InitializeFirebase();
-            LoadChatHistory();
+           
             ListenForMessages();
             CreateDataDirectories();
         }
-
+        
+     
         private void InitializeFirebase()
         {
             firebaseClient = new FirebaseClient(FirebaseURL);
@@ -69,8 +70,8 @@ namespace X_Plore.Chat
                                                       .Child("messages")
                                                       .OnceAsync<MessageNode>();
 
-                listBox1.Items.Clear(); // Clear existing messages
-                displayedMessages.Clear(); // Clear the set of displayed messages
+                // listBox1.Items.Clear(); // Clear existing messages
+               // displayedMessages.Clear(); // Clear the set of displayed messages
 
                 foreach (var messageNode in chatHistory)
                 {
@@ -83,7 +84,39 @@ namespace X_Plore.Chat
                 MessageBox.Show("Lỗi tải lịch sử trò chuyện: " + ex.Message);
             }
         }
+        public async Task UpdateAllDisplayNamesForSender(string sender, string newDisplayName)
+        {
+            try
+            {
+                // Lấy tất cả tin nhắn trong phòng chat
+                var messages = await firebaseClient.Child("RoomNames")
+                                                  .Child(roomName)
+                                                  .Child("messages")
+                                                  .OnceAsync<MessageNode>();
 
+                // Duyệt qua các tin nhắn và cập nhật DisplayName nếu Sender khớp
+                foreach (var message in messages)
+                {
+                    if (message.Object.Sender == memberName)
+                    {
+                        // Đảm bảo newDisplayName được gửi dưới dạng chuỗi JSON hợp lệ
+                        await firebaseClient.Child("RoomNames")
+                                            .Child(roomName)
+                                            .Child("messages")
+                                            .Child(message.Key)
+                                            .Child("DisplayName")
+                                            .PutAsync($"\"{newDisplayName}\""); // Thêm dấu ngoặc kép
+                    }
+                }
+
+                // Tải lại lịch sử trò chuyện để hiển thị thay đổi
+                await LoadChatHistory();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi cập nhật DisplayName: " + ex.Message);
+            }
+        }
 
 
         private async Task SaveMessageToFirebase(string message)
@@ -372,7 +405,11 @@ namespace X_Plore.Chat
         private async void GroupChat_Member_Load(object sender, EventArgs e)
         {
             ListenForMessages(); // Sau đó lắng nghe các tin nhắn mới
-            await LoadChatHistory(); // Tải lịch sử trò chuyện trước
+           
+            await UpdateAllDisplayNamesForSender(memberName, displayName);
+            
+          
+
         }
 
         private void iconButton_Click_1(object sender, EventArgs e)
