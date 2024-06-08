@@ -271,7 +271,7 @@
             this.keytextBox.SelectedText = "";
             this.keytextBox.Size = new System.Drawing.Size(149, 30);
             this.keytextBox.TabIndex = 82;
-            this.keytextBox.TextChanged += new System.EventHandler(this.keytextBox_TextChanged);
+   
             // 
             // keyInput
             // 

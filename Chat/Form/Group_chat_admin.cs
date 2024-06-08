@@ -1,5 +1,4 @@
-﻿
-using loginIndian.Classes;
+﻿using loginIndian.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -95,7 +94,7 @@ namespace X_Plore.Chat
         {
             try
             {
-                
+
 
                 var chatHistory = await firebaseClient.Child("RoomNames")
                                                       .Child(roomName)
@@ -124,7 +123,7 @@ namespace X_Plore.Chat
                 var messageNode = new MessageNode
                 {
                     Message = encryptedMessage,
-                    Sender = adminName,
+                    Sender = roomCreator, // Lưu tin nhắn dưới tên roomCreator
                     Timestamp = DateTime.Now,
                     IsFile = isFile,
                     FileName = fileName
@@ -154,7 +153,7 @@ namespace X_Plore.Chat
             {
                 if (message.IsFile)
                 {
-                    string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
+                    string fileMessage = $"{adminName} đã gửi một tệp: {message.FileName}"; // Hiển thị adminName thay vì roomCreator
                     listBox1.Items.Add(fileMessage);
                     displayedMessages.Add(uniqueMessageIdentifier);
 
@@ -196,7 +195,7 @@ namespace X_Plore.Chat
                 }
                 else
                 {
-                    string newMessage = $"{message.Sender}: {decryptedMessage}";
+                    string newMessage = $"{adminName}: {decryptedMessage}"; // Hiển thị adminName thay vì roomCreator
                     listBox1.Items.Add(newMessage);
                     displayedMessages.Add(uniqueMessageIdentifier);
                 }
@@ -510,7 +509,7 @@ namespace X_Plore.Chat
                         var messageNode = new MessageNode
                         {
                             Message = encryptedFile,
-                            Sender = adminName,
+                            Sender = roomCreator, // Lưu tin nhắn dưới tên roomCreator
                             Timestamp = DateTime.Now,
                             IsFile = true,
                             FileName = fileName

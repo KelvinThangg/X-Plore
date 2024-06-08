@@ -25,14 +25,17 @@ namespace X_Plore.Chat
         private bool isSendingMessage = false;
         private bool isSavingMessage = false;
         private string encryptionKey = null;
+        private string displayName;
         private HashSet<string> displayedMessages = new HashSet<string>();
-        public GroupChat_Member(string roomName, string memberName)
+        public GroupChat_Member(string roomName, string memberName, string displayName)
         {
             InitializeComponent();
             this.roomName = roomName;
             this.memberName = memberName;
-        
+            this.displayName = displayName;
             InitializeFirebase();
+            LoadChatHistory();
+            ListenForMessages();
             CreateDataDirectories();
         }
 
@@ -45,7 +48,7 @@ namespace X_Plore.Chat
         {
             string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
             string imgDir = Path.Combine(projectDir, "X-Plore", "Chat", "Data", "IMG");
-            string fileDir = Path.Combine(projectDir,"X-Plore", "Chat", "Data", "File");
+            string fileDir = Path.Combine(projectDir, "X-Plore", "Chat", "Data", "File");
 
             if (!Directory.Exists(imgDir))
             {
@@ -72,6 +75,7 @@ namespace X_Plore.Chat
                 foreach (var messageNode in chatHistory)
                 {
                     DisplayMessage(messageNode.Object);
+
                 }
             }
             catch (Exception ex)
@@ -93,7 +97,8 @@ namespace X_Plore.Chat
                     {
                         Message = encryptionKey == null ? message : SecurityChat.EncryptChat(message, encryptionKey),
                         Sender = memberName,
-                        Timestamp = DateTime.Now
+                        Timestamp = DateTime.Now,
+                        DisplayName = displayName
                     };
 
                     await firebaseClient.Child("RoomNames")
@@ -127,7 +132,7 @@ namespace X_Plore.Chat
             {
                 if (message.IsFile)
                 {
-                    string fileMessage = $"{message.Sender} đã gửi một tệp: {message.FileName}";
+                    string fileMessage = $"{message.DisplayName} đã gửi một tệp: {message.FileName}";
                     listBox1.Items.Add(fileMessage);
                     displayedMessages.Add(uniqueMessageIdentifier);
 
@@ -135,8 +140,8 @@ namespace X_Plore.Chat
                     string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
                     string fileExtension = Path.GetExtension(message.FileName).ToLower();
                     string targetDir = (fileExtension == ".jpg" || fileExtension == ".jpeg" || fileExtension == ".png" || fileExtension == ".gif") ?
-                        Path.Combine(projectDir,"X-Plore", "Chat", "Data", "IMG") :
-                        Path.Combine(projectDir,"X-Plore", "Chat", "Data", "File");
+                        Path.Combine(projectDir, "X-Plore", "Chat", "Data", "IMG") :
+                        Path.Combine(projectDir, "X-Plore", "Chat", "Data", "File");
 
                     string filePath = Path.Combine(targetDir, message.FileName);
 
@@ -169,7 +174,7 @@ namespace X_Plore.Chat
                 }
                 else
                 {
-                    string newMessage = $"{message.Sender}: {decryptedMessage}";
+                    string newMessage = $"{message.DisplayName}: {decryptedMessage}";
                     listBox1.Items.Add(newMessage);
                     displayedMessages.Add(uniqueMessageIdentifier);
                 }
@@ -187,10 +192,14 @@ namespace X_Plore.Chat
                  {
                      if (d.Object != null)
                      {
-                         this.Invoke((MethodInvoker)delegate
+                         // Kiểm tra xem handle của form đã được tạo chưa
+                         if (this.IsHandleCreated)
                          {
-                             DisplayMessage(d.Object);
-                         });
+                             this.Invoke((MethodInvoker)delegate
+                             {
+                                 DisplayMessage(d.Object);
+                             });
+                         }
                      }
                  });
         }
@@ -251,7 +260,7 @@ namespace X_Plore.Chat
             iconSuggestionForm.TopMost = true; // Ensure it stays on top
             iconSuggestionForm.Show(); // Show the form
         }
-       
+
         private async void sendTextButton_Click(object sender, EventArgs e)
         {
             string message = textBox1.Text.Trim();
@@ -413,39 +422,37 @@ namespace X_Plore.Chat
                 }
             }
         }
-        public void UpdateDisplayedMessagesForNameChange(string oldName, string newName)
-        {
-            // 1. Update displayed messages in listBox1
-            for (int i = 0; i < listBox1.Items.Count; i++)
-            {
-                string currentMessage = listBox1.Items[i].ToString();
+        /*  public void UpdateDisplayedMessagesForNameChange(string oldName, string newName)
+          {
+              // 1. Update displayed messages in listBox1
+              for (int i = 0; i < listBox1.Items.Count; i++)
+              {
+                  string currentMessage = listBox1.Items[i].ToString();
 
-                // Check if the message starts with the old name
-                if (currentMessage.StartsWith($"{oldName}: ") ||
-                    currentMessage.StartsWith($"{oldName} đã gửi một tệp: "))
-                {
-                    // Replace the old name with the new name
-                    string updatedMessage = currentMessage.Replace(oldName, newName);
-                    listBox1.Items[i] = updatedMessage;
-                }
-            }
+                  // Check if the message starts with the old name
+                  if (currentMessage.StartsWith($"{oldName}: ") ||
+                      currentMessage.StartsWith($"{oldName} đã gửi một tệp: "))
+                  {
+                      // Replace the old name with the new name
+                      string updatedMessage = currentMessage.Replace(oldName, newName);
+                      listBox1.Items[i] = updatedMessage;
+                  }
+              }
 
-            // 2. Update the displayedMessages set (optional, but recommended)
-            // This step is important if you rely on the displayedMessages set 
-            // to prevent duplicate messages from being displayed. 
-            displayedMessages = new HashSet<string>(displayedMessages.Select(msg =>
-            {
-                if (msg.StartsWith($"{oldName}-"))
-                {
-                    return msg.Replace($"{oldName}-", $"{newName}-");
-                }
-                return msg;
-            }));
-        }
-        private void keytextBox_TextChanged(object sender, EventArgs e)
-        {
+              // 2. Update the displayedMessages set (optional, but recommended)
+              // This step is important if you rely on the displayedMessages set 
+              // to prevent duplicate messages from being displayed. 
+              displayedMessages = new HashSet<string>(displayedMessages.Select(msg =>
+              {
+                  if (msg.StartsWith($"{oldName}-"))
+                  {
+                      return msg.Replace($"{oldName}-", $"{newName}-");
+                  }
+                  return msg;
+              }));
+          }*/
 
-        }
     }
 }
+
 
