@@ -1,4 +1,5 @@
-﻿using loginIndian.Classes;
+﻿
+using loginIndian.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -94,8 +95,7 @@ namespace X_Plore.Chat
         {
             try
             {
-                listBox1.Items.Clear();
-                displayedMessages.Clear();
+                
 
                 var chatHistory = await firebaseClient.Child("RoomNames")
                                                       .Child(roomName)
@@ -278,7 +278,7 @@ namespace X_Plore.Chat
         {
 
         }
- 
+
         // Add this method to handle key input button click
         private void ShowIconSuggestionPopup()
         {
@@ -431,7 +431,7 @@ namespace X_Plore.Chat
             }
         }
 
-       
+
         private async void delChat_Click_1(object sender, EventArgs e)
         {
             var confirmResult = MessageBox.Show("Bạn có chắc chắn muốn xóa sạch đoạn chat này không?",
