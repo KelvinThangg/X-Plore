@@ -1,73 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\chat\\.cs\\classeschat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\.cs\\classeschat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\groupchat_member.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\groupchat_member.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|c:\\users\\lenovo\\desktop\\chatv3\\x-plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\groupchat_member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\chat\\form\\groupchat_member.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\groupchat_member.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\group_chat_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\chat\\.cs\\classeschat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\.cs\\classeschat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\inviteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:chat\\form\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:main\\homescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\dangky-dangnhap\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\dangky-dangnhap\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\2famailverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\class\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\class\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:class\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D72D96AC-1871-4C27-B15D-233F0D52CC53}|X-Plore.csproj|solutionrelative:dangky-dangnhap\\xac_thuc_dky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -78,40 +78,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "GroupChat_Member.Designer.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\GroupChat_Member.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\GroupChat_Member.Designer.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\GroupChat_Member.Designer.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\GroupChat_Member.Designer.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\GroupChat_Member.Designer.cs",
               "RelativeToolTip": "Chat\\Form\\GroupChat_Member.Designer.cs",
-              "ViewState": "AQIAAPsAAAAAAAAAAAAowBEBAAADAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T11:46:44.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T11:46:44.588Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GroupChat_Member.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\GroupChat_Member.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\GroupChat_Member.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\GroupChat_Member.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\GroupChat_Member.cs [Design]",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\GroupChat_Member.cs [Design]",
               "RelativeToolTip": "Chat\\Form\\GroupChat_Member.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T11:46:43.272Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-08T11:46:43.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Group_chat_admin.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\Group_chat_admin.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\Group_chat_admin.cs [Design]",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\Group_chat_admin.cs [Design]",
               "RelativeToolTip": "Chat\\Form\\Group_chat_admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T19:15:43.98Z",
@@ -119,99 +125,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ClassesChat.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\.CS\\ClassesChat.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\.CS\\ClassesChat.cs",
               "RelativeDocumentMoniker": "Chat\\.CS\\ClassesChat.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\.CS\\ClassesChat.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\.CS\\ClassesChat.cs",
               "RelativeToolTip": "Chat\\.CS\\ClassesChat.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:38:38.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "General.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs",
-              "RelativeDocumentMoniker": "Chat\\Form\\General.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs",
-              "RelativeToolTip": "Chat\\Form\\General.cs",
-              "ViewState": "AQIAACcBAAAAAAAAAAAYwEABAABpAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:20:19.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T03:38:38.101Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "General.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\General.cs",
+              "RelativeDocumentMoniker": "Chat\\Form\\General.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\General.cs",
+              "RelativeToolTip": "Chat\\Form\\General.cs",
+              "ViewState": "AQIAACcBAAAAAAAAAAAYwEABAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T03:20:19.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "General.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\General.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\General.cs",
               "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\General.cs [Design]",
-              "RelativeToolTip": "Chat\\Form\\General.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:20:11.786Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T03:20:11.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "InviteUser.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\InviteUser.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\InviteUser.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\InviteUser.cs",
               "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\InviteUser.cs [Design]",
-              "RelativeToolTip": "Chat\\Form\\InviteUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T03:19:59.068Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-07T03:19:59.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GroupChat_Member.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\GroupChat_Member.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\GroupChat_Member.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\GroupChat_Member.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\GroupChat_Member.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\GroupChat_Member.cs",
               "RelativeToolTip": "Chat\\Form\\GroupChat_Member.cs",
-              "ViewState": "AQIAAE8BAAAAAAAAAAAswMcBAAABAAAA",
+              "ViewState": "AQIAAFkBAAAAAAAAAAAAwGUBAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T16:20:17.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T16:20:17.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Group_chat_admin.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
               "RelativeDocumentMoniker": "Chat\\Form\\Group_chat_admin.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Chat\\Form\\Group_chat_admin.cs",
               "RelativeToolTip": "Chat\\Form\\Group_chat_admin.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAQwE0AAAA8AAAA",
+              "ViewState": "AQIAAMMBAAAAAAAAAAAAwOQBAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T03:18:39.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "HomeScreen.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Main\\HomeScreen.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Main\\HomeScreen.cs",
               "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Main\\HomeScreen.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Main\\HomeScreen.cs",
               "RelativeToolTip": "Main\\HomeScreen.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAQwBkAAAAgAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAGUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T18:42:28.988Z"
+              "WhenOpened": "2024-06-01T18:42:28.988Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "UserData.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Class\\UserData.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Class\\UserData.cs",
               "RelativeDocumentMoniker": "Class\\UserData.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Class\\UserData.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Class\\UserData.cs",
               "RelativeToolTip": "Class\\UserData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -221,20 +221,21 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "HomeScreen.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Main\\HomeScreen.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Main\\HomeScreen.cs",
               "RelativeDocumentMoniker": "Main\\HomeScreen.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Main\\HomeScreen.cs [Design]*",
-              "RelativeToolTip": "Main\\HomeScreen.cs [Design]*",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Main\\HomeScreen.cs [Design]",
+              "RelativeToolTip": "Main\\HomeScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T05:05:58.56Z"
+              "WhenOpened": "2024-06-01T05:05:58.56Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "2FAMailVerify.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Dangky-Dangnhap\\2FAMailVerify.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Dangky-Dangnhap\\2FAMailVerify.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\2FAMailVerify.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Dangky-Dangnhap\\2FAMailVerify.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Dangky-Dangnhap\\2FAMailVerify.cs",
               "RelativeToolTip": "Dangky-Dangnhap\\2FAMailVerify.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAK0AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -244,9 +245,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Xac_thuc_dky.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Dangky-Dangnhap\\Xac_thuc_dky.cs",
               "RelativeToolTip": "Dangky-Dangnhap\\Xac_thuc_dky.cs",
               "ViewState": "AQIAAI8AAAAAAAAAAAAAAEIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -256,10 +257,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "FormDangNhap.cs [Design]",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangNhap.cs",
               "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\New folder\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs [Design]",
-              "RelativeToolTip": "..\\..\\New folder\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-01T04:57:05.409Z"
             },
@@ -267,9 +267,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "FormDangNhap.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "Dangky-Dangnhap\\FormDangNhap.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Dangky-Dangnhap\\FormDangNhap.cs",
               "RelativeToolTip": "Dangky-Dangnhap\\FormDangNhap.cs",
               "ViewState": "AQIAALoAAAAAAAAAAAAgwMkAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -279,9 +279,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\chatv3\\X-Plore\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAkwBwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

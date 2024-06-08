@@ -90,7 +90,7 @@ namespace X_Plore.Chat
             }
         }
 
-        private async void LoadChatHistory()
+        private async Task LoadChatHistory()
         {
             try
             {
@@ -458,7 +458,7 @@ namespace X_Plore.Chat
             }
         }
 
-        private void keyInput_Click_1(object sender, EventArgs e)
+        private async void keyInput_Click_1(object sender, EventArgs e)
         {
             encryptionKey = keytextBox.Text.Trim();
             if (string.IsNullOrEmpty(encryptionKey))
@@ -468,7 +468,7 @@ namespace X_Plore.Chat
             else
             {
                 MessageBox.Show("Khóa đã được cập nhật.");
-                LoadChatHistory(); // Call the method synchronously
+                await LoadChatHistory(); // Call the method synchronously
             }
         }
 

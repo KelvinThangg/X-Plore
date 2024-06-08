@@ -98,7 +98,7 @@ namespace X_Plore.Main
             // If the form is found, update the messages
             if (groupChatMemberForm != null)
             {
-                groupChatMemberForm.UpdateDisplayedMessagesForNameChange(oldName, newDisplayName);
+                //groupChatMemberForm.UpdateDisplayedMessagesForNameChange(oldName, newDisplayName);
             }
             else
             {
