@@ -37,6 +37,26 @@ namespace User1
             waveOut = new WaveOutEvent();
             waveOut.Init(waveProvider);
             waveOut.Play();
+            InitializeWebcam();
+        }
+        private void InitializeWebcam()
+        {
+            videoDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            if (videoDevices.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy webcam.");
+                return;
+            }
+
+            // Lấy webcam đầu tiên trong danh sách
+            videoSource = new VideoCaptureDevice(videoDevices[0].MonikerString);
+            videoSource.NewFrame += new NewFrameEventHandler(video_NewFrame);
+
+            // Yêu cầu quyền truy cập camera
+            if (!videoSource.IsRunning)
+            {
+                videoSource.Start();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,6 +78,7 @@ namespace User1
 
             videoSource = new VideoCaptureDevice(videoDevices[0].MonikerString);
             videoSource.NewFrame += new NewFrameEventHandler(video_NewFrame);
+            videoSource.Start();
         }
         private void video_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {

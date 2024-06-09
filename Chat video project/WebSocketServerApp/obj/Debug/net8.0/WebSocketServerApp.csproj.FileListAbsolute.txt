@@ -38,3 +38,24 @@ C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8
 C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.pdb
 C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.genruntimeconfig.cache
 C:\Users\dadad\source\repos\Chat video project\WebSocketServerApp\obj\Debug\net8.0\ref\WebSocketServerApp.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.exe
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.deps.json
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.runtimeconfig.json
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\WebSocketServerApp.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\AForge.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\AForge.Video.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\AForge.Video.DirectShow.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\bin\Debug\net8.0\websocket-sharp.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.csproj.AssemblyReference.cache
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.AssemblyInfoInputs.cache
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.AssemblyInfo.cs
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.csproj.CoreCompileInputs.cache
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.sourcelink.json
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocke.252BFCA1.Up2Date
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\refint\WebSocketServerApp.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\WebSocketServerApp.genruntimeconfig.cache
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\WebSocketServerApp\obj\Debug\net8.0\ref\WebSocketServerApp.dll

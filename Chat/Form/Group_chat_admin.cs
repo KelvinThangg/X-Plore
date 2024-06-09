@@ -34,7 +34,7 @@ namespace X_Plore.Chat
             this.roomCreator = roomCreator;
             this.adminName = adminName;
             InitializeFirebase();
-            LoadChatHistory();
+          
             ListenForMessages();
             CreateDataDirectories();
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
@@ -112,13 +112,15 @@ namespace X_Plore.Chat
                     Sender = roomCreator, // Lưu tin nhắn dưới tên roomCreator
                     Timestamp = DateTime.Now,
                     IsFile = isFile,
-                    FileName = fileName
+                    FileName = fileName,
+                    DisplayName = adminName
                 };
 
                 await firebaseClient.Child("RoomNames")
                                     .Child(roomName)
                                     .Child("messages")
                                     .PostAsync(messageNode);
+                DisplayMessage(messageNode);
             }
             catch (Exception ex)
             {
@@ -139,7 +141,7 @@ namespace X_Plore.Chat
             {
                 if (message.IsFile)
                 {
-                    string fileMessage = $"{adminName} đã gửi một tệp: {message.FileName}"; // Hiển thị adminName thay vì roomCreator
+                    string fileMessage = $"{message.DisplayName} đã gửi một tệp: {message.FileName}"; // Hiển thị adminName thay vì roomCreator
                     listBox1.Items.Add(fileMessage);
                     displayedMessages.Add(uniqueMessageIdentifier);
 
@@ -181,13 +183,72 @@ namespace X_Plore.Chat
                 }
                 else
                 {
-                    string newMessage = $"{adminName}: {decryptedMessage}"; // Hiển thị adminName thay vì roomCreator
+                    string newMessage = $"{message.DisplayName}: {decryptedMessage}"; // Hiển thị adminName thay vì roomCreator
+
                     listBox1.Items.Add(newMessage);
+
                     displayedMessages.Add(uniqueMessageIdentifier);
+
                 }
             }
         }
+       /* private void ListBox1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index >= 0)
+            {
+                // Lấy item hiện tại
+                string itemText = listBox1.Items[e.Index].ToString();
 
+                // Tạo font chữ đậm hơn
+                Font boldFont = new Font(listBox1.Font, FontStyle.Bold);
+
+                // Đổi màu và font chữ nếu là Sender
+                if (itemText.StartsWith($"{adminName}: ") || itemText.StartsWith($"{adminName} đã gửi một tệp: "))
+                {
+                    e.Graphics.DrawString(itemText, boldFont, Brushes.Black, e.Bounds);
+                }
+                else
+                {
+                    e.Graphics.DrawString(itemText, listBox1.Font, Brushes.Black, e.Bounds);
+                }
+
+                // Giải phóng font chữ
+                boldFont.Dispose();
+            }
+        }*/
+        public async Task UpdateAllDisplayNamesForSender(string sender, string newDisplayName)
+        {
+            try
+            {
+                // Lấy tất cả tin nhắn trong phòng chat
+                var messages = await firebaseClient.Child("RoomNames")
+                                                  .Child(roomName)
+                                                  .Child("messages")
+                                                  .OnceAsync<MessageNode>();
+
+                // Duyệt qua các tin nhắn và cập nhật DisplayName nếu Sender khớp
+                foreach (var message in messages)
+                {
+                    if (message.Object.Sender == roomCreator)
+                    {
+                        // Đảm bảo newDisplayName được gửi dưới dạng chuỗi JSON hợp lệ
+                        await firebaseClient.Child("RoomNames")
+                                            .Child(roomName)
+                                            .Child("messages")
+                                            .Child(message.Key)
+                                            .Child("DisplayName")
+                                            .PutAsync($"\"{newDisplayName}\""); // Thêm dấu ngoặc kép
+                    }
+                }
+
+                // Tải lại lịch sử trò chuyện để hiển thị thay đổi
+                await LoadChatHistory();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi cập nhật DisplayName: " + ex.Message);
+            }
+        }
 
         private void ListenForMessages()
         {
@@ -482,9 +543,10 @@ namespace X_Plore.Chat
             }
         }
 
-        private void Group_chat_admin_Load(object sender, EventArgs e)
+        private async void Group_chat_admin_Load(object sender, EventArgs e)
         {
             ListenForMessages();
+            await UpdateAllDisplayNamesForSender(roomCreator, adminName);
         }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)

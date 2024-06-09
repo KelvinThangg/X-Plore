@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FUHUUK+tMPqbvMP+ASOjSLansCSqGpUjVj0WeUo04wJL4N0PLDbE9QH/6UyCyjQRLbYE4NyA+yOLrV696Scujw==",
+  "dgSpecHash": "6g/MhRAOmZxp6Kkbh2w7W4U2AHyVPU/iQCg9J8n5RaXe+u5XSAAR8f5JIpIlLxXZio/HHvHMmBn0wx8HDHn6MA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dadad\\source\\repos\\Chat video project\\WebSocketServerApp\\WebSocketServerApp.csproj",
+  "projectFilePath": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\Chat video project\\WebSocketServerApp\\WebSocketServerApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dadad\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
-    "C:\\Users\\dadad\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\dadad\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\dadad\\.nuget\\packages\\websocketsharp-netstandard\\1.0.1\\websocketsharp-netstandard.1.0.1.nupkg.sha512"
+    "C:\\Users\\asus\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\websocketsharp-netstandard\\1.0.1\\websocketsharp-netstandard.1.0.1.nupkg.sha512"
   ],
   "logs": [
     {

@@ -34,7 +34,6 @@ namespace X_Plore.Chat
             this.memberName = memberName;
             this.displayName = displayName;
             InitializeFirebase();
-           
             ListenForMessages();
             CreateDataDirectories();
         }
@@ -230,6 +229,7 @@ namespace X_Plore.Chat
                          {
                              this.Invoke((MethodInvoker)delegate
                              {
+                                 // Hiển thị tin nhắn mới trên listbox
                                  DisplayMessage(d.Object);
                              });
                          }

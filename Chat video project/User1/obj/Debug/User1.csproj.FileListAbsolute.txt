@@ -37,3 +37,42 @@ C:\Users\dadad\source\repos\User1\obj\Debug\User1.csproj.CoreCompileInputs.cache
 C:\Users\dadad\source\repos\User1\obj\Debug\User1.csproj.Up2Date
 C:\Users\dadad\source\repos\User1\obj\Debug\User1.exe
 C:\Users\dadad\source\repos\User1\obj\Debug\User1.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\User1.exe.config
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\User1.exe
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\User1.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\AForge.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\AForge.Video.DirectShow.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\AForge.Video.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\Microsoft.Win32.Registry.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.Asio.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.Core.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.Midi.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.Wasapi.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.WinForms.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.WinMM.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\System.Security.AccessControl.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\System.Security.Principal.Windows.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\websocket-sharp.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\AForge.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\AForge.Video.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\AForge.Video.DirectShow.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\Microsoft.Win32.Registry.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.Asio.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.Core.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.Midi.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.Wasapi.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.WinForms.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\NAudio.WinMM.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\System.Security.AccessControl.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\System.Security.Principal.Windows.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\bin\Debug\websocket-sharp.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\obj\Debug\User1.csproj.AssemblyReference.cache
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\obj\Debug\User1.Form1.resources
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\obj\Debug\User1.Properties.Resources.resources
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\obj\Debug\User1.csproj.GenerateResource.cache
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\obj\Debug\User1.csproj.CoreCompileInputs.cache
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\obj\Debug\User1.csproj.Up2Date
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\obj\Debug\User1.exe
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\Chat video project\User1\obj\Debug\User1.pdb
