@@ -228,7 +228,7 @@ namespace X_Plore.Chat
             string matKhau = textBox1.Text;
             try
             {
-                var room = new Room { Name = tenPhong, Password = matKhau, IsAdmin = true, AppId = appId };
+                var room = new Room { Name = tenPhong, Password = matKhau, IsAdmin = true, AppId = appId, AdminName = username };
                 await firebaseClient.Child("rooms").Child(tenPhong).PutAsync(room);
                 // Liên kết phòng với người dùng
                 var user = await firebaseClient.Child("users").Child(username).OnceSingleAsync<Users>();

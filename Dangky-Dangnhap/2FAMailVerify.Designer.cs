@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.NotifcationTxT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lbDem = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -37,7 +38,6 @@
             this.confirmBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.codeBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.NotifcationTxT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,17 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(417, 425);
             this.guna2CustomGradientPanel1.TabIndex = 1;
             // 
+            // NotifcationTxT
+            // 
+            this.NotifcationTxT.BackColor = System.Drawing.Color.Transparent;
+            this.NotifcationTxT.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotifcationTxT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.NotifcationTxT.Location = new System.Drawing.Point(153, 369);
+            this.NotifcationTxT.Name = "NotifcationTxT";
+            this.NotifcationTxT.Size = new System.Drawing.Size(94, 27);
+            this.NotifcationTxT.TabIndex = 12;
+            this.NotifcationTxT.Text = "Thông báo";
+            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -78,11 +89,11 @@
             this.lbDem.BackColor = System.Drawing.Color.Transparent;
             this.lbDem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDem.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lbDem.Location = new System.Drawing.Point(253, 340);
+            this.lbDem.Location = new System.Drawing.Point(253, 338);
             this.lbDem.Name = "lbDem";
-            this.lbDem.Size = new System.Drawing.Size(87, 23);
+            this.lbDem.Size = new System.Drawing.Size(21, 23);
             this.lbDem.TabIndex = 10;
-            this.lbDem.Text = "Demnguoc";
+            this.lbDem.Text = "60";
             // 
             // guna2HtmlLabel2
             // 
@@ -123,7 +134,7 @@
             this.sendBtn.Name = "sendBtn";
             this.sendBtn.Size = new System.Drawing.Size(140, 45);
             this.sendBtn.TabIndex = 8;
-            this.sendBtn.Text = "Gửi lại";
+            this.sendBtn.Text = "Gửi";
             this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
             // 
             // confirmBtn
@@ -180,17 +191,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // NotifcationTxT
-            // 
-            this.NotifcationTxT.BackColor = System.Drawing.Color.Transparent;
-            this.NotifcationTxT.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NotifcationTxT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NotifcationTxT.Location = new System.Drawing.Point(153, 369);
-            this.NotifcationTxT.Name = "NotifcationTxT";
-            this.NotifcationTxT.Size = new System.Drawing.Size(94, 27);
-            this.NotifcationTxT.TabIndex = 12;
-            this.NotifcationTxT.Text = "Thông báo";
             // 
             // _2FAMailVerify
             // 

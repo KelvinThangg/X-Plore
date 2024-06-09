@@ -19,6 +19,7 @@ namespace X_Plore.Chat.CS
 
     public class Room
     {
+        public string AdminName { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public bool IsAdmin { get; set; }

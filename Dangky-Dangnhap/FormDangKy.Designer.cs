@@ -30,16 +30,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangKy));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.GenBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.showPassBox = new Guna.UI2.WinForms.Guna2ImageButton();
             this.RegBtn = new Guna.UI2.WinForms.Guna2Button();
             this.BackToLoginBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.PassBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.TelBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EmailBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.ReEnterPasswordBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,6 +49,8 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.showPassBox = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.PassBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -72,18 +71,18 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2Panel2.Controls.Add(this.showPassBox);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel2.Controls.Add(this.GenBox);
-            this.guna2Panel2.Controls.Add(this.showPassBox);
             this.guna2Panel2.Controls.Add(this.RegBtn);
             this.guna2Panel2.Controls.Add(this.BackToLoginBtn);
-            this.guna2Panel2.Controls.Add(this.PassBox);
             this.guna2Panel2.Controls.Add(this.TelBox);
             this.guna2Panel2.Controls.Add(this.EmailBox);
             this.guna2Panel2.Controls.Add(this.ReEnterPasswordBox);
             this.guna2Panel2.Controls.Add(this.displayNameBox);
             this.guna2Panel2.Controls.Add(this.UserBox);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel2.Controls.Add(this.PassBox);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -124,20 +123,6 @@
             this.GenBox.Size = new System.Drawing.Size(250, 36);
             this.GenBox.TabIndex = 12;
             // 
-            // showPassBox
-            // 
-            this.showPassBox.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.showPassBox.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.showPassBox.Image = ((System.Drawing.Image)(resources.GetObject("showPassBox.Image")));
-            this.showPassBox.ImageOffset = new System.Drawing.Point(0, 0);
-            this.showPassBox.ImageRotate = 0F;
-            this.showPassBox.ImageSize = new System.Drawing.Size(16, 16);
-            this.showPassBox.Location = new System.Drawing.Point(248, 286);
-            this.showPassBox.Name = "showPassBox";
-            this.showPassBox.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.showPassBox.Size = new System.Drawing.Size(26, 20);
-            this.showPassBox.TabIndex = 11;
-            // 
             // RegBtn
             // 
             this.RegBtn.Animated = true;
@@ -175,30 +160,6 @@
             this.BackToLoginBtn.Text = "Login";
             this.BackToLoginBtn.UseTransparentBackground = true;
             this.BackToLoginBtn.Click += new System.EventHandler(this.BackToLoginBtn_Click);
-            // 
-            // PassBox
-            // 
-            this.PassBox.Animated = true;
-            this.PassBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.PassBox.BorderRadius = 6;
-            this.PassBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PassBox.DefaultText = "";
-            this.PassBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PassBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PassBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PassBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PassBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.PassBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PassBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.PassBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PassBox.Location = new System.Drawing.Point(33, 281);
-            this.PassBox.Name = "PassBox";
-            this.PassBox.PasswordChar = '●';
-            this.PassBox.PlaceholderText = "Password";
-            this.PassBox.SelectedText = "";
-            this.PassBox.Size = new System.Drawing.Size(251, 36);
-            this.PassBox.TabIndex = 2;
-            this.PassBox.UseSystemPasswordChar = true;
             // 
             // TelBox
             // 
@@ -384,6 +345,40 @@
             this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_POSITIVE;
             this.guna2AnimateWindow1.TargetForm = this;
             // 
+            // showPassBox
+            // 
+            this.showPassBox.CheckedState.Image = global::X_Plore.Properties.Resources.hide_143316;
+            this.showPassBox.Image = global::X_Plore.Properties.Resources.eye_12918930;
+            this.showPassBox.ImageOffset = new System.Drawing.Point(0, 0);
+            this.showPassBox.ImageRotate = 0F;
+            this.showPassBox.Location = new System.Drawing.Point(250, 288);
+            this.showPassBox.Name = "showPassBox";
+            this.showPassBox.Size = new System.Drawing.Size(24, 24);
+            this.showPassBox.TabIndex = 14;
+            this.showPassBox.CheckedChanged += new System.EventHandler(this.showPassBox_CheckedChanged_1);
+            // 
+            // PassBox
+            // 
+            this.PassBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
+            this.PassBox.BorderRadius = 6;
+            this.PassBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PassBox.DefaultText = "";
+            this.PassBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PassBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PassBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PassBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PassBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.PassBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PassBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PassBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PassBox.Location = new System.Drawing.Point(33, 282);
+            this.PassBox.Name = "PassBox";
+            this.PassBox.PasswordChar = '\0';
+            this.PassBox.PlaceholderText = "Password";
+            this.PassBox.SelectedText = "";
+            this.PassBox.Size = new System.Drawing.Size(251, 36);
+            this.PassBox.TabIndex = 15;
+            // 
             // FormDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -412,7 +407,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button RegBtn;
         private Guna.UI2.WinForms.Guna2Button BackToLoginBtn;
-        private Guna.UI2.WinForms.Guna2TextBox PassBox;
         private Guna.UI2.WinForms.Guna2TextBox UserBox;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
@@ -420,13 +414,14 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2ImageButton showPassBox;
         private Guna.UI2.WinForms.Guna2TextBox TelBox;
         private Guna.UI2.WinForms.Guna2TextBox EmailBox;
         private Guna.UI2.WinForms.Guna2TextBox ReEnterPasswordBox;
         private Guna.UI2.WinForms.Guna2TextBox displayNameBox;
         private Guna.UI2.WinForms.Guna2ComboBox GenBox;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2ImageCheckBox showPassBox;
+        private Guna.UI2.WinForms.Guna2TextBox PassBox;
     }
 }
 

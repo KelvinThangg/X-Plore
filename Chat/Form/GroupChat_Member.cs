@@ -12,6 +12,14 @@ using System.Windows.Forms;
 using X_Plore.Chat.CS;
 using Firebase.Database;
 using Firebase.Database.Query;
+using Amazon.S3.Model;
+using Amazon.S3;
+using System.Net;
+using X_Plore.Class;
+using AWSSDK;
+using Amazon;
+using Amazon.S3.Model;
+using Amazon.S3;
 
 namespace X_Plore.Chat
 {
@@ -36,9 +44,10 @@ namespace X_Plore.Chat
             InitializeFirebase();
             ListenForMessages();
             CreateDataDirectories();
+            keytextBox.UseSystemPasswordChar = true;
         }
-        
-     
+
+
         private void InitializeFirebase()
         {
             firebaseClient = new FirebaseClient(FirebaseURL);
@@ -70,7 +79,7 @@ namespace X_Plore.Chat
                                                       .OnceAsync<MessageNode>();
 
                 // listBox1.Items.Clear(); // Clear existing messages
-               // displayedMessages.Clear(); // Clear the set of displayed messages
+                // displayedMessages.Clear(); // Clear the set of displayed messages
 
                 foreach (var messageNode in chatHistory)
                 {
@@ -206,8 +215,13 @@ namespace X_Plore.Chat
                 }
                 else
                 {
-                    string newMessage = $"{message.DisplayName}: {decryptedMessage}";
+                    string displayNameWithYou = message.Sender == memberName ? $"{message.DisplayName} (you)" : message.DisplayName;
+
+                    string newMessage = $"{displayNameWithYou}: {decryptedMessage}";
                     listBox1.Items.Add(newMessage);
+                    listBox1.TopIndex = listBox1.Items.Count - 1;
+
+
                     displayedMessages.Add(uniqueMessageIdentifier);
                 }
             }
@@ -404,11 +418,20 @@ namespace X_Plore.Chat
 
         private async void GroupChat_Member_Load(object sender, EventArgs e)
         {
-            ListenForMessages(); // Sau đó lắng nghe các tin nhắn mới
+            label1.Text = roomName;
            
+         
+
+            ListenForMessages(); // Sau đó lắng nghe các tin nhắn mới
+
             await UpdateAllDisplayNamesForSender(memberName, displayName);
-            
-          
+            var roomData = await firebaseClient.Child("rooms").Child(roomName).OnceSingleAsync<Room>();
+            if (roomData != null)
+            {
+                string adminUsername = roomData.AdminName; // Lấy username của admin từ roomData
+                await LoadAvatarFromS3(adminUsername); // Truyền username của admin vào hàm LoadAvatarFromS3
+            }
+
 
         }
 
@@ -459,36 +482,75 @@ namespace X_Plore.Chat
                 }
             }
         }
-        /*  public void UpdateDisplayedMessagesForNameChange(string oldName, string newName)
-          {
-              // 1. Update displayed messages in listBox1
-              for (int i = 0; i < listBox1.Items.Count; i++)
-              {
-                  string currentMessage = listBox1.Items[i].ToString();
+        private async Task LoadAvatarFromS3(string username)
+        {
 
-                  // Check if the message starts with the old name
-                  if (currentMessage.StartsWith($"{oldName}: ") ||
-                      currentMessage.StartsWith($"{oldName} đã gửi một tệp: "))
-                  {
-                      // Replace the old name with the new name
-                      string updatedMessage = currentMessage.Replace(oldName, newName);
-                      listBox1.Items[i] = updatedMessage;
-                  }
-              }
+            AWSS3 awsS3 = new AWSS3();
 
-              // 2. Update the displayedMessages set (optional, but recommended)
-              // This step is important if you rely on the displayedMessages set 
-              // to prevent duplicate messages from being displayed. 
-              displayedMessages = new HashSet<string>(displayedMessages.Select(msg =>
-              {
-                  if (msg.StartsWith($"{oldName}-"))
-                  {
-                      return msg.Replace($"{oldName}-", $"{newName}-");
-                  }
-                  return msg;
-              }));
-          }*/
 
+            string AccessKey = awsS3.GetAccessKey();
+            string SecretKey = awsS3.GetSecretKey();
+            string SessionToken = awsS3.GetSessionToken();
+            string BucketName = awsS3.GetBucketName();
+
+            try
+            {
+                // Tạo tên tệp tin avatar dựa trên username
+                string avatarFileName = $"{username}_avatar.png";
+
+                // Tạo request để lấy ảnh từ S3
+                var request = new GetObjectRequest
+                {
+                    BucketName = BucketName,
+                    Key = avatarFileName
+                };
+
+                // Lấy thông tin đăng nhập AWS
+                var credentials = new Amazon.Runtime.SessionAWSCredentials(AccessKey, SecretKey, SessionToken);
+
+                // Tạo AmazonS3Client
+                using (var client = new AmazonS3Client(credentials, RegionEndpoint.USEast1))
+                {
+                    // Thực hiện request để lấy ảnh
+                    using (var response = await client.GetObjectAsync(request))
+                    {
+                        // Kiểm tra xem ảnh có tồn tại hay không
+                        if (response.HttpStatusCode == HttpStatusCode.OK)
+                        {
+                            // Tải ảnh và hiển thị trong PictureBox
+                            using (var stream = new MemoryStream())
+                            {
+                                await response.ResponseStream.CopyToAsync(stream);
+                                guna2CirclePictureBox1.Image = Image.FromStream(stream);
+                            }
+                        }
+                        else
+                        {
+                            // Xử lý trường hợp không tìm thấy ảnh (ví dụ: hiển thị ảnh mặc định)
+                            guna2CirclePictureBox1.Image = Properties.Resources.avatardefault_92824;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải ảnh đại diện: {ex.Message}");
+                // Xử lý lỗi, ví dụ: ghi log hoặc hiển thị thông báo cho người dùng
+            }
+
+        }
+
+        private void HideorShowpassCb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (HideorShowpassCb.Checked)
+            {
+                textBox1.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox1.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
 

@@ -18,7 +18,7 @@ using System.IO;
 using Amazon.SecurityToken;
 using System.Net;
 using X_Plore.Chat;
-
+using X_Plore.Class;
 namespace X_Plore.Main
 {
     public partial class HomeScreen : Form
@@ -236,10 +236,10 @@ namespace X_Plore.Main
 
         }
 
-        private const string AccessKey = "ASIAZD7PBJSZSNFV2KOG";
-        private const string SecretKey = "KZ1eOPdNoq1Fe9+7bcOMfl3sJlI/IDu4secCRAKK";
-        private const string SessionToken = "IQoJb3JpZ2luX2VjEPH//////////wEaCXVzLXdlc3QtMiJHMEUCIQDxxBswHFKlZdAxGE0inu6B4Dlre7eGpl9oEPK7MiKe1wIgYkfcy1n5D3sxrHIyUhWRiUBJ1XWNYkzruEhOGz/cWRYqsAIIeRAAGgw2MjcwMjk2NTg4MDMiDNqiw9PpBGswA7gaAiqNAifK+oXYiOwc9LmTKC12v/hVcBjWWQh1xDlkn+I44EMTrmx2EhfFrYSXUQ865Ij6YbU88sOirc3Jzr6wTTfYlBLRp7RmiGZM4eg7NER+Ov1tEY3GKrwdQqOPTs12DjzjufOtX7k66yI8w4jt9/B2Wvt4v9Qr3JdY+C6e6fE7UoD9JslhCLWK+jDElcyjjCKzdZRWuv17RIrQMdKpFBm5IxMfRM0EvhIxrktiX7GsFwMK/bV7EEOmuDuTx2cwo5qkA2EKNu+YVvbeES7nRZ1XZjyKM3SIFqS5s6OPdb0zv+oDolYmYV1C8qjyjs5APr+Vb8j3oHmbMVtp+j+2UcuCS+Qlk23FPhUE5a4gJ52RMK638rIGOp0BinRF+a/mgd2obK18Qn6CaCMOgiV3xAMqBfz+zELY3jSaMPW7QDEfrDFikv/DLAAnslk3nbN0esURT2L08WH2l8SOUkqWma1I6rPgppn+AaltZM4O/idEHaYH7ECkX2PkjDaGDqTZ79AaSJwK1GjwdnFuH50iPaRhAZIi/etNTNB2qX7rxcQDRPmBl0UxAYRVWX4r+4u37wkijwYDCQ==";
-        private const string BucketName = "xplorer-bucket"; // Thay thế bằng tên bucket của bạn
+     //  private const string AccessKey = "ASIAZD7PBJSZSNFV2KOG";
+      // private const string SecretKey = "KZ1eOPdNoq1Fe9+7bcOMfl3sJlI/IDu4secCRAKK";
+      // private const string SessionToken = "IQoJb3JpZ2luX2VjEPH//////////wEaCXVzLXdlc3QtMiJHMEUCIQDxxBswHFKlZdAxGE0inu6B4Dlre7eGpl9oEPK7MiKe1wIgYkfcy1n5D3sxrHIyUhWRiUBJ1XWNYkzruEhOGz/cWRYqsAIIeRAAGgw2MjcwMjk2NTg4MDMiDNqiw9PpBGswA7gaAiqNAifK+oXYiOwc9LmTKC12v/hVcBjWWQh1xDlkn+I44EMTrmx2EhfFrYSXUQ865Ij6YbU88sOirc3Jzr6wTTfYlBLRp7RmiGZM4eg7NER+Ov1tEY3GKrwdQqOPTs12DjzjufOtX7k66yI8w4jt9/B2Wvt4v9Qr3JdY+C6e6fE7UoD9JslhCLWK+jDElcyjjCKzdZRWuv17RIrQMdKpFBm5IxMfRM0EvhIxrktiX7GsFwMK/bV7EEOmuDuTx2cwo5qkA2EKNu+YVvbeES7nRZ1XZjyKM3SIFqS5s6OPdb0zv+oDolYmYV1C8qjyjs5APr+Vb8j3oHmbMVtp+j+2UcuCS+Qlk23FPhUE5a4gJ52RMK638rIGOp0BinRF+a/mgd2obK18Qn6CaCMOgiV3xAMqBfz+zELY3jSaMPW7QDEfrDFikv/DLAAnslk3nbN0esURT2L08WH2l8SOUkqWma1I6rPgppn+AaltZM4O/idEHaYH7ECkX2PkjDaGDqTZ79AaSJwK1GjwdnFuH50iPaRhAZIi/etNTNB2qX7rxcQDRPmBl0UxAYRVWX4r+4u37wkijwYDCQ==";
+      // private const string BucketName = "xplorer-bucket"; // Thay thế bằng tên bucket của bạn
 
         private async void ChangeAvatarBtn_Click(object sender, EventArgs e)
         {
@@ -285,6 +285,11 @@ namespace X_Plore.Main
         // Hàm tải ảnh lên AWS S3
         private async Task<string> UploadAvatarToS3(string filePath)
         {
+            AWSS3 awsS3 = new AWSS3();
+            string AccessKey = awsS3.GetAccessKey();
+            string SecretKey = awsS3.GetSecretKey();
+            string SessionToken = awsS3.GetSessionToken();
+            string BucketName = awsS3.GetBucketName();
             try
             {
                 var credentials = new Amazon.Runtime.SessionAWSCredentials(AccessKey, SecretKey, SessionToken);
@@ -318,6 +323,11 @@ namespace X_Plore.Main
         }
         private async Task LoadAvatarFromS3()
         {
+            AWSS3 awsS3 = new AWSS3();
+            string AccessKey = awsS3.GetAccessKey();
+            string SecretKey = awsS3.GetSecretKey();
+            string SessionToken = awsS3.GetSessionToken();
+            string BucketName = awsS3.GetBucketName();
             try
             {
                 // Tạo tên tệp tin avatar dựa trên username

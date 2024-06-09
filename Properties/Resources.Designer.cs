@@ -63,6 +63,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_215337217_DK8Kn5Q74I4IZ6CZXjvcpv1lOiLCBTQE {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_215337217_DK8Kn5Q74I4IZ6CZXjvcpv1lOiLCBTQE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2 {
             get {
                 object obj = ResourceManager.GetObject("2", resourceCulture);
@@ -116,6 +126,49 @@ namespace X_Plore.Properties {
         internal static System.Drawing.Bitmap _3 {
             get {
                 object obj = ResourceManager.GetObject("3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7123025_logo_google_g_icon {
+            get {
+                object obj = ResourceManager.GetObject("7123025_logo_google_g_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap accept_call_and_decline_phone_icons_red_and_green_yes_no_buttons_icon_illustration_answer_and_decline_phone_call_buttons_vector_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("accept-call-and-decline-phone-icons-red-and-green-yes-no-buttons-icon-illustratio" +
+                        "n-answer-and-decline-phone-call-buttons-vector-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap accept_call_and_decline_phone_icons_red_and_green_yes_no_buttons_icon_illustration_answer_and_decline_phone_call_buttons_vector_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("accept-call-and-decline-phone-icons-red-and-green-yes-no-buttons-icon-illustratio" +
+                        "n-answer-and-decline-phone-call-buttons-vector-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap accept_call_and_decline_phone_icons_red_and_green_yes_no_buttons_icon_illustration_answer_and_decline_phone_call_buttons_vector_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("accept-call-and-decline-phone-icons-red-and-green-yes-no-buttons-icon-illustratio" +
+                        "n-answer-and-decline-phone-call-buttons-vector-removebg-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,6 +316,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide_143316 {
+            get {
+                object obj = ResourceManager.GetObject("hide_143316", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
@@ -286,6 +349,16 @@ namespace X_Plore.Properties {
         internal static System.Drawing.Bitmap image148711 {
             get {
                 object obj = ResourceManager.GetObject("image148711", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap incoming_call_6444234 {
+            get {
+                object obj = ResourceManager.GetObject("incoming-call_6444234", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +399,16 @@ namespace X_Plore.Properties {
         internal static System.Drawing.Bitmap password_12795700 {
             get {
                 object obj = ResourceManager.GetObject("password_12795700", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone_14026921 {
+            get {
+                object obj = ResourceManager.GetObject("phone_14026921", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

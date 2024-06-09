@@ -37,6 +37,7 @@ namespace X_Plore
         public FormDangKy()
         {
             InitializeComponent();
+            PassBox.UseSystemPasswordChar = true;
         }
 
         int Uuser = 0;
@@ -189,16 +190,7 @@ namespace X_Plore
 
         private void showPassBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (showPassBox.Checked == true)
-            {
-                PassBox.UseSystemPasswordChar = false;
-                ReEnterPasswordBox.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                PassBox.UseSystemPasswordChar = true;
-                ReEnterPasswordBox.UseSystemPasswordChar = true;
-            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -336,6 +328,18 @@ namespace X_Plore
             catch (Exception ex)
             {
                 MessageBox.Show($"Lỗi đăng nhập: {ex.Message}");
+            }
+        }
+
+        private void showPassBox_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (showPassBox.Checked == true)
+            {
+                PassBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                PassBox.UseSystemPasswordChar = true;
             }
         }
     }

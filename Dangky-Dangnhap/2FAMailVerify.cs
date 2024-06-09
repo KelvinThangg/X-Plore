@@ -26,6 +26,7 @@ namespace X_Plore.Dangky_Dangnhap
         private const int CODE_EXPIRY_SECONDS = 60;
         private string userEmail;
         private string userName;
+        private int secondsRemaining;
         string verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric);
 
         private void GoBackToLoginForm()
@@ -143,7 +144,14 @@ namespace X_Plore.Dangky_Dangnhap
                 sendBtn.Enabled = false;
                 confirmBtn.Enabled = true;
                 codeExpiryTimer.Start();
-            }
+                secondsRemaining = CODE_EXPIRY_SECONDS;
+                while (secondsRemaining > 0)
+                {
+                    sendBtn.Text = $"Gửi lại code ({secondsRemaining})";
+                    secondsRemaining--;
+                    lbDem.Text = secondsRemaining.ToString();
+                }
+    }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);

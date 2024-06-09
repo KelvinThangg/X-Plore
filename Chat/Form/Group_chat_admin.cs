@@ -12,6 +12,16 @@ using System.Windows.Forms;
 using X_Plore.Chat.CS;
 using Firebase.Database;
 using Firebase.Database.Query;
+using Amazon.S3.Model;
+using Amazon.S3;
+using System.Net;
+using X_Plore.Class;
+using AWSSDK;
+using Amazon;
+using AForge.Video;
+
+using NAudio.Wave;
+using WebSocketSharp;
 
 namespace X_Plore.Chat
 {
@@ -34,7 +44,7 @@ namespace X_Plore.Chat
             this.roomCreator = roomCreator;
             this.adminName = adminName;
             InitializeFirebase();
-          
+            keytextBox.UseSystemPasswordChar = true;
             ListenForMessages();
             CreateDataDirectories();
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
@@ -183,39 +193,19 @@ namespace X_Plore.Chat
                 }
                 else
                 {
-                    string newMessage = $"{message.DisplayName}: {decryptedMessage}"; // Hiển thị adminName thay vì roomCreator
+                    string displayNameWithYou = message.Sender == adminName ? $"{message.DisplayName} (you)" : message.DisplayName;
+
+                    string newMessage = $"{displayNameWithYou}: {decryptedMessage}";
 
                     listBox1.Items.Add(newMessage);
-
+                    listBox1.TopIndex = listBox1.Items.Count - 1; // Cuộn xuống dòng cuối cùng
+                
                     displayedMessages.Add(uniqueMessageIdentifier);
 
                 }
             }
         }
-       /* private void ListBox1_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            if (e.Index >= 0)
-            {
-                // Lấy item hiện tại
-                string itemText = listBox1.Items[e.Index].ToString();
-
-                // Tạo font chữ đậm hơn
-                Font boldFont = new Font(listBox1.Font, FontStyle.Bold);
-
-                // Đổi màu và font chữ nếu là Sender
-                if (itemText.StartsWith($"{adminName}: ") || itemText.StartsWith($"{adminName} đã gửi một tệp: "))
-                {
-                    e.Graphics.DrawString(itemText, boldFont, Brushes.Black, e.Bounds);
-                }
-                else
-                {
-                    e.Graphics.DrawString(itemText, listBox1.Font, Brushes.Black, e.Bounds);
-                }
-
-                // Giải phóng font chữ
-                boldFont.Dispose();
-            }
-        }*/
+       
         public async Task UpdateAllDisplayNamesForSender(string sender, string newDisplayName)
         {
             try
@@ -545,6 +535,8 @@ namespace X_Plore.Chat
 
         private async void Group_chat_admin_Load(object sender, EventArgs e)
         {
+            label1.Text = roomName;
+            await LoadAvatarFromS3();
             ListenForMessages();
             await UpdateAllDisplayNamesForSender(roomCreator, adminName);
         }
@@ -557,6 +549,86 @@ namespace X_Plore.Chat
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private async Task LoadAvatarFromS3()
+        {
+            AWSS3 awsS3 = new AWSS3();
+            string username = roomCreator;
+            string AccessKey = awsS3.GetAccessKey();
+            string SecretKey = awsS3.GetSecretKey();
+            string SessionToken = awsS3.GetSessionToken();
+            string BucketName = awsS3.GetBucketName();
+
+            try
+            {
+                // Tạo tên tệp tin avatar dựa trên username
+                string avatarFileName = $"{username}_avatar.png";
+
+                // Tạo request để lấy ảnh từ S3
+                var request = new GetObjectRequest
+                {
+                    BucketName = BucketName,
+                    Key = avatarFileName
+                };
+
+                // Lấy thông tin đăng nhập AWS
+                var credentials = new Amazon.Runtime.SessionAWSCredentials(AccessKey, SecretKey, SessionToken);
+
+                // Tạo AmazonS3Client
+                using (var client = new AmazonS3Client(credentials, RegionEndpoint.USEast1))
+                {
+                    // Thực hiện request để lấy ảnh
+                    using (var response = await client.GetObjectAsync(request))
+                    {
+                        // Kiểm tra xem ảnh có tồn tại hay không
+                        if (response.HttpStatusCode == HttpStatusCode.OK)
+                        {
+                            // Tải ảnh và hiển thị trong PictureBox
+                            using (var stream = new MemoryStream())
+                            {
+                                await response.ResponseStream.CopyToAsync(stream);
+                                guna2CirclePictureBox1.Image = Image.FromStream(stream);
+                            }
+                        }
+                        else
+                        {
+                            // Xử lý trường hợp không tìm thấy ảnh (ví dụ: hiển thị ảnh mặc định)
+                            guna2CirclePictureBox1.Image = Properties.Resources.avatardefault_92824;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải ảnh đại diện: {ex.Message}");
+                // Xử lý lỗi, ví dụ: ghi log hoặc hiển thị thông báo cho người dùng
+            }
+        }
+        public string GetRoomCreator()
+        {
+            return roomCreator;
+        }
+       
+
+            private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            //CALL
+       
+           CallForm callForm = new CallForm();
+            callForm.Show();
+         
+        }
+
+        private void HideorShowpassCb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (HideorShowpassCb.Checked)
+            {
+                keytextBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                keytextBox.UseSystemPasswordChar = true;
+            }
         }
     }
 }

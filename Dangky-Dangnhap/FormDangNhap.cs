@@ -32,6 +32,7 @@ namespace X_Plore
         private const int CODE_EXPIRY_SECONDS = 60;
         int enterout = 0;
 
+
         bool checkTimeout()
         {
             if (enterout == 3)
@@ -48,6 +49,7 @@ namespace X_Plore
         {
             InitializeComponent();
             InitializeCodeExpiryTimer();
+            PassBox.UseSystemPasswordChar = true;
             codeExpiryTimer.Start();
             this.UserBox.Text = username;
             if (username != null)
@@ -317,7 +319,7 @@ namespace X_Plore
             await Task.Yield();
         }
 
-        private async void signInGGbtn_Click(object sender, EventArgs e)
+        private async void guna2TileButton1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -422,6 +424,12 @@ namespace X_Plore
             GenerateCaptcha();
         }
 
-      
+        private void signInGGbtn_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        }
     }
-}
+

@@ -209,11 +209,11 @@
             this.lbDem.BackColor = System.Drawing.Color.Transparent;
             this.lbDem.Font = new System.Drawing.Font("Shopee Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDem.ForeColor = System.Drawing.Color.Chartreuse;
-            this.lbDem.Location = new System.Drawing.Point(181, 177);
+            this.lbDem.Location = new System.Drawing.Point(213, 176);
             this.lbDem.Name = "lbDem";
-            this.lbDem.Size = new System.Drawing.Size(83, 25);
+            this.lbDem.Size = new System.Drawing.Size(20, 25);
             this.lbDem.TabIndex = 6;
-            this.lbDem.Text = "Demnguoc";
+            this.lbDem.Text = "60";
             // 
             // guna2HtmlLabel1
             // 

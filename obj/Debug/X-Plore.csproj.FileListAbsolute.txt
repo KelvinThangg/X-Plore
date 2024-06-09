@@ -1283,3 +1283,32 @@ C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\Test merge\X-Plore\obj\
 C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\Test merge\X-Plore\obj\Debug\X-Plore.csproj.CopyComplete
 C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\Test merge\X-Plore\obj\Debug\X-Plore.exe
 C:\TỔNG HỢP TÀI LIỆU\LAP TRINH MANG CAN BAN\DO AN\Test merge\X-Plore\obj\Debug\X-Plore.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Chat.CallForm.resources
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.DirectShow.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\Microsoft.Win32.Registry.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.Asio.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.Core.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.Midi.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.Wasapi.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.WinForms.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.WinMM.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\System.Security.AccessControl.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\System.Security.Principal.Windows.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\websocket-sharp.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.DirectShow.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\Microsoft.Win32.Registry.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.Asio.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.Core.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.Midi.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.Wasapi.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.WinForms.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\NAudio.WinMM.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\System.Security.AccessControl.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\System.Security.Principal.Windows.xml
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\websocket-sharp.xml
