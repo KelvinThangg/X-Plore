@@ -66,27 +66,13 @@ namespace X_Plore.Chat
             {
                 dataGridView1.Columns.Add("Sender", "Sender");
             }
-
-            // Thêm cột "Kick" nếu chưa tồn tại
-            if (dataGridView1.Columns["Kick"] == null)
-            {
-                DataGridViewButtonColumn kickButtonColumn = new DataGridViewButtonColumn();
-                kickButtonColumn.Name = "Kick";
-                kickButtonColumn.HeaderText = "Kick";
-                kickButtonColumn.Text = "Kick";
-                kickButtonColumn.UseColumnTextForButtonValue = true;
-                dataGridView1.Columns.Add(kickButtonColumn);
-            }
-
             // Kiểm tra xem tên người gửi đã được thêm vào DataGridView chưa
             bool senderNameExists = dataGridView1.Rows.Cast<DataGridViewRow>()
                                                       .Any(row => row.Cells["Sender"].Value?.ToString() == senderName);
-
             // Nếu tên người gửi chưa tồn tại trong DataGridView, thêm nó vào
             if (!senderNameExists)
             {
                 int rowIndex = dataGridView1.Rows.Add(senderName);
-                dataGridView1.Rows[rowIndex].Cells["Kick"].Value = "Kick";
             }
         }
 
@@ -206,71 +192,33 @@ namespace X_Plore.Chat
         private void ListenForMessages()
         {
             firebaseClient
-         .Child("RoomNames")
-         .Child(roomName)
-         .Child("messages")
-         .AsObservable<MessageNode>()
-         .Subscribe(d =>
-         {
-             if (d.Object != null)
+             .Child("RoomNames")
+             .Child(roomName)
+             .Child("messages")
+             .AsObservable<MessageNode>()
+             .Subscribe(d =>
              {
-                 if (this.IsHandleCreated) // Kiểm tra xem handle của control đã được tạo chưa
+                 if (d.Object != null)
                  {
-                     this.Invoke((MethodInvoker)delegate
+                     if (this.IsHandleCreated) // Kiểm tra xem handle của control đã được tạo chưa
                      {
-                         string uniqueMessageIdentifier = d.Object.IsFile ? $"{d.Object.Sender}-{d.Object.FileName}-{d.Object.Timestamp}" : $"{d.Object.Sender}-{d.Object.Message}-{d.Object.Timestamp}";
-
-                         if (!displayedMessages.Contains(uniqueMessageIdentifier))
+                         this.Invoke((MethodInvoker)delegate
                          {
-                             DisplayMessage(d.Object);
-                         }
-                     });
+                             string uniqueMessageIdentifier = d.Object.IsFile ? $"{d.Object.Sender}-{d.Object.FileName}-{d.Object.Timestamp}" : $"{d.Object.Sender}-{d.Object.Message}-{d.Object.Timestamp}";
+
+                             if (!displayedMessages.Contains(uniqueMessageIdentifier))
+                             {
+                                 DisplayMessage(d.Object);
+                             }
+                         });
+                     }
                  }
-             }
-         });
+             });
         }
 
-        private void RemoveForm(Form form)
-        {
-            openForms.Remove(form);
-        }
-
-        private void CloseFormByName(string senderName)
-        {
-            var formsToClose = openForms.OfType<GroupChat_Member>()
-                                        .Where(f => f.UserName == senderName)
-                                        .ToList();
-
-            foreach (var form in formsToClose)
-            {
-                form.Close();
-                RemoveForm(form); // Sau khi đóng, loại bỏ form khỏi danh sách
-            }
-        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex == dataGridView1.Columns["Kick"].Index)
-            {
-                // Lấy tên người gửi từ ô được chọn
-                DataGridViewCell cell = dataGridView1.Rows[e.RowIndex].Cells["Sender"];
-                if (cell.Value != null)
-                {
-                    string senderName = cell.Value.ToString();
-
-                    // Xóa hàng tương ứng khỏi DataGridView
-                    dataGridView1.Rows.RemoveAt(e.RowIndex);
-
-                    // Thực hiện hành động kick, ví dụ như đóng form tương ứng
-                    CloseFormByName(senderName);
-
-                    // Hiển thị thông báo
-                    MessageBox.Show($"{senderName} đã bị kick.");
-                }
-                else
-                {
-                    MessageBox.Show("Không thể xác định tên người gửi.");
-                }
-            }
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
