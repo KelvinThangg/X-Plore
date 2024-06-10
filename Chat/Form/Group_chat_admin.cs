@@ -22,6 +22,7 @@ using AForge.Video;
 
 using NAudio.Wave;
 using WebSocketSharp;
+using CrapChat;
 
 namespace X_Plore.Chat
 {
@@ -613,10 +614,9 @@ namespace X_Plore.Chat
             private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             //CALL
-       
-           CallForm callForm = new CallForm();
-            callForm.Show();
-         
+
+            CallForm call = new CallForm();
+            call.Show();
         }
 
         private void HideorShowpassCb_CheckedChanged(object sender, EventArgs e)

@@ -40,6 +40,7 @@
             this.lbDem = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -232,6 +233,11 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // Form_QuenMK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,5 +266,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lbDem;
         private Guna.UI2.WinForms.Guna2GradientButton helpBtn;
         private Guna.UI2.WinForms.Guna2GradientButton BacktologinBtn;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

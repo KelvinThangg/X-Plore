@@ -33,7 +33,11 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
+            this.showPassBox = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.RefreshBtn = new Guna.UI2.WinForms.Guna2ImageButton();
             this.captchaTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.BackToRegisterBtn = new Guna.UI2.WinForms.Guna2Button();
             this.LoginBtn = new Guna.UI2.WinForms.Guna2Button();
             this.forgotPassBtn = new System.Windows.Forms.Label();
@@ -41,22 +45,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.UserBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PassBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.PassBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
-            this.showPassBox = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.RefreshBtn = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.pictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +69,7 @@
             // guna2DragControl1
             // 
             this.guna2DragControl1.ContainerControl = this;
+            this.guna2DragControl1.DockForm = true;
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.TargetControl = this.guna2Panel2;
             this.guna2DragControl1.UseTransparentDrag = true;
@@ -94,6 +97,57 @@
             this.guna2Panel2.Size = new System.Drawing.Size(331, 666);
             this.guna2Panel2.TabIndex = 3;
             // 
+            // guna2TileButton1
+            // 
+            this.guna2TileButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.guna2TileButton1.BorderRadius = 6;
+            this.guna2TileButton1.BorderThickness = 1;
+            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2TileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2TileButton1.Image = global::X_Plore.Properties.Resources._7123025_logo_google_g_icon;
+            this.guna2TileButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2TileButton1.ImageOffset = new System.Drawing.Point(5, 13);
+            this.guna2TileButton1.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2TileButton1.Location = new System.Drawing.Point(66, 380);
+            this.guna2TileButton1.Name = "guna2TileButton1";
+            this.guna2TileButton1.Size = new System.Drawing.Size(180, 37);
+            this.guna2TileButton1.TabIndex = 15;
+            this.guna2TileButton1.Text = "Login with Google";
+            this.guna2TileButton1.TextOffset = new System.Drawing.Point(5, -15);
+            this.guna2TileButton1.Click += new System.EventHandler(this.guna2TileButton1_Click);
+            // 
+            // showPassBox
+            // 
+            this.showPassBox.CheckedState.Image = global::X_Plore.Properties.Resources.hide_143316;
+            this.showPassBox.Image = global::X_Plore.Properties.Resources.eye_12918930;
+            this.showPassBox.ImageOffset = new System.Drawing.Point(0, 0);
+            this.showPassBox.ImageRotate = 0F;
+            this.showPassBox.Location = new System.Drawing.Point(251, 233);
+            this.showPassBox.Name = "showPassBox";
+            this.showPassBox.Size = new System.Drawing.Size(24, 24);
+            this.showPassBox.TabIndex = 13;
+            this.showPassBox.CheckedChanged += new System.EventHandler(this.showPassBox_CheckedChanged);
+            // 
+            // RefreshBtn
+            // 
+            this.RefreshBtn.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.RefreshBtn.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.RefreshBtn.Image = global::X_Plore.Properties.Resources.redo_12108539;
+            this.RefreshBtn.ImageOffset = new System.Drawing.Point(0, 0);
+            this.RefreshBtn.ImageRotate = 0F;
+            this.RefreshBtn.ImageSize = new System.Drawing.Size(28, 28);
+            this.RefreshBtn.Location = new System.Drawing.Point(270, 440);
+            this.RefreshBtn.Name = "RefreshBtn";
+            this.RefreshBtn.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.RefreshBtn.Size = new System.Drawing.Size(48, 46);
+            this.RefreshBtn.TabIndex = 12;
+            this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
+            // 
             // captchaTextBox
             // 
             this.captchaTextBox.BorderColor = System.Drawing.Color.Thistle;
@@ -116,6 +170,20 @@
             this.captchaTextBox.SelectedText = "";
             this.captchaTextBox.Size = new System.Drawing.Size(193, 30);
             this.captchaTextBox.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.AutoRoundedCorners = true;
+            this.pictureBox1.BorderRadius = 22;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.FillColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ImageRotate = 0F;
+            this.pictureBox1.Location = new System.Drawing.Point(53, 440);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(222, 46);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // BackToRegisterBtn
             // 
@@ -229,6 +297,43 @@
             this.UserBox.Size = new System.Drawing.Size(251, 36);
             this.UserBox.TabIndex = 1;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.InitialImage = global::X_Plore.Properties.Resources._22;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(64, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(182, 144);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
+            // PassBox
+            // 
+            this.PassBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
+            this.PassBox.BorderRadius = 6;
+            this.PassBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PassBox.DefaultText = "";
+            this.PassBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PassBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PassBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PassBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PassBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.PassBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PassBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PassBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PassBox.Location = new System.Drawing.Point(34, 227);
+            this.PassBox.Name = "PassBox";
+            this.PassBox.PasswordChar = '\0';
+            this.PassBox.PlaceholderText = "Password";
+            this.PassBox.SelectedText = "";
+            this.PassBox.Size = new System.Drawing.Size(251, 36);
+            this.PassBox.TabIndex = 14;
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
@@ -262,119 +367,6 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
             this.guna2ControlBox1.TabIndex = 2;
             // 
-            // guna2ShadowForm1
-            // 
-            this.guna2ShadowForm1.BorderRadius = 6;
-            this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.guna2ShadowForm1.TargetForm = this;
-            // 
-            // guna2AnimateWindow1
-            // 
-            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_POSITIVE;
-            this.guna2AnimateWindow1.TargetForm = this;
-            // 
-            // PassBox
-            // 
-            this.PassBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.PassBox.BorderRadius = 6;
-            this.PassBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PassBox.DefaultText = "";
-            this.PassBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PassBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PassBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PassBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PassBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.PassBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PassBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.PassBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PassBox.Location = new System.Drawing.Point(34, 227);
-            this.PassBox.Name = "PassBox";
-            this.PassBox.PasswordChar = '\0';
-            this.PassBox.PlaceholderText = "Password";
-            this.PassBox.SelectedText = "";
-            this.PassBox.Size = new System.Drawing.Size(251, 36);
-            this.PassBox.TabIndex = 14;
-            // 
-            // guna2TileButton1
-            // 
-            this.guna2TileButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.guna2TileButton1.BorderRadius = 6;
-            this.guna2TileButton1.BorderThickness = 1;
-            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2TileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2TileButton1.Image = global::X_Plore.Properties.Resources._7123025_logo_google_g_icon;
-            this.guna2TileButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2TileButton1.ImageOffset = new System.Drawing.Point(5, 13);
-            this.guna2TileButton1.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2TileButton1.Location = new System.Drawing.Point(66, 380);
-            this.guna2TileButton1.Name = "guna2TileButton1";
-            this.guna2TileButton1.Size = new System.Drawing.Size(180, 37);
-            this.guna2TileButton1.TabIndex = 15;
-            this.guna2TileButton1.Text = "Login with Google";
-            this.guna2TileButton1.TextOffset = new System.Drawing.Point(5, -15);
-            this.guna2TileButton1.Click += new System.EventHandler(this.guna2TileButton1_Click);
-            // 
-            // showPassBox
-            // 
-            this.showPassBox.CheckedState.Image = global::X_Plore.Properties.Resources.hide_143316;
-            this.showPassBox.Image = global::X_Plore.Properties.Resources.eye_12918930;
-            this.showPassBox.ImageOffset = new System.Drawing.Point(0, 0);
-            this.showPassBox.ImageRotate = 0F;
-            this.showPassBox.Location = new System.Drawing.Point(251, 233);
-            this.showPassBox.Name = "showPassBox";
-            this.showPassBox.Size = new System.Drawing.Size(24, 24);
-            this.showPassBox.TabIndex = 13;
-            this.showPassBox.CheckedChanged += new System.EventHandler(this.showPassBox_CheckedChanged);
-            // 
-            // RefreshBtn
-            // 
-            this.RefreshBtn.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.RefreshBtn.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.RefreshBtn.Image = global::X_Plore.Properties.Resources.redo_12108539;
-            this.RefreshBtn.ImageOffset = new System.Drawing.Point(0, 0);
-            this.RefreshBtn.ImageRotate = 0F;
-            this.RefreshBtn.ImageSize = new System.Drawing.Size(28, 28);
-            this.RefreshBtn.Location = new System.Drawing.Point(270, 440);
-            this.RefreshBtn.Name = "RefreshBtn";
-            this.RefreshBtn.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.RefreshBtn.Size = new System.Drawing.Size(48, 46);
-            this.RefreshBtn.TabIndex = 12;
-            this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.AutoRoundedCorners = true;
-            this.pictureBox1.BorderRadius = 22;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.ImageRotate = 0F;
-            this.pictureBox1.Location = new System.Drawing.Point(53, 440);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(222, 46);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.ErrorImage")));
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.InitialImage = global::X_Plore.Properties.Resources._22;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(64, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(182, 144);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -387,6 +379,28 @@
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
+            // 
+            // guna2ShadowForm1
+            // 
+            this.guna2ShadowForm1.BorderRadius = 6;
+            this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.guna2ShadowForm1.TargetForm = this;
+            // 
+            // guna2AnimateWindow1
+            // 
+            this.guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_VER_POSITIVE;
+            this.guna2AnimateWindow1.TargetForm = this;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockForm = true;
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
+            // guna2DragControl3
+            // 
+            this.guna2DragControl3.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl3.UseTransparentDrag = true;
             // 
             // FormDangNhap
             // 
@@ -401,9 +415,9 @@
             this.Text = "Form1";
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -434,6 +448,8 @@
         private Guna.UI2.WinForms.Guna2ImageCheckBox showPassBox;
         private Guna.UI2.WinForms.Guna2TextBox PassBox;
         private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl3;
     }
 }
 

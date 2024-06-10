@@ -29,40 +29,40 @@
         private void InitializeComponent()
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.LeaveButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.StartButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // guna2ImageButton2
+            // LeaveButton
             // 
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Image = global::X_Plore.Properties.Resources.accept_call_and_decline_phone_icons_red_and_green_yes_no_buttons_icon_illustration_answer_and_decline_phone_call_buttons_vector_removebg_preview__1_;
-            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(415, 326);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(64, 54);
-            this.guna2ImageButton2.TabIndex = 2;
-            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
+            this.LeaveButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.LeaveButton.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.LeaveButton.Image = global::X_Plore.Properties.Resources.accept_call_and_decline_phone_icons_red_and_green_yes_no_buttons_icon_illustration_answer_and_decline_phone_call_buttons_vector_removebg_preview__1_;
+            this.LeaveButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.LeaveButton.ImageRotate = 0F;
+            this.LeaveButton.ImageSize = new System.Drawing.Size(50, 50);
+            this.LeaveButton.Location = new System.Drawing.Point(415, 326);
+            this.LeaveButton.Name = "LeaveButton";
+            this.LeaveButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.LeaveButton.Size = new System.Drawing.Size(64, 54);
+            this.LeaveButton.TabIndex = 2;
+           
             // 
-            // guna2ImageButton1
+            // StartButton
             // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = global::X_Plore.Properties.Resources.accept_call_and_decline_phone_icons_red_and_green_yes_no_buttons_icon_illustration_answer_and_decline_phone_call_buttons_vector_removebg_preview1;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(274, 326);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(64, 54);
-            this.guna2ImageButton1.TabIndex = 2;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            this.StartButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.StartButton.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.StartButton.Image = global::X_Plore.Properties.Resources.accept_call_and_decline_phone_icons_red_and_green_yes_no_buttons_icon_illustration_answer_and_decline_phone_call_buttons_vector_removebg_preview1;
+            this.StartButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.StartButton.ImageRotate = 0F;
+            this.StartButton.ImageSize = new System.Drawing.Size(50, 50);
+            this.StartButton.Location = new System.Drawing.Point(274, 326);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.StartButton.Size = new System.Drawing.Size(64, 54);
+            this.StartButton.TabIndex = 2;
+          
             // 
             // listView1
             // 
@@ -80,19 +80,18 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.guna2ImageButton2);
-            this.Controls.Add(this.guna2ImageButton1);
+            this.Controls.Add(this.LeaveButton);
+            this.Controls.Add(this.StartButton);
             this.Name = "CallForm";
             this.Text = "CallForm";
-            this.Load += new System.EventHandler(this.CallForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
+        private Guna.UI2.WinForms.Guna2ImageButton StartButton;
+        private Guna.UI2.WinForms.Guna2ImageButton LeaveButton;
         private System.Windows.Forms.ListView listView1;
     }
 }

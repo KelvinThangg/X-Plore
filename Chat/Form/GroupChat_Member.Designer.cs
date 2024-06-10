@@ -34,16 +34,16 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.exitBtn = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.HideorShowpassCb = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.keytextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.keyInput = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lbMatKhauGr = new System.Windows.Forms.Label();
             this.file = new Guna.UI2.WinForms.Guna2GradientButton();
             this.iconButton = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.exitBtn = new Guna.UI2.WinForms.Guna2ImageRadioButton();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.sendTextButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pnLichSu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -122,6 +122,62 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(620, 46);
             this.panel1.TabIndex = 60;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::X_Plore.Properties.Resources.cat1;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(10, 3);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(37, 38);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 62;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
+            this.exitBtn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.exitBtn.Image = global::X_Plore.Properties.Resources.delete_14267751;
+            this.exitBtn.ImageOffset = new System.Drawing.Point(0, 0);
+            this.exitBtn.ImageRotate = 0F;
+            this.exitBtn.ImageSize = new System.Drawing.Size(30, 30);
+            this.exitBtn.Location = new System.Drawing.Point(578, 6);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(35, 32);
+            this.exitBtn.TabIndex = 3;
+            this.exitBtn.CheckedChanged += new System.EventHandler(this.exitBtn_CheckedChanged);
+            // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Image = global::X_Plore.Properties.Resources.video_call_12595734;
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(527, 1);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(45, 42);
+            this.guna2ImageButton2.TabIndex = 61;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = global::X_Plore.Properties.Resources.phone_call_597177;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(28, 28);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(476, 1);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(45, 42);
+            this.guna2ImageButton1.TabIndex = 61;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // HideorShowpassCb
             // 
@@ -238,60 +294,6 @@
             this.iconButton.TabIndex = 79;
             this.iconButton.Text = "Icon";
             this.iconButton.Click += new System.EventHandler(this.iconButton_Click_1);
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::X_Plore.Properties.Resources.cat1;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(10, 3);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(37, 38);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 62;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // exitBtn
-            // 
-            this.exitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.exitBtn.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.exitBtn.Image = global::X_Plore.Properties.Resources.delete_14267751;
-            this.exitBtn.ImageOffset = new System.Drawing.Point(0, 0);
-            this.exitBtn.ImageRotate = 0F;
-            this.exitBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.exitBtn.Location = new System.Drawing.Point(578, 6);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(35, 32);
-            this.exitBtn.TabIndex = 3;
-            this.exitBtn.CheckedChanged += new System.EventHandler(this.exitBtn_CheckedChanged);
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Image = global::X_Plore.Properties.Resources.video_call_12595734;
-            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(527, 1);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(45, 42);
-            this.guna2ImageButton2.TabIndex = 61;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = global::X_Plore.Properties.Resources.phone_call_597177;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(476, 1);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(45, 42);
-            this.guna2ImageButton1.TabIndex = 61;
             // 
             // sendTextButton
             // 

@@ -20,6 +20,7 @@ using AWSSDK;
 using Amazon;
 using Amazon.S3.Model;
 using Amazon.S3;
+using CrapChat;
 
 namespace X_Plore.Chat
 {
@@ -550,6 +551,18 @@ namespace X_Plore.Chat
             {
                 textBox1.UseSystemPasswordChar = true;
             }
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            CallForm call = new CallForm();
+            call.Show();
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

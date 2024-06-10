@@ -12,137 +12,152 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WebSocketSharp;
 using System.Drawing.Imaging;
-using AForge.Video;
-using NAudio.Wave;
 using WebSocketSharp;
 using AForge.Video.DirectShow;
-
+using Lidgren.Network;
+using System.Net;
+using CrapChat;
+using NAudio.Wave.SampleProviders;
+using System.Threading;
+using WebSocketSharp.Server;
 
 namespace X_Plore.Chat
 {
+   
     public partial class CallForm : Form
     {
-        private FilterInfoCollection videoDevices;
-        private VideoCaptureDevice videoSource;
-        private WebSocket ws;
-        private WaveInEvent waveIn;
-        private BufferedWaveProvider waveProvider;
-        private WaveOutEvent waveOut;
         public CallForm()
         {
-            ws = new WebSocket("ws://localhost:8080/video");
-            ws.OnMessage += Ws_OnMessage;
-            ws.Connect();
-
-            waveIn = new WaveInEvent();
-            waveIn.DataAvailable += OnAudioDataAvailable;
-            waveProvider = new BufferedWaveProvider(waveIn.WaveFormat);
-            waveIn.StartRecording();
-
-            waveOut = new WaveOutEvent();
-            waveOut.Init(waveProvider);
-            waveOut.Play();
-            InitializeWebcam();
             InitializeComponent();
+            Initialize();    
+        }
+   
+        private Button buttonStart;
+        private Button buttonStop;
+        private WebSocketServer wssv;
+        private WaveInEvent waveIn;
+        private WaveOutEvent waveOut;
+        private WebSocket ws;
+        private bool serverStarted = false; // Flag to track server status
+        private void Initialize()
+        {
+            
+            StartButton.Click += new EventHandler(StartConnection);
+
+         
+            LeaveButton.Click += new EventHandler(StopConnection);
+            LeaveButton.Enabled = false;
+
+            // Add the controls to the form
+            Controls.Add(StartButton);
+            Controls.Add(LeaveButton);
+
+            // Set the size and title of the form
+            ClientSize = new Size(400, 200);
+            Text = "WebSocket Voice Chat";
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private void StartConnection(object sender, EventArgs e)
         {
-            if (videoSource != null && !videoSource.IsRunning)
+            if (!serverStarted) // Only start the server if it's not already running
             {
-                videoSource.Start();
-            }
-        }
-
-        private void guna2ImageButton2_Click(object sender, EventArgs e)
-        {
-            if (videoSource != null && videoSource.IsRunning)
-            {
-                videoSource.SignalToStop();
-                videoSource.WaitForStop();
-            }
-
-        }
-        private void video_NewFrame(object sender, NewFrameEventArgs eventArgs)
-        {
-            using (MemoryStream ms = new MemoryStream())
-            {
-                Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
-                bitmap.Save(ms, ImageFormat.Jpeg);
-                byte[] videoBuffer = ms.ToArray();
-                ws.Send(videoBuffer);
-            }
-
-            // Hiển thị video của chính mình
-           // pictureBox1.Image = (Bitmap)eventArgs.Frame.Clone();
-        }
-
-        private void OnAudioDataAvailable(object sender, WaveInEventArgs e)
-        {
-            ws.Send(e.Buffer);
-        }
-
-        private void Ws_OnMessage(object sender, MessageEventArgs e)
-        {
-            if (e.RawData.Length > 3000)
-            {
-                using (MemoryStream ms = new MemoryStream(e.RawData))
+                try
                 {
-                    Bitmap bitmap = new Bitmap(ms);
-                    // Hiển thị video của người kia
-                   // pictureBox2.Image = bitmap;
+                    wssv = new WebSocketServer("ws://localhost:14235");
+                    wssv.AddWebSocketService<VideoBehavior>("/video");
+                    wssv.Start();
+                    Console.WriteLine("WebSocket server started at ws://localhost:14235");
+                    serverStarted = true;
+                }
+                catch (Exception ex)
+                {
+                    // Handle exceptions gracefully, e.g., show an error message to the user
+                    MessageBox.Show("Error starting server: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return; // Exit the method if the server couldn't start
                 }
             }
-            else
+
+            // Start recording and connect client even if server was already running
+            StartRecordingAndConnectClient();
+        }
+
+        private void StartRecordingAndConnectClient()
+        {
+            // Start recording audio
+            waveIn = new WaveInEvent();
+            waveIn.DeviceNumber = 0;
+            waveIn.WaveFormat = new WaveFormat(44100, 16, 1);
+            waveIn.DataAvailable += new EventHandler<WaveInEventArgs>(WaveInDataAvailable);
+            waveIn.StartRecording();
+
+            // Connect to the server
+            ws = new WebSocket("ws://localhost:14235/video");
+            ws.OnMessage += new EventHandler<MessageEventArgs>(WsOnMessage);
+            ws.Connect();
+
+            StartButton.Enabled = false;
+            LeaveButton.Enabled = true;
+        }
+
+
+        private void StopConnection(object sender, EventArgs e)
+        {
+            // Stop recording audio
+            if (waveIn != null)
             {
-                waveProvider.AddSamples(e.RawData, 0, e.RawData.Length);
+                waveIn.StopRecording();
+                waveIn.Dispose();
+                waveIn = null;
+            }
+
+            // Disconnect from the server
+            if (ws != null)
+            {
+                ws.Close();
+                ws = null;
+            }
+
+            // Only stop the server if it was started by this instance
+            if (serverStarted && wssv != null)
+            {
+                wssv.Stop();
+                wssv = null;
+                serverStarted = false;
+            }
+
+            StartButton.Enabled = true;
+            LeaveButton.Enabled = false;
+        }
+
+        private void WaveInDataAvailable(object sender, WaveInEventArgs e)
+        {
+            if (ws != null && ws.IsAlive)
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    ms.Write(e.Buffer, 0, e.BytesRecorded);
+                    byte[] audioData = ms.ToArray();
+                    ws.Send(audioData);
+                }
             }
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
+        private void WsOnMessage(object sender, MessageEventArgs e)
         {
-            if (videoSource != null && videoSource.IsRunning)
+            if (waveOut == null)
             {
-                videoSource.SignalToStop();
-                videoSource.WaitForStop();
+                waveOut = new WaveOutEvent();
+                waveOut.Init(new RawSourceWaveStream(e.RawData, 0, e.RawData.Length, waveIn.WaveFormat));
             }
-            ws.Close();
-            waveIn.StopRecording();
-            waveOut.Stop();
-            base.OnFormClosing(e);
+            waveOut.Play();
         }
+    }
 
-        private void CallForm_Load(object sender, EventArgs e)
+    public class VideoBehavior : WebSocketBehavior
+    {
+        protected override void OnMessage(MessageEventArgs e)
         {
-            videoDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            if (videoDevices.Count == 0)
-            {
-                MessageBox.Show("No video sources found");
-                return;
-            }
-
-            videoSource = new VideoCaptureDevice(videoDevices[0].MonikerString);
-            videoSource.NewFrame += new NewFrameEventHandler(video_NewFrame);
-            videoSource.Start();
-        }
-        private void InitializeWebcam()
-        {
-            videoDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            if (videoDevices.Count == 0)
-            {
-                MessageBox.Show("Không tìm thấy webcam.");
-                return;
-            }
-
-            // Lấy webcam đầu tiên trong danh sách
-            videoSource = new VideoCaptureDevice(videoDevices[0].MonikerString);
-            videoSource.NewFrame += new NewFrameEventHandler(video_NewFrame);
-
-            // Yêu cầu quyền truy cập camera
-            if (!videoSource.IsRunning)
-            {
-                videoSource.Start();
-            }
+            Sessions.Broadcast(e.RawData);
         }
     }
 }
