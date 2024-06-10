@@ -19,7 +19,7 @@ namespace X_Plore.Chat
     {
         private string Displayname;
         private string username;
-        private const string FirebaseURL = "https://checkdatabase-1fbc9-default-rtdb.firebaseio.com/";
+        private const string FirebaseURL = "https://testfinal-90ec8-default-rtdb.asia-southeast1.firebasedatabase.app/";
         private FirebaseClient firebaseClient;
         public InviteUser(string username, string Displayname)
         {

@@ -28,7 +28,7 @@ namespace X_Plore.Chat
 {
     public partial class Group_chat_admin : Form
     {
-        private const string FirebaseURL = "https://checkdatabase-1fbc9-default-rtdb.firebaseio.com/";
+        private const string FirebaseURL = "https://testfinal-90ec8-default-rtdb.asia-southeast1.firebasedatabase.app/";
         private FirebaseClient firebaseClient;
         private string roomName;
         private string roomCreator;
