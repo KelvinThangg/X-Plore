@@ -89,8 +89,8 @@ namespace X_Plore
                 docRef.SetAsync(data);
                 MessageBox.Show("success");
                 Hide();
-               Xac_thuc_dky form = new Xac_thuc_dky(data.Email, UserBox.Text.Trim());
-               FormDangNhap form1 = new(data.Username);
+                Xac_thuc_dky form = new Xac_thuc_dky(data.Email, UserBox.Text.Trim());
+                FormDangNhap form1 = new(data.Username);
                 form.ShowDialog();
                 Close();
 
@@ -342,8 +342,20 @@ namespace X_Plore
                 PassBox.UseSystemPasswordChar = true;
             }
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to exit the program?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+                MessageBox.Show("Exit successfully!");
+                Environment.Exit(1);
+            }
+        }
+
+
     }
-
-
 }
 

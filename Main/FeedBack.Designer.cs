@@ -62,7 +62,7 @@
             this.textBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox4.Location = new System.Drawing.Point(216, 85);
+            this.textBox4.Location = new System.Drawing.Point(144, 82);
             this.textBox4.Name = "textBox4";
             this.textBox4.PasswordChar = '\0';
             this.textBox4.PlaceholderText = "Tiêu đề";
@@ -85,7 +85,7 @@
             this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.richTextBox1.ForeColor = System.Drawing.Color.Silver;
             this.richTextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.richTextBox1.Location = new System.Drawing.Point(216, 138);
+            this.richTextBox1.Location = new System.Drawing.Point(144, 135);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.PasswordChar = '\0';
             this.richTextBox1.PlaceholderText = "Miêu tả ngắn gọn vấn đề gặp phải";
@@ -99,7 +99,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Black", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(275, 21);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(203, 18);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(329, 39);
             this.guna2HtmlLabel1.TabIndex = 2;
@@ -119,7 +119,7 @@
             this.button1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(692, 373);
+            this.button1.Location = new System.Drawing.Point(620, 370);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 50);
             this.button1.TabIndex = 76;
@@ -135,7 +135,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(692, 321);
+            this.button2.Location = new System.Drawing.Point(620, 318);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 32);
             this.button2.TabIndex = 77;
@@ -151,7 +151,7 @@
             this.listView1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.listView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(216, 373);
+            this.listView1.Location = new System.Drawing.Point(144, 370);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(451, 50);
             this.listView1.TabIndex = 78;
@@ -166,7 +166,7 @@
             this.button5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button5.Location = new System.Drawing.Point(692, 270);
+            this.button5.Location = new System.Drawing.Point(620, 267);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 32);
             this.button5.TabIndex = 77;
@@ -179,7 +179,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(200, 391);
+            this.label6.Location = new System.Drawing.Point(128, 388);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(10, 17);
             this.label6.TabIndex = 79;
@@ -206,6 +206,7 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
             this.guna2ControlBox1.TabIndex = 80;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // FeedBack
             // 

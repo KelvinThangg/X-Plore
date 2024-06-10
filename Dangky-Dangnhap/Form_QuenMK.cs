@@ -81,10 +81,10 @@ namespace X_Plore.Dangky_Dangnhap
                         smtp.Send(message);
                         MessageBox.Show("Code send successful!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         secondsRemaining = CODE_EXPIRY_SECONDS;
-                      while (secondsRemaining > 0)
+                        while (secondsRemaining > 0)
                         {
                             sendBtn.Text = $"Resend code ({secondsRemaining})";
-                           
+
                             secondsRemaining--;
                             lbDem.Text = secondsRemaining.ToString();
                         }
@@ -93,7 +93,7 @@ namespace X_Plore.Dangky_Dangnhap
                         recoveryCodeBox.Enabled = true;
                         confirmBtn.Enabled = true;
                         codeExpiryTimer.Start();
-                        
+
                     }
                     catch (Exception ex)
                     {
@@ -134,13 +134,13 @@ namespace X_Plore.Dangky_Dangnhap
 
         private void CodeExpiryTimer_Tick(object sender, EventArgs e)
         {
-           
-            
-                codeExpiryTimer.Stop();
-                verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // Tạo mã mới
-                MessageBox.Show("Verification code expired! Exit");
-                Environment.Exit(1);
-            
+
+
+            codeExpiryTimer.Stop();
+            verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // Tạo mã mới
+            MessageBox.Show("Verification code expired! Exit");
+            Environment.Exit(1);
+
         }
 
         private void confirmBtn_Click(object sender, EventArgs e)
@@ -182,11 +182,23 @@ namespace X_Plore.Dangky_Dangnhap
 
         private void helpBtn_Click(object sender, EventArgs e)
         {
-            
+
             Hide();
             Help form = new Help();
             form.ShowDialog();
             Close();
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to exit the program?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+                MessageBox.Show("Exit successfully!");
+                Environment.Exit(1);
+            }
         }
     }
 }

@@ -326,6 +326,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide_1433161 {
+            get {
+                object obj = ResourceManager.GetObject("hide_1433161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);
@@ -389,6 +399,26 @@ namespace X_Plore.Properties {
         internal static System.Drawing.Bitmap Mesa_de_trabajo_1_copia_4x {
             get {
                 object obj = ResourceManager.GetObject("Mesa de trabajo 1 copia@4x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mesa_de_trabajo_1_copia_4x1 {
+            get {
+                object obj = ResourceManager.GetObject("Mesa de trabajo 1 copia@4x1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mesa_de_trabajo_1_copia_4x2 {
+            get {
+                object obj = ResourceManager.GetObject("Mesa de trabajo 1 copia@4x2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

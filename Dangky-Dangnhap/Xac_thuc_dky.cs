@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Net.PeerToPeer;
 
 namespace X_Plore.Dangky_Dangnhap
 {
@@ -185,6 +186,18 @@ namespace X_Plore.Dangky_Dangnhap
             if (flag != 1)
             {
                 await DeleteUserData();
+            }
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to exit the program?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+             
+                MessageBox.Show("Exit successfully!");
+                Environment.Exit(1);
             }
         }
     }

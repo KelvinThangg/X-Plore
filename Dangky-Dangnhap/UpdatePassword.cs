@@ -61,7 +61,7 @@ namespace X_Plore.Dangky_Dangnhap
                     await docRef.UpdateAsync("Password", Security.Encrypt(PassBox.Text));
                     MessageBox.Show("Password updated successfully!");
                     Hide();
-                   FormDangNhap form = new FormDangNhap("");
+                    FormDangNhap form = new FormDangNhap("");
                     form.ShowDialog();
                     Close();
                 }
@@ -90,5 +90,16 @@ namespace X_Plore.Dangky_Dangnhap
             }
         }
 
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to exit the program?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+                MessageBox.Show("Exit successfully!");
+                Environment.Exit(1);
+            }
+        }
     }
 }

@@ -30,6 +30,8 @@ namespace X_Plore.Chat
         {
             this.username = username;
             this.Displayname = Displayname;
+            this.AutoScaleMode = AutoScaleMode.Font;
+            
             InitializeComponent();
             InitializeFirebase();
             currentUserName = Displayname;
@@ -407,6 +409,18 @@ namespace X_Plore.Chat
             }
         }
 
-       
+        private void guna2ControlBox1_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to exit the program?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                var db = FirestoreHelper.Database;
+                DocumentReference docRef = db.Collection("UserData").Document(username);
+                docRef.UpdateAsync("isLoggedIn", false);
+                MessageBox.Show("Exit successfully!");
+                Environment.Exit(1);
+            }
+        }
     }
 }

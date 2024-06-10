@@ -257,6 +257,20 @@ namespace X_Plore.Main
                 MessageBox.Show("Please select attachments to remove.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to exit the program?", "Success", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                var db = FirestoreHelper.Database;
+                DocumentReference docRef = db.Collection("UserData").Document(username);
+                docRef.UpdateAsync("isLoggedIn", false);
+                MessageBox.Show("Exit successfully!");
+                Environment.Exit(1);
+            }
+        }
     }
    }
 

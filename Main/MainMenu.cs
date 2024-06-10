@@ -22,9 +22,12 @@ namespace X_Plore.Main
         public MainMenu(string DisplayName, string username)
         {
             InitializeComponent();
+
             this.username = username;
             this.displayname = DisplayName;
-            MessageBox.Show("Welcome: " + DisplayName);
+           MessageBox.Show("Welcome: " + DisplayName);
+     
+          
             DisplayLbl.Text = DisplayName;
 
             // Listen for changes in Firestore
@@ -136,10 +139,25 @@ namespace X_Plore.Main
 
         private void guna2TileButton2_Click(object sender, EventArgs e)
         {
-            InviteUser inviteUserForm = new InviteUser(username,displayname);
+            /* InviteUser inviteUserForm = new InviteUser(username,displayname);
 
-            // Mở form InviteUser
-            inviteUserForm.ShowDialog();
+             // Mở form InviteUser
+             inviteUserForm.ShowDialog();*/
+            guna2PictureBox2.Hide();
+
+            General general = new General(username, displayname);
+            general.TopLevel = false;
+            general.FormBorderStyle = FormBorderStyle.None;
+            general.AutoScaleMode = AutoScaleMode.Font; // Ensure consistent scaling
+            general.Margin = new Padding(0);          // Remove default margins
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(general);
+
+            general.ClientSize = panel1.ClientSize;   // Set size before docking
+            general.Dock = DockStyle.Fill;
+
+            general.Show();
         }
 
         private void guna2TileButton5_Click(object sender, EventArgs e)
@@ -163,8 +181,15 @@ namespace X_Plore.Main
 
         private void guna2TileButton3_Click(object sender, EventArgs e)
         {
-            MaHoaFile maHoaFile = new MaHoaFile();
-            maHoaFile.ShowDialog();
+            guna2PictureBox2.Hide();
+            MaHoaFile mahoa = new MaHoaFile();
+            mahoa.TopLevel = false;
+            mahoa.FormBorderStyle = FormBorderStyle.None;
+            mahoa.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(mahoa);
+            mahoa.Show();
+
         }
     }
 }

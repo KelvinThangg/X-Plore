@@ -124,14 +124,8 @@
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2fa_11220705" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2fa_11220705.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="phone-call_597177" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone-call_597177.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="upload_9694125" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\upload_9694125.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picture_7126547" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picture_7126547.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,14 +133,11 @@
   <data name="Screenshot 2024-05-28 194735" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2024-05-28 194735.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hide_143316" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hide_143316.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="send_3354313" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\send_3354313.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="usic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\usic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="video-call_12595734" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\video-call_12595734.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="extttt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\extttt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +163,14 @@
   <data name="renovation_12313686" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\renovation_12313686.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chatic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chatic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dangky" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dangky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +181,17 @@
   <data name="banchuacotaikhoan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banchuacotaikhoan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="phone-call_4213179" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone-call_4213179.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="live-stream_5175754" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\live-stream_5175754.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="password_12795700" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password_12795700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2265" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2265.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,9 +205,6 @@
   <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image148711" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image148711.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="accept-call-and-decline-phone-icons-red-and-green-yes-no-buttons-icon-illustration-answer-and-decline-phone-call-buttons-vector-removebg-preview (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\accept-call-and-decline-phone-icons-red-and-green-yes-no-buttons-icon-illustration-answer-and-decline-phone-call-buttons-vector-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -216,6 +213,12 @@
   </data>
   <data name="1000_F_215337217_DK8Kn5Q74I4IZ6CZXjvcpv1lOiLCBTQE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1000_F_215337217_DK8Kn5Q74I4IZ6CZXjvcpv1lOiLCBTQE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mesa de trabajo 1 copia@4x2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mesa de trabajo 1 copia@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7123025_logo_google_g_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7123025_logo_google_g_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mesa de trabajo 1 copia@4x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mesa de trabajo 1 copia@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,17 +232,20 @@
   <data name="incoming-call_6444234" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\incoming-call_6444234.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="eye_12918930" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye_12918930.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user_32374721" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_32374721.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="avatardefault_92824" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avatardefault_92824.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye_12918930" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye_12918930.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image148711" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image148711.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2265" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2265.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hide_143316" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hide_143316.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shield_12795904" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shield_12795904.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,25 +253,28 @@
   <data name="mahoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mahoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chatic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chatic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="upload_9694125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upload_9694125.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="password_12795700" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password_12795700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="upload_96941251" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upload_9694125.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Mesa de trabajo 1 copia@4x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mesa de trabajo 1 copia@4x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2fa_11220705" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2fa_11220705.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="accept-call-and-decline-phone-icons-red-and-green-yes-no-buttons-icon-illustration-answer-and-decline-phone-call-buttons-vector-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\accept-call-and-decline-phone-icons-red-and-green-yes-no-buttons-icon-illustration-answer-and-decline-phone-call-buttons-vector-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="send_3354313" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\send_3354313.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="video-call_12595734" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video-call_12595734.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7123025_logo_google_g_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7123025_logo_google_g_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hide_1433161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hide_143316.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
