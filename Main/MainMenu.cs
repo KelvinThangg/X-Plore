@@ -160,5 +160,11 @@ namespace X_Plore.Main
             panel1.Controls.Add(feedback);
             feedback.Show();
         }
+
+        private void guna2TileButton3_Click(object sender, EventArgs e)
+        {
+            MaHoaFile maHoaFile = new MaHoaFile();
+            maHoaFile.ShowDialog();
+        }
     }
 }
