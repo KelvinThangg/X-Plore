@@ -86,7 +86,7 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
             this.guna2ControlBox1.TabIndex = 14;
-            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+           
             // 
             // button3
             // 
@@ -224,6 +224,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(7)))), ((int)(((byte)(70)))));
             this.panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
             this.panel1.BorderRadius = 16;
             this.panel1.BorderThickness = 2;
@@ -232,7 +233,7 @@
             this.panel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(8)))), ((int)(((byte)(60)))));
             this.panel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(8)))), ((int)(((byte)(60)))));
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.ForeColor = System.Drawing.SystemColors.Window;
             this.panel1.Location = new System.Drawing.Point(16, 136);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 298);
