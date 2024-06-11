@@ -69,8 +69,7 @@ namespace X_Plore.Main
                 docRef.UpdateAsync("isLoggedIn", false);
                 MessageBox.Show("You are out! Back to Login");
                 Hide();
-                FormDangNhap form = new FormDangNhap(username);
-                form.ShowDialog();
+                Application.Restart();
                 Close();
             }
         }
