@@ -23,6 +23,8 @@ namespace X_Plore.Dangky_Dangnhap
             InitializeComponent();
             this.userEmail = userEmail;
             UserBox.Text = userEmail;
+            PassBox.UseSystemPasswordChar = true;
+            ReEnterPasswordBox.UseSystemPasswordChar = true;
         }
 
         private bool ValidateFields()

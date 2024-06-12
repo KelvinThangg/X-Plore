@@ -8,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using X_Plore.Chat;
@@ -26,8 +27,8 @@ namespace X_Plore.Main
             this.username = username;
             this.displayname = DisplayName;
            MessageBox.Show("Welcome: " + DisplayName);
-     
-          
+            Application.ThreadException += new ThreadExceptionEventHandler(Application_ThreadException);
+
             DisplayLbl.Text = DisplayName;
 
             // Listen for changes in Firestore
@@ -69,8 +70,7 @@ namespace X_Plore.Main
                 docRef.UpdateAsync("isLoggedIn", false);
                 MessageBox.Show("You are out! Back to Login");
                 Hide();
-                FormDangNhap form = new FormDangNhap(username);
-                form.ShowDialog();
+                Application.Restart();
                 Close();
             }
         }
@@ -190,6 +190,40 @@ namespace X_Plore.Main
             panel1.Controls.Add(mahoa);
             mahoa.Show();
 
+        }
+
+        private void guna2TileButton4_Click(object sender, EventArgs e)
+        {
+            guna2PictureBox2.Hide();
+            QuanLy quanly = new QuanLy();
+            quanly.TopLevel = false;
+            quanly.FormBorderStyle = FormBorderStyle.None;
+            quanly.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(quanly);
+            quanly.Show();
+
+        }
+        private void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
+        {
+            try
+            {
+                // Đặt isLoggedIn thành false
+                var db = FirestoreHelper.Database;
+                DocumentReference docRef = db.Collection("UserData").Document(username);
+                docRef.UpdateAsync("isLoggedIn", false);
+
+                // Hiển thị thông báo lỗi
+                MessageBox.Show("Đã xảy ra lỗi. Ứng dụng sẽ bị đóng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                // Thoát ứng dụng
+                Environment.Exit(1);
+            }
+            catch (Exception ex)
+            {
+                
+                // ...
+            }
         }
     }
 }

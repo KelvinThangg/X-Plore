@@ -38,6 +38,7 @@ namespace X_Plore
         {
             InitializeComponent();
             PassBox.UseSystemPasswordChar = true;
+            ReEnterPasswordBox.UseSystemPasswordChar = true;
         }
 
         int Uuser = 0;

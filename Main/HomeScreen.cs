@@ -35,7 +35,9 @@ namespace X_Plore.Main
             panelDoipass.Hide();
             NhapPassPn.Hide();
             LoadAvatarFromS3();
-
+            OldpassBox.UseSystemPasswordChar = true;
+            PassBox.UseSystemPasswordChar = true;
+            EnterPasstb.UseSystemPasswordChar = true;
 
             // Check and update 2FA status when the form loads
             CheckAndUpdate2FAStatus();

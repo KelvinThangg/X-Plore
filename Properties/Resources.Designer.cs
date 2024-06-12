@@ -206,6 +206,16 @@ namespace X_Plore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avatardefault_928241 {
+            get {
+                object obj = ResourceManager.GetObject("avatardefault_928241", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap banchuacotaikhoan {
             get {
                 object obj = ResourceManager.GetObject("banchuacotaikhoan", resourceCulture);

@@ -21,7 +21,12 @@ using Amazon;
 using Amazon.S3.Model;
 using Amazon.S3;
 using CrapChat;
-
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 namespace X_Plore.Chat
 {
     public partial class GroupChat_Member : Form
@@ -252,47 +257,155 @@ namespace X_Plore.Chat
                  });
         }
 
+        public class LowLevelMouseHook
+        {
+            private const int WH_MOUSE_LL = 14;
+            private const int WM_LBUTTONDOWN = 0x0201;
+            private static LowLevelMouseProc _proc = HookCallback;
+            private static IntPtr _hookID = IntPtr.Zero;
+
+            public static event EventHandler MouseClick;
+
+            public static void SetHook()
+            {
+                _hookID = SetHook(_proc);
+            }
+
+            public static void Unhook()
+            {
+                UnhookWindowsHookEx(_hookID);
+            }
+
+            private static IntPtr SetHook(LowLevelMouseProc proc)
+            {
+                using (Process curProcess = Process.GetCurrentProcess())
+                using (ProcessModule curModule = curProcess.MainModule)
+                {
+                    return SetWindowsHookEx(WH_MOUSE_LL, proc, GetModuleHandle(curModule.ModuleName), 0);
+                }
+            }
+
+            private delegate IntPtr LowLevelMouseProc(int nCode, IntPtr wParam, IntPtr lParam);
+
+            private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
+            {
+                if (nCode >= 0 && wParam == (IntPtr)WM_LBUTTONDOWN)
+                {
+                    MouseClick?.Invoke(null, EventArgs.Empty);
+                }
+                return CallNextHookEx(_hookID, nCode, wParam, lParam);
+            }
+
+            [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+            private static extern IntPtr SetWindowsHookEx(int idHook, LowLevelMouseProc lpfn, IntPtr hMod, uint dwThreadId);
+
+            [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+            [return: MarshalAs(UnmanagedType.Bool)]
+            private static extern bool UnhookWindowsHookEx(IntPtr hhk);
+
+            [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+            private static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
+
+            [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+            private static extern IntPtr GetModuleHandle(string lpModuleName);
+        }
+
+        // Class-level variables
+        // Class-level variables
+        // Class-level variables
+        private Form iconSuggestionForm;
+
         private void ShowIconSuggestionPopup()
         {
-            Form iconSuggestionForm = new Form();
-            iconSuggestionForm.FormBorderStyle = FormBorderStyle.None; // Remove border
-            iconSuggestionForm.StartPosition = FormStartPosition.Manual;
-            iconSuggestionForm.BackColor = Color.LightGreen; // Set background color
-            iconSuggestionForm.TransparencyKey = Color.LightGreen; // Make the background color transparent
+            // If the suggestion form is already open, close it and return
+            if (iconSuggestionForm != null && !iconSuggestionForm.IsDisposed)
+            {
+                iconSuggestionForm.Close();
+                return;
+            }
+
+            // Define the properties for icons and layout
+            int iconSize = 40;
+            int iconsPerRow = 5;
+            int iconSpacing = 5;
+            int totalIcons = 20;
+            int totalIconsPlusCloseButton = totalIcons + 1;
+
+            // Calculate the number of rows needed
+            int rows = (int)Math.Ceiling(totalIconsPlusCloseButton / (double)iconsPerRow);
+
+            // Calculate the form size based on the number of icons and spacing
+            int formWidth = (iconsPerRow * iconSize) + ((iconsPerRow - 1) * iconSpacing) + 20;
+            int formHeight = (rows * iconSize) + ((rows - 1) * iconSpacing) + 40;
+
+            // Create a new form instance
+            iconSuggestionForm = new Form
+            {
+                FormBorderStyle = FormBorderStyle.None, // Remove border
+                StartPosition = FormStartPosition.Manual,
+                BackColor = Color.LightGreen, // Set background color
+                TransparencyKey = Color.LightGreen, // Make the background color transparent
+                Width = formWidth, // Set form width based on the calculated value
+                Height = formHeight // Set form height based on the calculated value
+            };
+
             iconSuggestionForm.Location = new Point(this.Location.X + iconButton.Location.X,
                                                     this.Location.Y + iconButton.Location.Y + iconButton.Height + 40);
-            iconSuggestionForm.Width = 550; // Increase width to fit 5 icons per row
-            iconSuggestionForm.Height = 300;
 
             List<string> iconSuggestions = new List<string> { "❤️", "😎", "👍", "😁", "😢", "😊", "😀", "👌", "😍", "😌",
-                                                       "🥰", "😇", "😅", "😂", "🤩", "📚", "🎓", "🖊️", "📝", "🧠" };
+                                "🥰", "😇", "😅", "😂", "🤩", "📚", "🎓", "🖊️", "📝" };
 
             int xPos = 10;
             int yPos = 10;
-            int iconsPerRow = 10;
-            int iconSpacing = 5;
-            int iconSize = 40; // Adjust icon size as needed
 
-            foreach (string icon in iconSuggestions)
+            // Add the close button first
+            Button closeButton = new Button
             {
-                Button iconButton = new Button();
-                iconButton.Text = icon;
-                iconButton.Font = new Font("Segoe UI Emoji", 12);
-                iconButton.AutoSize = true;
-                iconButton.FlatStyle = FlatStyle.Flat; // Remove button border
+                Text = "X",
+                Font = new Font("Segoe UI", 12),
+                BackColor = Color.Red,
+                ForeColor = Color.White,
+                Size = new Size(iconSize, iconSize),
+                Location = new Point(xPos, yPos)
+            };
+
+            closeButton.Click += (sender, e) =>
+            {
+                iconSuggestionForm.Close();
+                LowLevelMouseHook.Unhook();
+            };
+
+            iconSuggestionForm.Controls.Add(closeButton);
+
+            // Adjust the position for the next icon
+            xPos += iconSize + iconSpacing;
+
+            for (int i = 0; i < iconSuggestions.Count; i++)
+            {
+                string icon = iconSuggestions[i];
+                Button iconButton = new Button
+                {
+                    Text = icon,
+                    Font = new Font("Segoe UI Emoji", 12),
+                    AutoSize = true,
+                    FlatStyle = FlatStyle.Flat, // Remove button border
+                    BackColor = Color.LightGray, // Set button background color to match form's background
+                    Size = new Size(iconSize, iconSize), // Set icon size
+                    Location = new Point(xPos, yPos)
+                };
                 iconButton.FlatAppearance.BorderSize = 0; // Remove button border
-                iconButton.BackColor = Color.LightGray; // Set button background color to match form's background
-                iconButton.Size = new Size(iconSize, iconSize); // Set icon size
-                iconButton.Location = new Point(xPos, yPos);
+
                 iconButton.Click += (sender, e) =>
                 {
                     textBox1.Text += icon;
                     iconSuggestionForm.Close();
+                    LowLevelMouseHook.Unhook();
                 };
+
                 iconSuggestionForm.Controls.Add(iconButton);
 
-                // Move to the next row if the maximum number of icons per row is reached
-                if ((iconSuggestions.IndexOf(icon) + 1) % iconsPerRow == 0)
+                // Move to the next icon position
+                if ((i + 2) % iconsPerRow == 0) // Account for the close button in the first row
                 {
                     xPos = 10;
                     yPos += iconSize + iconSpacing;
@@ -303,11 +416,31 @@ namespace X_Plore.Chat
                 }
             }
 
+            iconSuggestionForm.FormClosed += (sender, e) =>
+            {
+                LowLevelMouseHook.Unhook();
+            };
+
             iconSuggestionForm.ShowInTaskbar = false; // Don't show in taskbar
             iconSuggestionForm.ShowIcon = false; // Hide icon
             iconSuggestionForm.TopMost = true; // Ensure it stays on top
             iconSuggestionForm.Show(); // Show the form
+
+            // Register the low-level mouse hook to close the form when clicking outside
+            LowLevelMouseHook.SetHook();
+            LowLevelMouseHook.MouseClick += (sender, e) =>
+            {
+                Point cursorPosition = Cursor.Position;
+                if (iconSuggestionForm != null && !iconSuggestionForm.Bounds.Contains(cursorPosition))
+                {
+                    iconSuggestionForm.Close();
+                    LowLevelMouseHook.Unhook();
+                }
+            };
         }
+
+
+
 
         private async void sendTextButton_Click(object sender, EventArgs e)
         {

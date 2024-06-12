@@ -112,7 +112,7 @@
             // 
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2CirclePictureBox1.Image = global::X_Plore.Properties.Resources.Screenshot_2024_05_28_194735;
+            this.guna2CirclePictureBox1.Image = global::X_Plore.Properties.Resources.avatardefault_928241;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(123, 36);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";

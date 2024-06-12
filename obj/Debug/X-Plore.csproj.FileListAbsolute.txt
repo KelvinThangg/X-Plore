@@ -4,7 +4,6 @@ D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\libgrp
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\libgrpc_csharp_ext.x64.dylib
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\X-Plore.exe.config
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\X-Plore.exe
-D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\X-Plore.pdb
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.DirectShow.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.dll
@@ -74,6 +73,7 @@ D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\System
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\System.Text.Encoding.CodePages.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\System.ValueTuple.dll
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\TrueConfVideoSDKLibrary.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\websocket-sharp.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.xml
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.xml
@@ -215,3 +215,5 @@ D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plor
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plore.csproj.Up2Date
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plore.exe
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plore.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\X-Plore.pdb
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Main.ChangeTheme.resources

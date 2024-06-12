@@ -36,25 +36,25 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2CustomGradientPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.panel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.DisplayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.button2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.button1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.DisplayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TileButton5 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2TileButton4 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2TileButton3 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
             this.button3 = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.button2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2CustomGradientPanel4.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,56 +130,6 @@
             this.guna2CustomGradientPanel4.Size = new System.Drawing.Size(153, 439);
             this.guna2CustomGradientPanel4.TabIndex = 12;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.guna2ControlBox2);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.guna2PictureBox2);
-            this.panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.panel1.FillColor2 = System.Drawing.Color.Black;
-            this.panel1.FillColor3 = System.Drawing.Color.Black;
-            this.panel1.FillColor4 = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(159, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 439);
-            this.panel1.TabIndex = 8;
-            // 
-            // DisplayLbl
-            // 
-            this.DisplayLbl.BackColor = System.Drawing.Color.Transparent;
-            this.DisplayLbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.DisplayLbl.ForeColor = System.Drawing.Color.White;
-            this.DisplayLbl.Location = new System.Drawing.Point(60, 42);
-            this.DisplayLbl.Name = "DisplayLbl";
-            this.DisplayLbl.Size = new System.Drawing.Size(36, 22);
-            this.DisplayLbl.TabIndex = 3;
-            this.DisplayLbl.Text = "label";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.button2.HoverState.FillColor = System.Drawing.Color.Red;
-            this.button2.IconColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(738, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 28);
-            this.button2.TabIndex = 4;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(697, 12);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
-            this.guna2ControlBox2.TabIndex = 5;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -196,6 +146,17 @@
             this.button1.Size = new System.Drawing.Size(48, 48);
             this.button1.TabIndex = 4;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // DisplayLbl
+            // 
+            this.DisplayLbl.BackColor = System.Drawing.Color.Transparent;
+            this.DisplayLbl.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.DisplayLbl.ForeColor = System.Drawing.Color.White;
+            this.DisplayLbl.Location = new System.Drawing.Point(60, 42);
+            this.DisplayLbl.Name = "DisplayLbl";
+            this.DisplayLbl.Size = new System.Drawing.Size(36, 22);
+            this.DisplayLbl.TabIndex = 3;
+            this.DisplayLbl.Text = "label";
             // 
             // guna2TileButton5
             // 
@@ -249,6 +210,7 @@
             this.guna2TileButton4.Text = "Quản lý";
             this.guna2TileButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2TileButton4.TextOffset = new System.Drawing.Point(0, -5);
+            this.guna2TileButton4.Click += new System.EventHandler(this.guna2TileButton4_Click);
             // 
             // guna2TileButton3
             // 
@@ -343,6 +305,45 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.guna2ControlBox2);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.guna2PictureBox2);
+            this.panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.panel1.FillColor2 = System.Drawing.Color.Black;
+            this.panel1.FillColor3 = System.Drawing.Color.Black;
+            this.panel1.FillColor4 = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(159, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(792, 439);
+            this.panel1.TabIndex = 8;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(697, 12);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
+            this.guna2ControlBox2.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(43)))));
+            this.button2.HoverState.FillColor = System.Drawing.Color.Red;
+            this.button2.IconColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(738, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(35, 28);
+            this.button2.TabIndex = 4;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -388,8 +389,8 @@
             this.Text = "MainMenu";
             this.guna2CustomGradientPanel4.ResumeLayout(false);
             this.guna2CustomGradientPanel4.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 

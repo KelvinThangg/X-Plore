@@ -1,27 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
-using System.Windows.Forms;
-using System.IO;
-using Newtonsoft.Json;
-using Google.Apis.Auth.OAuth2;
+﻿using Google.Apis.Auth.OAuth2;
 using Google.Apis.PeopleService.v1;
-using Google.Apis.Services;
-using Google.Api.Gax;
-using Google.Apis.Util;
-using Google.Apis.Gmail.v1;
 using Google.Apis.PeopleService.v1.Data;
+using Google.Apis.Services;
 using Google.Apis.Util.Store;
-using System.Diagnostics;
-using loginIndian.Classes;
 using Google.Cloud.Firestore;
+using loginIndian.Classes;
+using Newtonsoft.Json;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using X_Plore.Dangky_Dangnhap;
+using System.Drawing;
 using X_Plore.Main;
 
 namespace X_Plore
@@ -32,22 +25,23 @@ namespace X_Plore
         private const int CODE_EXPIRY_SECONDS = 60;
         int enterout = 0;
 
-
         bool checkTimeout()
         {
-            if (enterout == 3)
-            {
-                return true;
-            }
-            return false;
+            return enterout == 3;
         }
 
         private Captcha captcha;
         private PictureBox captchaPictureBox;
+        private string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        private const string googleCredsFolder = "X_Plore\\GoogleCredentials";
+        private string googleCredsPath;
+        private string clientSecretPath;
 
         public FormDangNhap(string username)
         {
             InitializeComponent();
+            googleCredsPath = Path.Combine(appDataPath, googleCredsFolder);
+            clientSecretPath = Path.Combine(Application.StartupPath, "client_secret.json");
             InitializeCodeExpiryTimer();
             PassBox.UseSystemPasswordChar = true;
             codeExpiryTimer.Start();
@@ -57,34 +51,29 @@ namespace X_Plore
                 UserBox.Text = username;
                 LoadSettings();
             }
-
-            // Initialize and add the captcha PictureBox to the form
             captchaPictureBox = new PictureBox
             {
-                Location = new Point(100, 100), // Set the location as needed
-                Size = new Size(200, 50) // Set the size as needed
+                Location = new Point(100, 100),
+                Size = new Size(200, 50)
             };
             this.Controls.Add(captchaPictureBox);
-
             GenerateCaptcha();
-
-            // Ensure that the event handlers are correctly set
             this.Click += ResetTimer;
             this.KeyPress += ResetTimer;
         }
-     
+
         private void InitializeCodeExpiryTimer()
         {
             codeExpiryTimer = new System.Windows.Forms.Timer();
-            codeExpiryTimer.Interval = CODE_EXPIRY_SECONDS * 1000;  // 60 seconds
+            codeExpiryTimer.Interval = CODE_EXPIRY_SECONDS * 1000;
             codeExpiryTimer.Tick += CodeExpiryTimer_Tick;
         }
 
         private async void CodeExpiryTimer_Tick(object sender, EventArgs e)
         {
             codeExpiryTimer.Stop();
-            MessageBox.Show("Verification login expired! Exit");
-            Environment.Exit(1);
+           // MessageBox.Show("Verification login expired! Exit");
+           // Environment.Exit(1);
         }
 
         private void ResetTimer(object sender, EventArgs e)
@@ -102,7 +91,7 @@ namespace X_Plore
             Close();
         }
 
-        private const string settingsFilePath = @"C:\Users\dadad\OneDrive\Documents\UserData\user_settings.json";
+        private const string settingsFilePath = "user_settings.json";
 
         private async void LoginBtn_Click(object sender, EventArgs e)
         {
@@ -113,7 +102,6 @@ namespace X_Plore
             string password = PassBox.Text;
             string captchaInput = captchaTextBox.Text;
             var db = FirestoreHelper.Database;
-
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("User/Password missing!");
@@ -130,7 +118,6 @@ namespace X_Plore
                 QuerySnapshot snapshot = await userDataCollection.WhereEqualTo("Username", username).GetSnapshotAsync();
                 DocumentSnapshot document = snapshot.Documents[0];
                 string DisplayName = document.GetValue<string>("DisplayName");
-
                 if (data != null)
                 {
                     if (password == Security.Decrypt(data.Password) && captchaInput == captcha.Text)
@@ -154,7 +141,7 @@ namespace X_Plore
                             MessageBox.Show("Success");
                             if (checkBox1.Checked)
                             {
-                                SaveSettings(username, password); // Save credentials to JSON file
+                                SaveSettings(username, password);
                             }
                             else
                             {
@@ -187,7 +174,6 @@ namespace X_Plore
                     enterout += 1;
                 }
             }
-
             if (checkTimeout())
             {
                 codeExpiryTimer.Stop();
@@ -242,7 +228,6 @@ namespace X_Plore
                     File.ReadAllText(settingsFilePath),
                     new { RememberMe = false, Username = "", Password = "" }
                 );
-
                 if (settings.RememberMe && settings.Username == UserBox.Text)
                 {
                     PassBox.Text = settings.Password;
@@ -282,7 +267,6 @@ namespace X_Plore
                     File.ReadAllText(settingsFilePath),
                     new { RememberMe = false, Username = "", Password = "" }
                 );
-
                 if (settings.RememberMe && settings.Username == UserBox.Text)
                 {
                     PassBox.Text = settings.Password;
@@ -298,23 +282,20 @@ namespace X_Plore
         private async Task<bool> CheckIfUserExists(string email)
         {
             var db = FirestoreHelper.Database;
-
             var emailQuery = db.Collection("UserData").WhereEqualTo("Email", email);
             var emailSnapshot = await emailQuery.GetSnapshotAsync();
             if (emailSnapshot.Count > 0)
             {
                 return true;
             }
-
             return false;
         }
 
         private async Task ClearStoredCredentialsAsync()
         {
-            string credPath = @"C:\Users\dadad\source\repos\loginIndian - Final\bin\Debug\net8.0-windows\SigninwithGG";
-            if (Directory.Exists(credPath))
+            if (Directory.Exists(googleCredsPath))
             {
-                Directory.Delete(credPath, true);
+                Directory.Delete(googleCredsPath, true);
             }
             await Task.Yield();
         }
@@ -325,23 +306,20 @@ namespace X_Plore
             {
                 await ClearStoredCredentialsAsync();
                 UserCredential credential;
-
-                using (var stream = new FileStream(@"C:\Users\dadad\Downloads\client_secret_716693675227-0huu2ruuqr969vbmujlmed2ulju8qle8.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
+                using (var stream = new FileStream(clientSecretPath, FileMode.Open, FileAccess.Read))
                 {
                     string[] scopes = {
                         PeopleServiceService.Scope.UserinfoProfile,
                         PeopleServiceService.Scope.UserinfoEmail,
                         "https://www.googleapis.com/auth/user.phonenumbers.read"
-                    };
-
+                                       };
                     credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
-                    scopes,
-                    "user",
-                    CancellationToken.None,
-                    new FileDataStore("SigninwithGG", true));
+                        GoogleClientSecrets.Load(stream).Secrets,
+                        scopes,
+                        "user",
+                        CancellationToken.None,
+                        new FileDataStore(googleCredsPath, true));
                 }
-
                 if (credential != null)
                 {
                     using (var peopleService = new PeopleServiceService(new BaseClientService.Initializer()
@@ -353,14 +331,12 @@ namespace X_Plore
                         PeopleResource.GetRequest peopleRequest = peopleService.People.Get("people/me");
                         peopleRequest.RequestMaskIncludeField = "person.names,person.emailAddresses,person.genders,person.phoneNumbers";
                         Person profile = await peopleRequest.ExecuteAsync();
-
                         if (profile != null)
                         {
                             string name = profile.Names?.FirstOrDefault()?.DisplayName ?? "Unknown";
                             string email = profile.EmailAddresses?.FirstOrDefault()?.Value ?? "Unknown";
                             string gender = profile.Genders?.FirstOrDefault()?.Value ?? "Unknown";
                             string phoneNumber = profile.PhoneNumbers?.FirstOrDefault()?.Value ?? "Unknown";
-
                             if (!await CheckIfUserExists(email))
                             {
                                 MessageBox.Show("Người dùng không tồn tại!");
@@ -370,7 +346,6 @@ namespace X_Plore
                             {
                                 var db = FirestoreHelper.Database;
                                 var userDataCollection = db.Collection("UserData");
-
                                 try
                                 {
                                     QuerySnapshot snapshot = await userDataCollection.WhereEqualTo("Email", email).GetSnapshotAsync();
@@ -379,18 +354,13 @@ namespace X_Plore
                                     string Username = document.GetValue<string>("Username");
                                     bool Is2FAEnabled = document.GetValue<bool>("2FAEnable");
                                     string Email = document.GetValue<string>("Email");
-
                                     if (snapshot.Documents.Count > 0)
                                     {
                                         DocumentReference docRef = snapshot.Documents[0].Reference;
-
                                         await docRef.UpdateAsync("isLoggedIn", true);
-
                                         MessageBox.Show("Đăng nhập thành công!");
-
                                         codeExpiryTimer.Stop();
                                         Hide();
-
                                         X_Plore.Main.MainMenu form = new X_Plore.Main.MainMenu(Displayname, Username);
                                         form.ShowDialog();
                                         Close();
@@ -428,8 +398,5 @@ namespace X_Plore
         {
 
         }
-
-       
-        }
     }
-
+}

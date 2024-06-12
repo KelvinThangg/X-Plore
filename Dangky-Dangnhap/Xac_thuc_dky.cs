@@ -40,6 +40,7 @@ namespace X_Plore.Dangky_Dangnhap
             this.userEmail = userEmail;
             this.userName = userName;
             NotifcationTxT.Text = "Sending mail to: " + userEmail;
+            NotifcationTxT.Dock = DockStyle.Bottom;
             InitializeCodeExpiryTimer();
         }
 
