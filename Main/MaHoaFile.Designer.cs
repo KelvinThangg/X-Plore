@@ -57,7 +57,7 @@
             this.textBoxKey.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(8)))), ((int)(((byte)(60)))));
             this.textBoxKey.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxKey.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.textBoxKey.ForeColor = System.Drawing.Color.Black;
+            this.textBoxKey.ForeColor = System.Drawing.Color.LightGray;
             this.textBoxKey.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxKey.Location = new System.Drawing.Point(551, 400);
             this.textBoxKey.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -192,7 +192,7 @@
             this.textBoxFilePath.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(8)))), ((int)(((byte)(60)))));
             this.textBoxFilePath.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxFilePath.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.textBoxFilePath.ForeColor = System.Drawing.Color.Black;
+            this.textBoxFilePath.ForeColor = System.Drawing.Color.LightGray;
             this.textBoxFilePath.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxFilePath.Location = new System.Drawing.Point(152, 400);
             this.textBoxFilePath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

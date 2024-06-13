@@ -141,12 +141,8 @@ namespace X_Plore.Dangky_Dangnhap
                 sendBtn.Enabled = false;
                 confirmBtn.Enabled = true;
                 codeExpiryTimer.Start();
-                while (secondsRemaining > 0)
-                {
-                    sendBtn.Text = $"Gửi lại ({secondsRemaining})";
-                    secondsRemaining--;
-                    lbDem.Text = secondsRemaining.ToString();
-                }
+                secondsRemaining = CODE_EXPIRY_SECONDS;
+                lbDem.Text = secondsRemaining.ToString(); // Update label initially
             }
             catch (Exception ex)
             {
@@ -171,14 +167,18 @@ namespace X_Plore.Dangky_Dangnhap
         }
 
 
-        private async void CodeExpiryTimer_Tick(object sender, EventArgs e)
+        private void CodeExpiryTimer_Tick(object sender, EventArgs e)
         {
+            secondsRemaining--;
+            lbDem.Text = secondsRemaining.ToString();  // Update label every second
 
-            codeExpiryTimer.Stop();
-            verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // New code
-            MessageBox.Show("Verification code expired! Exit");
-            await DeleteUserData();
-            Environment.Exit(1);
+            if (secondsRemaining <= 0)
+            {
+                codeExpiryTimer.Stop();
+                verificationCode = GenerateCode.CreateVerificationCode(4, GenerateCode.VerificationType.Alphanumeric); // New code
+                MessageBox.Show("Verification code expired! Exit");
+                Environment.Exit(1);
+            }
         }
 
         private async void EmailVerify_FormClosed(object sender, FormClosedEventArgs e)

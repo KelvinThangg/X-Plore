@@ -97,6 +97,16 @@ namespace X_Plore.Main
                 textBoxFilePath.Text = openFileDialog.FileName;
             }
         }
+        private void DisplayEncryptedFile(string filePath)
+        {
+            // Create a new label
+            Label fileLabel = new Label();
+            fileLabel.Text = filePath;
+            fileLabel.AutoSize = true;
+
+            // Add the label to the flowLayoutFileList
+            flowLayoutFileList.Controls.Add(fileLabel);
+        }
 
         private void buttonDecrypt_Click(object sender, EventArgs e)
         {
@@ -127,6 +137,9 @@ namespace X_Plore.Main
             {
                 FileEncryptor.EncryptFile(inputFile, outputFile, key);
                 MessageBox.Show("Thành công. File saved ở: " + outputFile);
+
+                // Display the encrypted file in the flowLayoutFileList
+                DisplayEncryptedFile(outputFile);
             }
             else
             {

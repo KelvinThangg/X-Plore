@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\loginindian\\forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\loginindian\\forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\forgottenpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\forms\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\loginindian\\forms\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|d:\\uit\\hk2 nam 2\\lap trinh mang\\demo\\do an\\xploremerged\\x-plore\\loginindian\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBCA0DD2-3A39-46F4-A7C3-2FA94B7BF1AD}|loginIndian.csproj|D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\forms\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -42,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 201,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,6 +59,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ForgottenPassword.cs [Design]",
+              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\ForgottenPassword.cs",
+              "RelativeDocumentMoniker": "Forms\\ForgottenPassword.cs",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\ForgottenPassword.cs [Design]",
+              "RelativeToolTip": "Forms\\ForgottenPassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T15:20:57.324Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ForgottenPassword.cs",
+              "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\ForgottenPassword.cs",
+              "RelativeDocumentMoniker": "Forms\\ForgottenPassword.cs",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\ForgottenPassword.cs",
+              "RelativeToolTip": "Forms\\ForgottenPassword.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAMwK0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T15:20:52.848Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -67,23 +100,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Help.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\Help.cs",
               "RelativeDocumentMoniker": "Forms\\Help.cs",
               "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\Help.cs [Design]",
               "RelativeToolTip": "Forms\\Help.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T16:54:55.593Z"
+              "WhenOpened": "2024-06-10T16:54:55.593Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\LoginForm.cs*",
-              "RelativeToolTip": "Forms\\LoginForm.cs*",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "Forms\\LoginForm.cs",
               "ViewState": "AQIAADoBAAAAAAAAAAAQwJwBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T17:05:44.049Z",
@@ -91,19 +125,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\LoginForm.cs [Design]*",
-              "RelativeToolTip": "Forms\\LoginForm.cs [Design]*",
+              "ToolTip": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Forms\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T17:05:31.678Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Feedback.Designer.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\Feedback.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Feedback.Designer.cs",
@@ -115,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Feedback.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\Feedback.cs",
               "RelativeDocumentMoniker": "Forms\\Feedback.cs",
@@ -127,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "UpdatePassword.cs",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\UpdatePassword.cs",
               "RelativeDocumentMoniker": "Forms\\UpdatePassword.cs",
@@ -139,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Feedback.cs [Design]",
               "DocumentMoniker": "D:\\UIT\\HK2 Nam 2\\Lap trinh mang\\Demo\\Do an\\XploreMerged\\X-Plore\\loginIndian\\Forms\\Feedback.cs",
               "RelativeDocumentMoniker": "Forms\\Feedback.cs",

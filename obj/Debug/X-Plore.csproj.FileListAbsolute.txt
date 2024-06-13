@@ -4,6 +4,7 @@ D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\libgrp
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\libgrpc_csharp_ext.x64.dylib
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\X-Plore.exe.config
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\X-Plore.exe
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\X-Plore.pdb
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.DirectShow.dll
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\AForge.Video.dll
@@ -209,11 +210,10 @@ D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plor
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Main.HomeScreen.resources
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Main.MaHoaFile.resources
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Main.MainMenu.resources
+D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Main.QuanLy.resources
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Properties.Resources.resources
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plore.csproj.GenerateResource.cache
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plore.csproj.CoreCompileInputs.cache
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plore.csproj.Up2Date
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plore.exe
 D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X-Plore.pdb
-D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\bin\Debug\X-Plore.pdb
-D:\UIT\HK2 Nam 2\Lap trinh mang\Demo\Do an\XploreMerged\X-Plore\obj\Debug\X_Plore.Main.ChangeTheme.resources

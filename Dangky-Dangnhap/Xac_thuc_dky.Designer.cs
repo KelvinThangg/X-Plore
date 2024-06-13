@@ -90,11 +90,11 @@
             // NotifcationTxT
             // 
             this.NotifcationTxT.BackColor = System.Drawing.Color.Transparent;
-            this.NotifcationTxT.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotifcationTxT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.NotifcationTxT.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NotifcationTxT.Location = new System.Drawing.Point(163, 369);
+            this.NotifcationTxT.Location = new System.Drawing.Point(20, 366);
             this.NotifcationTxT.Name = "NotifcationTxT";
-            this.NotifcationTxT.Size = new System.Drawing.Size(94, 27);
+            this.NotifcationTxT.Size = new System.Drawing.Size(77, 23);
             this.NotifcationTxT.TabIndex = 9;
             this.NotifcationTxT.Text = "Thông báo";
             // 

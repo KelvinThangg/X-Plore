@@ -168,7 +168,7 @@
             this.textBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
             this.textBox1.BorderRadius = 10;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.DefaultText = "Group password";
+            this.textBox1.DefaultText = "";
             this.textBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -181,7 +181,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '\0';
             this.textBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.PlaceholderText = "";
+            this.textBox1.PlaceholderText = "Group password";
             this.textBox1.SelectedText = "";
             this.textBox1.Size = new System.Drawing.Size(153, 36);
             this.textBox1.TabIndex = 11;
@@ -193,7 +193,7 @@
             this.textBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
             this.textBox2.BorderRadius = 10;
             this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.DefaultText = "Group name";
+            this.textBox2.DefaultText = "";
             this.textBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.textBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.textBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -206,7 +206,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '\0';
             this.textBox2.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.PlaceholderText = "";
+            this.textBox2.PlaceholderText = "Group name";
             this.textBox2.SelectedText = "";
             this.textBox2.Size = new System.Drawing.Size(153, 36);
             this.textBox2.TabIndex = 11;
