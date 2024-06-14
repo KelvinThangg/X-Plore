@@ -13,7 +13,7 @@
 ### Programming Languages, Frameworks, and Database
 - **Programming Language**: C#
 - **Framework**: .NET Framework
-- **Database**: Firebase Realtime Database
+- **Database**: Firebase Realtime Database, Firestore Database
 - **User Interface**: Windows Forms
 
 ## Help
